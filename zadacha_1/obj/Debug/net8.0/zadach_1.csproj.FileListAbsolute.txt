@@ -1,0 +1,14 @@
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\bin\Debug\net8.0\zadach_1.exe
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\bin\Debug\net8.0\zadach_1.deps.json
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\bin\Debug\net8.0\zadach_1.runtimeconfig.json
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\bin\Debug\net8.0\zadach_1.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\bin\Debug\net8.0\zadach_1.pdb
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\obj\Debug\net8.0\zadach_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\obj\Debug\net8.0\zadach_1.AssemblyInfoInputs.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\obj\Debug\net8.0\zadach_1.AssemblyInfo.cs
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\obj\Debug\net8.0\zadach_1.csproj.CoreCompileInputs.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\obj\Debug\net8.0\zadach_1.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\obj\Debug\net8.0\refint\zadach_1.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\obj\Debug\net8.0\zadach_1.pdb
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\obj\Debug\net8.0\zadach_1.genruntimeconfig.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Code_read\DZ_3\zadach_1\obj\Debug\net8.0\ref\zadach_1.dll
