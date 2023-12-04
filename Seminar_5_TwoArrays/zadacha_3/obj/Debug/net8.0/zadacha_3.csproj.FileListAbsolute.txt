@@ -1,0 +1,30 @@
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\zadacha_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\zadacha_3.AssemblyInfoInputs.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\zadacha_3.AssemblyInfo.cs
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\zadacha_3.csproj.CoreCompileInputs.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\zadacha_3.sourcelink.json
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\bin\Debug\net8.0\zadacha_3.exe
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\bin\Debug\net8.0\zadacha_3.deps.json
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\bin\Debug\net8.0\zadacha_3.runtimeconfig.json
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\bin\Debug\net8.0\zadacha_3.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\bin\Debug\net8.0\zadacha_3.pdb
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\zadacha_3.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\refint\zadacha_3.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\zadacha_3.pdb
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\zadacha_3.genruntimeconfig.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar 4_functions\zadacha_3\obj\Debug\net8.0\ref\zadacha_3.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\bin\Debug\net8.0\zadacha_3.exe
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\bin\Debug\net8.0\zadacha_3.deps.json
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\bin\Debug\net8.0\zadacha_3.runtimeconfig.json
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\bin\Debug\net8.0\zadacha_3.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\bin\Debug\net8.0\zadacha_3.pdb
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\zadacha_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\zadacha_3.AssemblyInfoInputs.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\zadacha_3.AssemblyInfo.cs
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\zadacha_3.csproj.CoreCompileInputs.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\zadacha_3.sourcelink.json
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\zadacha_3.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\refint\zadacha_3.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\zadacha_3.pdb
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\zadacha_3.genruntimeconfig.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Seminar_5_TwoArrays\zadacha_3\obj\Debug\net8.0\ref\zadacha_3.dll
