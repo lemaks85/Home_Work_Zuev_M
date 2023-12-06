@@ -1,0 +1,15 @@
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\zadacha_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\zadacha_2.AssemblyInfoInputs.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\zadacha_2.AssemblyInfo.cs
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\zadacha_2.csproj.CoreCompileInputs.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\zadacha_2.sourcelink.json
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\bin\Debug\net8.0\zadacha_2.exe
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\bin\Debug\net8.0\zadacha_2.deps.json
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\bin\Debug\net8.0\zadacha_2.runtimeconfig.json
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\bin\Debug\net8.0\zadacha_2.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\bin\Debug\net8.0\zadacha_2.pdb
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\zadacha_2.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\refint\zadacha_2.dll
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\zadacha_2.pdb
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\zadacha_2.genruntimeconfig.cache
+C:\Users\maxel\OneDrive\Рабочий стол\Home_Work_Zuev_M\Lecture_6_Arrays_and_strings\zadacha_2\obj\Debug\net8.0\ref\zadacha_2.dll
