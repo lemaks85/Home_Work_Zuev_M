@@ -1,0 +1,15 @@
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\zadacha_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\zadacha_2.AssemblyInfoInputs.cache
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\zadacha_2.AssemblyInfo.cs
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\zadacha_2.csproj.CoreCompileInputs.cache
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\zadacha_2.sourcelink.json
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\bin\Debug\net6.0\zadacha_2.exe
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\bin\Debug\net6.0\zadacha_2.deps.json
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\bin\Debug\net6.0\zadacha_2.runtimeconfig.json
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\bin\Debug\net6.0\zadacha_2.dll
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\bin\Debug\net6.0\zadacha_2.pdb
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\zadacha_2.dll
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\refint\zadacha_2.dll
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\zadacha_2.pdb
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\zadacha_2.genruntimeconfig.cache
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Seminar_7_Recursion\zadacha_2\obj\Debug\net6.0\ref\zadacha_2.dll
