@@ -8,24 +8,32 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\maxel\\.nuget\\packages\\": {}
+    "C:\\Users\\Maks_Z\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maxel\\OneDrive\\Рабочий стол\\Home_Work_Zuev_M\\Seminar_3_Array\\zadacha_3\\zadach_3.csproj",
+      "projectUniqueName": "C:\\Users\\Maks_Z\\Desktop\\Home_Work_Zuev_M\\Seminar_3_Array\\zadacha_3\\zadach_3.csproj",
       "projectName": "zadach_3",
-      "projectPath": "C:\\Users\\maxel\\OneDrive\\Рабочий стол\\Home_Work_Zuev_M\\Seminar_3_Array\\zadacha_3\\zadach_3.csproj",
-      "packagesPath": "C:\\Users\\maxel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maxel\\OneDrive\\Рабочий стол\\Home_Work_Zuev_M\\Seminar_3_Array\\zadacha_3\\obj\\",
+      "projectPath": "C:\\Users\\Maks_Z\\Desktop\\Home_Work_Zuev_M\\Seminar_3_Array\\zadacha_3\\zadach_3.csproj",
+      "packagesPath": "C:\\Users\\Maks_Z\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Maks_Z\\Desktop\\Home_Work_Zuev_M\\Seminar_3_Array\\zadacha_3\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\maxel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Maks_Z\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
