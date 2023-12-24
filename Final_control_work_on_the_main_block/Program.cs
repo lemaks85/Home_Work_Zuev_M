@@ -15,7 +15,6 @@ static string[] NewArrayString(string[] pull)
         }
     return chars;
 }
-
 static void ShowArray(string[] array)
 {
     Console.Write("The created array" + " ");
@@ -24,7 +23,6 @@ static void ShowArray(string[] array)
             Console.Write(elem + " ");
         }
 }
-
 static string[] ModArray(string[] array)
 {
     string[] newArray = new string[array.Length];
