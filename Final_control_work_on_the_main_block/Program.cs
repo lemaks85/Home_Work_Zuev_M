@@ -39,5 +39,20 @@ static string[] ModArray(string[] array)
         }
 
     return newArray;
-    
+}
+
+private static void Main(string[] args){
+
+Console.WriteLine("Enter a comma-separated ',' string as an array element");
+    string s = Console.ReadLine();
+        string[] pull = s.Split(',');
+
+string[] myArray = NewArrayString(pull);
+        ShowArray(myArray);
+
+        Console.WriteLine();
+
+string[] newArray = ModArray(myArray);
+    ShowArray(newArray);
+    }
 }
