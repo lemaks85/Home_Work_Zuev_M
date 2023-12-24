@@ -1,0 +1,15 @@
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\Final_control_work_on_the_main_block.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\Final_control_work_on_the_main_block.AssemblyInfoInputs.cache
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\Final_control_work_on_the_main_block.AssemblyInfo.cs
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\Final_control_work_on_the_main_block.csproj.CoreCompileInputs.cache
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\Final_control_work_on_the_main_block.sourcelink.json
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\bin\Debug\net8.0\Final_control_work_on_the_main_block.exe
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\bin\Debug\net8.0\Final_control_work_on_the_main_block.deps.json
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\bin\Debug\net8.0\Final_control_work_on_the_main_block.runtimeconfig.json
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\bin\Debug\net8.0\Final_control_work_on_the_main_block.dll
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\bin\Debug\net8.0\Final_control_work_on_the_main_block.pdb
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\Final_control_work_on_the_main_block.dll
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\refint\Final_control_work_on_the_main_block.dll
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\Final_control_work_on_the_main_block.pdb
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\Final_control_work_on_the_main_block.genruntimeconfig.cache
+C:\Users\Maks_Z\Desktop\Home_Work_Zuev_M\Final_control_work_on_the_main_block\obj\Debug\net8.0\ref\Final_control_work_on_the_main_block.dll

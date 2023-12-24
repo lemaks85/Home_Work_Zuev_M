@@ -2,3 +2,17 @@
 длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры,
 либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями,
 лучше обойтись исключительно массивами. */
+
+
+internal class Program{
+
+static string[] NewArrayString(string[] pull)
+{
+    string[] chars = new string[pull.Length];
+        for (int i = 0; i < pull.Length; i++)
+        {
+            chars[i] = pull[i];
+        }
+    return chars;
+}
+
