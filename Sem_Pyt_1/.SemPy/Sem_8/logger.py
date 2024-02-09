@@ -22,9 +22,11 @@ def input_data():
     else:
         with open('data_second_variant.csv', 'a', encoding='utf-8') as file:
             file.write(f'{name};{surname};{phone};{adress}\n\n')
+    print_data()
 
 
 def print_data():
+    print('/////////////////////////////////////////////////////////////////////////////////')
     print('1 Файл:')
     with open('data_first_variant.csv', 'r', encoding='utf-8') as file:
         data = file.readlines()
@@ -34,6 +36,7 @@ def print_data():
     with open('data_second_variant.csv', 'r', encoding='utf-8') as file:
         data = file.readlines()
         print(''.join(data))
+    print('/////////////////////////////////////////////////////////////////////////////////')
        
     
         
@@ -54,6 +57,7 @@ def tochange_data(): # Функуция изменения данных
     else:
         with open('data_second_variant.csv', 'w+', encoding='utf-8') as file:
             file.write(f'{name};{surname};{phone};{adress}\n\n')
+    print_data()
         
                        
                     
@@ -66,6 +70,7 @@ def delete_data(): # Функция удаления данных полност
         data = file.readlines()
         for line in data:
                 file.write(line)
+    print_data()
 
 
 def copy_data(): # Функция копирывания данных из одного файла  в другой файл
@@ -77,10 +82,11 @@ def copy_data(): # Функция копирывания данных из од�
         with open('data_first_variant.csv', 'r+', encoding='utf-8') as firstfile, open('data_second_variant.csv', 'w+', encoding='utf-8') as secondfile:
           for line in firstfile:
                 secondfile.write(line)
-    else:
-        with open('data_second_variant.csv', 'r+', encoding='utf-8') as secondfile, open('data_first_variant.csv', 'w+', encoding='utf-8') as firstline:
+    elif var3 == 2:
+        with open('data_second_variant.csv', 'r+', encoding='utf-8') as secondfile, open('data_first_variant.csv', 'w+', encoding='utf-8') as firstfile:
             for line in secondfile:
                 firstfile.write(line)
+    print_data()
             
     
       
