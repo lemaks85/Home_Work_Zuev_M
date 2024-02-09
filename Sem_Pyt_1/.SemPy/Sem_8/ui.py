@@ -1,6 +1,10 @@
 from logger import input_data, print_data, tochange_data, delete_data, copy_data
 
 
+def exit_data():
+    return exit()
+
+
 def interface():
     print('********************************************************************************')
     print('Добрый день! Это бот-помощник. \n'
@@ -9,12 +13,13 @@ def interface():
           '2 - Вывести данные \n'
           '3 - Изменить данные \n'
           '4 - Удалить данные \n'
-          '5 - Копировать данные \n\n')
+          '5 - Копировать данные \n'
+          '6 - <<< Выход >>> \n\n')
     command = int(input('Ваш выбор: '))
     
     
 
-    while command < 1 or command > 5:
+    while command < 1 or command > 6:
         command = int(input('Ошибка! Ваш выбор: '))
 
     if command == 1:
@@ -27,6 +32,8 @@ def interface():
         delete_data()
     elif command == 5:
         copy_data()
+    elif command == 6:
+        exit_data()
     
     interface()
 
