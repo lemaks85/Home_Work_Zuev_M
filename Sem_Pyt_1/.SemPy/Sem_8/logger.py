@@ -36,7 +36,7 @@ def print_data():
         
         
         
-def tochange_data():
+def tochange_data(): # Функуция изменения данных
     var2 = int(input(f'\n Выберите файл который хотите изменить? \n'
                 f'Файл № 1:\n'
                 f'Файл № 2:\n\n'
@@ -54,19 +54,7 @@ def tochange_data():
         
                        
                     
-    
-    
-    
-    # with open('data_first_variant.csv','w+', encoding='utf-8') as file:
-    #     data = file.readlines()
-    #     for line in data:
-    #         if line == 'name':
-               
-                #file.write(line)
-
-
-
-def delete_data():
+def delete_data(): # Функция удаления данных полностью из двух файлов
     with open('data_first_variant.csv','w+', encoding='utf-8') as file:
         data = file.readlines()
         for line in data:
@@ -77,7 +65,7 @@ def delete_data():
                 file.write(line)
 
 
-def copy_data():
+def copy_data(): # Функция копирывания данных из одного в другой
     var3 = int(input(f'\n Выберите файл в который хотите скопировать данные? \n'
                 f'1 Из файла № 1 в файл № 2:\n'
                 f'2 Из файла № 2 в файл № 1:\n\n'
