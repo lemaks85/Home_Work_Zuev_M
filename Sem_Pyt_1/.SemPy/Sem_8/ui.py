@@ -1,5 +1,6 @@
 from logger import input_data, print_data, tochange_data, delete_data, copy_data
 
+
 def interface():
     print('Добрый день! Это бот-помощник. \n'
           'Что вы хотите сделать? \n'
@@ -23,7 +24,12 @@ def interface():
         delete_data()
     elif command == 5:
         copy_data()
+    
+    interface()
+
         
         
 
 interface()
+
+

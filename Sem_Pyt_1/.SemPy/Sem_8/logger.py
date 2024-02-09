@@ -1,5 +1,7 @@
 from data_create import input_user_data
 
+
+
 def input_data():
     name, surname, phone, adress = input_user_data()
     var = int(input(f'\n В каком формате записать данные? \n'
@@ -32,7 +34,7 @@ def print_data():
     with open('data_second_variant.csv', 'r', encoding='utf-8') as file:
         data = file.readlines()
         print(''.join(data))
-        
+    
         
         
         
