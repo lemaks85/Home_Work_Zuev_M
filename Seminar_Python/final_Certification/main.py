@@ -19,6 +19,9 @@ save_button.pack(pady=5)
 delete_button = customtkinter.CTkButton(root, text="Delete note", commanf=delete_note)
 delete_button.pack(pady=5)
 
+notes_list = tk.Listbox(root, width=45, height=15)
+notes_list.pack(pady=5)
 
+root.mainloop()
 
 
