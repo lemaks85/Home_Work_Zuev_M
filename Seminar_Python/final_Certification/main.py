@@ -7,6 +7,14 @@ root.title("My Notes")
 root.geometry('300x300')
 root.resizable(0, 0)
 
+def db_start():
+    global conn, cur
+
+    conn = sqlite3.connect('notes.db')
+    cur = conn.cursor()
+    cur.execute("""CREATE TABLE IF NOT EXISTS notes (id INTEGER PRYMARY KEY, note TEXT)""")
+
+
 note_lable = customtkinter.CTkLabel(root, text="Note:")
 note_lable.pack(pady=5)
 
