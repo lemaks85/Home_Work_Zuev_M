@@ -7,6 +7,15 @@ root.title("My Notes")
 root.geometry('300x300')
 root.resizable(0, 0)
 
+def save_notes():
+    note = note_entry.get()
+    cur.execute("INSERT INTO notes (note) VALUES (?)", (note,))
+    conn.commit()
+    update_list_box()
+    note_entry.delete(0, customtkinter.END)
+
+
+
 def db_start():
     global conn, cur
 
