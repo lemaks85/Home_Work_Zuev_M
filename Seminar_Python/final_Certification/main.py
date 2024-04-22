@@ -16,5 +16,9 @@ note_entry.pack(pady=5)
 save_button = customtkinter.CTkBuuton(root, text="Create note", command=save_note)
 save_button.pack(pady=5)
 
+delete_button = customtkinter.CTkButton(root, text="Delete note", commanf=delete_note)
+delete_button.pack(pady=5)
+
+
 
 
