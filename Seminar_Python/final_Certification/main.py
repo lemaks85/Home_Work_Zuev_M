@@ -1,24 +1,20 @@
 import tkinter as tk
-from tkinter import ttk
-from tkinter import messagebox
+import customtkinter
 import sqlite3
 
-connection = sqlite3.connect('note.db')
-cur = connection.cursor()
-
-cur.execute("""
-            CREATE TABLE IF NOT EXISTS transactions (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            type TEXT,
-            amount REAL,
-            comment TEXT
-                )
-""")
-
-connection.commit()
-
-root = tk()
+root = customtkinter.Ctk()
 root.title("My Notes")
 root.geometry('300x300')
+root.resizable(0, 0)
+
+note_lable = customtkinter.CTkLabel(root, text="Note:")
+note_lable.pack(pady=5)
+
+note_entry = customtkinter.CTkEntry(root)
+note_entry.pack(pady=5)
+
+save_button = customtkinter.CTkBuuton(root, text="Create note", command=save_note)
+save_button.pack(pady=5)
+
 
 
