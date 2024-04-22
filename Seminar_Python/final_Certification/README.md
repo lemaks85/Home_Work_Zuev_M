@@ -9,6 +9,6 @@
 
 * Sqlite3 база данных более гибкая, чем списки. Хотя немного сложнее в работе.
 
-![notes](Seminar_Python/final_Certification/get_2.png)
+![notes](get_2.png)
 
-![notes](Seminar_Python/final_Certification/get_1.png)
+![notes](get_1.png)
