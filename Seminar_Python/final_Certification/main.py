@@ -16,3 +16,9 @@ cur.execute("""
 """)
 
 connection.commit()
+
+root = tk()
+root.title("My Notes")
+root.geometry('300x300')
+
+
