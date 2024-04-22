@@ -15,6 +15,13 @@ def save_notes():
     note_entry.delete(0, customtkinter.END)
 
 
+def delete_note():
+    index = notes_list.curselection()
+    if index:
+        selected_note = notes_list.get(index)
+        cur.execute("DELETE FROM notes WHERE note=?", (selected_note,))
+        conn.commit()
+        update_list_box()
 
 def db_start():
     global conn, cur
@@ -22,6 +29,7 @@ def db_start():
     conn = sqlite3.connect('notes.db')
     cur = conn.cursor()
     cur.execute("""CREATE TABLE IF NOT EXISTS notes (id INTEGER PRYMARY KEY, note TEXT)""")
+
 
 def update_list_box():
     notes_list.delete(0, customtkinter.END)
