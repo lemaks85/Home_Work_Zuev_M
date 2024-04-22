@@ -2,12 +2,12 @@ import tkinter as tk
 import customtkinter
 import sqlite3
 
-root = customtkinter.Ctk()
+root = customtkinter.CTk()
 root.title("My Notes")
 root.geometry('300x300')
 root.resizable(0, 0)
 
-def save_notes():
+def save_note():
     note = note_entry.get()
     cur.execute("INSERT INTO notes (note) VALUES (?)", (note,))
     conn.commit()
@@ -46,10 +46,10 @@ note_lable.pack(pady=5)
 note_entry = customtkinter.CTkEntry(root)
 note_entry.pack(pady=5)
 
-save_button = customtkinter.CTkBuuton(root, text="Create note", command=save_note)
+save_button = customtkinter.CTkButton(root, text="Create note", command=save_note)
 save_button.pack(pady=5)
 
-delete_button = customtkinter.CTkButton(root, text="Delete note", commanf=delete_note)
+delete_button = customtkinter.CTkButton(root, text="Delete note", command=delete_note)
 delete_button.pack(pady=5)
 
 notes_list = tk.Listbox(root, width=45, height=15)
@@ -59,5 +59,6 @@ db_start()
 update_list_box()
 root.mainloop()
 conn.close()
+
 
 
