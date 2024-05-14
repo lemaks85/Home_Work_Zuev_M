@@ -1,0 +1,74 @@
+https://github.com/lemaks85
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
+
+PS C:\Users\Maks_Z> ssh -p 2222 qzee@localhost
+qzee@localhost's password:
+Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-31-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Last login: Tue May 14 21:48:57 2024 from 10.0.2.2
+qzee@qzee-VirtualBox:~$ sudo systemctl status ssh
+[sudo] password for qzee:
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/usr/lib/systemd/system/ssh.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2024-05-14 19:27:02 MSK; 2h 28min ago
+TriggeredBy: ● ssh.socket
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+    Process: 1347 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+   Main PID: 1393 (sshd)
+      Tasks: 1 (limit: 3539)
+     Memory: 4.3M (peak: 5.2M)
+        CPU: 321ms
+     CGroup: /system.slice/ssh.service
+             └─1393 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+May 14 21:42:46 qzee-VirtualBox sshd[4272]: Accepted password for qzee from 10.0.2.2 port 50582 ssh2
+May 14 21:42:46 qzee-VirtualBox sshd[4272]: pam_unix(sshd:session): session opened for user qzee(uid=1000) by qzee(uid=0)
+May 14 21:45:54 qzee-VirtualBox sshd[4367]: Accepted password for qzee from 10.0.2.2 port 50635 ssh2
+May 14 21:45:54 qzee-VirtualBox sshd[4367]: pam_unix(sshd:session): session opened for user qzee(uid=1000) by qzee(uid=0)
+May 14 21:48:18 qzee-VirtualBox sshd[4442]: Accepted password for qzee from 10.0.2.2 port 50665 ssh2
+May 14 21:48:18 qzee-VirtualBox sshd[4442]: pam_unix(sshd:session): session opened for user qzee(uid=1000) by qzee(uid=0)
+May 14 21:48:57 qzee-VirtualBox sshd[4517]: Accepted password for qzee from 10.0.2.2 port 50669 ssh2
+May 14 21:48:57 qzee-VirtualBox sshd[4517]: pam_unix(sshd:session): session opened for user qzee(uid=1000) by qzee(uid=0)
+May 14 21:54:44 qzee-VirtualBox sshd[4609]: Accepted password for qzee from 10.0.2.2 port 50856 ssh2
+May 14 21:54:44 qzee-VirtualBox sshd[4609]: pam_unix(sshd:session): session opened for user qzee(uid=1000) by qzee(uid=0)
+qzee@qzee-VirtualBox:~$ sudo hostnamectl
+ Static hostname: qzee-VirtualBox
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: b1725205a1a54a9bbe507714ae233170
+         Boot ID: ab9ae322b09c400e91bdae011691b76e
+  Virtualization: oracle
+Operating System: Ubuntu 24.04 LTS
+          Kernel: Linux 6.8.0-31-generic
+    Architecture: x86-64
+ Hardware Vendor: innotek GmbH
+  Hardware Model: VirtualBox
+Firmware Version: VirtualBox
+   Firmware Date: Fri 2006-12-01
+    Firmware Age: 17y 5month 1w 6d
+qzee@qzee-VirtualBox:~$ sudo hostname -I
+10.0.2.15 172.17.0.1
+qzee@qzee-VirtualBox:~$ cd ..
+qzee@qzee-VirtualBox:/home$ exit
+logout
+Connection to localhost closed.
+PS C:\Users\Maks_Z>
+
