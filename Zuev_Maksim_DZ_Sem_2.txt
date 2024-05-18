@@ -1,0 +1,3214 @@
+qzee@qzee-VirtualBox:~$ sudo hostnamectl
+Static hostname: qzee-VirtualBox
+Icon name: computer-vm
+Chassis: vm 🖴
+Machine ID: b1725205a1a54a9bbe507714ae233170
+Boot ID: 73827dcaf4554fe2a79450a2b5b2e60b
+Virtualization: oracle
+Operating System: Ubuntu 24.04 LTS                
+Kernel: Linux 6.8.0-31-generic
+Architecture: x86-64
+Hardware Vendor: innotek GmbH
+Hardware Model: VirtualBox
+Firmware Version: VirtualBox
+Firmware Date: Fri 2006-12-01
+Firmware Age: 17y 5month 2w 3d                
+qzee@qzee-VirtualBox:~$ 
+qzee@qzee-VirtualBox:~$ echo Hello world
+Hello world
+qzee@qzee-VirtualBox:~$ echo 'Hello world'
+Hello world
+qzee@qzee-VirtualBox:~$ echo "Hello world"
+Hello world
+qzee@qzee-VirtualBox:~$ # clear 
+qzee@qzee-VirtualBox:~$ # ctrl+l
+qzee@qzee-VirtualBox:~$ # ctrl+u
+qzee@qzee-VirtualBox:~$ # ctrl+k
+qzee@qzee-VirtualBox:~$ # reset
+qzee@qzee-VirtualBox:~$ ls -l
+total 120
+drwxr-xr-x 2 qzee qzee    4096 May  5 21:40 Desktop
+drwxr-xr-x 2 qzee qzee    4096 May  5 21:40 Documents
+drwxr-xr-x 2 qzee qzee    4096 May  5 21:40 Downloads
+drwxr-xr-x 2 qzee qzee    4096 May  5 21:40 Music
+drwxr-xr-x 2 qzee qzee    4096 May  5 21:40 Pictures
+drwxr-xr-x 2 qzee qzee    4096 May  5 21:40 Public
+drwxrwx--- 1 root vboxsf 81920 May 17 02:13 shared
+drwx------ 5 qzee qzee    4096 May  6 12:00 snap
+drwxr-xr-x 2 qzee qzee    4096 May  5 21:40 Templates
+-rw-rw-r-- 1 qzee qzee      39 May  6 10:57 test_vim
+drwxr-xr-x 2 qzee qzee    4096 May  5 21:40 Videos
+qzee@qzee-VirtualBox:~$ ls -la
+total 188
+drwxr-x--- 16 qzee qzee    4096 May 19 00:03 .
+drwxr-xr-x  3 root root    4096 May  5 21:40 ..
+-rw-------  1 qzee qzee    5677 May 19 00:38 .bash_history
+-rw-r--r--  1 qzee qzee     220 Mar 31 11:41 .bash_logout
+-rw-r--r--  1 qzee qzee    3771 Mar 31 11:41 .bashrc
+drwx------ 13 qzee qzee    4096 May  6 01:06 .cache
+drwx------ 14 qzee qzee    4096 May  6 00:46 .config
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Desktop
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Documents
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Downloads
+-rw-------  1 qzee qzee      20 May  6 02:15 .lesshst
+drwx------  4 qzee qzee    4096 May  5 21:40 .local
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Music
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Pictures
+-rw-r--r--  1 qzee qzee     807 Mar 31 11:41 .profile
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Public
+drwxrwx---  1 root vboxsf 81920 May 17 02:13 shared
+drwx------  5 qzee qzee    4096 May  6 12:00 snap
+drwx------  2 qzee qzee    4096 May  5 21:41 .ssh
+-rw-r--r--  1 qzee qzee       0 May  5 21:46 .sudo_as_admin_successful
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Templates
+-rw-rw-r--  1 qzee qzee      39 May  6 10:57 test_vim
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-clipboard.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-draganddrop.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-seamless.pid
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Videos
+-rw-------  1 qzee qzee     805 May  6 10:57 .viminfo
+qzee@qzee-VirtualBox:~$ history
+    1  sudo apt install mc
+    2  mc
+    3  sudo apt install openssh-server
+    4  ip a
+    5  systemctl status ssh
+    6  ip a
+    7  systemctl status ssh
+    8  ip a
+    9  sudo apt install openssh-server
+   10  systemctl status ssh
+   11  ip a
+   12  systemctl status ssh
+   13  q
+   14  systemctl status ssh
+   15  clear
+   16  systemctl status ssh
+   17  clear
+   18  sudo systemclt status ssh
+   19  systemctl status ssh
+   20  service ssh status
+   21  sudo systemctl enable --now ssh
+   22  service ssh status
+   23  ip a
+   24  systemctl status ssh
+   25  sudo ufw allow ssh
+   26  sudo ufw status
+   27  sudo apt install openssh-client
+   28  sudo systemctl start ssh
+   29  systemctl status ssh
+   30  ip a 
+   31  ip a
+   32  sudo systemctl start ssh
+   33  systemctl status ssh
+   34  sudo apt-get install policycoreutils
+   35  sudo apt-get install net-tools
+   36  exit
+   37  mc
+   38  sudo apt update
+   39  sudo apt install gcc make perl
+   40  sudo reboot
+   41  sudo usermod -aG vboxsf qzee
+   42  sudo reboot
+   43  cd/home
+   44  cd /home
+   45  sudo su
+   46  cd /
+   47  cd
+   48  clear
+   49  cd /
+   50  ~
+   51  cd ~
+   52  cd /
+   53  cd
+   54  ls -al
+   55  as
+   56  ls
+   57  ls -al
+   58  ls -l
+   59  clear
+   60  mc
+   61  cd /proc
+   62  ls -al
+   63  cat cpuinfo
+   64  clear
+   65  cd
+   66  ls -al
+   67  ls =al
+   68  ls -al
+   69  cd /run
+   70  ls -al
+   71  ls
+   72  ls -a
+   73  ls --help
+   74  pwd
+   75  cd /home
+   76  cd
+   77  mkdir test
+   78  ls -al
+   79  cd ~/test
+   80  cat > testfile
+   81  cp testfile testfile_2 
+   82  ll
+   83  cd
+   84  ll
+   85  rm test
+   86  cd ~/test
+   87  rm test
+   88  cd
+   89  rm test
+   90  rm -f test
+   91  ll
+   92  rm test
+   93  cd /dev
+   94  ll
+   95  cd
+   96  ll
+   97  cd /test
+   98  ll
+   99  ls -al
+  100  cd ~/test
+  101  ll
+  102  rm testfile
+  103  ll
+  104  rm testfile_2 
+  105  ll
+  106  rm -f test
+  107  ll
+  108  cd
+  109  ll
+  110  rm test
+  111  rm -rf test
+  112  ll
+  113  exit
+  114  sudo apt install vim
+  115  ll
+  116  cat > test_vim
+  117  ll
+  118  vim test_vim
+  119  etc/passwd
+  120  cd etc/passwd
+  121  cat /etc/passwd
+  122  clear
+  123  cat /etc/group
+  124  clear
+  125  cat /etc/shadow
+  126  sudo su
+  127  id
+  128  exit
+  129  sudo apt update
+  130  sudo apt upgrade
+  131  sudo apt search nginx
+  132  sudo apt list nginx
+  133  sudo apt install nginx
+  134  cd /etc/nginx
+  135  ll
+  136  cd ..
+  137  ll
+  138  cd nginx
+  139  cd ..
+  140  sudo apt purge nginx
+  141  cd nginx
+  142  ll
+  143  cd nginx
+  144  sudo apt list mc'
+  145  sudo apt list mc
+  146  sudo apt show mc
+  147  cd /etc
+  148  nano crontab
+  149  ll
+  150  cd cron.daily
+  151  ll
+  152  cd ../cron.d
+  153  ll
+  154  exit
+  155  ip a
+  156  ip -s a
+  157  ip r
+  158  ss socket stat
+  159  ss -tulpan
+  160  ss -ntlp
+  161  sudo ss -ntlp
+  162  sudo sudo ss -ntlp
+  163  ss -ntulp
+  164  sudo ss -tulpan
+  165  ping ya.ru
+  166  tracepath ya.ru
+  167  exit
+  168  sudo shutdown -h now
+  169  sudo apt install curl
+  170  curl -L https://ya.ru
+  171  sudo curl https://qmox.ru
+  172  sudo apt install -y nginx
+  173  sudo ss -ntlp
+  174  sudo ps apx
+  175  sudo pc afx
+  176  ps afx
+  177  curl localhost
+  178  cd /etc/nginx
+  179  ll
+  180  nano nginx.conf
+  181  sudo nginx -t
+  182  ll
+  183  cd sites-enabled/
+  184  ll
+  185  cd ..
+  186  sudo ss -ntlp
+  187  sudo ps afx
+  188  sudo curl localhost
+  189  ll
+  190  sudo nano nginx.conf
+  191  cd sites-enabled/
+  192  ll
+  193  sudo nano default 
+  194  cd
+  195  sudo apt install apache2
+  196  sudo ps afx
+  197  cd etc/apache2
+  198  cd /etc
+  199  ll
+  200  cd apache2
+  201  ll
+  202  sudo nano ports.conf
+  203  sudo systemctl start apache2
+  204  sudo ps afx
+  205  ss -ntlp
+  206  sudo ss -ntlp
+  207  cd etc
+  208  cd /etc
+  209  cd /apache2
+  210  ll
+  211  cd /apache2
+  212  cd apache2
+  213  ll
+  214  cd sites-enabled/
+  215  ll
+  216  sudo nano 000-default.conf 
+  217  apachectl -t
+  218  sudo systemctl reload apache2
+  219  sudo curl localhost:8080
+  220  cd /var/www/html
+  221  ll
+  222  sudo ps afx
+  223  systemctl reload nginx
+  224  sudo systemctl reload nginx
+  225  sudo apache2ctl reload
+  226  sudo systemctl reload apache2
+  227  sudo ps afx
+  228  sudo ss -ntlp
+  229  ll
+  230  cd 
+  231  cd /etc
+  232  cd /nginx
+  233  cd nginx
+  234  ll
+  235  sudo nano nginx.conf
+  236  ll
+  237  cd site-enable
+  238  ll
+  239  cd site-enabled
+  240  cd /site-enabled
+  241  cd
+  242  cd /ect/nginx/site-enabled
+  243  cd etc
+  244  cd /etc
+  245  cd nginx
+  246  cd sires-enabled
+  247  cd sites-enabled
+  248  ll
+  249  sudo nano default 
+  250  cd ..
+  251  ll
+  252  sudo nano nginx.conf 
+  253  cd sites-enabled/
+  254  ll
+  255  sudo nano default 
+  256  sudo nginx -t
+  257  sudo nano default 
+  258  sudo nginx -t
+  259  sudo systemctl reload nginx
+  260  sudo ps afx
+  261  sudo apr install php8.1 libapache2-mod-php8.1
+  262  sudo apt install php8.1 libapache2-mod-php8.1
+  263  cd
+  264  sudo apt install php8.1 libapache2-mod-php8.1
+  265  cd /etc
+  266  cd nginx
+  267  sudo apt install php8.1 libapache2-mod-php8.1
+  268  sudo apt install php8.0 libapache2-mod-php8.0
+  269  sudo apt install php8.1
+  270  sudo apt install php7.4 libapache2-mod-php7.4
+  271  sudo apt show php
+  272  sudo apt install php8.3 libapache2-mod-php8.3
+  273  cd /etc/apache2#
+  274  cd /etc/apache2
+  275  ll
+  276  cd mods-enabled/
+  277  ll
+  278  sudo cat php8.3.conf
+  279  cd /var/www/html
+  280  ll
+  281  cat > info.php
+  282  ll
+  283  sudo cat > info.php
+  284  ll
+  285  sudo su
+  286  sudo apt install php8.3-fpm
+  287  sudo ps afx
+  288  cd
+  289  cd /etc/php
+  290  ll
+  291  cd 8.3
+  292  ll
+  293  cd fpm
+  294  ll
+  295  cd pool.d/
+  296  ll
+  297  sudo nano www.conf 
+  298  cd /etc/nginx
+  299  cd sites-enabled/
+  300  sudo nano default 
+  301  sudo nginx -t
+  302  sudo systemctl reload nginx
+  303  cd
+  304  sudo apt install mysql-server-8.0 -y
+  305  sudo ps afx
+  306  sudo ss -ntlp
+  307  ss -ntlp
+  308  sudo ss -ntlp
+  309  sudo mysql
+  310  exit
+  311  sudo apt install docker.io
+  312  sudo docker
+  313  sudo docker -v
+  314  sudo docker run hello-world
+  315  docker ps
+  316  sudo docker ps
+  317  sudo docker ps -a
+  318  ~sudo docker search nginx
+  319  docker search nginx
+  320  sudo su
+  321  sudo docker images
+  322  sudo docker ps -a
+  323  sudo docker rm dccad791f032 
+  324  sudo docker ps -a
+  325  sudo docker images
+  326  sudo docker rmi hello-world 
+  327  sudo docker images
+  328  sudo docker ps -a
+  329  exit
+  330  ls
+  331  echo $?
+  332  cat /etc/shadow
+  333  echo $?
+  334  cat /etc/shadow || echo "Failed"
+  335  exit
+  336  ip
+  337  sudo ip -a
+  338  sudo localhost
+  339  sudo id
+  340  sudo uname -a
+  341  uname
+  342  hostnamectl
+  343  sudo ps afx
+  344  sudo ip -a
+  345  sudo systemctl
+  346  sudo systemctl status ssh
+  347  exit
+  348  sudo systemctl status ssh
+  349  hostnamectl
+  350  cd ..
+  351  cd /etc/www
+  352  exit
+  353  sudo system status ssh
+  354  123
+  355  exit
+  356  sudo systemctl status ssh
+  357  sudo hostnamectl
+  358  sudo ip
+  359  sudo ip -a
+  360  sudo hostname -I
+  361  sudo systemctl status ssh
+  362  sudo hostnamectl
+  363  sudo hostname -I
+  364  cd ..
+  365  exit
+  366  ls -l
+  367  clear
+  368  ls -l
+  369  ls -la
+  370  history
+qzee@qzee-VirtualBox:~$ ll
+total 188
+drwxr-x--- 16 qzee qzee    4096 May 19 00:03 ./
+drwxr-xr-x  3 root root    4096 May  5 21:40 ../
+-rw-------  1 qzee qzee    5677 May 19 00:38 .bash_history
+-rw-r--r--  1 qzee qzee     220 Mar 31 11:41 .bash_logout
+-rw-r--r--  1 qzee qzee    3771 Mar 31 11:41 .bashrc
+drwx------ 13 qzee qzee    4096 May  6 01:06 .cache/
+drwx------ 14 qzee qzee    4096 May  6 00:46 .config/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Desktop/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Documents/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Downloads/
+-rw-------  1 qzee qzee      20 May  6 02:15 .lesshst
+drwx------  4 qzee qzee    4096 May  5 21:40 .local/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Music/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Pictures/
+-rw-r--r--  1 qzee qzee     807 Mar 31 11:41 .profile
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Public/
+drwxrwx---  1 root vboxsf 81920 May 17 02:13 shared/
+drwx------  5 qzee qzee    4096 May  6 12:00 snap/
+drwx------  2 qzee qzee    4096 May  5 21:41 .ssh/
+-rw-r--r--  1 qzee qzee       0 May  5 21:46 .sudo_as_admin_successful
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Templates/
+-rw-rw-r--  1 qzee qzee      39 May  6 10:57 test_vim
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-clipboard.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-draganddrop.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-seamless.pid
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Videos/
+-rw-------  1 qzee qzee     805 May  6 10:57 .viminfo
+qzee@qzee-VirtualBox:~$ ls /var -l
+total 52
+drwxr-xr-x  2 root root     4096 May  8 09:11 backups
+drwxr-xr-x 22 root root     4096 May  7 15:50 cache
+drwxrwxrwt  2 root whoopsie 4096 Apr 24 13:49 crash
+drwxr-xr-x 82 root root     4096 May  7 19:59 lib
+drwxrwsr-x  2 root staff    4096 Apr 22 16:08 local
+lrwxrwxrwx  1 root root        9 Apr 24 13:47 lock -> /run/lock
+drwxrwxr-x 19 root syslog   4096 May 19 00:02 log
+drwxrwsr-x  2 root mail     4096 Apr 24 13:47 mail
+drwxrwsrwt  2 root whoopsie 4096 Apr 24 13:49 metrics
+drwxr-xr-x  2 root root     4096 Apr 24 13:47 opt
+lrwxrwxrwx  1 root root        4 Apr 24 13:47 run -> /run
+drwxr-xr-x 11 root root     4096 Apr 24 13:51 snap
+drwxr-xr-x  6 root root     4096 Apr 24 13:48 spool
+drwxrwxrwt 13 root root     4096 May 19 00:39 tmp
+drwxr-xr-x  3 root root     4096 May  6 17:02 www
+qzee@qzee-VirtualBox:~$ ls /var -a
+.        cache  local  mail     run    tmp
+..       crash  lock   metrics  snap   .updated
+backups  lib    log    opt      spool  www
+qzee@qzee-VirtualBox:~$ cd
+qzee@qzee-VirtualBox:~$ pwd
+/home/qzee
+qzee@qzee-VirtualBox:~$ mkdir geekbrainc
+qzee@qzee-VirtualBox:~$ ls
+Desktop  Documents  Downloads  geekbrainc  Music  Pictures  Public  shared  snap  Templates  test_vim  Videos
+qzee@qzee-VirtualBox:~$ mkdir Geekbrainc
+qzee@qzee-VirtualBox:~$ ll
+total 196
+drwxr-x--- 18 qzee qzee    4096 May 19 00:43 ./
+drwxr-xr-x  3 root root    4096 May  5 21:40 ../
+-rw-------  1 qzee qzee    5677 May 19 00:38 .bash_history
+-rw-r--r--  1 qzee qzee     220 Mar 31 11:41 .bash_logout
+-rw-r--r--  1 qzee qzee    3771 Mar 31 11:41 .bashrc
+drwx------ 13 qzee qzee    4096 May  6 01:06 .cache/
+drwx------ 14 qzee qzee    4096 May  6 00:46 .config/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Desktop/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Documents/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Downloads/
+drwxrwxr-x  2 qzee qzee    4096 May 19 00:43 geekbrainc/
+drwxrwxr-x  2 qzee qzee    4096 May 19 00:43 Geekbrainc/
+-rw-------  1 qzee qzee      20 May  6 02:15 .lesshst
+drwx------  4 qzee qzee    4096 May  5 21:40 .local/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Music/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Pictures/
+-rw-r--r--  1 qzee qzee     807 Mar 31 11:41 .profile
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Public/
+drwxrwx---  1 root vboxsf 81920 May 17 02:13 shared/
+drwx------  5 qzee qzee    4096 May  6 12:00 snap/
+drwx------  2 qzee qzee    4096 May  5 21:41 .ssh/
+-rw-r--r--  1 qzee qzee       0 May  5 21:46 .sudo_as_admin_successful
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Templates/
+-rw-rw-r--  1 qzee qzee      39 May  6 10:57 test_vim
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-clipboard.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-draganddrop.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-seamless.pid
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Videos/
+-rw-------  1 qzee qzee     805 May  6 10:57 .viminfo
+qzee@qzee-VirtualBox:~$ ls
+Desktop  Documents  Downloads  geekbrainc  Geekbrainc  Music  Pictures  Public  shared  snap  Templates  test_vim  Videos
+qzee@qzee-VirtualBox:~$ cd geekbrainc/
+qzee@qzee-VirtualBox:~/geekbrainc$ pwd
+/home/qzee/geekbrainc
+qzee@qzee-VirtualBox:~/geekbrainc$ mkdir dir1 dir2 dir3
+qzee@qzee-VirtualBox:~/geekbrainc$ ls
+dir1  dir2  dir3
+qzee@qzee-VirtualBox:~/geekbrainc$ mkdir 22/33/44
+mkdir: cannot create directory ‘22/33/44’: No such file or directory
+qzee@qzee-VirtualBox:~/geekbrainc$ mkdir 22/33/44 -p
+qzee@qzee-VirtualBox:~/geekbrainc$ ls
+22  dir1  dir2  dir3
+qzee@qzee-VirtualBox:~/geekbrainc$ cd 22
+qzee@qzee-VirtualBox:~/geekbrainc/22$ pwd
+/home/qzee/geekbrainc/22
+qzee@qzee-VirtualBox:~/geekbrainc/22$ cd 33
+qzee@qzee-VirtualBox:~/geekbrainc/22/33$ pwd
+/home/qzee/geekbrainc/22/33
+qzee@qzee-VirtualBox:~/geekbrainc/22/33$ cd 44
+qzee@qzee-VirtualBox:~/geekbrainc/22/33/44$ pwd
+/home/qzee/geekbrainc/22/33/44
+qzee@qzee-VirtualBox:~/geekbrainc/22/33/44$ cd../../../
+bash: cd../../../: No such file or directory
+qzee@qzee-VirtualBox:~/geekbrainc/22/33/44$ pwd
+/home/qzee/geekbrainc/22/33/44
+qzee@qzee-VirtualBox:~/geekbrainc/22/33/44$ cd ../../../
+qzee@qzee-VirtualBox:~/geekbrainc$ pwd
+/home/qzee/geekbrainc
+qzee@qzee-VirtualBox:~/geekbrainc$ mkdir /myFolder
+mkdir: cannot create directory ‘/myFolder’: Permission denied
+qzee@qzee-VirtualBox:~/geekbrainc$ sudo mkdir /myFolder
+[sudo] password for qzee: 
+qzee@qzee-VirtualBox:~/geekbrainc$ ls
+22  dir1  dir2  dir3
+qzee@qzee-VirtualBox:~/geekbrainc$ cd /
+qzee@qzee-VirtualBox:/$ ls
+bin                cdrom  home   lib.usr-is-merged  mnt       proc  sbin                srv       tmp
+bin.usr-is-merged  dev    lib    lost+found         myFolder  root  sbin.usr-is-merged  swap.img  usr
+boot               etc    lib64  media              opt       run   snap                sys       var
+qzee@qzee-VirtualBox:/$ cd geekbrainc
+bash: cd: geekbrainc: No such file or directory
+qzee@qzee-VirtualBox:/$ cd
+qzee@qzee-VirtualBox:~$ ls
+Desktop  Documents  Downloads  geekbrainc  Geekbrainc  Music  Pictures  Public  shared  snap  Templates  test_vim  Videos
+qzee@qzee-VirtualBox:~$ cd /geekbrainc
+bash: cd: /geekbrainc: No such file or directory
+qzee@qzee-VirtualBox:~$ cd geekbrainc/
+qzee@qzee-VirtualBox:~/geekbrainc$ touch file1
+qzee@qzee-VirtualBox:~/geekbrainc$ ls
+22  dir1  dir2  dir3  file1
+qzee@qzee-VirtualBox:~/geekbrainc$ touch file1.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ ls
+22  dir1  dir2  dir3  file1  file1.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ cat > file2.txt
+123
+1234
+12345
+qwerty
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 28
+drwxrwxr-x  6 qzee qzee 4096 May 19 00:54 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 00:43 ../
+drwxrwxr-x  3 qzee qzee 4096 May 19 00:46 22/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir1/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir2/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir3/
+-rw-rw-r--  1 qzee qzee    0 May 19 00:53 file1
+-rw-rw-r--  1 qzee qzee    0 May 19 00:54 file1.txt
+-rw-rw-r--  1 qzee qzee   22 May 19 00:54 file2.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ echo > file3.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 32
+drwxrwxr-x  6 qzee qzee 4096 May 19 00:56 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 00:43 ../
+drwxrwxr-x  3 qzee qzee 4096 May 19 00:46 22/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir1/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir2/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir3/
+-rw-rw-r--  1 qzee qzee    0 May 19 00:53 file1
+-rw-rw-r--  1 qzee qzee    0 May 19 00:54 file1.txt
+-rw-rw-r--  1 qzee qzee   22 May 19 00:54 file2.txt
+-rw-rw-r--  1 qzee qzee    1 May 19 00:56 file3.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ > file4.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 32
+drwxrwxr-x  6 qzee qzee 4096 May 19 00:56 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 00:43 ../
+drwxrwxr-x  3 qzee qzee 4096 May 19 00:46 22/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir1/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir2/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir3/
+-rw-rw-r--  1 qzee qzee    0 May 19 00:53 file1
+-rw-rw-r--  1 qzee qzee    0 May 19 00:54 file1.txt
+-rw-rw-r--  1 qzee qzee   22 May 19 00:54 file2.txt
+-rw-rw-r--  1 qzee qzee    1 May 19 00:56 file3.txt
+-rw-rw-r--  1 qzee qzee    0 May 19 00:56 file4.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ touch file1
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 32
+drwxrwxr-x  6 qzee qzee 4096 May 19 00:56 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 00:43 ../
+drwxrwxr-x  3 qzee qzee 4096 May 19 00:46 22/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir1/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir2/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir3/
+-rw-rw-r--  1 qzee qzee    0 May 19 00:57 file1
+-rw-rw-r--  1 qzee qzee    0 May 19 00:54 file1.txt
+-rw-rw-r--  1 qzee qzee   22 May 19 00:54 file2.txt
+-rw-rw-r--  1 qzee qzee    1 May 19 00:56 file3.txt
+-rw-rw-r--  1 qzee qzee    0 May 19 00:56 file4.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ ls
+22  dir1  dir2  dir3  file1  file1.txt  file2.txt  file3.txt  file4.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ cp *f dir1
+cp: cannot stat '*f': No such file or directory
+qzee@qzee-VirtualBox:~/geekbrainc$ cp f* dir1
+qzee@qzee-VirtualBox:~/geekbrainc$ ls
+22  dir1  dir2  dir3  file1  file1.txt  file2.txt  file3.txt  file4.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ cd dir1
+qzee@qzee-VirtualBox:~/geekbrainc/dir1$ ll
+total 16
+drwxrwxr-x 2 qzee qzee 4096 May 19 00:58 ./
+drwxrwxr-x 6 qzee qzee 4096 May 19 00:56 ../
+-rw-rw-r-- 1 qzee qzee    0 May 19 00:58 file1
+-rw-rw-r-- 1 qzee qzee    0 May 19 00:58 file1.txt
+-rw-rw-r-- 1 qzee qzee   22 May 19 00:58 file2.txt
+-rw-rw-r-- 1 qzee qzee    1 May 19 00:58 file3.txt
+-rw-rw-r-- 1 qzee qzee    0 May 19 00:58 file4.txt
+qzee@qzee-VirtualBox:~/geekbrainc/dir1$ pwd
+/home/qzee/geekbrainc/dir1
+qzee@qzee-VirtualBox:~/geekbrainc/dir1$ tree
+Command 'tree' not found, but can be installed with:
+sudo snap install tree  # version 1.8.0+pkg-3fd6, or
+sudo apt  install tree  # version 2.1.1-2
+See 'snap info tree' for additional versions.
+qzee@qzee-VirtualBox:~/geekbrainc/dir1$ sudo apt install tree
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  tree
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 47.1 kB of archives.
+After this operation, 111 kB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 tree amd64 2.1.1-2ubuntu3 [47.1 kB]
+Fetched 47.1 kB in 0s (395 kB/s)
+Selecting previously unselected package tree.
+(Reading database ... 157001 files and directories currently installed.)
+Preparing to unpack .../tree_2.1.1-2ubuntu3_amd64.deb ...
+Unpacking tree (2.1.1-2ubuntu3) ...
+Setting up tree (2.1.1-2ubuntu3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+qzee@qzee-VirtualBox:~/geekbrainc/dir1$ tree
+.
+├── file1
+├── file1.txt
+├── file2.txt
+├── file3.txt
+└── file4.txt
+
+1 directory, 5 files
+qzee@qzee-VirtualBox:~/geekbrainc/dir1$ cd ..
+qzee@qzee-VirtualBox:~/geekbrainc$ tree
+.
+├── 22
+│   └── 33
+│       └── 44
+├── dir1
+│   ├── file1
+│   ├── file1.txt
+│   ├── file2.txt
+│   ├── file3.txt
+│   └── file4.txt
+├── dir2
+├── dir3
+├── file1
+├── file1.txt
+├── file2.txt
+├── file3.txt
+└── file4.txt
+
+7 directories, 10 files
+qzee@qzee-VirtualBox:~/geekbrainc$ cp dir1 dir3
+cp: -r not specified; omitting directory 'dir1'
+qzee@qzee-VirtualBox:~/geekbrainc$ cp dir1 dir3 -r
+qzee@qzee-VirtualBox:~/geekbrainc$ tree
+.
+├── 22
+│   └── 33
+│       └── 44
+├── dir1
+│   ├── file1
+│   ├── file1.txt
+│   ├── file2.txt
+│   ├── file3.txt
+│   └── file4.txt
+├── dir2
+├── dir3
+│   └── dir1
+│       ├── file1
+│       ├── file1.txt
+│       ├── file2.txt
+│       ├── file3.txt
+│       └── file4.txt
+├── file1
+├── file1.txt
+├── file2.txt
+├── file3.txt
+└── file4.txt
+
+8 directories, 15 files
+qzee@qzee-VirtualBox:~/geekbrainc$ mv *txt 22
+qzee@qzee-VirtualBox:~/geekbrainc$ tree
+.
+├── 22
+│   ├── 33
+│   │   └── 44
+│   ├── file1.txt
+│   ├── file2.txt
+│   ├── file3.txt
+│   └── file4.txt
+├── dir1
+│   ├── file1
+│   ├── file1.txt
+│   ├── file2.txt
+│   ├── file3.txt
+│   └── file4.txt
+├── dir2
+├── dir3
+│   └── dir1
+│       ├── file1
+│       ├── file1.txt
+│       ├── file2.txt
+│       ├── file3.txt
+│       └── file4.txt
+└── file1
+
+8 directories, 15 files
+qzee@qzee-VirtualBox:~/geekbrainc$ mv file1 file11.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ ll'
+> ^C
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 24
+drwxrwxr-x  6 qzee qzee 4096 May 19 01:03 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 00:43 ../
+drwxrwxr-x  3 qzee qzee 4096 May 19 01:02 22/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:58 dir1/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir2/
+drwxrwxr-x  3 qzee qzee 4096 May 19 01:01 dir3/
+-rw-rw-r--  1 qzee qzee    0 May 19 00:57 file11.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ rm file11.txt
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 24
+drwxrwxr-x  6 qzee qzee 4096 May 19 01:04 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 00:43 ../
+drwxrwxr-x  3 qzee qzee 4096 May 19 01:02 22/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:58 dir1/
+drwxrwxr-x  2 qzee qzee 4096 May 19 00:46 dir2/
+drwxrwxr-x  3 qzee qzee 4096 May 19 01:01 dir3/
+qzee@qzee-VirtualBox:~/geekbrainc$ rm dir1 -r
+qzee@qzee-VirtualBox:~/geekbrainc$ tree
+.
+├── 22
+│   ├── 33
+│   │   └── 44
+│   ├── file1.txt
+│   ├── file2.txt
+│   ├── file3.txt
+│   └── file4.txt
+├── dir2
+└── dir3
+    └── dir1
+        ├── file1
+        ├── file1.txt
+        ├── file2.txt
+        ├── file3.txt
+        └── file4.txt
+
+7 directories, 9 files
+qzee@qzee-VirtualBox:~/geekbrainc$ rm * -r
+qzee@qzee-VirtualBox:~/geekbrainc$ tree
+.
+
+0 directories, 0 files
+qzee@qzee-VirtualBox:~/geekbrainc$ # rm --rf / delete all file
+qzee@qzee-VirtualBox:~/geekbrainc$ more --help
+
+Usage:
+ more [options] <file>...
+
+Display the contents of a file in a terminal.
+
+Options:
+ -d, --silent          display help instead of ringing bell
+ -f, --logical         count logical rather than screen lines
+ -l, --no-pause        suppress pause after form feed
+ -c, --print-over      do not scroll, display text and clean line ends
+ -p, --clean-print     do not scroll, clean screen and display text
+ -e, --exit-on-eof     exit on end-of-file
+ -s, --squeeze         squeeze multiple blank lines into one
+ -u, --plain           suppress underlining and bold
+ -n, --lines <number>  the number of lines per screenful
+ -<number>             same as --lines
+ +<number>             display file beginning from line number
+ +/<pattern>           display file beginning from pattern match
+
+ -h, --help            display this help
+ -V, --version         display version
+
+For more details see more(1).
+qzee@qzee-VirtualBox:~/geekbrainc$ more --h
+
+Usage:
+ more [options] <file>...
+
+Display the contents of a file in a terminal.
+
+Options:
+ -d, --silent          display help instead of ringing bell
+ -f, --logical         count logical rather than screen lines
+ -l, --no-pause        suppress pause after form feed
+ -c, --print-over      do not scroll, display text and clean line ends
+ -p, --clean-print     do not scroll, clean screen and display text
+ -e, --exit-on-eof     exit on end-of-file
+ -s, --squeeze         squeeze multiple blank lines into one
+ -u, --plain           suppress underlining and bold
+ -n, --lines <number>  the number of lines per screenful
+ -<number>             same as --lines
+ +<number>             display file beginning from line number
+ +/<pattern>           display file beginning from pattern match
+
+ -h, --help            display this help
+ -V, --version         display version
+
+For more details see more(1).
+qzee@qzee-VirtualBox:~/geekbrainc$ man more
+qzee@qzee-VirtualBox:~/geekbrainc$ # q = quit
+qzee@qzee-VirtualBox:~/geekbrainc$ whatis more
+more (1)             - display the contents of a file in a terminal
+qzee@qzee-VirtualBox:~/geekbrainc$ ls
+qzee@qzee-VirtualBox:~/geekbrainc$ cd
+qzee@qzee-VirtualBox:~$ cat > mqzee.txt
+123
+123
+123
+fff
+g
+g
+gf
+g
+g
+fh
+tyf
+hf
+ghf
+ghf
+gj
+fg
+hf
+gj
+fhj
+f
+jr
+gfj
+fgj
+fbreack
+go
+hello world
+dsfgdfg
+dfgdf
+gdfh
+dfh
+dfh
+try
+y45g
+45rh
+rty
+hnrt
+yj
+tug
+jtu
+ghktu
+hqzee@qzee-VirtualBox:~$ ll
+total 200
+drwxr-x--- 18 qzee qzee    4096 May 19 01:11 ./
+drwxr-xr-x  3 root root    4096 May  5 21:40 ../
+-rw-------  1 qzee qzee    5677 May 19 00:38 .bash_history
+-rw-r--r--  1 qzee qzee     220 Mar 31 11:41 .bash_logout
+-rw-r--r--  1 qzee qzee    3771 Mar 31 11:41 .bashrc
+drwx------ 13 qzee qzee    4096 May  6 01:06 .cache/
+drwx------ 14 qzee qzee    4096 May  6 00:46 .config/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Desktop/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Documents/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Downloads/
+drwxrwxr-x  2 qzee qzee    4096 May 19 01:05 geekbrainc/
+drwxrwxr-x  2 qzee qzee    4096 May 19 00:43 Geekbrainc/
+-rw-------  1 qzee qzee      20 May 19 01:08 .lesshst
+drwx------  4 qzee qzee    4096 May  5 21:40 .local/
+-rw-rw-r--  1 qzee qzee     165 May 19 01:12 mqzee.txt
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Music/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Pictures/
+-rw-r--r--  1 qzee qzee     807 Mar 31 11:41 .profile
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Public/
+drwxrwx---  1 root vboxsf 81920 May 17 02:13 shared/
+drwx------  5 qzee qzee    4096 May  6 12:00 snap/
+drwx------  2 qzee qzee    4096 May  5 21:41 .ssh/
+-rw-r--r--  1 qzee qzee       0 May  5 21:46 .sudo_as_admin_successful
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Templates/
+-rw-rw-r--  1 qzee qzee      39 May  6 10:57 test_vim
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-clipboard.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-draganddrop.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-seamless.pid
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Videos/
+-rw-------  1 qzee qzee     805 May  6 10:57 .viminfo
+qzee@qzee-VirtualBox:~$ ls
+Desktop    Downloads   Geekbrainc  Music     Public  snap       test_vim
+Documents  geekbrainc  mqzee.txt   Pictures  shared  Templates  Videos
+qzee@qzee-VirtualBox:~$ more qzee.txt
+more: cannot open qzee.txt: No such file or directory
+qzee@qzee-VirtualBox:~$ more mqzee.txt 
+123
+123
+123
+fff
+g
+g
+gf
+g
+g
+fh
+tyf
+hf
+ghf
+ghf
+gj
+fg
+hf
+gj
+fhj
+f
+jr
+gfj
+fgj
+fbreack
+go
+qzee@qzee-VirtualBox:~$ more -10 mqzee.txt 
+123
+123
+123
+fff
+g
+g
+gf
+g
+g
+fh
+qzee@qzee-VirtualBox:~$ more +3 mqzee.txt 
+123
+fff
+g
+g
+gf
+g
+g
+fh
+tyf
+hf
+ghf
+ghf
+gj
+fg
+hf
+gj
+fhj
+f
+jr
+gfj
+fgj
+fbreack
+go
+hello world
+dsfgdfg
+qzee@qzee-VirtualBox:~$ more +10 mqzee.txt 
+fh
+tyf
+hf
+ghf
+ghf
+gj
+fg
+hf
+gj
+fhj
+f
+jr
+gfj
+fgj
+fbreack
+go
+hello world
+dsfgdfg
+dfgdf
+gdfh
+dfh
+dfh
+try
+y45g
+45rh
+qzee@qzee-VirtualBox:~$ more -33 +5 mqzee.txt 
+g
+g
+gf
+g
+g
+fh
+tyf
+hf
+ghf
+ghf
+gj
+fg
+hf
+gj
+fhj
+f
+jr
+gfj
+fgj
+fbreack
+go
+hello world
+dsfgdfg
+dfgdf
+gdfh
+dfh
+dfh
+try
+y45g
+45rh
+rty
+hnrt
+yj
+qzee@qzee-VirtualBox:~$ more +33 -5 mqzee.txt 
+y45g
+45rh
+rty
+hnrt
+yj
+tug
+jtu
+ghktu
+h
+qzee@qzee-VirtualBox:~$ more -10 +/hello ~/mqzee.txt 
+
+...skipping
+fbreack
+go
+hello world
+dsfgdfg
+dfgdf
+gdfh
+dfh
+dfh
+try
+y45g
+qzee@qzee-VirtualBox:~$ less ---h
+There is no -h option ("less --help" for help)
+Missing filename ("less --help" for help)
+qzee@qzee-VirtualBox:~$ less --help
+qzee@qzee-VirtualBox:~$ less mqzee.txt 
+qzee@qzee-VirtualBox:~$ less -p "hello" ~/mqzee.txt 
+qzee@qzee-VirtualBox:~$ less -N -I "g" ~/mqzee.txt 
+g: No such file or directory
+Press RETURN to continue 
+qzee@qzee-VirtualBox:~$ less -N -I -p "g" ~/mqzee.txt 
+qzee@qzee-VirtualBox:~$ head --help
+Usage: head [OPTION]... [FILE]...
+Print the first 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -c, --bytes=[-]NUM       print the first NUM bytes of each file;
+                             with the leading '-', print all but the last
+                             NUM bytes of each file
+  -n, --lines=[-]NUM       print the first NUM lines instead of the first 10;
+                             with the leading '-', print all but the last
+                             NUM lines of each file
+  -q, --quiet, --silent    never print headers giving file names
+  -v, --verbose            always print headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help        display this help and exit
+      --version     output version information and exit
+
+NUM may have a multiplier suffix:
+b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
+GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y, R, Q.
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/head>
+or available locally via: info '(coreutils) head invocation'
+qzee@qzee-VirtualBox:~$ head mqzee.txt 
+123
+123
+123
+fff
+g
+g
+gf
+g
+g
+fh
+qzee@qzee-VirtualBox:~$ head -3 mqzee.txt 
+123
+123
+123
+qzee@qzee-VirtualBox:~$ head -c 12 mqzee.txt 
+123
+123
+123
+qzee@qzee-VirtualBox:~$ head -c 2 mqzee.txt 
+12qzee@qzee-VirtualBox:~$ hisrory
+hisrory: command not found
+qzee@qzee-VirtualBox:~$ history
+    1  sudo apt install mc
+    2  mc
+    3  sudo apt install openssh-server
+    4  ip a
+    5  systemctl status ssh
+    6  ip a
+    7  systemctl status ssh
+    8  ip a
+    9  sudo apt install openssh-server
+   10  systemctl status ssh
+   11  ip a
+   12  systemctl status ssh
+   13  q
+   14  systemctl status ssh
+   15  clear
+   16  systemctl status ssh
+   17  clear
+   18  sudo systemclt status ssh
+   19  systemctl status ssh
+   20  service ssh status
+   21  sudo systemctl enable --now ssh
+   22  service ssh status
+   23  ip a
+   24  systemctl status ssh
+   25  sudo ufw allow ssh
+   26  sudo ufw status
+   27  sudo apt install openssh-client
+   28  sudo systemctl start ssh
+   29  systemctl status ssh
+   30  ip a 
+   31  ip a
+   32  sudo systemctl start ssh
+   33  systemctl status ssh
+   34  sudo apt-get install policycoreutils
+   35  sudo apt-get install net-tools
+   36  exit
+   37  mc
+   38  sudo apt update
+   39  sudo apt install gcc make perl
+   40  sudo reboot
+   41  sudo usermod -aG vboxsf qzee
+   42  sudo reboot
+   43  cd/home
+   44  cd /home
+   45  sudo su
+   46  cd /
+   47  cd
+   48  clear
+   49  cd /
+   50  ~
+   51  cd ~
+   52  cd /
+   53  cd
+   54  ls -al
+   55  as
+   56  ls
+   57  ls -al
+   58  ls -l
+   59  clear
+   60  mc
+   61  cd /proc
+   62  ls -al
+   63  cat cpuinfo
+   64  clear
+   65  cd
+   66  ls -al
+   67  ls =al
+   68  ls -al
+   69  cd /run
+   70  ls -al
+   71  ls
+   72  ls -a
+   73  ls --help
+   74  pwd
+   75  cd /home
+   76  cd
+   77  mkdir test
+   78  ls -al
+   79  cd ~/test
+   80  cat > testfile
+   81  cp testfile testfile_2 
+   82  ll
+   83  cd
+   84  ll
+   85  rm test
+   86  cd ~/test
+   87  rm test
+   88  cd
+   89  rm test
+   90  rm -f test
+   91  ll
+   92  rm test
+   93  cd /dev
+   94  ll
+   95  cd
+   96  ll
+   97  cd /test
+   98  ll
+   99  ls -al
+  100  cd ~/test
+  101  ll
+  102  rm testfile
+  103  ll
+  104  rm testfile_2 
+  105  ll
+  106  rm -f test
+  107  ll
+  108  cd
+  109  ll
+  110  rm test
+  111  rm -rf test
+  112  ll
+  113  exit
+  114  sudo apt install vim
+  115  ll
+  116  cat > test_vim
+  117  ll
+  118  vim test_vim
+  119  etc/passwd
+  120  cd etc/passwd
+  121  cat /etc/passwd
+  122  clear
+  123  cat /etc/group
+  124  clear
+  125  cat /etc/shadow
+  126  sudo su
+  127  id
+  128  exit
+  129  sudo apt update
+  130  sudo apt upgrade
+  131  sudo apt search nginx
+  132  sudo apt list nginx
+  133  sudo apt install nginx
+  134  cd /etc/nginx
+  135  ll
+  136  cd ..
+  137  ll
+  138  cd nginx
+  139  cd ..
+  140  sudo apt purge nginx
+  141  cd nginx
+  142  ll
+  143  cd nginx
+  144  sudo apt list mc'
+  145  sudo apt list mc
+  146  sudo apt show mc
+  147  cd /etc
+  148  nano crontab
+  149  ll
+  150  cd cron.daily
+  151  ll
+  152  cd ../cron.d
+  153  ll
+  154  exit
+  155  ip a
+  156  ip -s a
+  157  ip r
+  158  ss socket stat
+  159  ss -tulpan
+  160  ss -ntlp
+  161  sudo ss -ntlp
+  162  sudo sudo ss -ntlp
+  163  ss -ntulp
+  164  sudo ss -tulpan
+  165  ping ya.ru
+  166  tracepath ya.ru
+  167  exit
+  168  sudo shutdown -h now
+  169  sudo apt install curl
+  170  curl -L https://ya.ru
+  171  sudo curl https://qmox.ru
+  172  sudo apt install -y nginx
+  173  sudo ss -ntlp
+  174  sudo ps apx
+  175  sudo pc afx
+  176  ps afx
+  177  curl localhost
+  178  cd /etc/nginx
+  179  ll
+  180  nano nginx.conf
+  181  sudo nginx -t
+  182  ll
+  183  cd sites-enabled/
+  184  ll
+  185  cd ..
+  186  sudo ss -ntlp
+  187  sudo ps afx
+  188  sudo curl localhost
+  189  ll
+  190  sudo nano nginx.conf
+  191  cd sites-enabled/
+  192  ll
+  193  sudo nano default 
+  194  cd
+  195  sudo apt install apache2
+  196  sudo ps afx
+  197  cd etc/apache2
+  198  cd /etc
+  199  ll
+  200  cd apache2
+  201  ll
+  202  sudo nano ports.conf
+  203  sudo systemctl start apache2
+  204  sudo ps afx
+  205  ss -ntlp
+  206  sudo ss -ntlp
+  207  cd etc
+  208  cd /etc
+  209  cd /apache2
+  210  ll
+  211  cd /apache2
+  212  cd apache2
+  213  ll
+  214  cd sites-enabled/
+  215  ll
+  216  sudo nano 000-default.conf 
+  217  apachectl -t
+  218  sudo systemctl reload apache2
+  219  sudo curl localhost:8080
+  220  cd /var/www/html
+  221  ll
+  222  sudo ps afx
+  223  systemctl reload nginx
+  224  sudo systemctl reload nginx
+  225  sudo apache2ctl reload
+  226  sudo systemctl reload apache2
+  227  sudo ps afx
+  228  sudo ss -ntlp
+  229  ll
+  230  cd 
+  231  cd /etc
+  232  cd /nginx
+  233  cd nginx
+  234  ll
+  235  sudo nano nginx.conf
+  236  ll
+  237  cd site-enable
+  238  ll
+  239  cd site-enabled
+  240  cd /site-enabled
+  241  cd
+  242  cd /ect/nginx/site-enabled
+  243  cd etc
+  244  cd /etc
+  245  cd nginx
+  246  cd sires-enabled
+  247  cd sites-enabled
+  248  ll
+  249  sudo nano default 
+  250  cd ..
+  251  ll
+  252  sudo nano nginx.conf 
+  253  cd sites-enabled/
+  254  ll
+  255  sudo nano default 
+  256  sudo nginx -t
+  257  sudo nano default 
+  258  sudo nginx -t
+  259  sudo systemctl reload nginx
+  260  sudo ps afx
+  261  sudo apr install php8.1 libapache2-mod-php8.1
+  262  sudo apt install php8.1 libapache2-mod-php8.1
+  263  cd
+  264  sudo apt install php8.1 libapache2-mod-php8.1
+  265  cd /etc
+  266  cd nginx
+  267  sudo apt install php8.1 libapache2-mod-php8.1
+  268  sudo apt install php8.0 libapache2-mod-php8.0
+  269  sudo apt install php8.1
+  270  sudo apt install php7.4 libapache2-mod-php7.4
+  271  sudo apt show php
+  272  sudo apt install php8.3 libapache2-mod-php8.3
+  273  cd /etc/apache2#
+  274  cd /etc/apache2
+  275  ll
+  276  cd mods-enabled/
+  277  ll
+  278  sudo cat php8.3.conf
+  279  cd /var/www/html
+  280  ll
+  281  cat > info.php
+  282  ll
+  283  sudo cat > info.php
+  284  ll
+  285  sudo su
+  286  sudo apt install php8.3-fpm
+  287  sudo ps afx
+  288  cd
+  289  cd /etc/php
+  290  ll
+  291  cd 8.3
+  292  ll
+  293  cd fpm
+  294  ll
+  295  cd pool.d/
+  296  ll
+  297  sudo nano www.conf 
+  298  cd /etc/nginx
+  299  cd sites-enabled/
+  300  sudo nano default 
+  301  sudo nginx -t
+  302  sudo systemctl reload nginx
+  303  cd
+  304  sudo apt install mysql-server-8.0 -y
+  305  sudo ps afx
+  306  sudo ss -ntlp
+  307  ss -ntlp
+  308  sudo ss -ntlp
+  309  sudo mysql
+  310  exit
+  311  sudo apt install docker.io
+  312  sudo docker
+  313  sudo docker -v
+  314  sudo docker run hello-world
+  315  docker ps
+  316  sudo docker ps
+  317  sudo docker ps -a
+  318  ~sudo docker search nginx
+  319  docker search nginx
+  320  sudo su
+  321  sudo docker images
+  322  sudo docker ps -a
+  323  sudo docker rm dccad791f032 
+  324  sudo docker ps -a
+  325  sudo docker images
+  326  sudo docker rmi hello-world 
+  327  sudo docker images
+  328  sudo docker ps -a
+  329  exit
+  330  ls
+  331  echo $?
+  332  cat /etc/shadow
+  333  echo $?
+  334  cat /etc/shadow || echo "Failed"
+  335  exit
+  336  ip
+  337  sudo ip -a
+  338  sudo localhost
+  339  sudo id
+  340  sudo uname -a
+  341  uname
+  342  hostnamectl
+  343  sudo ps afx
+  344  sudo ip -a
+  345  sudo systemctl
+  346  sudo systemctl status ssh
+  347  exit
+  348  sudo systemctl status ssh
+  349  hostnamectl
+  350  cd ..
+  351  cd /etc/www
+  352  exit
+  353  sudo system status ssh
+  354  123
+  355  exit
+  356  sudo systemctl status ssh
+  357  sudo hostnamectl
+  358  sudo ip
+  359  sudo ip -a
+  360  sudo hostname -I
+  361  sudo systemctl status ssh
+  362  sudo hostnamectl
+  363  sudo hostname -I
+  364  cd ..
+  365  exit
+  366  ls -l
+  367  clear
+  368  ls -l
+  369  ls -la
+  370  history
+  371  ll
+  372  ls /var -l
+  373  ls /var -a
+  374  cd
+  375  pwd
+  376  mkdir geekbrainc
+  377  ls
+  378  mkdir Geekbrainc
+  379  ll
+  380  ls
+  381  cd geekbrainc/
+  382  pwd
+  383  mkdir dir1 dir2 dir3
+  384  ls
+  385  mkdir 22/33/44
+  386  mkdir 22/33/44 -p
+  387  ls
+  388  cd 22
+  389  pwd
+  390  cd 33
+  391  pwd
+  392  cd 44
+  393  pwd
+  394  cd../../../
+  395  pwd
+  396  cd ../../../
+  397  pwd
+  398  mkdir /myFolder
+  399  sudo mkdir /myFolder
+  400  ls
+  401  cd /
+  402  ls
+  403  cd geekbrainc
+  404  cd
+  405  ls
+  406  cd /geekbrainc
+  407  cd geekbrainc/
+  408  touch file1
+  409  ls
+  410  touch file1.txt
+  411  ls
+  412  cat > file2.txt
+  413  ll
+  414  echo > file3.txt
+  415  ll
+  416  > file4.txt
+  417  ll
+  418  touch file1
+  419  ll
+  420  ls
+  421  cp *f dir1
+  422  cp f* dir1
+  423  ls
+  424  cd dir1
+  425  ll
+  426  pwd
+  427  tree
+  428  sudo apt install tree
+  429  tree
+  430  cd ..
+  431  tree
+  432  cp dir1 dir3
+  433  cp dir1 dir3 -r
+  434  tree
+  435  mv *txt 22
+  436  tree
+  437  mv file1 file11.txt
+  438  ll'
+  439  ll
+  440  rm file11.txt
+  441  ll
+  442  rm dir1 -r
+  443  tree
+  444  rm * -r
+  445  tree
+  446  # rm --rf / delete all file
+  447  more --help
+  448  more --h
+  449  man more
+  450  # q = quit
+  451  whatis more
+  452  ls
+  453  cd
+  454  cat > mqzee.txt
+  455  ll
+  456  ls
+  457  more qzee.txt
+  458  more mqzee.txt 
+  459  more -10 mqzee.txt 
+  460  more +3 mqzee.txt 
+  461  more +10 mqzee.txt 
+  462  more -33 +5 mqzee.txt 
+  463  more +33 -5 mqzee.txt 
+  464  more -10 +/hello ~/mqzee.txt 
+  465  less ---h
+  466  less --help
+  467  less mqzee.txt 
+  468  less -p "hello" ~/mqzee.txt 
+  469  less -N -I "g" ~/mqzee.txt 
+  470  less -N -I -p "g" ~/mqzee.txt 
+  471  head --help
+  472  head mqzee.txt 
+  473  head -3 mqzee.txt 
+  474  head -c 12 mqzee.txt 
+  475  head -c 2 mqzee.txt 
+  476  hisrory
+  477  history
+qzee@qzee-VirtualBox:~$ tail --help
+Usage: tail [OPTION]... [FILE]...
+Print the last 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -c, --bytes=[+]NUM       output the last NUM bytes; or use -c +NUM to
+                             output starting with byte NUM of each file
+  -f, --follow[={name|descriptor}]
+                           output appended data as the file grows;
+                             an absent option argument means 'descriptor'
+  -F                       same as --follow=name --retry
+  -n, --lines=[+]NUM       output the last NUM lines, instead of the last 10;
+                             or use -n +NUM to skip NUM-1 lines at the start
+      --max-unchanged-stats=N
+                           with --follow=name, reopen a FILE which has not
+                             changed size after N (default 5) iterations
+                             to see if it has been unlinked or renamed
+                             (this is the usual case of rotated log files);
+                             with inotify, this option is rarely useful
+      --pid=PID            with -f, terminate after process ID, PID dies
+  -q, --quiet, --silent    never output headers giving file names
+      --retry              keep trying to open a file if it is inaccessible
+  -s, --sleep-interval=N   with -f, sleep for approximately N seconds
+                             (default 1.0) between iterations;
+                             with inotify and --pid=P, check process P at
+                             least once every N seconds
+  -v, --verbose            always output headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help        display this help and exit
+      --version     output version information and exit
+
+NUM may have a multiplier suffix:
+b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
+GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y, R, Q.
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+With --follow (-f), tail defaults to following the file descriptor, which
+means that even if a tail'ed file is renamed, tail will continue to track
+its end.  This default behavior is not desirable when you really want to
+track the actual name of the file, not the file descriptor (e.g., log
+rotation).  Use --follow=name in that case.  That causes tail to track the
+named file in a way that accommodates renaming, removal and creation.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/tail>
+or available locally via: info '(coreutils) tail invocation'
+qzee@qzee-VirtualBox:~$ tail mqzee.txt 
+try
+y45g
+45rh
+rty
+hnrt
+yj
+tug
+jtu
+ghktu
+hqzee@qzee-VirtualBox:~$ tail -2 mq
+tail: cannot open 'mq' for reading: No such file or directory
+qzee@qzee-VirtualBox:~$ tail -2 mqzee.txt 
+ghktu
+qzee@qzee-VirtualBox:~$ tail -f logs.txt 
+line111
+line222
+line333
+sdfvkdojnowjen ojnwsfojwnfjn3
+^C
+qzee@qzee-VirtualBox:~$ # nano, vim
+qzee@qzee-VirtualBox:~$ whatis nano
+nano (1)             - Nano's ANOther editor, inspired by Pico
+qzee@qzee-VirtualBox:~$ nano -h
+Usage: nano [OPTIONS] [[+LINE[,COLUMN]] FILE]...
+
+To place the cursor on a specific line of a file, put the line number with
+a '+' before the filename.  The column number can be added after a comma.
+When a filename is '-', nano reads data from standard input.
+
+ Option         Long option             Meaning
+ -A             --smarthome             Enable smart home key
+ -B             --backup                Save backups of existing files
+ -C <dir>       --backupdir=<dir>       Directory for saving unique backup files
+ -D             --boldtext              Use bold instead of reverse video text
+ -E             --tabstospaces          Convert typed tabs to spaces
+ -F             --multibuffer           Read a file into a new buffer by default
+ -G             --locking               Use (vim-style) lock files
+ -H             --historylog            Save & reload old search/replace strings
+ -I             --ignorercfiles         Don't look at nanorc files
+ -J <number>    --guidestripe=<number>  Show a guiding bar at this column
+ -K             --rawsequences          Fix numeric keypad key confusion problem
+ -L             --nonewlines            Don't add an automatic newline
+ -M             --trimblanks            Trim tail spaces when hard-wrapping
+ -N             --noconvert             Don't convert files from DOS/Mac format
+ -O             --bookstyle             Leading whitespace means new paragraph
+ -P             --positionlog           Save & restore position of the cursor
+ -Q <regex>     --quotestr=<regex>      Regular expression to match quoting
+ -R             --restricted            Restrict access to the filesystem
+ -S             --softwrap              Display overlong lines on multiple rows
+ -T <number>    --tabsize=<number>      Make a tab this number of columns wide
+ -U             --quickblank            Wipe status bar upon next keystroke
+ -V             --version               Print version information and exit
+ -W             --wordbounds            Detect word boundaries more accurately
+ -X <string>    --wordchars=<string>    Which other characters are word parts
+ -Y <name>      --syntax=<name>         Syntax definition to use for coloring
+ -Z             --zap                   Let Bsp and Del erase a marked region
+ -a             --atblanks              When soft-wrapping, do it at whitespace
+ -b             --breaklonglines        Automatically hard-wrap overlong lines
+ -c             --constantshow          Constantly show cursor position
+ -d             --rebinddelete          Fix Backspace/Delete confusion problem
+ -e             --emptyline             Keep the line below the title bar empty
+ -f <file>      --rcfile=<file>         Use only this file for configuring nano
+ -g             --showcursor            Show cursor in file browser & help text
+ -h             --help                  Show this help text and exit
+ -i             --autoindent            Automatically indent new lines
+ -j             --jumpyscrolling        Scroll per half-screen, not per line
+ -k             --cutfromcursor         Cut from cursor to end of line
+ -l             --linenumbers           Show line numbers in front of the text
+ -m             --mouse                 Enable the use of the mouse
+ -n             --noread                Do not read the file (only write it)
+ -o <dir>       --operatingdir=<dir>    Set operating directory
+ -p             --preserve              Preserve XON (^Q) and XOFF (^S) keys
+ -q             --indicator             Show a position+portion indicator
+ -r <number>    --fill=<number>         Set width for hard-wrap and justify
+ -s <program>   --speller=<program>     Use this alternative spell checker
+ -t             --saveonexit            Save changes on exit, don't prompt
+ -u             --unix                  Save a file by default in Unix format
+ -v             --view                  View mode (read-only)
+ -w             --nowrap                Don't hard-wrap long lines [default]
+ -x             --nohelp                Don't show the two help lines
+ -y             --afterends             Make Ctrl+Right stop at word ends
+ -%             --stateflags            Show some states on the title bar
+ -_             --minibar               Show a feedback bar at the bottom
+ -0             --zero                  Hide all bars, use whole terminal
+qzee@qzee-VirtualBox:~$ nano
+qzee@qzee-VirtualBox:~$ ll
+total 208
+drwxr-x--- 18 qzee qzee    4096 May 19 01:34 ./
+drwxr-xr-x  3 root root    4096 May  5 21:40 ../
+-rw-------  1 qzee qzee    5833 May 19 01:31 .bash_history
+-rw-r--r--  1 qzee qzee     220 Mar 31 11:41 .bash_logout
+-rw-r--r--  1 qzee qzee    3771 Mar 31 11:41 .bashrc
+drwx------ 13 qzee qzee    4096 May  6 01:06 .cache/
+drwx------ 14 qzee qzee    4096 May  6 00:46 .config/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Desktop/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Documents/
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Downloads/
+drwxrwxr-x  2 qzee qzee    4096 May 19 01:05 geekbrainc/
+drwxrwxr-x  2 qzee qzee    4096 May 19 00:43 Geekbrainc/
+-rw-------  1 qzee qzee      46 May 19 01:21 .lesshst
+drwx------  4 qzee qzee    4096 May  5 21:40 .local/
+-rw-rw-r--  1 qzee qzee      54 May 19 01:31 logs.txt
+-rw-rw-r--  1 qzee qzee     165 May 19 01:12 mqzee.txt
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Music/
+-rw-rw-r--  1 qzee qzee     112 May 19 01:33 myfile.txt
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Pictures/
+-rw-r--r--  1 qzee qzee     807 Mar 31 11:41 .profile
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Public/
+drwxrwx---  1 root vboxsf 81920 May 17 02:13 shared/
+drwx------  5 qzee qzee    4096 May  6 12:00 snap/
+drwx------  2 qzee qzee    4096 May  5 21:41 .ssh/
+-rw-r--r--  1 qzee qzee       0 May  5 21:46 .sudo_as_admin_successful
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Templates/
+-rw-rw-r--  1 qzee qzee      39 May  6 10:57 test_vim
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-clipboard.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-draganddrop.pid
+-rw-r-----  1 qzee qzee       5 May 19 00:03 .vboxclient-seamless.pid
+drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Videos/
+-rw-------  1 qzee qzee     805 May  6 10:57 .viminfo
+qzee@qzee-VirtualBox:~$ ls
+Desktop    Downloads   Geekbrainc  mqzee.txt  myfile.txt  Public  snap       test_vim
+Documents  geekbrainc  logs.txt    Music      Pictures    shared  Templates  Videos
+qzee@qzee-VirtualBox:~$ myfile.txt
+myfile.txt: command not found
+qzee@qzee-VirtualBox:~$ more myfile.txt 
+sdfsdf
+sdfsdfs
+sdfsdf
+sdftrhyt6yh
+45rthgyjtrtegrgyjr
+rhteyrtghghteyrghdg
+hhterg
+tg
+gdrf
+ght
+r
+yrhg
+hjy
+jt
+jt
+h
+
+qzee@qzee-VirtualBox:~$ nano myfile.txt 
+qzee@qzee-VirtualBox:~$ more myfile.txt 
+123123
+12
+31
+23
+213
+
+432
+4
+543
+
+435
+
+64
+76777
+7
+7
+
+7777777777777777777777777777777777777777777777777
+sdfsdf
+sdfsdfs
+sdfsdf
+sdftrhyt6yh
+45rthgyjtrtegrgyjr
+qzee@qzee-VirtualBox:~$ nano myfile.txt -B
+qzee@qzee-VirtualBox:~$ ls
+Desktop    geekbrainc  mqzee.txt   myfile.txt~  shared     test_vim
+Documents  Geekbrainc  Music       Pictures     snap       Videos
+Downloads  logs.txt    myfile.txt  Public       Templates
+qzee@qzee-VirtualBox:~$ more myfile.txt
+1
+12
+123
+1234
+12345
+
+qzee@qzee-VirtualBox:~$ more myfile.txt~
+123123
+12
+31
+23
+213
+
+432
+4
+543
+
+435
+
+64
+76777
+7
+7
+
+7777777777777777777777777777777777777777777777777
+sdfsdf
+sdfsdfs
+sdfsdf
+sdftrhyt6yh
+45rthgyjtrtegrgyjr
+qzee@qzee-VirtualBox:~$ nano +10.3 myfile.txt
+qzee@qzee-VirtualBox:~$ vim
+qzee@qzee-VirtualBox:~$ vim --help
+VIM - Vi IMproved 9.1 (2024 Jan 02, compiled Mar 31 2024 00:15:53)
+
+Usage: vim [arguments] [file ..]       edit specified file(s)
+   or: vim [arguments] -               read text from stdin
+   or: vim [arguments] -t tag          edit file where tag is defined
+   or: vim [arguments] -q [errorfile]  edit file with first error
+
+Arguments:
+   --			Only file names after this
+   -v			Vi mode (like "vi")
+   -e			Ex mode (like "ex")
+   -E			Improved Ex mode
+   -s			Silent (batch) mode (only for "ex")
+   -d			Diff mode (like "vimdiff")
+   -y			Easy mode (like "evim", modeless)
+   -R			Readonly mode (like "view")
+   -Z			Restricted mode (like "rvim")
+   -m			Modifications (writing files) not allowed
+   -M			Modifications in text not allowed
+   -b			Binary mode
+   -l			Lisp mode
+   -C			Compatible with Vi: 'compatible'
+   -N			Not fully Vi compatible: 'nocompatible'
+   -V[N][fname]		Be verbose [level N] [log messages to fname]
+   -D			Debugging mode
+   -n			No swap file, use memory only
+   -r			List swap files and exit
+   -r (with file name)	Recover crashed session
+   -L			Same as -r
+   -A			Start in Arabic mode
+   -H			Start in Hebrew mode
+   -T <terminal>	Set terminal type to <terminal>
+   --not-a-term		Skip warning for input/output not being a terminal
+   --ttyfail		Exit if input or output is not a terminal
+   -u <vimrc>		Use <vimrc> instead of any .vimrc
+   --noplugin		Don't load plugin scripts
+   -p[N]		Open N tab pages (default: one for each file)
+   -o[N]		Open N windows (default: one for each file)
+   -O[N]		Like -o but split vertically
+   +			Start at end of file
+   +<lnum>		Start at line <lnum>
+   --cmd <command>	Execute <command> before loading any vimrc file
+   -c <command>		Execute <command> after loading the first file
+   -S <session>		Source file <session> after loading the first file
+   -s <scriptin>	Read Normal mode commands from file <scriptin>
+   -w <scriptout>	Append all typed commands to file <scriptout>
+   -W <scriptout>	Write all typed commands to file <scriptout>
+   -x			Edit encrypted files
+   --startuptime <file>	Write startup timing messages to <file>
+   --log <file>		Start logging to <file> early
+   -i <viminfo>		Use <viminfo> instead of .viminfo
+   --clean		'nocompatible', Vim defaults, no plugins, no viminfo
+   -h  or  --help	Print Help (this message) and exit
+   --version		Print version information and exit
+qzee@qzee-VirtualBox:~$ vim
+qzee@qzee-VirtualBox:~$ vim myfile.txt
+qzee@qzee-VirtualBox:~$ vimtutor
+
+[1]+  Stopped                 vimtutor
+qzee@qzee-VirtualBox:~$ sudo apt install vim-runtime
+[sudo] password for qzee: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+vim-runtime is already the newest version (2:9.1.0016-1ubuntu7).
+vim-runtime set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+qzee@qzee-VirtualBox:~$ vimtutor
+qzee@qzee-VirtualBox:~$ vimtutor ru
+qzee@qzee-VirtualBox:~$ ls
+Desktop    geekbrainc  mqzee.txt   myfile.txt~  shared     test_vim
+Documents  Geekbrainc  Music       Pictures     snap       Videos
+Downloads  logs.txt    myfile.txt  Public       Templates
+qzee@qzee-VirtualBox:~$ cd geekbrainc/
+qzee@qzee-VirtualBox:~/geekbrainc$ ls
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 8
+drwxrwxr-x  2 qzee qzee 4096 May 19 01:05 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+qzee@qzee-VirtualBox:~/geekbrainc$ echo hi all >> origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 12
+drwxrwxr-x  2 qzee qzee 4096 May 19 01:53 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+-rw-rw-r--  1 qzee qzee    7 May 19 01:53 origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ ln origenal_file hardlink
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 16
+drwxrwxr-x  2 qzee qzee 4096 May 19 01:54 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+-rw-rw-r--  2 qzee qzee    7 May 19 01:53 hardlink
+-rw-rw-r--  2 qzee qzee    7 May 19 01:53 origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ ln -s origenal_file softlink
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 16
+drwxrwxr-x  2 qzee qzee 4096 May 19 01:54 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+-rw-rw-r--  2 qzee qzee    7 May 19 01:53 hardlink
+-rw-rw-r--  2 qzee qzee    7 May 19 01:53 origenal_file
+lrwxrwxrwx  1 qzee qzee   13 May 19 01:54 softlink -> origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ more origenal_file 
+hi all
+qzee@qzee-VirtualBox:~/geekbrainc$ more hardlink 
+hi all
+qzee@qzee-VirtualBox:~/geekbrainc$ more softlink 
+hi all
+qzee@qzee-VirtualBox:~/geekbrainc$ cp origenal_file copy
+qzee@qzee-VirtualBox:~/geekbrainc$ more copy 
+hi all
+qzee@qzee-VirtualBox:~/geekbrainc$ echo hello >> origenal_file 
+qzee@qzee-VirtualBox:~/geekbrainc$ more origenal_file 
+hi all
+hello
+qzee@qzee-VirtualBox:~/geekbrainc$ more hardlink 
+hi all
+hello
+qzee@qzee-VirtualBox:~/geekbrainc$ more softlink 
+hi all
+hello
+qzee@qzee-VirtualBox:~/geekbrainc$ more copy 
+hi all
+qzee@qzee-VirtualBox:~/geekbrainc$ mv origenal_file o_f
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 20
+drwxrwxr-x  2 qzee qzee 4096 May 19 01:59 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+-rw-rw-r--  1 qzee qzee    7 May 19 01:56 copy
+-rw-rw-r--  2 qzee qzee   13 May 19 01:57 hardlink
+-rw-rw-r--  2 qzee qzee   13 May 19 01:57 o_f
+lrwxrwxrwx  1 qzee qzee   13 May 19 01:54 softlink -> origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ more o_f
+hi all
+hello
+qzee@qzee-VirtualBox:~/geekbrainc$ more hardlink 
+hi all
+hello
+qzee@qzee-VirtualBox:~/geekbrainc$ more softlink 
+more: cannot open softlink: No such file or directory
+qzee@qzee-VirtualBox:~/geekbrainc$ mv o_f origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 20
+drwxrwxr-x  2 qzee qzee 4096 May 19 02:00 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+-rw-rw-r--  1 qzee qzee    7 May 19 01:56 copy
+-rw-rw-r--  2 qzee qzee   13 May 19 01:57 hardlink
+-rw-rw-r--  2 qzee qzee   13 May 19 01:57 origenal_file
+lrwxrwxrwx  1 qzee qzee   13 May 19 01:54 softlink -> origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ more softlink 
+hi all
+hello
+qzee@qzee-VirtualBox:~/geekbrainc$ rm origenal_file 
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 16
+drwxrwxr-x  2 qzee qzee 4096 May 19 02:01 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+-rw-rw-r--  1 qzee qzee    7 May 19 01:56 copy
+-rw-rw-r--  1 qzee qzee   13 May 19 01:57 hardlink
+lrwxrwxrwx  1 qzee qzee   13 May 19 01:54 softlink -> origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ more hardlink 
+hi all
+hello
+qzee@qzee-VirtualBox:~/geekbrainc$ more softlink 
+more: cannot open softlink: No such file or directory
+qzee@qzee-VirtualBox:~/geekbrainc$ more copy 
+hi all
+qzee@qzee-VirtualBox:~/geekbrainc$ nano hardlink 
+qzee@qzee-VirtualBox:~/geekbrainc$ more hardlink 
+1
+12
+123
+hi all
+hello
+qzee@qzee-VirtualBox:~/geekbrainc$ rm *
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 8
+drwxrwxr-x  2 qzee qzee 4096 May 19 02:03 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+qzee@qzee-VirtualBox:~/geekbrainc$ history
+    1  sudo apt install mc
+    2  mc
+    3  sudo apt install openssh-server
+    4  ip a
+    5  systemctl status ssh
+    6  ip a
+    7  systemctl status ssh
+    8  ip a
+    9  sudo apt install openssh-server
+   10  systemctl status ssh
+   11  ip a
+   12  systemctl status ssh
+   13  q
+   14  systemctl status ssh
+   15  clear
+   16  systemctl status ssh
+   17  clear
+   18  sudo systemclt status ssh
+   19  systemctl status ssh
+   20  service ssh status
+   21  sudo systemctl enable --now ssh
+   22  service ssh status
+   23  ip a
+   24  systemctl status ssh
+   25  sudo ufw allow ssh
+   26  sudo ufw status
+   27  sudo apt install openssh-client
+   28  sudo systemctl start ssh
+   29  systemctl status ssh
+   30  ip a 
+   31  ip a
+   32  sudo systemctl start ssh
+   33  systemctl status ssh
+   34  sudo apt-get install policycoreutils
+   35  sudo apt-get install net-tools
+   36  exit
+   37  mc
+   38  sudo apt update
+   39  sudo apt install gcc make perl
+   40  sudo reboot
+   41  sudo usermod -aG vboxsf qzee
+   42  sudo reboot
+   43  cd/home
+   44  cd /home
+   45  sudo su
+   46  cd /
+   47  cd
+   48  clear
+   49  cd /
+   50  ~
+   51  cd ~
+   52  cd /
+   53  cd
+   54  ls -al
+   55  as
+   56  ls
+   57  ls -al
+   58  ls -l
+   59  clear
+   60  mc
+   61  cd /proc
+   62  ls -al
+   63  cat cpuinfo
+   64  clear
+   65  cd
+   66  ls -al
+   67  ls =al
+   68  ls -al
+   69  cd /run
+   70  ls -al
+   71  ls
+   72  ls -a
+   73  ls --help
+   74  pwd
+   75  cd /home
+   76  cd
+   77  mkdir test
+   78  ls -al
+   79  cd ~/test
+   80  cat > testfile
+   81  cp testfile testfile_2 
+   82  ll
+   83  cd
+   84  ll
+   85  rm test
+   86  cd ~/test
+   87  rm test
+   88  cd
+   89  rm test
+   90  rm -f test
+   91  ll
+   92  rm test
+   93  cd /dev
+   94  ll
+   95  cd
+   96  ll
+   97  cd /test
+   98  ll
+   99  ls -al
+  100  cd ~/test
+  101  ll
+  102  rm testfile
+  103  ll
+  104  rm testfile_2 
+  105  ll
+  106  rm -f test
+  107  ll
+  108  cd
+  109  ll
+  110  rm test
+  111  rm -rf test
+  112  ll
+  113  exit
+  114  sudo apt install vim
+  115  ll
+  116  cat > test_vim
+  117  ll
+  118  vim test_vim
+  119  etc/passwd
+  120  cd etc/passwd
+  121  cat /etc/passwd
+  122  clear
+  123  cat /etc/group
+  124  clear
+  125  cat /etc/shadow
+  126  sudo su
+  127  id
+  128  exit
+  129  sudo apt update
+  130  sudo apt upgrade
+  131  sudo apt search nginx
+  132  sudo apt list nginx
+  133  sudo apt install nginx
+  134  cd /etc/nginx
+  135  ll
+  136  cd ..
+  137  ll
+  138  cd nginx
+  139  cd ..
+  140  sudo apt purge nginx
+  141  cd nginx
+  142  ll
+  143  cd nginx
+  144  sudo apt list mc'
+  145  sudo apt list mc
+  146  sudo apt show mc
+  147  cd /etc
+  148  nano crontab
+  149  ll
+  150  cd cron.daily
+  151  ll
+  152  cd ../cron.d
+  153  ll
+  154  exit
+  155  ip a
+  156  ip -s a
+  157  ip r
+  158  ss socket stat
+  159  ss -tulpan
+  160  ss -ntlp
+  161  sudo ss -ntlp
+  162  sudo sudo ss -ntlp
+  163  ss -ntulp
+  164  sudo ss -tulpan
+  165  ping ya.ru
+  166  tracepath ya.ru
+  167  exit
+  168  sudo shutdown -h now
+  169  sudo apt install curl
+  170  curl -L https://ya.ru
+  171  sudo curl https://qmox.ru
+  172  sudo apt install -y nginx
+  173  sudo ss -ntlp
+  174  sudo ps apx
+  175  sudo pc afx
+  176  ps afx
+  177  curl localhost
+  178  cd /etc/nginx
+  179  ll
+  180  nano nginx.conf
+  181  sudo nginx -t
+  182  ll
+  183  cd sites-enabled/
+  184  ll
+  185  cd ..
+  186  sudo ss -ntlp
+  187  sudo ps afx
+  188  sudo curl localhost
+  189  ll
+  190  sudo nano nginx.conf
+  191  cd sites-enabled/
+  192  ll
+  193  sudo nano default 
+  194  cd
+  195  sudo apt install apache2
+  196  sudo ps afx
+  197  cd etc/apache2
+  198  cd /etc
+  199  ll
+  200  cd apache2
+  201  ll
+  202  sudo nano ports.conf
+  203  sudo systemctl start apache2
+  204  sudo ps afx
+  205  ss -ntlp
+  206  sudo ss -ntlp
+  207  cd etc
+  208  cd /etc
+  209  cd /apache2
+  210  ll
+  211  cd /apache2
+  212  cd apache2
+  213  ll
+  214  cd sites-enabled/
+  215  ll
+  216  sudo nano 000-default.conf 
+  217  apachectl -t
+  218  sudo systemctl reload apache2
+  219  sudo curl localhost:8080
+  220  cd /var/www/html
+  221  ll
+  222  sudo ps afx
+  223  systemctl reload nginx
+  224  sudo systemctl reload nginx
+  225  sudo apache2ctl reload
+  226  sudo systemctl reload apache2
+  227  sudo ps afx
+  228  sudo ss -ntlp
+  229  ll
+  230  cd 
+  231  cd /etc
+  232  cd /nginx
+  233  cd nginx
+  234  ll
+  235  sudo nano nginx.conf
+  236  ll
+  237  cd site-enable
+  238  ll
+  239  cd site-enabled
+  240  cd /site-enabled
+  241  cd
+  242  cd /ect/nginx/site-enabled
+  243  cd etc
+  244  cd /etc
+  245  cd nginx
+  246  cd sires-enabled
+  247  cd sites-enabled
+  248  ll
+  249  sudo nano default 
+  250  cd ..
+  251  ll
+  252  sudo nano nginx.conf 
+  253  cd sites-enabled/
+  254  ll
+  255  sudo nano default 
+  256  sudo nginx -t
+  257  sudo nano default 
+  258  sudo nginx -t
+  259  sudo systemctl reload nginx
+  260  sudo ps afx
+  261  sudo apr install php8.1 libapache2-mod-php8.1
+  262  sudo apt install php8.1 libapache2-mod-php8.1
+  263  cd
+  264  sudo apt install php8.1 libapache2-mod-php8.1
+  265  cd /etc
+  266  cd nginx
+  267  sudo apt install php8.1 libapache2-mod-php8.1
+  268  sudo apt install php8.0 libapache2-mod-php8.0
+  269  sudo apt install php8.1
+  270  sudo apt install php7.4 libapache2-mod-php7.4
+  271  sudo apt show php
+  272  sudo apt install php8.3 libapache2-mod-php8.3
+  273  cd /etc/apache2#
+  274  cd /etc/apache2
+  275  ll
+  276  cd mods-enabled/
+  277  ll
+  278  sudo cat php8.3.conf
+  279  cd /var/www/html
+  280  ll
+  281  cat > info.php
+  282  ll
+  283  sudo cat > info.php
+  284  ll
+  285  sudo su
+  286  sudo apt install php8.3-fpm
+  287  sudo ps afx
+  288  cd
+  289  cd /etc/php
+  290  ll
+  291  cd 8.3
+  292  ll
+  293  cd fpm
+  294  ll
+  295  cd pool.d/
+  296  ll
+  297  sudo nano www.conf 
+  298  cd /etc/nginx
+  299  cd sites-enabled/
+  300  sudo nano default 
+  301  sudo nginx -t
+  302  sudo systemctl reload nginx
+  303  cd
+  304  sudo apt install mysql-server-8.0 -y
+  305  sudo ps afx
+  306  sudo ss -ntlp
+  307  ss -ntlp
+  308  sudo ss -ntlp
+  309  sudo mysql
+  310  exit
+  311  sudo apt install docker.io
+  312  sudo docker
+  313  sudo docker -v
+  314  sudo docker run hello-world
+  315  docker ps
+  316  sudo docker ps
+  317  sudo docker ps -a
+  318  ~sudo docker search nginx
+  319  docker search nginx
+  320  sudo su
+  321  sudo docker images
+  322  sudo docker ps -a
+  323  sudo docker rm dccad791f032 
+  324  sudo docker ps -a
+  325  sudo docker images
+  326  sudo docker rmi hello-world 
+  327  sudo docker images
+  328  sudo docker ps -a
+  329  exit
+  330  ls
+  331  echo $?
+  332  cat /etc/shadow
+  333  echo $?
+  334  cat /etc/shadow || echo "Failed"
+  335  exit
+  336  ip
+  337  sudo ip -a
+  338  sudo localhost
+  339  sudo id
+  340  sudo uname -a
+  341  uname
+  342  hostnamectl
+  343  sudo ps afx
+  344  sudo ip -a
+  345  sudo systemctl
+  346  sudo systemctl status ssh
+  347  exit
+  348  sudo systemctl status ssh
+  349  hostnamectl
+  350  cd ..
+  351  cd /etc/www
+  352  exit
+  353  sudo system status ssh
+  354  123
+  355  exit
+  356  sudo systemctl status ssh
+  357  sudo hostnamectl
+  358  sudo ip
+  359  sudo ip -a
+  360  sudo hostname -I
+  361  sudo systemctl status ssh
+  362  sudo hostnamectl
+  363  sudo hostname -I
+  364  cd ..
+  365  exit
+  366  ls -l
+  367  clear
+  368  ls -l
+  369  ls -la
+  370  history
+  371  ll
+  372  ls /var -l
+  373  ls /var -a
+  374  cd
+  375  pwd
+  376  mkdir geekbrainc
+  377  ls
+  378  mkdir Geekbrainc
+  379  ll
+  380  ls
+  381  cd geekbrainc/
+  382  pwd
+  383  mkdir dir1 dir2 dir3
+  384  ls
+  385  mkdir 22/33/44
+  386  mkdir 22/33/44 -p
+  387  ls
+  388  cd 22
+  389  pwd
+  390  cd 33
+  391  pwd
+  392  cd 44
+  393  pwd
+  394  cd../../../
+  395  pwd
+  396  cd ../../../
+  397  pwd
+  398  mkdir /myFolder
+  399  sudo mkdir /myFolder
+  400  ls
+  401  cd /
+  402  ls
+  403  cd geekbrainc
+  404  cd
+  405  ls
+  406  cd /geekbrainc
+  407  cd geekbrainc/
+  408  touch file1
+  409  ls
+  410  touch file1.txt
+  411  ls
+  412  cat > file2.txt
+  413  ll
+  414  echo > file3.txt
+  415  ll
+  416  > file4.txt
+  417  ll
+  418  touch file1
+  419  ll
+  420  ls
+  421  cp *f dir1
+  422  cp f* dir1
+  423  ls
+  424  cd dir1
+  425  ll
+  426  pwd
+  427  tree
+  428  sudo apt install tree
+  429  tree
+  430  cd ..
+  431  tree
+  432  cp dir1 dir3
+  433  cp dir1 dir3 -r
+  434  tree
+  435  mv *txt 22
+  436  tree
+  437  mv file1 file11.txt
+  438  ll'
+  439  ll
+  440  rm file11.txt
+  441  ll
+  442  rm dir1 -r
+  443  tree
+  444  rm * -r
+  445  tree
+  446  # rm --rf / delete all file
+  447  more --help
+  448  more --h
+  449  man more
+  450  # q = quit
+  451  whatis more
+  452  ls
+  453  cd
+  454  cat > mqzee.txt
+  455  ll
+  456  ls
+  457  more qzee.txt
+  458  more mqzee.txt 
+  459  more -10 mqzee.txt 
+  460  more +3 mqzee.txt 
+  461  more +10 mqzee.txt 
+  462  more -33 +5 mqzee.txt 
+  463  more +33 -5 mqzee.txt 
+  464  more -10 +/hello ~/mqzee.txt 
+  465  less ---h
+  466  less --help
+  467  less mqzee.txt 
+  468  less -p "hello" ~/mqzee.txt 
+  469  less -N -I "g" ~/mqzee.txt 
+  470  less -N -I -p "g" ~/mqzee.txt 
+  471  head --help
+  472  head mqzee.txt 
+  473  head -3 mqzee.txt 
+  474  head -c 12 mqzee.txt 
+  475  head -c 2 mqzee.txt 
+  476  hisrory
+  477  history
+  478  tail --help
+  479  tail mqzee.txt 
+  480  tail -2 mq
+  481  tail -2 mqzee.txt 
+  482  tail -f logs.txt 
+  483  # nano, vim
+  484  whatis nano
+  485  nano -h
+  486  nano
+  487  ll
+  488  ls
+  489  myfile.txt
+  490  more myfile.txt 
+  491  nano myfile.txt 
+  492  more myfile.txt 
+  493  nano myfile.txt -B
+  494  ls
+  495  more myfile.txt
+  496  more myfile.txt~
+  497  nano +10.3 myfile.txt
+  498  vim
+  499  vim --help
+  500  vim
+  501  vim myfile.txt
+  502  vimtutor
+  503  sudo apt install vim-runtime
+  504  vimtutor
+  505  vimtutor ru
+  506  ls
+  507  cd geekbrainc/
+  508  ls
+  509  ll
+  510  echo hi all >> origenal_file
+  511  ll
+  512  ln origenal_file hardlink
+  513  ll
+  514  ln -s origenal_file softlink
+  515  ll
+  516  more origenal_file 
+  517  more hardlink 
+  518  more softlink 
+  519  cp origenal_file copy
+  520  more copy 
+  521  echo hello >> origenal_file 
+  522  more origenal_file 
+  523  more hardlink 
+  524  more softlink 
+  525  more copy 
+  526  mv origenal_file o_f
+  527  ll
+  528  more o_f
+  529  more hardlink 
+  530  more softlink 
+  531  mv o_f origenal_file
+  532  ll
+  533  more softlink 
+  534  rm origenal_file 
+  535  ll
+  536  more hardlink 
+  537  more softlink 
+  538  more copy 
+  539  nano hardlink 
+  540  more hardlink 
+  541  rm *
+  542  ll
+  543  history
+qzee@qzee-VirtualBox:~/geekbrainc$ !510
+echo hi all >> origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ !519
+cp origenal_file copy
+qzee@qzee-VirtualBox:~/geekbrainc$ !521
+echo hello >> origenal_file 
+qzee@qzee-VirtualBox:~/geekbrainc$ !516
+more origenal_file 
+hi all
+hello
+qzee@qzee-VirtualBox:~/geekbrainc$ !517
+more hardlink 
+more: cannot open hardlink: No such file or directory
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 16
+drwxrwxr-x  2 qzee qzee 4096 May 19 02:04 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+-rw-rw-r--  1 qzee qzee    7 May 19 02:04 copy
+-rw-rw-r--  1 qzee qzee   13 May 19 02:04 origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ history
+    1  sudo apt install mc
+    2  mc
+    3  sudo apt install openssh-server
+    4  ip a
+    5  systemctl status ssh
+    6  ip a
+    7  systemctl status ssh
+    8  ip a
+    9  sudo apt install openssh-server
+   10  systemctl status ssh
+   11  ip a
+   12  systemctl status ssh
+   13  q
+   14  systemctl status ssh
+   15  clear
+   16  systemctl status ssh
+   17  clear
+   18  sudo systemclt status ssh
+   19  systemctl status ssh
+   20  service ssh status
+   21  sudo systemctl enable --now ssh
+   22  service ssh status
+   23  ip a
+   24  systemctl status ssh
+   25  sudo ufw allow ssh
+   26  sudo ufw status
+   27  sudo apt install openssh-client
+   28  sudo systemctl start ssh
+   29  systemctl status ssh
+   30  ip a 
+   31  ip a
+   32  sudo systemctl start ssh
+   33  systemctl status ssh
+   34  sudo apt-get install policycoreutils
+   35  sudo apt-get install net-tools
+   36  exit
+   37  mc
+   38  sudo apt update
+   39  sudo apt install gcc make perl
+   40  sudo reboot
+   41  sudo usermod -aG vboxsf qzee
+   42  sudo reboot
+   43  cd/home
+   44  cd /home
+   45  sudo su
+   46  cd /
+   47  cd
+   48  clear
+   49  cd /
+   50  ~
+   51  cd ~
+   52  cd /
+   53  cd
+   54  ls -al
+   55  as
+   56  ls
+   57  ls -al
+   58  ls -l
+   59  clear
+   60  mc
+   61  cd /proc
+   62  ls -al
+   63  cat cpuinfo
+   64  clear
+   65  cd
+   66  ls -al
+   67  ls =al
+   68  ls -al
+   69  cd /run
+   70  ls -al
+   71  ls
+   72  ls -a
+   73  ls --help
+   74  pwd
+   75  cd /home
+   76  cd
+   77  mkdir test
+   78  ls -al
+   79  cd ~/test
+   80  cat > testfile
+   81  cp testfile testfile_2 
+   82  ll
+   83  cd
+   84  ll
+   85  rm test
+   86  cd ~/test
+   87  rm test
+   88  cd
+   89  rm test
+   90  rm -f test
+   91  ll
+   92  rm test
+   93  cd /dev
+   94  ll
+   95  cd
+   96  ll
+   97  cd /test
+   98  ll
+   99  ls -al
+  100  cd ~/test
+  101  ll
+  102  rm testfile
+  103  ll
+  104  rm testfile_2 
+  105  ll
+  106  rm -f test
+  107  ll
+  108  cd
+  109  ll
+  110  rm test
+  111  rm -rf test
+  112  ll
+  113  exit
+  114  sudo apt install vim
+  115  ll
+  116  cat > test_vim
+  117  ll
+  118  vim test_vim
+  119  etc/passwd
+  120  cd etc/passwd
+  121  cat /etc/passwd
+  122  clear
+  123  cat /etc/group
+  124  clear
+  125  cat /etc/shadow
+  126  sudo su
+  127  id
+  128  exit
+  129  sudo apt update
+  130  sudo apt upgrade
+  131  sudo apt search nginx
+  132  sudo apt list nginx
+  133  sudo apt install nginx
+  134  cd /etc/nginx
+  135  ll
+  136  cd ..
+  137  ll
+  138  cd nginx
+  139  cd ..
+  140  sudo apt purge nginx
+  141  cd nginx
+  142  ll
+  143  cd nginx
+  144  sudo apt list mc'
+  145  sudo apt list mc
+  146  sudo apt show mc
+  147  cd /etc
+  148  nano crontab
+  149  ll
+  150  cd cron.daily
+  151  ll
+  152  cd ../cron.d
+  153  ll
+  154  exit
+  155  ip a
+  156  ip -s a
+  157  ip r
+  158  ss socket stat
+  159  ss -tulpan
+  160  ss -ntlp
+  161  sudo ss -ntlp
+  162  sudo sudo ss -ntlp
+  163  ss -ntulp
+  164  sudo ss -tulpan
+  165  ping ya.ru
+  166  tracepath ya.ru
+  167  exit
+  168  sudo shutdown -h now
+  169  sudo apt install curl
+  170  curl -L https://ya.ru
+  171  sudo curl https://qmox.ru
+  172  sudo apt install -y nginx
+  173  sudo ss -ntlp
+  174  sudo ps apx
+  175  sudo pc afx
+  176  ps afx
+  177  curl localhost
+  178  cd /etc/nginx
+  179  ll
+  180  nano nginx.conf
+  181  sudo nginx -t
+  182  ll
+  183  cd sites-enabled/
+  184  ll
+  185  cd ..
+  186  sudo ss -ntlp
+  187  sudo ps afx
+  188  sudo curl localhost
+  189  ll
+  190  sudo nano nginx.conf
+  191  cd sites-enabled/
+  192  ll
+  193  sudo nano default 
+  194  cd
+  195  sudo apt install apache2
+  196  sudo ps afx
+  197  cd etc/apache2
+  198  cd /etc
+  199  ll
+  200  cd apache2
+  201  ll
+  202  sudo nano ports.conf
+  203  sudo systemctl start apache2
+  204  sudo ps afx
+  205  ss -ntlp
+  206  sudo ss -ntlp
+  207  cd etc
+  208  cd /etc
+  209  cd /apache2
+  210  ll
+  211  cd /apache2
+  212  cd apache2
+  213  ll
+  214  cd sites-enabled/
+  215  ll
+  216  sudo nano 000-default.conf 
+  217  apachectl -t
+  218  sudo systemctl reload apache2
+  219  sudo curl localhost:8080
+  220  cd /var/www/html
+  221  ll
+  222  sudo ps afx
+  223  systemctl reload nginx
+  224  sudo systemctl reload nginx
+  225  sudo apache2ctl reload
+  226  sudo systemctl reload apache2
+  227  sudo ps afx
+  228  sudo ss -ntlp
+  229  ll
+  230  cd 
+  231  cd /etc
+  232  cd /nginx
+  233  cd nginx
+  234  ll
+  235  sudo nano nginx.conf
+  236  ll
+  237  cd site-enable
+  238  ll
+  239  cd site-enabled
+  240  cd /site-enabled
+  241  cd
+  242  cd /ect/nginx/site-enabled
+  243  cd etc
+  244  cd /etc
+  245  cd nginx
+  246  cd sires-enabled
+  247  cd sites-enabled
+  248  ll
+  249  sudo nano default 
+  250  cd ..
+  251  ll
+  252  sudo nano nginx.conf 
+  253  cd sites-enabled/
+  254  ll
+  255  sudo nano default 
+  256  sudo nginx -t
+  257  sudo nano default 
+  258  sudo nginx -t
+  259  sudo systemctl reload nginx
+  260  sudo ps afx
+  261  sudo apr install php8.1 libapache2-mod-php8.1
+  262  sudo apt install php8.1 libapache2-mod-php8.1
+  263  cd
+  264  sudo apt install php8.1 libapache2-mod-php8.1
+  265  cd /etc
+  266  cd nginx
+  267  sudo apt install php8.1 libapache2-mod-php8.1
+  268  sudo apt install php8.0 libapache2-mod-php8.0
+  269  sudo apt install php8.1
+  270  sudo apt install php7.4 libapache2-mod-php7.4
+  271  sudo apt show php
+  272  sudo apt install php8.3 libapache2-mod-php8.3
+  273  cd /etc/apache2#
+  274  cd /etc/apache2
+  275  ll
+  276  cd mods-enabled/
+  277  ll
+  278  sudo cat php8.3.conf
+  279  cd /var/www/html
+  280  ll
+  281  cat > info.php
+  282  ll
+  283  sudo cat > info.php
+  284  ll
+  285  sudo su
+  286  sudo apt install php8.3-fpm
+  287  sudo ps afx
+  288  cd
+  289  cd /etc/php
+  290  ll
+  291  cd 8.3
+  292  ll
+  293  cd fpm
+  294  ll
+  295  cd pool.d/
+  296  ll
+  297  sudo nano www.conf 
+  298  cd /etc/nginx
+  299  cd sites-enabled/
+  300  sudo nano default 
+  301  sudo nginx -t
+  302  sudo systemctl reload nginx
+  303  cd
+  304  sudo apt install mysql-server-8.0 -y
+  305  sudo ps afx
+  306  sudo ss -ntlp
+  307  ss -ntlp
+  308  sudo ss -ntlp
+  309  sudo mysql
+  310  exit
+  311  sudo apt install docker.io
+  312  sudo docker
+  313  sudo docker -v
+  314  sudo docker run hello-world
+  315  docker ps
+  316  sudo docker ps
+  317  sudo docker ps -a
+  318  ~sudo docker search nginx
+  319  docker search nginx
+  320  sudo su
+  321  sudo docker images
+  322  sudo docker ps -a
+  323  sudo docker rm dccad791f032 
+  324  sudo docker ps -a
+  325  sudo docker images
+  326  sudo docker rmi hello-world 
+  327  sudo docker images
+  328  sudo docker ps -a
+  329  exit
+  330  ls
+  331  echo $?
+  332  cat /etc/shadow
+  333  echo $?
+  334  cat /etc/shadow || echo "Failed"
+  335  exit
+  336  ip
+  337  sudo ip -a
+  338  sudo localhost
+  339  sudo id
+  340  sudo uname -a
+  341  uname
+  342  hostnamectl
+  343  sudo ps afx
+  344  sudo ip -a
+  345  sudo systemctl
+  346  sudo systemctl status ssh
+  347  exit
+  348  sudo systemctl status ssh
+  349  hostnamectl
+  350  cd ..
+  351  cd /etc/www
+  352  exit
+  353  sudo system status ssh
+  354  123
+  355  exit
+  356  sudo systemctl status ssh
+  357  sudo hostnamectl
+  358  sudo ip
+  359  sudo ip -a
+  360  sudo hostname -I
+  361  sudo systemctl status ssh
+  362  sudo hostnamectl
+  363  sudo hostname -I
+  364  cd ..
+  365  exit
+  366  ls -l
+  367  clear
+  368  ls -l
+  369  ls -la
+  370  history
+  371  ll
+  372  ls /var -l
+  373  ls /var -a
+  374  cd
+  375  pwd
+  376  mkdir geekbrainc
+  377  ls
+  378  mkdir Geekbrainc
+  379  ll
+  380  ls
+  381  cd geekbrainc/
+  382  pwd
+  383  mkdir dir1 dir2 dir3
+  384  ls
+  385  mkdir 22/33/44
+  386  mkdir 22/33/44 -p
+  387  ls
+  388  cd 22
+  389  pwd
+  390  cd 33
+  391  pwd
+  392  cd 44
+  393  pwd
+  394  cd../../../
+  395  pwd
+  396  cd ../../../
+  397  pwd
+  398  mkdir /myFolder
+  399  sudo mkdir /myFolder
+  400  ls
+  401  cd /
+  402  ls
+  403  cd geekbrainc
+  404  cd
+  405  ls
+  406  cd /geekbrainc
+  407  cd geekbrainc/
+  408  touch file1
+  409  ls
+  410  touch file1.txt
+  411  ls
+  412  cat > file2.txt
+  413  ll
+  414  echo > file3.txt
+  415  ll
+  416  > file4.txt
+  417  ll
+  418  touch file1
+  419  ll
+  420  ls
+  421  cp *f dir1
+  422  cp f* dir1
+  423  ls
+  424  cd dir1
+  425  ll
+  426  pwd
+  427  tree
+  428  sudo apt install tree
+  429  tree
+  430  cd ..
+  431  tree
+  432  cp dir1 dir3
+  433  cp dir1 dir3 -r
+  434  tree
+  435  mv *txt 22
+  436  tree
+  437  mv file1 file11.txt
+  438  ll'
+  439  ll
+  440  rm file11.txt
+  441  ll
+  442  rm dir1 -r
+  443  tree
+  444  rm * -r
+  445  tree
+  446  # rm --rf / delete all file
+  447  more --help
+  448  more --h
+  449  man more
+  450  # q = quit
+  451  whatis more
+  452  ls
+  453  cd
+  454  cat > mqzee.txt
+  455  ll
+  456  ls
+  457  more qzee.txt
+  458  more mqzee.txt 
+  459  more -10 mqzee.txt 
+  460  more +3 mqzee.txt 
+  461  more +10 mqzee.txt 
+  462  more -33 +5 mqzee.txt 
+  463  more +33 -5 mqzee.txt 
+  464  more -10 +/hello ~/mqzee.txt 
+  465  less ---h
+  466  less --help
+  467  less mqzee.txt 
+  468  less -p "hello" ~/mqzee.txt 
+  469  less -N -I "g" ~/mqzee.txt 
+  470  less -N -I -p "g" ~/mqzee.txt 
+  471  head --help
+  472  head mqzee.txt 
+  473  head -3 mqzee.txt 
+  474  head -c 12 mqzee.txt 
+  475  head -c 2 mqzee.txt 
+  476  hisrory
+  477  history
+  478  tail --help
+  479  tail mqzee.txt 
+  480  tail -2 mq
+  481  tail -2 mqzee.txt 
+  482  tail -f logs.txt 
+  483  # nano, vim
+  484  whatis nano
+  485  nano -h
+  486  nano
+  487  ll
+  488  ls
+  489  myfile.txt
+  490  more myfile.txt 
+  491  nano myfile.txt 
+  492  more myfile.txt 
+  493  nano myfile.txt -B
+  494  ls
+  495  more myfile.txt
+  496  more myfile.txt~
+  497  nano +10.3 myfile.txt
+  498  vim
+  499  vim --help
+  500  vim
+  501  vim myfile.txt
+  502  vimtutor
+  503  sudo apt install vim-runtime
+  504  vimtutor
+  505  vimtutor ru
+  506  ls
+  507  cd geekbrainc/
+  508  ls
+  509  ll
+  510  echo hi all >> origenal_file
+  511  ll
+  512  ln origenal_file hardlink
+  513  ll
+  514  ln -s origenal_file softlink
+  515  ll
+  516  more origenal_file 
+  517  more hardlink 
+  518  more softlink 
+  519  cp origenal_file copy
+  520  more copy 
+  521  echo hello >> origenal_file 
+  522  more origenal_file 
+  523  more hardlink 
+  524  more softlink 
+  525  more copy 
+  526  mv origenal_file o_f
+  527  ll
+  528  more o_f
+  529  more hardlink 
+  530  more softlink 
+  531  mv o_f origenal_file
+  532  ll
+  533  more softlink 
+  534  rm origenal_file 
+  535  ll
+  536  more hardlink 
+  537  more softlink 
+  538  more copy 
+  539  nano hardlink 
+  540  more hardlink 
+  541  rm *
+  542  ll
+  543  history
+  544  echo hi all >> origenal_file
+  545  cp origenal_file copy
+  546  echo hello >> origenal_file 
+  547  more origenal_file 
+  548  more hardlink 
+  549  ll
+  550  history
+qzee@qzee-VirtualBox:~/geekbrainc$ !512
+ln origenal_file hardlink
+qzee@qzee-VirtualBox:~/geekbrainc$ !514
+ln -s origenal_file softlink
+qzee@qzee-VirtualBox:~/geekbrainc$ ll
+total 20
+drwxrwxr-x  2 qzee qzee 4096 May 19 02:06 ./
+drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+-rw-rw-r--  1 qzee qzee    7 May 19 02:04 copy
+-rw-rw-r--  2 qzee qzee   13 May 19 02:04 hardlink
+-rw-rw-r--  2 qzee qzee   13 May 19 02:04 origenal_file
+lrwxrwxrwx  1 qzee qzee   13 May 19 02:06 softlink -> origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ ll -i
+total 20
+  36002 drwxrwxr-x  2 qzee qzee 4096 May 19 02:06 ./
+1049012 drwxr-x--- 18 qzee qzee 4096 May 19 01:51 ../
+  36006 -rw-rw-r--  1 qzee qzee    7 May 19 02:04 copy
+  36004 -rw-rw-r--  2 qzee qzee   13 May 19 02:04 hardlink
+  36004 -rw-rw-r--  2 qzee qzee   13 May 19 02:04 origenal_file
+  36007 lrwxrwxrwx  1 qzee qzee   13 May 19 02:06 softlink -> origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ ls-li
+ls-li: command not found
+qzee@qzee-VirtualBox:~/geekbrainc$ sudo ls -li
+[sudo] password for qzee: 
+total 12
+36006 -rw-rw-r-- 1 qzee qzee  7 May 19 02:04 copy
+36004 -rw-rw-r-- 2 qzee qzee 13 May 19 02:04 hardlink
+36004 -rw-rw-r-- 2 qzee qzee 13 May 19 02:04 origenal_file
+36007 lrwxrwxrwx 1 qzee qzee 13 May 19 02:06 softlink -> origenal_file
+qzee@qzee-VirtualBox:~/geekbrainc$ cd
+qzee@qzee-VirtualBox:~$ exit
