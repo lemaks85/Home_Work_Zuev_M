@@ -1,3 +1,4 @@
+qzee_git_start_2
 qzee@qzee-VirtualBox:~$ sudo hostnamectl
 Static hostname: qzee-VirtualBox
 Icon name: computer-vm
