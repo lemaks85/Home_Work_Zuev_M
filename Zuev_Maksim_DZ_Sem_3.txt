@@ -1,3 +1,4 @@
+qzee_start_git
 qzee@qzee-VirtualBox:~$ id
 uid=1000(qzee) gid=1000(qzee) groups=1000(qzee),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),114(lpadmin),984(vboxsf)
 qzee@qzee-VirtualBox:~$ whoami
@@ -4465,3 +4466,4 @@ drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Templates/
 drwxr-xr-x  2 qzee qzee    4096 May  5 21:40 Videos/
 -rw-------  1 qzee qzee    2388 May 19 02:16 .viminfo
 qzee@qzee-VirtualBox:~$ 
+exit
