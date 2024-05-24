@@ -1,4 +1,4 @@
-
+ДО 23 строчки настрока терминала ДАЛЕЕ КОМАНДЫ В ТЕРМИНАЛЕ НА СЕМЕНАРЕ 4
 qzee@qzee-VirtualBox:~$ history
     1  sudo apt install bzip2
     2  sudo apt-get install gcc make perl
