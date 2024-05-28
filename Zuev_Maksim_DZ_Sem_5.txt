@@ -1,0 +1,1316 @@
+qzee@qzee-VirtualBox:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04 LTS
+Release:	24.04
+Codename:	noble
+qzee@qzee-VirtualBox:~$ uname
+Linux
+qzee@qzee-VirtualBox:~$ history
+    1  lsb_release -a
+    2  uname
+    3  nano /etc/host
+    4  nano /etc/hosts
+    5  sudo nano /etc/hosts
+    6  ping win-host
+    7  ping 192.168.1.2 -c 4
+    8  more /etc/hosts
+    9  iptables
+   10  sudo apt update
+   11  sudo apt install iptables
+   12  sudo iptables -L
+   13  sudo iptables -L -t filter
+   14  sudo iptables -L
+   15  sudo iptables -t filter -A INPUT -s 192.168.1.2 -j DROP
+   16  sudo iptables -L
+   17  hostname -I
+   18  sudo iptables -F INPUT
+   19  sudo iptables -L
+   20  ping 192.168.1.2
+   21  sudo iptables -t filter -A INPUT -s 192.168.1.2 -j REJACT
+   22  sudo iptables -L
+   23  ping 192.168.1.2
+   24  sudo iptables -F INPUT
+   25  sudo iptables -t filter -A INPUT -s 192.168.1.2 -j DROP
+   26  sudo iptables -L
+   27  ping 192.168.1.2
+   28  sudo iptables -t filter -A INPUT -s 192.168.1.2 -j ACCEPT
+   29  sudo iptables -L
+   30  sudo iptables -F INPUT
+   31  sudo iptables -L
+   32  sudo iptables -A OUTPUT -p tcp --dport 443 -j REJECT
+   33  sudo iptables -L
+   34  sudo iptables -F OUTPUT
+   35  sudo iptables -L
+   36  sudo iptables -A OUTPUT -p tcp --dport 443 -j REJECT
+   37  sudo iptables -L
+   38  sudo iptables >./iptables-config
+   39  nano iptables-config
+   40  ll
+   41  nano iptables-config 
+   42  sudo iptables -F 
+   43  sudo iptables -L
+   44  sudo iptables-restore < ./iptables-config 
+   45  sudo iptables -L
+   46  sudo iptables-save >./iptables-config
+   47  sudo iptables -L
+   48  sudo iptables -P OUTPUT DROP
+   49  sudo iptables -L
+   50  sudo apt update
+   51  sudo iptables -P OUTPUT ACCEPT
+   52  sudo iptables -L
+   53  sudo apt update
+   54  ufw --help
+   55  clear
+   56  ufw --help
+   57  top
+   58  top -o PID
+   59  top -o -PID
+   60  kill -l
+   61  sudo top
+   62  htop
+   63  sudo apt install htop
+   64  htop
+   65  ps
+   66  ps aux
+   67  ps afx
+   68  ps aux
+   69  kill 6824
+   70  #pidof firefox
+   71  history
+qzee@qzee-VirtualBox:~$ 
+
+
+*******************************************************************************
+
+qzee@qzee-VirtualBox:~$ nano /etc/host
+qzee@qzee-VirtualBox:~$ nano /etc/hosts
+qzee@qzee-VirtualBox:~$ sudo nano /etc/hosts
+[sudo] password for qzee: 
+qzee@qzee-VirtualBox:~$ ping win-host
+PING win-host (192.168.1.2) 56(84) bytes of data.
+64 bytes from win-host (192.168.1.2): icmp_seq=1 ttl=127 time=0.723 ms
+64 bytes from win-host (192.168.1.2): icmp_seq=2 ttl=127 time=0.854 ms
+64 bytes from win-host (192.168.1.2): icmp_seq=3 ttl=127 time=0.751 ms
+64 bytes from win-host (192.168.1.2): icmp_seq=4 ttl=127 time=0.764 ms
+^C
+--- win-host ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3093ms
+rtt min/avg/max/mdev = 0.723/0.773/0.854/0.049 ms
+qzee@qzee-VirtualBox:~$ ping 192.168.1.2 -c 4
+PING 192.168.1.2 (192.168.1.2) 56(84) bytes of data.
+64 bytes from 192.168.1.2: icmp_seq=1 ttl=127 time=0.671 ms
+64 bytes from 192.168.1.2: icmp_seq=2 ttl=127 time=0.759 ms
+64 bytes from 192.168.1.2: icmp_seq=3 ttl=127 time=0.839 ms
+64 bytes from 192.168.1.2: icmp_seq=4 ttl=127 time=2.15 ms
+
+--- 192.168.1.2 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3044ms
+rtt min/avg/max/mdev = 0.671/1.104/2.149/0.605 ms
+qzee@qzee-VirtualBox:~$ more /etc/hosts
+127.0.0.1 localhost
+127.0.1.1 qzee-VirtualBox
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+192.168.1.2 win-host
+qzee@qzee-VirtualBox:~$ iptables
+iptables v1.8.10 (nf_tables): no command specified
+Try `iptables -h' or 'iptables --help' for more information.
+qzee@qzee-VirtualBox:~$ sudo apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [89.7 kB]
+Hit:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:4 http://security.ubuntu.com/ubuntu noble-security InRelease [89.7 kB]
+Get:5 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [81.5 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [22.9 kB]
+Get:7 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [39.0 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [14.3 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [76.4 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [21.3 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [34.6 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [13.2 kB]
+Fetched 483 kB in 2s (309 kB/s)                            
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+22 packages can be upgraded. Run 'apt list --upgradable' to see them.
+qzee@qzee-VirtualBox:~$ sudo apt install iptables
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)... Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 3708 (unattended-upgr)       
+Reading package lists... 0%                                 Reading package lists... Done                           
+Building dependency tree... Done
+Reading state information... Done
+iptables is already the newest version (1.8.10-3ubuntu2).
+iptables set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo iptables -L -t filter
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo iptables -t filter -A INPUT -s 192.168.1.2 -j DROP
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+DROP       all  --  win-host             anywhere            
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ hostname -I
+10.0.2.15 
+qzee@qzee-VirtualBox:~$ sudo iptables -F INPUT
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ ping 192.168.1.2
+PING 192.168.1.2 (192.168.1.2) 56(84) bytes of data.
+64 bytes from 192.168.1.2: icmp_seq=1 ttl=127 time=0.667 ms
+64 bytes from 192.168.1.2: icmp_seq=2 ttl=127 time=0.810 ms
+64 bytes from 192.168.1.2: icmp_seq=3 ttl=127 time=0.948 ms
+64 bytes from 192.168.1.2: icmp_seq=4 ttl=127 time=0.724 ms
+^C
+--- 192.168.1.2 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3062ms
+rtt min/avg/max/mdev = 0.667/0.787/0.948/0.105 ms
+qzee@qzee-VirtualBox:~$ sudo iptables -t filter -A INPUT -s 192.168.1.2 -j REJACT
+iptables v1.8.10 (nf_tables): Chain 'REJACT' does not exist
+Try `iptables -h' or 'iptables --help' for more information.
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ ping 192.168.1.2
+PING 192.168.1.2 (192.168.1.2) 56(84) bytes of data.
+64 bytes from 192.168.1.2: icmp_seq=1 ttl=127 time=0.641 ms
+64 bytes from 192.168.1.2: icmp_seq=2 ttl=127 time=0.780 ms
+64 bytes from 192.168.1.2: icmp_seq=3 ttl=127 time=0.856 ms
+64 bytes from 192.168.1.2: icmp_seq=4 ttl=127 time=0.850 ms
+64 bytes from 192.168.1.2: icmp_seq=5 ttl=127 time=0.845 ms
+^C
+--- 192.168.1.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4129ms
+rtt min/avg/max/mdev = 0.641/0.794/0.856/0.081 ms
+qzee@qzee-VirtualBox:~$ sudo iptables -F INPUT
+qzee@qzee-VirtualBox:~$ sudo iptables -t filter -A INPUT -s 192.168.1.2 -j DROP
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+DROP       all  --  win-host             anywhere            
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ ping 192.168.1.2
+PING 192.168.1.2 (192.168.1.2) 56(84) bytes of data.
+^C
+--- 192.168.1.2 ping statistics ---
+11 packets transmitted, 0 received, 100% packet loss, time 10232ms
+
+qzee@qzee-VirtualBox:~$ sudo iptables -t filter -A INPUT -s 192.168.1.2 -j ACCEPT
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+DROP       all  --  win-host             anywhere            
+ACCEPT     all  --  win-host             anywhere            
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo iptables -F INPUT
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo iptables -A OUTPUT -p tcp --dport 443 -j REJECT
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+REJECT     tcp  --  anywhere             anywhere             tcp dpt:https reject-with icmp-port-unreachable
+qzee@qzee-VirtualBox:~$ sudo iptables -F OUTPUT
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo iptables -A OUTPUT -p tcp --dport 443 -j REJECT
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+REJECT     tcp  --  anywhere             anywhere             tcp dpt:https reject-with icmp-port-unreachable
+qzee@qzee-VirtualBox:~$ sudo iptables >./iptables-config
+iptables v1.8.10 (nf_tables): no command specified
+Try `iptables -h' or 'iptables --help' for more information.
+qzee@qzee-VirtualBox:~$ nano iptables-config
+qzee@qzee-VirtualBox:~$ ll
+total 272
+drwxr-x--- 15 qzee qzee   4096 May 28 20:34 ./
+drwxr-xr-x  3 root root   4096 May 23 22:42 ../
+-rw-------  1 qzee qzee   1592 May 28 19:39 .bash_history
+-rw-r--r--  1 qzee qzee    220 Mar 31 11:41 .bash_logout
+-rw-r--r--  1 qzee qzee   3771 Mar 31 11:41 .bashrc
+drwx------ 11 qzee qzee   4096 May 23 23:30 .cache/
+drwx------ 14 qzee qzee   4096 May 23 23:30 .config/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Desktop/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Documents/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Downloads/
+-rw-rw-r--  1 qzee qzee      0 May 28 20:33 iptables-config
+-rw-------  1 qzee qzee     20 May 24 20:58 .lesshst
+drwx------  4 qzee qzee   4096 May 23 22:42 .local/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Music/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Pictures/
+-rw-r--r--  1 qzee qzee    807 Mar 31 11:41 .profile
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Public/
+-rw-rw-r--  1 qzee qzee     66 May 24 21:00 .selected_editor
+drwx------  5 qzee qzee   4096 May 28 20:31 snap/
+drwx------  2 qzee qzee   4096 May 23 22:43 .ssh/
+-rw-r--r--  1 qzee qzee      0 May 23 22:50 .sudo_as_admin_successful
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Templates/
+-rw-r-----  1 qzee qzee      5 May 28 19:41 .vboxclient-clipboard.pid
+-rw-r-----  1 qzee qzee      5 May 28 19:41 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 qzee qzee      5 May 28 19:41 .vboxclient-draganddrop.pid
+-rw-r-----  1 qzee qzee      5 May 28 19:41 .vboxclient-seamless.pid
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Videos/
+-rw-r--r--  1 qzee qzee 175418 Apr  8 21:39 zip_3.0-13build1_amd64.deb
+qzee@qzee-VirtualBox:~$ nano iptables-config 
+qzee@qzee-VirtualBox:~$ sudo iptables -F 
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo iptables-restore < ./iptables-config 
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo iptables-save >./iptables-config
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo iptables -P OUTPUT DROP
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo apt update
+Ign:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Ign:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+Ign:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Ign:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Ign:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Ign:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+Ign:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Ign:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Ign:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Ign:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+Ign:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Ign:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Err:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+  Temporary failure resolving 'ru.archive.ubuntu.com'
+Err:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+  Temporary failure resolving 'ru.archive.ubuntu.com'
+Err:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+  Temporary failure resolving 'security.ubuntu.com'
+Err:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+  Temporary failure resolving 'ru.archive.ubuntu.com'
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+12 packages can be upgraded. Run 'apt list --upgradable' to see them.
+W: Failed to fetch http://ru.archive.ubuntu.com/ubuntu/dists/noble/InRelease  Temporary failure resolving 'ru.archive.ubuntu.com'
+W: Failed to fetch http://ru.archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease  Temporary failure resolving 'ru.archive.ubuntu.com'
+W: Failed to fetch http://ru.archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease  Temporary failure resolving 'ru.archive.ubuntu.com'
+W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/noble-security/InRelease  Temporary failure resolving 'security.ubuntu.com'
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+qzee@qzee-VirtualBox:~$ sudo iptables -P OUTPUT ACCEPT
+qzee@qzee-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+qzee@qzee-VirtualBox:~$ sudo apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+12 packages can be upgraded. Run 'apt list --upgradable' to see them.
+qzee@qzee-VirtualBox:~$ 
+qzee@qzee-VirtualBox:~$ ufw --help
+
+Usage: ufw COMMAND
+
+Commands:
+ enable                          enables the firewall
+ disable                         disables the firewall
+ default ARG                     set default policy
+ logging LEVEL                   set logging to LEVEL
+ allow ARGS                      add allow rule
+ deny ARGS                       add deny rule
+ reject ARGS                     add reject rule
+ limit ARGS                      add limit rule
+ delete RULE|NUM                 delete RULE
+ insert NUM RULE                 insert RULE at NUM
+ prepend RULE                    prepend RULE
+ route RULE                      add route RULE
+ route delete RULE|NUM           delete route RULE
+ route insert NUM RULE           insert route RULE at NUM
+ reload                          reload firewall
+ reset                           reset firewall
+ status                          show firewall status
+ status numbered                 show firewall status as numbered list of RULES
+ status verbose                  show verbose firewall status
+ show ARG                        show firewall report
+ version                         display version information
+
+Application profile commands:
+ app list                        list application profiles
+ app info PROFILE                show information on PROFILE
+ app update PROFILE              update PROFILE
+ app default ARG                 set default application policy
+
+qzee@qzee-VirtualBox:~$ top
+
+top - 20:54:48 up  1:13,  1 user,  load average: 0.00, 0.00,
+Tasks: 200 total,   1 running, 199 sleeping,   0 stopped,   
+%Cpu(s):  0.2 us,  0.2 sy,  0.0 ni, 99.3 id,  0.0 wa,  0.0 h
+MiB Mem :   2900.9 total,    299.4 free,   1026.2 used,   17
+MiB Swap:   3779.0 total,   3779.0 free,      0.0 used.   18
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU 
+   2220 qzee      20   0 3923148 323968 133328 S   0.3 
+   2465 qzee      20   0  153416   3464   3072 S   0.3 
+   5685 qzee      20   0   14536   5632   3584 R   0.3 
+      1 root      20   0   23124  14080   9472 S   0.0 
+      2 root      20   0       0      0      0 S   0.0 
+      3 root      20   0       0      0      0 S   0.0 
+      4 root       0 -20       0      0      0 I   0.0 
+      5 root       0 -20       0      0      0 I   0.0 
+      6 root       0 -20       0      0      0 I   0.0 
+      7 root       0 -20       0      0      0 I   0.0 
+     10 root       0 -20       0      0      0 I   0.0 
+     12 root       0 -20       0      0      0 I   0.0 
+     13 root      20   0       0      0      0 I   0.0 
+     14 root      20   0       0      0      0 I   0.0 
+     15 root      20   0       0      0      0 I   0.0 
+     16 root      20   0       0      0      0 S   0.0 
+     17 root      20   0       0      0      0 I   0.0 
+qzee@qzee-VirtualBox:~$ top
+
+top - 20:55:56 up  1:15,  1 user,  load average: 0.04, 0.01, 0.02
+Tasks: 199 total,   2 running, 197 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 16.4 us,  6.4 sy,  0.0 ni, 75.0 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   2900.9 total,    298.2 free,   1027.4 used,   1774.3 buff/cache     
+MiB Swap:   3779.0 total,   3779.0 free,      0.0 used.   1873.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+   2220 qzee      20   0 3936452 346224 135488 R  37.3  11.7   1:11.99 gnome-s+ 
+   2338 qzee      20   0  523472  24184  20472 S   1.0   0.8   0:00.34 gsd-pow+ 
+   3122 qzee      20   0 2805916  61672  46868 S   1.0   2.1   0:01.87 gjs      
+   3161 qzee      20   0  699244  55668  43468 S   1.0   1.9   0:13.79 gnome-t+ 
+    551 message+  20   0   12124   7168   4608 S   0.7   0.2   0:01.97 dbus-da+ 
+top - 21:00:40 up  1:19,  1 user,  load average: 0.06, 0.03,
+Tasks: 200 total,   1 running, 199 sleeping,   0 stopped,   
+%Cpu(s):  1.5 us,  0.9 sy,  0.0 ni, 97.4 id,  0.0 wa,  0.0 h
+MiB Mem :   2900.9 total,    297.5 free,   1028.1 used,   17
+MiB Swap:   3779.0 total,   3779.0 free,      0.0 used.   18
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU 
+   2220 qzee      20   0 3934176 345244 134848 S   3.6 
+   3161 qzee      20   0  698756  55180  42980 S   0.3 
+   5690 qzee      20   0   14536   5632   3584 R   0.3 
+      1 root      20   0   23124  14080   9472 S   0.0 
+      2 root      20   0       0      0      0 S   0.0 
+      3 root      20   0       0      0      0 S   0.0 
+      4 root       0 -20       0      0      0 I   0.0 
+      5 root       0 -20       0      0      0 I   0.0 
+      6 root       0 -20       0      0      0 I   0.0 
+      7 root       0 -20       0      0      0 I   0.0 
+     10 root       0 -20       0      0      0 I   0.0 
+     12 root       0 -20       0      0      0 I   0.0 
+     13 root      20   0       0      0      0 I   0.0 
+     14 root      20   0       0      0      0 I   0.0 
+     15 root      20   0       0      0      0 I   0.0 
+     16 root      20   0       0      0      0 S   0.0 
+     17 root      20   0       0      0      0 I   0.0 
+qzee@qzee-VirtualBox:~$ top -o PID
+
+top - 21:06:20 up  1:25,  1 user,  load average: 0.00, 0.02,
+Tasks: 199 total,   1 running, 198 sleeping,   0 stopped,   
+%Cpu(s):  0.2 us,  0.2 sy,  0.0 ni, 99.3 id,  0.0 wa,  0.0 h
+MiB Mem :   2900.9 total,    308.2 free,   1010.0 used,   17
+MiB Swap:   3779.0 total,   3779.0 free,      0.0 used.   18
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU 
+   5791 qzee      20   0   14536   5888   3712 R   0.3 
+   5790 root      20   0       0      0      0 I   0.0 
+   5727 root      20   0       0      0      0 I   0.0 
+   5724 root      20   0       0      0      0 I   0.0 
+   5683 root      20   0       0      0      0 I   0.0 
+   5682 root      20   0       0      0      0 I   0.0 
+   5655 root      20   0       0      0      0 I   0.0 
+   5234 root      20   0       0      0      0 I   0.0 
+   4695 qzee      20   0 1761432  19200  13440 S   0.0 
+   4416 root      20   0       0      0      0 I   0.0 
+   4330 root      20   0       0      0      0 I   0.0 
+   4311 root      20   0       0      0      0 I   0.0 
+   4275 root      20   0  577868 133952  33608 S   0.0 
+   3591 root      20   0       0      0      0 I   0.0 
+   3217 qzee      20   0  491644  26628  19844 S   0.0 
+   3169 qzee      20   0   11156   5120   3712 S   0.0 
+   3161 qzee      20   0  698756  55180  42980 S   0.0 
+qzee@qzee-VirtualBox:~$ top -o -PID
+
+top - 21:06:51 up  1:25,  1 user,  load average: 0.00, 0.02,
+Tasks: 199 total,   1 running, 198 sleeping,   0 stopped,   
+%Cpu(s):  0.2 us,  0.0 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 h
+MiB Mem :   2900.9 total,    307.7 free,   1010.5 used,   17
+MiB Swap:   3779.0 total,   3779.0 free,      0.0 used.   18
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU 
+      1 root      20   0   23124  14080   9472 S   0.0 
+      2 root      20   0       0      0      0 S   0.0 
+      3 root      20   0       0      0      0 S   0.0 
+      4 root       0 -20       0      0      0 I   0.0 
+      5 root       0 -20       0      0      0 I   0.0 
+      6 root       0 -20       0      0      0 I   0.0 
+      7 root       0 -20       0      0      0 I   0.0 
+     10 root       0 -20       0      0      0 I   0.0 
+     12 root       0 -20       0      0      0 I   0.0 
+     13 root      20   0       0      0      0 I   0.0 
+     14 root      20   0       0      0      0 I   0.0 
+     15 root      20   0       0      0      0 I   0.0 
+     16 root      20   0       0      0      0 S   0.0 
+     17 root      20   0       0      0      0 I   0.0 
+     18 root      rt   0       0      0      0 S   0.0 
+     19 root     -51   0       0      0      0 S   0.0 
+     20 root      20   0       0      0      0 S   0.0 
+qzee@qzee-VirtualBox:~$ kill -l
+ 1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
+ 6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL10) SIGUSR1
+11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM15) SIGTERM
+16) SIGSTKFLT	17) SIGCHLD	18) SIGCONT	19) SIGSTOP20) SIGTSTP
+21) SIGTTIN	22) SIGTTOU	23) SIGURG	24) SIGXCPU25) SIGXFSZ
+26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO	30) SIGPWR
+31) SIGSYS	34) SIGRTMIN	35) SIGRTMIN+1	36) SIGRTMIN+2	37) SIGRTMIN+3
+38) SIGRTMIN+4	39) SIGRTMIN+5	40) SIGRTMIN+6	41) SIGRTMIN+7	42) SIGRTMIN+8
+43) SIGRTMIN+9	44) SIGRTMIN+10	45) SIGRTMIN+11	46) SIGRTMIN+12	47) SIGRTMIN+13
+48) SIGRTMIN+14	49) SIGRTMIN+15	50) SIGRTMAX-14	51) SIGRTMAX-13	52) SIGRTMAX-12
+53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
+58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
+63) SIGRTMAX-1	64) SIGRTMAX	
+qzee@qzee-VirtualBox:~$ sudo top
+[sudo] password for qzee: 
+
+top - 21:14:45 up  1:33,  1 user,  load average: 0.03, 0.01,
+Tasks: 203 total,   1 running, 202 sleeping,   0 stopped,   
+%Cpu(s):  0.2 us,  0.2 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 h
+MiB Mem :   2900.9 total,    307.4 free,   1010.7 used,   17
+MiB Swap:   3779.0 total,   3779.0 free,      0.0 used.   18
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU 
+   5804 root      20   0   14536   5888   3712 R   0.7 
+   2465 qzee      20   0  153416   3464   3072 S   0.3 
+      1 root      20   0   23124  14080   9472 S   0.0 
+      2 root      20   0       0      0      0 S   0.0 
+      3 root      20   0       0      0      0 S   0.0 
+      4 root       0 -20       0      0      0 I   0.0 
+      5 root       0 -20       0      0      0 I   0.0 
+      6 root       0 -20       0      0      0 I   0.0 
+      7 root       0 -20       0      0      0 I   0.0 
+     10 root       0 -20       0      0      0 I   0.0 
+     12 root       0 -20       0      0      0 I   0.0 
+     13 root      20   0       0      0      0 I   0.0 
+     14 root      20   0       0      0      0 I   0.0 
+     15 root      20   0       0      0      0 I   0.0 
+     16 root      20   0       0      0      0 S   0.0 
+     17 root      20   0       0      0      0 I   0.0 
+     18 root      rt   0       0      0      0 S   0.0 
+qzee@qzee-VirtualBox:~$ htop
+Command 'htop' not found, but can be installed with:
+sudo snap install htop  # version 3.3.0, or
+sudo apt  install htop  # version 3.2.2-2
+See 'snap info htop' for additional versions.
+qzee@qzee-VirtualBox:~$ sudo apt install htop
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  lm-sensors
+The following NEW packages will be installed:
+  htop
+0 upgraded, 1 newly installed, 0 to remove and 12 not upgraded.
+Need to get 171 kB of archives.
+After this operation, 434 kB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 htop amd64 3.3.0-4build1 [171 kB]
+Fetched 171 kB in 0s (1,582 kB/s)
+Selecting previously unselected package htop.
+(Reading database ... 152286 files and directories currently
+ installed.)
+Preparing to unpack .../htop_3.3.0-4build1_amd64.deb ...
+Unpacking htop (3.3.0-4build1) ...
+Setting up htop (3.3.0-4build1) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.27-2build1) ..
+.
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1.1ubuntu3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+qzee@qzee-VirtualBox:~$ htop
+qzee@qzee-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   3169 pts/0    00:00:00 bash
+   6677 pts/0    00:00:00 ps
+qzee@qzee-VirtualBox:~$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.4  23124 14080 ?        Ss   19:40   0:03 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    19:40   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    19:40   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/0:0H]
+root          12  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    19:40   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    19:40   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    19:40   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    19:40   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    19:40   0:01 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    19:40   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    19:40   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    19:40   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    19:40   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    19:40   0:00 [idle_inject/1]
+root          23  0.0  0.0      0     0 ?        S    19:40   0:00 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    19:40   0:00 [ksoftirqd/1]
+root          29  0.0  0.0      0     0 ?        S    19:40   0:00 [kdevtmpfs]
+root          30  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-inet_]
+root          31  0.0  0.0      0     0 ?        S    19:40   0:00 [kauditd]
+root          33  0.0  0.0      0     0 ?        S    19:40   0:00 [khungtaskd]
+root          34  0.0  0.0      0     0 ?        S    19:40   0:00 [oom_reaper]
+root          35  0.0  0.0      0     0 ?        I    19:40   0:00 [kworker/u6:1-events_unbound]
+root          36  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-write]
+root          37  0.0  0.0      0     0 ?        S    19:40   0:00 [kcompactd0]
+root          38  0.0  0.0      0     0 ?        SN   19:40   0:00 [ksmd]
+root          40  0.0  0.0      0     0 ?        SN   19:40   0:00 [khugepaged]
+root          41  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-kinte]
+root          42  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-kbloc]
+root          43  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-blkcg]
+root          44  0.0  0.0      0     0 ?        S    19:40   0:00 [irq/9-acpi]
+root          45  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-tpm_d]
+root          46  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-ata_s]
+root          47  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-md]
+root          48  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-md_bi]
+root          49  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-edac-]
+root          50  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-devfr]
+root          51  0.0  0.0      0     0 ?        S    19:40   0:00 [watchdogd]
+root          52  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/1:1H-kblockd]
+root          53  0.0  0.0      0     0 ?        S    19:40   0:00 [kswapd0]
+root          54  0.0  0.0      0     0 ?        S    19:40   0:00 [ecryptfs-kthread]
+root          55  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-kthro]
+root          56  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-acpi_]
+root          58  0.0  0.0      0     0 ?        S    19:40   0:00 [scsi_eh_0]
+root          59  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-scsi_]
+root          60  0.0  0.0      0     0 ?        S    19:40   0:00 [scsi_eh_1]
+root          61  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-scsi_]
+root          64  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-mld]
+root          65  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-ipv6_]
+root          72  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-kstrp]
+root          74  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/u7:0]
+root          76  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/u8:0-ttm]
+root          77  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/u9:0]
+root          86  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/0:1H-kblockd]
+root          92  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-charg]
+root         142  0.0  0.0      0     0 ?        S    19:40   0:00 [scsi_eh_2]
+root         143  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-scsi_]
+root         150  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/1:2H]
+root         190  0.0  0.0      0     0 ?        S    19:40   0:00 [jbd2/sda2-8]
+root         191  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-ext4-]
+root         261  0.0  0.6  67284 18328 ?        Ss   19:40   0:00 /usr/lib/systemd/systemd-journald
+root         300  0.0  0.2  30372  8552 ?        Ss   19:41   0:00 /usr/lib/systemd/systemd-udevd
+root         301  0.0  0.0      0     0 ?        I    19:41   0:00 [kworker/u4:1-ext4-rsv-conversion]
+root         337  0.0  0.0      0     0 ?        S    19:41   0:00 [psimon]
+systemd+     412  0.0  0.2  17556  7552 ?        Ss   19:41   0:02 /usr/lib/systemd/systemd-oomd
+systemd+     415  0.0  0.4  21712 13056 ?        Ss   19:41   0:00 /usr/lib/systemd/systemd-resolved
+avahi        550  0.0  0.1   8664  4480 ?        Ss   19:41   0:00 avahi-daemon: running [qzee-VirtualBox.local]
+message+     551  0.0  0.2  12124  7168 ?        Ss   19:41   0:02 @dbus-daemon --system --address=systemd: --nofork --n
+gnome-r+     554  0.0  0.5 512796 16320 ?        Ssl  19:41   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      557  0.0  0.3 310908 10984 ?        Ssl  19:41   0:01 /usr/lib/polkit-1/polkitd --no-debug
+root         561  0.0  0.2 313376  7424 ?        Ssl  19:41   0:00 /usr/libexec/power-profiles-daemon
+root         574  0.0  1.0 1843624 31572 ?       Ssl  19:41   0:01 /usr/lib/snapd/snapd
+root         576  0.0  0.2  18152  8832 ?        S<s  19:41   0:00 /usr/lib/systemd/systemd-logind
+root         580  0.0  0.2 313292  7768 ?        Ssl  19:41   0:00 /usr/libexec/accounts-daemon
+root         588  0.0  0.0   9424  2816 ?        Ss   19:41   0:00 /usr/sbin/cron -f -P
+root         589  0.0  0.2 309856  6912 ?        Ssl  19:41   0:00 /usr/libexec/switcheroo-control
+root         601  0.0  0.4 469364 13928 ?        Ssl  19:41   0:00 /usr/libexec/udisks2/udisksd
+avahi        628  0.0  0.0   8476  1420 ?        S    19:41   0:00 avahi-daemon: chroot helper
+root         629  0.0  0.6 336312 19148 ?        Ssl  19:41   0:00 /usr/sbin/NetworkManager --no-daemon
+root         633  0.0  0.0      0     0 ?        S    19:41   0:00 [irq/18-vmwgfx]
+root         636  0.0  0.0      0     0 ?        I<   19:41   0:00 [kworker/R-ttm]
+root         637  0.0  0.2  17376  6400 ?        Ss   19:41   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_suppli
+root         654  0.0  0.0      0     0 ?        I<   19:41   0:00 [kworker/R-crypt]
+syslog       655  0.0  0.1 222564  5888 ?        Ssl  19:41   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         719  0.0  0.4 392096 12916 ?        Ssl  19:41   0:00 /usr/sbin/ModemManager
+root        1295  0.0  0.4  38248 11904 ?        Ss   19:41   0:00 /usr/sbin/cupsd -l
+root        1304  0.0  0.7 112212 22784 ?        Ssl  19:41   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root        1313  0.0  0.2  12020  7936 ?        Ss   19:41   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startu
+cups-br+    1322  0.0  0.6 268400 19840 ?        Ssl  19:41   0:00 /usr/sbin/cups-browsed
+kernoops    1331  0.0  0.0  12744  2440 ?        Ss   19:41   0:00 /usr/sbin/kerneloops --test
+kernoops    1341  0.0  0.0  12744  2440 ?        Ss   19:41   0:00 /usr/sbin/kerneloops
+root        1515  0.0  0.1 296672  3864 ?        Sl   19:41   0:01 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-serv
+root        1516  0.0  0.3 314820  9216 ?        Ssl  19:41   0:00 /usr/sbin/gdm3
+root        1538  0.0  0.0      0     0 ?        S    19:41   0:00 [psimon]
+rtkit       1575  0.0  0.1  22940  3456 ?        SNsl 19:41   0:00 /usr/libexec/rtkit-daemon
+colord      1665  0.0  0.4 320020 14808 ?        Ssl  19:41   0:00 /usr/libexec/colord
+root        1704  0.0  0.3 316652  8960 ?        Ssl  19:41   0:00 /usr/libexec/upowerd
+root        1926  0.0  0.0      0     0 ?        I<   19:41   0:00 [kworker/u8:1]
+root        1973  0.0  0.3 242580 10240 ?        Sl   19:41   0:00 gdm-session-worker [pam/gdm-password]
+qzee        1983  0.0  0.4  21084 12672 ?        Ss   19:41   0:01 /usr/lib/systemd/systemd --user
+qzee        1987  0.0  0.1  21460  3740 ?        S    19:41   0:00 (sd-pam)
+qzee        1998  0.0  0.5 116836 15708 ?        S<sl 19:41   0:00 /usr/bin/pipewire
+qzee        2000  0.0  0.1  97736  5888 ?        Ssl  19:41   0:00 /usr/bin/pipewire -c filter-chain.conf
+qzee        2003  0.0  0.6 406820 18688 ?        S<sl 19:41   0:00 /usr/bin/wireplumber
+qzee        2006  0.0  0.4 116540 14028 ?        S<sl 19:41   0:00 /usr/bin/pipewire-pulse
+qzee        2010  0.0  0.3 316508 10112 ?        SLsl 19:41   0:00 /usr/bin/gnome-keyring-daemon --foreground --componen
+qzee        2023  0.0  0.2  10776  6528 ?        Ss   19:41   0:01 /usr/bin/dbus-daemon --session --address=systemd: --n
+qzee        2043  0.0  0.2 686088  7296 ?        Ssl  19:41   0:00 /usr/libexec/xdg-document-portal
+qzee        2058  0.0  0.2 235668  6016 tty2     Ssl+ 19:41   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESS
+qzee        2062  0.0  0.2 309308  6016 ?        Ssl  19:41   0:00 /usr/libexec/xdg-permission-store
+qzee        2067  0.0  0.5 298200 16512 tty2     Sl+  19:41   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+root        2109  0.0  0.0   2704  1792 ?        Ss   19:41   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unm
+qzee        2145  0.0  0.2 162652  6784 ?        Ssl  19:41   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/
+qzee        2146  0.0  0.1  91548  5504 ?        Ssl  19:41   0:00 /usr/libexec/gnome-session-ctl --monitor
+qzee        2157  0.0  0.2 314252  7936 ?        Ssl  19:41   0:00 /usr/libexec/gvfsd
+qzee        2169  0.0  0.2 459712  6912 ?        Sl   19:41   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+qzee        2180  0.0  0.6 594180 18304 ?        Ssl  19:41   0:00 /usr/libexec/gnome-session-binary --systemd-service -
+qzee        2219  0.0  0.2 382940  7680 ?        Sl   19:41   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+qzee        2220  1.6 11.6 3934160 346724 ?      Ssl  19:41   1:35 /usr/bin/gnome-shell
+qzee        2233  0.0  0.1   9476  4864 ?        S    19:41   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/default
+qzee        2284  0.0  0.2 236068  7552 ?        Sl   19:41   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+qzee        2298  0.0  0.5 654860 17664 ?        Sl   19:41   0:00 /usr/libexec/gnome-shell-calendar-server
+qzee        2306  0.0  1.4 1192456 42496 ?       Ssl  19:41   0:00 /usr/libexec/evolution-source-registry
+qzee        2316  0.0  0.9 2592984 26944 ?       Sl   19:41   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shel
+qzee        2318  0.0  0.4 388644 12012 ?        Ssl  19:41   0:04 /usr/bin/ibus-daemon --panel disable
+qzee        2319  0.0  0.2 383520  6656 ?        Ssl  19:41   0:00 /usr/libexec/gsd-a11y-settings
+qzee        2323  0.0  0.6 412904 20548 ?        Ssl  19:41   0:00 /usr/libexec/gsd-color
+qzee        2325  0.0  0.4 431664 12032 ?        Ssl  19:41   0:00 /usr/libexec/gsd-datetime
+qzee        2333  0.0  0.2 458868  7936 ?        Ssl  19:41   0:00 /usr/libexec/gsd-housekeeping
+qzee        2336  0.0  0.6 411760 20072 ?        Ssl  19:41   0:00 /usr/libexec/gsd-keyboard
+qzee        2337  0.0  0.8 741492 25280 ?        Ssl  19:41   0:00 /usr/libexec/gsd-media-keys
+qzee        2338  0.0  0.8 523472 24184 ?        Ssl  19:41   0:00 /usr/libexec/gsd-power
+qzee        2339  0.0  0.3 323648 11264 ?        Ssl  19:41   0:00 /usr/libexec/gsd-print-notifications
+qzee        2342  0.0  0.2 531084  6656 ?        Ssl  19:41   0:00 /usr/libexec/gsd-rfkill
+qzee        2343  0.0  0.2 309560  6272 ?        Ssl  19:41   0:00 /usr/libexec/gsd-screensaver-proxy
+qzee        2344  0.0  0.3 543196 11520 ?        Ssl  19:41   0:00 /usr/libexec/gsd-sharing
+qzee        2345  0.0  0.2 385820  8192 ?        Ssl  19:41   0:00 /usr/libexec/gsd-smartcard
+qzee        2347  0.0  0.3 393640  9728 ?        Ssl  19:41   0:00 /usr/libexec/gsd-sound
+qzee        2350  0.0  0.7 486468 20840 ?        Ssl  19:41   0:00 /usr/libexec/gsd-wacom
+qzee        2372  0.0  0.2 305492  7296 ?        Sl   19:41   0:00 /usr/libexec/gsd-disk-utility-notify
+qzee        2399  0.0  2.1 809024 62596 ?        Sl   19:41   0:00 /usr/libexec/evolution-data-server/evolution-alarm-no
+qzee        2413  0.0  0.0  20664  1288 ?        S    19:41   0:00 /usr/bin/VBoxClient --clipboard
+qzee        2414  0.0  0.1 152800  4488 ?        Sl   19:41   0:00 /usr/bin/VBoxClient --clipboard
+qzee        2440  0.0  0.0  20664  1416 ?        S    19:41   0:00 /usr/bin/VBoxClient --seamless
+qzee        2444  0.0  0.1 152900  3336 ?        Sl   19:41   0:00 /usr/bin/VBoxClient --seamless
+qzee        2445  0.0  0.8 546640 24064 ?        Sl   19:41   0:00 /usr/libexec/goa-daemon
+qzee        2459  0.0  0.0  20664  1416 ?        S    19:41   0:00 /usr/bin/VBoxClient --draganddrop
+qzee        2465  0.3  0.1 153416  3464 ?        Sl   19:41   0:18 /usr/bin/VBoxClient --draganddrop
+qzee        2469  0.0  0.0  20664  1416 ?        S    19:41   0:00 /usr/bin/VBoxClient --vmsvga
+root        2471  0.0  0.0  86132  2432 ?        S    19:41   0:00 ?
+qzee        2482  0.0  1.9 216464 58848 ?        S    19:41   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -cor
+qzee        2486  0.0  0.3  38952 11776 ?        Ss   19:41   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-des
+qzee        2576  0.0  0.5 416208 15104 ?        Sl   19:41   0:00 /usr/libexec/gsd-printer
+qzee        2608  0.0  1.0 429440 30220 ?        Sl   19:41   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-des
+qzee        2609  0.0  0.8 890720 23936 ?        Ssl  19:41   0:00 /usr/libexec/evolution-calendar-factory
+qzee        2630  0.0  0.3 389128  9216 ?        Sl   19:41   0:00 /usr/libexec/goa-identity-service
+qzee        2643  0.0  0.2 310468  7168 ?        Sl   19:41   0:00 /usr/libexec/ibus-dconf
+qzee        2645  0.1  1.0 421500 29752 ?        Sl   19:41   0:06 /usr/libexec/ibus-extension-gtk3
+qzee        2647  0.0  0.2 310428  7040 ?        Sl   19:41   0:00 /usr/libexec/ibus-portal
+qzee        2674  0.0  0.3 389316 10112 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+qzee        2675  0.0  1.0 825412 29824 ?        Ssl  19:41   0:00 /usr/libexec/evolution-addressbook-factory
+qzee        2689  0.0  0.2 309792  6528 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+qzee        2696  0.0  0.2 309772  6528 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-goa-volume-monitor
+qzee        2702  0.0  0.2 310760  6784 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+qzee        2710  0.0  0.2 389376  7936 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-afc-volume-monitor
+qzee        2721  0.0  0.2 236772  7296 ?        Sl   19:41   0:01 /usr/libexec/ibus-engine-simple
+qzee        2751  0.0  0.1 230108  5504 ?        Ssl  19:41   0:00 /usr/libexec/dconf-service
+qzee        2758  0.0  0.2 609444  8832 ?        Sl   19:41   0:00 /usr/libexec/gvfsd-trash --spawner :1.19 /org/gtk/gvf
+qzee        2790  0.0  0.4 701608 14132 ?        Ssl  19:41   0:00 /usr/libexec/xdg-desktop-portal
+qzee        2846  0.0  2.5 613772 75276 ?        Ssl  19:41   0:00 /usr/libexec/gsd-xsettings
+qzee        2858  0.0  0.9 2519232 26772 ?       Sl   19:41   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Scre
+qzee        2886  0.0  0.8 267112 24964 ?        Sl   19:41   0:00 /usr/libexec/ibus-x11
+qzee        2890  0.0  0.8 810056 25808 ?        SNsl 19:41   0:00 /usr/libexec/tracker-miner-fs-3
+qzee        2891  0.0  1.3 556388 40568 ?        Ssl  19:41   0:00 /usr/libexec/xdg-desktop-portal-gnome
+qzee        2900  0.0  3.0 1090048 89460 ?       Sl   19:41   0:00 /usr/libexec/mutter-x11-frames
+qzee        2919  0.0  0.2 236304  6400 ?        Ssl  19:41   0:00 /usr/libexec/gvfsd-metadata
+qzee        2924  0.0  0.8 417752 26244 ?        Ssl  19:41   0:00 /usr/libexec/xdg-desktop-portal-gtk
+qzee        3122  0.0  2.0 2805712 61604 ?       Sl   19:41   0:02 gjs /usr/share/gnome-shell/extensions/ding@rastersoft
+qzee        3161  0.3  1.8 699916 56404 ?        Ssl  19:42   0:19 /usr/libexec/gnome-terminal-server
+qzee        3169  0.0  0.1  11156  5120 pts/0    Ss   19:42   0:00 bash
+qzee        3217  0.0  0.8 491644 26628 ?        Sl   19:42   0:00 /usr/bin/update-notifier
+root        3591  0.0  0.0      0     0 ?        I    20:18   0:01 [kworker/u5:3-writeback]
+root        4275  0.0  4.5 577868 133952 ?       Ssl  20:29   0:02 /usr/libexec/fwupd/fwupd
+root        4311  0.0  0.0      0     0 ?        I    20:29   0:00 [kworker/0:1-events]
+root        4330  0.0  0.0      0     0 ?        I    20:31   0:01 [kworker/1:0-cgroup_destroy]
+root        4416  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u5:0-flush-8:0]
+qzee        4695  0.0  0.6 1762328 19908 ?       Sl   20:31   0:00 /usr/bin/snap userd
+root        5234  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u4:2-ext4-rsv-conversion]
+root        5655  0.0  0.0      0     0 ?        I    20:40   0:00 [kworker/u5:2-events_unbound]
+root        5682  0.0  0.0      0     0 ?        I    20:50   0:00 [kworker/1:2-events]
+root        5790  0.0  0.0      0     0 ?        I    21:05   0:00 [kworker/u6:2-events_unbound]
+root        5799  0.0  0.0      0     0 ?        I    21:10   0:00 [kworker/0:3-cgroup_destroy]
+root        5800  0.0  0.0      0     0 ?        I    21:10   0:00 [kworker/u6:0-events_unbound]
+root        5899  0.0  0.7 375156 20924 ?        Ssl  21:16   0:00 /usr/libexec/packagekitd
+root        5925  0.0  0.0      0     0 ?        I    21:16   0:00 [kworker/u6:3-events_unbound]
+root        6643  0.0  0.0      0     0 ?        I    21:17   0:00 [kworker/0:0-events]
+root        6672  0.0  0.0      0     0 ?        I    21:19   0:00 [kworker/1:1-cgroup_destroy]
+root        6673  0.0  0.0      0     0 ?        I    21:19   0:00 [kworker/1:3-events]
+qzee        6678  100  0.1  13616  4480 pts/0    R+   21:20   0:00 ps aux
+qzee@qzee-VirtualBox:~$ ps afx
+    PID TTY      STAT   TIME COMMAND
+      2 ?        S      0:00 [kthreadd]
+      3 ?        S      0:00  \_ [pool_workqueue_release]
+      4 ?        I<     0:00  \_ [kworker/R-rcu_g]
+      5 ?        I<     0:00  \_ [kworker/R-rcu_p]
+      6 ?        I<     0:00  \_ [kworker/R-slub_]
+      7 ?        I<     0:00  \_ [kworker/R-netns]
+     10 ?        I<     0:00  \_ [kworker/0:0H]
+     12 ?        I<     0:00  \_ [kworker/R-mm_pe]
+     13 ?        I      0:00  \_ [rcu_tasks_kthread]
+     14 ?        I      0:00  \_ [rcu_tasks_rude_kthread]
+     15 ?        I      0:00  \_ [rcu_tasks_trace_kthread]
+     16 ?        S      0:00  \_ [ksoftirqd/0]
+     17 ?        I      0:01  \_ [rcu_preempt]
+     18 ?        S      0:00  \_ [migration/0]
+     19 ?        S      0:00  \_ [idle_inject/0]
+     20 ?        S      0:00  \_ [cpuhp/0]
+     21 ?        S      0:00  \_ [cpuhp/1]
+     22 ?        S      0:00  \_ [idle_inject/1]
+     23 ?        S      0:00  \_ [migration/1]
+     24 ?        S      0:00  \_ [ksoftirqd/1]
+     29 ?        S      0:00  \_ [kdevtmpfs]
+     30 ?        I<     0:00  \_ [kworker/R-inet_]
+     31 ?        S      0:00  \_ [kauditd]
+     33 ?        S      0:00  \_ [khungtaskd]
+     34 ?        S      0:00  \_ [oom_reaper]
+     35 ?        I      0:00  \_ [kworker/u6:1-events_unboun
+     36 ?        I<     0:00  \_ [kworker/R-write]
+     37 ?        S      0:00  \_ [kcompactd0]
+     38 ?        SN     0:00  \_ [ksmd]
+     40 ?        SN     0:00  \_ [khugepaged]
+     41 ?        I<     0:00  \_ [kworker/R-kinte]
+     42 ?        I<     0:00  \_ [kworker/R-kbloc]
+     43 ?        I<     0:00  \_ [kworker/R-blkcg]
+     44 ?        S      0:00  \_ [irq/9-acpi]
+     45 ?        I<     0:00  \_ [kworker/R-tpm_d]
+     46 ?        I<     0:00  \_ [kworker/R-ata_s]
+     47 ?        I<     0:00  \_ [kworker/R-md]
+     48 ?        I<     0:00  \_ [kworker/R-md_bi]
+     49 ?        I<     0:00  \_ [kworker/R-edac-]
+     50 ?        I<     0:00  \_ [kworker/R-devfr]
+     51 ?        S      0:00  \_ [watchdogd]
+     52 ?        I<     0:00  \_ [kworker/1:1H-kblockd]
+     53 ?        S      0:00  \_ [kswapd0]
+     54 ?        S      0:00  \_ [ecryptfs-kthread]
+     55 ?        I<     0:00  \_ [kworker/R-kthro]
+     56 ?        I<     0:00  \_ [kworker/R-acpi_]
+     58 ?        S      0:00  \_ [scsi_eh_0]
+     59 ?        I<     0:00  \_ [kworker/R-scsi_]
+     60 ?        S      0:00  \_ [scsi_eh_1]
+     61 ?        I<     0:00  \_ [kworker/R-scsi_]
+     64 ?        I<     0:00  \_ [kworker/R-mld]
+     65 ?        I<     0:00  \_ [kworker/R-ipv6_]
+     72 ?        I<     0:00  \_ [kworker/R-kstrp]
+     74 ?        I<     0:00  \_ [kworker/u7:0]
+     76 ?        I<     0:00  \_ [kworker/u8:0-ttm]
+     77 ?        I<     0:00  \_ [kworker/u9:0]
+     86 ?        I<     0:00  \_ [kworker/0:1H-kblockd]
+     92 ?        I<     0:00  \_ [kworker/R-charg]
+    142 ?        S      0:00  \_ [scsi_eh_2]
+    143 ?        I<     0:00  \_ [kworker/R-scsi_]
+    150 ?        I<     0:00  \_ [kworker/1:2H]
+    190 ?        S      0:00  \_ [jbd2/sda2-8]
+    191 ?        I<     0:00  \_ [kworker/R-ext4-]
+    301 ?        I      0:00  \_ [kworker/u4:1-ext4-rsv-conv
+    337 ?        S      0:00  \_ [psimon]
+    633 ?        S      0:00  \_ [irq/18-vmwgfx]
+    636 ?        I<     0:00  \_ [kworker/R-ttm]
+    654 ?        I<     0:00  \_ [kworker/R-crypt]
+   1538 ?        S      0:00  \_ [psimon]
+   1926 ?        I<     0:00  \_ [kworker/u8:1]
+   3591 ?        I      0:01  \_ [kworker/u5:3-events_unboun
+   4311 ?        I      0:00  \_ [kworker/0:1-events]
+   4330 ?        I      0:01  \_ [kworker/1:0-cgroup_destroy
+   4416 ?        I      0:00  \_ [kworker/u5:0-flush-8:0]
+   5234 ?        I      0:00  \_ [kworker/u4:2-ext4-rsv-conv
+   5655 ?        I      0:00  \_ [kworker/u5:2-events_unboun
+   5682 ?        I      0:00  \_ [kworker/1:2-events]
+   5790 ?        I      0:00  \_ [kworker/u6:2-events_unboun
+   5799 ?        I      0:00  \_ [kworker/0:3-cgroup_destroy
+   5800 ?        I      0:00  \_ [kworker/u6:0-events_unboun
+   5925 ?        I      0:00  \_ [kworker/u6:3-events_unboun
+   6643 ?        I      0:00  \_ [kworker/0:0-events]
+   6672 ?        I      0:00  \_ [kworker/1:1-cgroup_destroy
+   6673 ?        I      0:00  \_ [kworker/1:3-events]
+      1 ?        Ss     0:03 /sbin/init splash
+    261 ?        Ss     0:00 /usr/lib/systemd/systemd-journa
+    300 ?        Ss     0:00 /usr/lib/systemd/systemd-udevd
+    412 ?        Ss     0:02 /usr/lib/systemd/systemd-oomd
+    415 ?        Ss     0:00 /usr/lib/systemd/systemd-resolv
+    550 ?        Ss     0:00 avahi-daemon: running [qzee-Vir
+    628 ?        S      0:00  \_ avahi-daemon: chroot helper
+    551 ?        Ss     0:02 @dbus-daemon --system --address
+    554 ?        Ssl    0:00 /usr/libexec/gnome-remote-deskt
+    557 ?        Ssl    0:01 /usr/lib/polkit-1/polkitd --no-
+    561 ?        Ssl    0:00 /usr/libexec/power-profiles-dae
+    574 ?        Ssl    0:01 /usr/lib/snapd/snapd
+    576 ?        S<s    0:00 /usr/lib/systemd/systemd-logind
+    580 ?        Ssl    0:00 /usr/libexec/accounts-daemon
+    588 ?        Ss     0:00 /usr/sbin/cron -f -P
+    589 ?        Ssl    0:00 /usr/libexec/switcheroo-control
+    601 ?        Ssl    0:00 /usr/libexec/udisks2/udisksd
+    629 ?        Ssl    0:00 /usr/sbin/NetworkManager --no-d
+    637 ?        Ss     0:00 /usr/sbin/wpa_supplicant -u -s 
+    655 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+    719 ?        Ssl    0:00 /usr/sbin/ModemManager
+   1295 ?        Ss     0:00 /usr/sbin/cupsd -l
+   1304 ?        Ssl    0:00 /usr/bin/python3 /usr/share/una
+   1313 ?        Ss     0:00 sshd: /usr/sbin/sshd -D [listen
+   1322 ?        Ssl    0:00 /usr/sbin/cups-browsed
+   1331 ?        Ss     0:00 /usr/sbin/kerneloops --test
+   1341 ?        Ss     0:00 /usr/sbin/kerneloops
+   1515 ?        Sl     0:01 /usr/sbin/VBoxService --pidfile
+   1516 ?        Ssl    0:00 /usr/sbin/gdm3
+   1973 ?        Sl     0:00  \_ gdm-session-worker [pam/gdm
+   2058 tty2     Ssl+   0:00      \_ /usr/libexec/gdm-waylan
+   2067 tty2     Sl+    0:00          \_ /usr/libexec/gnome-
+   1575 ?        SNsl   0:00 /usr/libexec/rtkit-daemon
+   1665 ?        Ssl    0:00 /usr/libexec/colord
+   1704 ?        Ssl    0:00 /usr/libexec/upowerd
+   1983 ?        Ss     0:01 /usr/lib/systemd/systemd --user
+   1987 ?        S      0:00  \_ (sd-pam)
+   1998 ?        S<sl   0:00  \_ /usr/bin/pipewire
+   2000 ?        Ssl    0:00  \_ /usr/bin/pipewire -c filter
+   2003 ?        S<sl   0:00  \_ /usr/bin/wireplumber
+   2006 ?        S<sl   0:00  \_ /usr/bin/pipewire-pulse
+   2010 ?        SLsl   0:00  \_ /usr/bin/gnome-keyring-daem
+   2023 ?        Ss     0:01  \_ /usr/bin/dbus-daemon --sess
+   2043 ?        Ssl    0:00  \_ /usr/libexec/xdg-document-p
+   2109 ?        Ss     0:00  |   \_ fusermount3 -o rw,nosui
+   2062 ?        Ssl    0:00  \_ /usr/libexec/xdg-permission
+   2145 ?        Ssl    0:00  \_ /usr/libexec/gcr-ssh-agent 
+   2146 ?        Ssl    0:00  \_ /usr/libexec/gnome-session-
+   2157 ?        Ssl    0:00  \_ /usr/libexec/gvfsd
+   2758 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-tras
+   2169 ?        Sl     0:00  \_ /usr/libexec/gvfsd-fuse /ru
+   2180 ?        Ssl    0:00  \_ /usr/libexec/gnome-session-
+   2219 ?        Sl     0:00  |   \_ /usr/libexec/at-spi-bus
+   2233 ?        S      0:00  |   |   \_ /usr/bin/dbus-daemo
+   2372 ?        Sl     0:00  |   \_ /usr/libexec/gsd-disk-u
+   2399 ?        Sl     0:00  |   \_ /usr/libexec/evolution-
+   3217 ?        Sl     0:00  |   \_ /usr/bin/update-notifie
+   2220 ?        Ssl    1:35  \_ /usr/bin/gnome-shell
+   2482 ?        S      0:00  |   \_ /usr/bin/Xwayland :0 -r
+   2900 ?        Sl     0:00  |   \_ /usr/libexec/mutter-x11
+   3122 ?        Sl     0:02  |   \_ gjs /usr/share/gnome-sh
+   2284 ?        Sl     0:00  \_ /usr/libexec/at-spi2-regist
+   2298 ?        Sl     0:00  \_ /usr/libexec/gnome-shell-ca
+   2306 ?        Ssl    0:00  \_ /usr/libexec/evolution-sour
+   2316 ?        Sl     0:00  \_ /usr/bin/gjs -m /usr/share/
+   2318 ?        Ssl    0:04  \_ /usr/bin/ibus-daemon --pane
+   2643 ?        Sl     0:00  |   \_ /usr/libexec/ibus-dconf
+   2645 ?        Sl     0:06  |   \_ /usr/libexec/ibus-exten
+   2721 ?        Sl     0:01  |   \_ /usr/libexec/ibus-engin
+   2319 ?        Ssl    0:00  \_ /usr/libexec/gsd-a11y-setti
+   2323 ?        Ssl    0:00  \_ /usr/libexec/gsd-color
+   2325 ?        Ssl    0:00  \_ /usr/libexec/gsd-datetime
+   2333 ?        Ssl    0:00  \_ /usr/libexec/gsd-housekeepi
+   2336 ?        Ssl    0:00  \_ /usr/libexec/gsd-keyboard
+   2337 ?        Ssl    0:00  \_ /usr/libexec/gsd-media-keys
+   2338 ?        Ssl    0:00  \_ /usr/libexec/gsd-power
+   2339 ?        Ssl    0:00  \_ /usr/libexec/gsd-print-noti
+   2342 ?        Ssl    0:00  \_ /usr/libexec/gsd-rfkill
+   2343 ?        Ssl    0:00  \_ /usr/libexec/gsd-screensave
+   2344 ?        Ssl    0:00  \_ /usr/libexec/gsd-sharing
+   2345 ?        Ssl    0:00  \_ /usr/libexec/gsd-smartcard
+   2347 ?        Ssl    0:00  \_ /usr/libexec/gsd-sound
+   2350 ?        Ssl    0:00  \_ /usr/libexec/gsd-wacom
+   2413 ?        S      0:00  \_ /usr/bin/VBoxClient --clipb
+   2414 ?        Sl     0:00  |   \_ /usr/bin/VBoxClient --c
+   2440 ?        S      0:00  \_ /usr/bin/VBoxClient --seaml
+   2444 ?        Sl     0:00  |   \_ /usr/bin/VBoxClient --s
+   2445 ?        Sl     0:00  \_ /usr/libexec/goa-daemon
+   2459 ?        S      0:00  \_ /usr/bin/VBoxClient --draga
+   2465 ?        Sl     0:18  |   \_ /usr/bin/VBoxClient --d
+   2469 ?        S      0:00  \_ /usr/bin/VBoxClient --vmsvg
+   2471 ?        S      0:00  |   \_ ?
+   2486 ?        Ss     0:00  \_ /snap/snapd-desktop-integra
+   2608 ?        Sl     0:00  |   \_ /snap/snapd-desktop-int
+   2576 ?        Sl     0:00  \_ /usr/libexec/gsd-printer
+   2609 ?        Ssl    0:00  \_ /usr/libexec/evolution-cale
+   2630 ?        Sl     0:00  \_ /usr/libexec/goa-identity-s
+   2647 ?        Sl     0:00  \_ /usr/libexec/ibus-portal
+   2674 ?        Ssl    0:00  \_ /usr/libexec/gvfs-udisks2-v
+   2675 ?        Ssl    0:00  \_ /usr/libexec/evolution-addr
+   2689 ?        Ssl    0:00  \_ /usr/libexec/gvfs-mtp-volum
+   2696 ?        Ssl    0:00  \_ /usr/libexec/gvfs-goa-volum
+   2702 ?        Ssl    0:00  \_ /usr/libexec/gvfs-gphoto2-v
+   2710 ?        Ssl    0:00  \_ /usr/libexec/gvfs-afc-volum
+   2751 ?        Ssl    0:00  \_ /usr/libexec/dconf-service
+   2790 ?        Ssl    0:00  \_ /usr/libexec/xdg-desktop-po
+   2846 ?        Ssl    0:00  \_ /usr/libexec/gsd-xsettings
+   2858 ?        Sl     0:00  \_ /usr/bin/gjs -m /usr/share/
+   2886 ?        Sl     0:00  \_ /usr/libexec/ibus-x11
+   2890 ?        SNsl   0:00  \_ /usr/libexec/tracker-miner-
+   2891 ?        Ssl    0:00  \_ /usr/libexec/xdg-desktop-po
+   2919 ?        Ssl    0:00  \_ /usr/libexec/gvfsd-metadata
+   2924 ?        Ssl    0:00  \_ /usr/libexec/xdg-desktop-po
+   3161 ?        Ssl    0:19  \_ /usr/libexec/gnome-terminal
+   3169 pts/0    Ss     0:00  |   \_ bash
+   6679 pts/0    R+     0:00  |       \_ ps afx
+   4695 ?        Sl     0:00  \_ /usr/bin/snap userd
+   4275 ?        Ssl    0:02 /usr/libexec/fwupd/fwupd
+   5899 ?        Ssl    0:00 /usr/libexec/packagekitd
+qzee@qzee-VirtualBox:~$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.4  23124 14080 ?        Ss   19:40   0:03 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    19:40   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    19:40   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/0:0H]
+root          12  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    19:40   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    19:40   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    19:40   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    19:40   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    19:40   0:01 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    19:40   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    19:40   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    19:40   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    19:40   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    19:40   0:00 [idle_inject/1]
+root          23  0.0  0.0      0     0 ?        S    19:40   0:00 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    19:40   0:00 [ksoftirqd/1]
+root          29  0.0  0.0      0     0 ?        S    19:40   0:00 [kdevtmpfs]
+root          30  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-inet_]
+root          31  0.0  0.0      0     0 ?        S    19:40   0:00 [kauditd]
+root          33  0.0  0.0      0     0 ?        S    19:40   0:00 [khungtaskd]
+root          34  0.0  0.0      0     0 ?        S    19:40   0:00 [oom_reaper]
+root          35  0.0  0.0      0     0 ?        I    19:40   0:00 [kworker/u6:1-events_unbound]
+root          36  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-write]
+root          37  0.0  0.0      0     0 ?        S    19:40   0:00 [kcompactd0]
+root          38  0.0  0.0      0     0 ?        SN   19:40   0:00 [ksmd]
+root          40  0.0  0.0      0     0 ?        SN   19:40   0:00 [khugepaged]
+root          41  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-kinte]
+root          42  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-kbloc]
+root          43  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-blkcg]
+root          44  0.0  0.0      0     0 ?        S    19:40   0:00 [irq/9-acpi]
+root          45  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-tpm_d]
+root          46  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-ata_s]
+root          47  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-md]
+root          48  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-md_bi]
+root          49  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-edac-]
+root          50  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-devfr]
+root          51  0.0  0.0      0     0 ?        S    19:40   0:00 [watchdogd]
+root          52  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/1:1H-kblockd]
+root          53  0.0  0.0      0     0 ?        S    19:40   0:00 [kswapd0]
+root          54  0.0  0.0      0     0 ?        S    19:40   0:00 [ecryptfs-kthread]
+root          55  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-kthro]
+root          56  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-acpi_]
+root          58  0.0  0.0      0     0 ?        S    19:40   0:00 [scsi_eh_0]
+root          59  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-scsi_]
+root          60  0.0  0.0      0     0 ?        S    19:40   0:00 [scsi_eh_1]
+root          61  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-scsi_]
+root          64  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-mld]
+root          65  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-ipv6_]
+root          72  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-kstrp]
+root          74  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/u7:0]
+root          76  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/u8:0-ttm]
+root          77  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/u9:0]
+root          86  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/0:1H-kblockd]
+root          92  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-charg]
+root         142  0.0  0.0      0     0 ?        S    19:40   0:00 [scsi_eh_2]
+root         143  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-scsi_]
+root         150  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/1:2H]
+root         190  0.0  0.0      0     0 ?        S    19:40   0:00 [jbd2/sda2-8]
+root         191  0.0  0.0      0     0 ?        I<   19:40   0:00 [kworker/R-ext4-]
+root         261  0.0  0.6  67284 18328 ?        Ss   19:40   0:00 /usr/lib/systemd/systemd-journald
+root         300  0.0  0.2  30372  8552 ?        Ss   19:41   0:00 /usr/lib/systemd/systemd-udevd
+root         301  0.0  0.0      0     0 ?        I    19:41   0:00 [kworker/u4:1-ext4-rsv-conversion]
+root         337  0.0  0.0      0     0 ?        S    19:41   0:00 [psimon]
+systemd+     412  0.0  0.2  17556  7552 ?        Ss   19:41   0:02 /usr/lib/systemd/systemd-oomd
+systemd+     415  0.0  0.4  21712 13056 ?        Ss   19:41   0:00 /usr/lib/systemd/systemd-resolved
+avahi        550  0.0  0.1   8664  4480 ?        Ss   19:41   0:00 avahi-daemon: running [qzee-VirtualBox.local]
+message+     551  0.0  0.2  12124  7168 ?        Ss   19:41   0:02 @dbus-daemon --system --address=systemd: --nofork --n
+gnome-r+     554  0.0  0.5 512796 16320 ?        Ssl  19:41   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      557  0.0  0.3 310908 10984 ?        Ssl  19:41   0:01 /usr/lib/polkit-1/polkitd --no-debug
+root         561  0.0  0.2 313376  7424 ?        Ssl  19:41   0:00 /usr/libexec/power-profiles-daemon
+root         574  0.0  1.0 1843624 32596 ?       Ssl  19:41   0:01 /usr/lib/snapd/snapd
+root         576  0.0  0.2  18152  8832 ?        S<s  19:41   0:00 /usr/lib/systemd/systemd-logind
+root         580  0.0  0.2 313292  7768 ?        Ssl  19:41   0:00 /usr/libexec/accounts-daemon
+root         588  0.0  0.0   9424  2816 ?        Ss   19:41   0:00 /usr/sbin/cron -f -P
+root         589  0.0  0.2 309856  6912 ?        Ssl  19:41   0:00 /usr/libexec/switcheroo-control
+root         601  0.0  0.4 469364 13928 ?        Ssl  19:41   0:00 /usr/libexec/udisks2/udisksd
+avahi        628  0.0  0.0   8476  1420 ?        S    19:41   0:00 avahi-daemon: chroot helper
+root         629  0.0  0.6 336312 19148 ?        Ssl  19:41   0:00 /usr/sbin/NetworkManager --no-daemon
+root         633  0.0  0.0      0     0 ?        S    19:41   0:00 [irq/18-vmwgfx]
+root         636  0.0  0.0      0     0 ?        I<   19:41   0:00 [kworker/R-ttm]
+root         637  0.0  0.2  17376  6400 ?        Ss   19:41   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_suppli
+root         654  0.0  0.0      0     0 ?        I<   19:41   0:00 [kworker/R-crypt]
+syslog       655  0.0  0.1 222564  5888 ?        Ssl  19:41   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         719  0.0  0.4 392096 12916 ?        Ssl  19:41   0:00 /usr/sbin/ModemManager
+root        1295  0.0  0.4  38248 11904 ?        Ss   19:41   0:00 /usr/sbin/cupsd -l
+root        1304  0.0  0.7 112212 22784 ?        Ssl  19:41   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+root        1313  0.0  0.2  12020  7936 ?        Ss   19:41   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startu
+cups-br+    1322  0.0  0.6 268400 19840 ?        Ssl  19:41   0:00 /usr/sbin/cups-browsed
+kernoops    1331  0.0  0.0  12744  2440 ?        Ss   19:41   0:00 /usr/sbin/kerneloops --test
+kernoops    1341  0.0  0.0  12744  2440 ?        Ss   19:41   0:00 /usr/sbin/kerneloops
+root        1515  0.0  0.1 296672  3864 ?        Sl   19:41   0:01 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-serv
+root        1516  0.0  0.3 314820  9216 ?        Ssl  19:41   0:00 /usr/sbin/gdm3
+root        1538  0.0  0.0      0     0 ?        S    19:41   0:00 [psimon]
+rtkit       1575  0.0  0.1  22940  3456 ?        SNsl 19:41   0:00 /usr/libexec/rtkit-daemon
+colord      1665  0.0  0.4 320020 14808 ?        Ssl  19:41   0:00 /usr/libexec/colord
+root        1704  0.0  0.3 316652  8960 ?        Ssl  19:41   0:00 /usr/libexec/upowerd
+root        1926  0.0  0.0      0     0 ?        I<   19:41   0:00 [kworker/u8:1]
+root        1973  0.0  0.3 242580 10240 ?        Sl   19:41   0:00 gdm-session-worker [pam/gdm-password]
+qzee        1983  0.0  0.4  21084 12672 ?        Ss   19:41   0:01 /usr/lib/systemd/systemd --user
+qzee        1987  0.0  0.1  21460  3740 ?        S    19:41   0:00 (sd-pam)
+qzee        1998  0.0  0.5 116836 15708 ?        S<sl 19:41   0:00 /usr/bin/pipewire
+qzee        2000  0.0  0.1  97736  5888 ?        Ssl  19:41   0:00 /usr/bin/pipewire -c filter-chain.conf
+qzee        2003  0.0  0.6 406820 18688 ?        S<sl 19:41   0:00 /usr/bin/wireplumber
+qzee        2006  0.0  0.4 116540 14028 ?        S<sl 19:41   0:00 /usr/bin/pipewire-pulse
+qzee        2010  0.0  0.3 316508 10112 ?        SLsl 19:41   0:00 /usr/bin/gnome-keyring-daemon --foreground --componen
+qzee        2023  0.0  0.2  10776  6528 ?        Ss   19:41   0:01 /usr/bin/dbus-daemon --session --address=systemd: --n
+qzee        2043  0.0  0.2 686088  7296 ?        Ssl  19:41   0:00 /usr/libexec/xdg-document-portal
+qzee        2058  0.0  0.2 235668  6016 tty2     Ssl+ 19:41   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESS
+qzee        2062  0.0  0.2 309308  6016 ?        Ssl  19:41   0:00 /usr/libexec/xdg-permission-store
+qzee        2067  0.0  0.5 298200 16512 tty2     Sl+  19:41   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+root        2109  0.0  0.0   2704  1792 ?        Ss   19:41   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unm
+qzee        2145  0.0  0.2 162652  6784 ?        Ssl  19:41   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/
+qzee        2146  0.0  0.1  91548  5504 ?        Ssl  19:41   0:00 /usr/libexec/gnome-session-ctl --monitor
+qzee        2157  0.0  0.2 314252  7936 ?        Ssl  19:41   0:00 /usr/libexec/gvfsd
+qzee        2169  0.0  0.2 459712  6912 ?        Sl   19:41   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+qzee        2180  0.0  0.6 594180 18304 ?        Ssl  19:41   0:00 /usr/libexec/gnome-session-binary --systemd-service -
+qzee        2219  0.0  0.2 382940  7680 ?        Sl   19:41   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+qzee        2220  1.6 11.8 3942888 351036 ?      Ssl  19:41   1:41 /usr/bin/gnome-shell
+qzee        2233  0.0  0.1   9476  4864 ?        S    19:41   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/default
+qzee        2284  0.0  0.2 236068  7552 ?        Sl   19:41   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+qzee        2298  0.0  0.5 654860 17664 ?        Sl   19:41   0:00 /usr/libexec/gnome-shell-calendar-server
+qzee        2306  0.0  1.4 1192456 42496 ?       Ssl  19:41   0:00 /usr/libexec/evolution-source-registry
+qzee        2316  0.0  0.9 2592984 26944 ?       Sl   19:41   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shel
+qzee        2318  0.0  0.4 388644 12012 ?        Ssl  19:41   0:04 /usr/bin/ibus-daemon --panel disable
+qzee        2319  0.0  0.2 383520  6656 ?        Ssl  19:41   0:00 /usr/libexec/gsd-a11y-settings
+qzee        2323  0.0  0.6 412904 20548 ?        Ssl  19:41   0:00 /usr/libexec/gsd-color
+qzee        2325  0.0  0.4 431664 12032 ?        Ssl  19:41   0:00 /usr/libexec/gsd-datetime
+qzee        2333  0.0  0.2 458868  7936 ?        Ssl  19:41   0:00 /usr/libexec/gsd-housekeeping
+qzee        2336  0.0  0.6 411760 20072 ?        Ssl  19:41   0:00 /usr/libexec/gsd-keyboard
+qzee        2337  0.0  0.8 741492 25280 ?        Ssl  19:41   0:00 /usr/libexec/gsd-media-keys
+qzee        2338  0.0  0.8 523472 24184 ?        Ssl  19:41   0:00 /usr/libexec/gsd-power
+qzee        2339  0.0  0.3 323648 11264 ?        Ssl  19:41   0:00 /usr/libexec/gsd-print-notifications
+qzee        2342  0.0  0.2 531084  6656 ?        Ssl  19:41   0:00 /usr/libexec/gsd-rfkill
+qzee        2343  0.0  0.2 309560  6272 ?        Ssl  19:41   0:00 /usr/libexec/gsd-screensaver-proxy
+qzee        2344  0.0  0.3 543196 11520 ?        Ssl  19:41   0:00 /usr/libexec/gsd-sharing
+qzee        2345  0.0  0.2 385820  8192 ?        Ssl  19:41   0:00 /usr/libexec/gsd-smartcard
+qzee        2347  0.0  0.3 393640  9728 ?        Ssl  19:41   0:00 /usr/libexec/gsd-sound
+qzee        2350  0.0  0.7 486468 20840 ?        Ssl  19:41   0:00 /usr/libexec/gsd-wacom
+qzee        2372  0.0  0.2 305492  7296 ?        Sl   19:41   0:00 /usr/libexec/gsd-disk-utility-notify
+qzee        2399  0.0  2.1 809024 62596 ?        Sl   19:41   0:00 /usr/libexec/evolution-data-server/evolution-alarm-no
+qzee        2413  0.0  0.0  20664  1288 ?        S    19:41   0:00 /usr/bin/VBoxClient --clipboard
+qzee        2414  0.0  0.1 152800  4488 ?        Sl   19:41   0:00 /usr/bin/VBoxClient --clipboard
+qzee        2440  0.0  0.0  20664  1416 ?        S    19:41   0:00 /usr/bin/VBoxClient --seamless
+qzee        2444  0.0  0.1 152900  3336 ?        Sl   19:41   0:00 /usr/bin/VBoxClient --seamless
+qzee        2445  0.0  0.8 546640 24064 ?        Sl   19:41   0:00 /usr/libexec/goa-daemon
+qzee        2459  0.0  0.0  20664  1416 ?        S    19:41   0:00 /usr/bin/VBoxClient --draganddrop
+qzee        2465  0.3  0.1 153416  3464 ?        Sl   19:41   0:18 /usr/bin/VBoxClient --draganddrop
+qzee        2469  0.0  0.0  20664  1416 ?        S    19:41   0:00 /usr/bin/VBoxClient --vmsvga
+root        2471  0.0  0.0  86132  2432 ?        S    19:41   0:00 ?
+qzee        2482  0.0  1.9 216464 58848 ?        S    19:41   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -cor
+qzee        2486  0.0  0.3  38952 11776 ?        Ss   19:41   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-des
+qzee        2576  0.0  0.5 416208 15104 ?        Sl   19:41   0:00 /usr/libexec/gsd-printer
+qzee        2608  0.0  1.0 429440 30220 ?        Sl   19:41   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-des
+qzee        2609  0.0  0.8 890720 23936 ?        Ssl  19:41   0:00 /usr/libexec/evolution-calendar-factory
+qzee        2630  0.0  0.3 389128  9216 ?        Sl   19:41   0:00 /usr/libexec/goa-identity-service
+qzee        2643  0.0  0.2 310468  7168 ?        Sl   19:41   0:00 /usr/libexec/ibus-dconf
+qzee        2645  0.1  1.0 421500 29752 ?        Sl   19:41   0:06 /usr/libexec/ibus-extension-gtk3
+qzee        2647  0.0  0.2 310428  7040 ?        Sl   19:41   0:00 /usr/libexec/ibus-portal
+qzee        2674  0.0  0.3 389316 10112 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+qzee        2675  0.0  1.0 825412 29824 ?        Ssl  19:41   0:00 /usr/libexec/evolution-addressbook-factory
+qzee        2689  0.0  0.2 309792  6528 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+qzee        2696  0.0  0.2 309772  6528 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-goa-volume-monitor
+qzee        2702  0.0  0.2 310760  6784 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+qzee        2710  0.0  0.2 389376  7936 ?        Ssl  19:41   0:00 /usr/libexec/gvfs-afc-volume-monitor
+qzee        2721  0.0  0.2 236772  7296 ?        Sl   19:41   0:01 /usr/libexec/ibus-engine-simple
+qzee        2751  0.0  0.1 230108  5504 ?        Ssl  19:41   0:00 /usr/libexec/dconf-service
+qzee        2758  0.0  0.2 609444  8832 ?        Sl   19:41   0:00 /usr/libexec/gvfsd-trash --spawner :1.19 /org/gtk/gvf
+qzee        2790  0.0  0.4 701608 14132 ?        Ssl  19:41   0:00 /usr/libexec/xdg-desktop-portal
+qzee        2846  0.0  2.5 613772 75276 ?        Ssl  19:41   0:00 /usr/libexec/gsd-xsettings
+qzee        2858  0.0  0.9 2519232 26772 ?       Sl   19:41   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Scre
+qzee        2886  0.0  0.8 267112 24964 ?        Sl   19:41   0:00 /usr/libexec/ibus-x11
+qzee        2890  0.0  0.8 810056 25808 ?        SNsl 19:41   0:00 /usr/libexec/tracker-miner-fs-3
+qzee        2891  0.0  1.3 556388 40568 ?        Ssl  19:41   0:00 /usr/libexec/xdg-desktop-portal-gnome
+qzee        2900  0.0  3.0 1090048 89460 ?       Sl   19:41   0:00 /usr/libexec/mutter-x11-frames
+qzee        2919  0.0  0.2 236304  6400 ?        Ssl  19:41   0:00 /usr/libexec/gvfsd-metadata
+qzee        2924  0.0  0.8 417752 26244 ?        Ssl  19:41   0:00 /usr/libexec/xdg-desktop-portal-gtk
+qzee        3122  0.0  2.0 2805712 61476 ?       Sl   19:41   0:02 gjs /usr/share/gnome-shell/extensions/ding@rastersoft
+qzee        3161  0.3  1.8 699916 56404 ?        Ssl  19:42   0:21 /usr/libexec/gnome-terminal-server
+qzee        3169  0.0  0.1  11156  5120 pts/0    Ss   19:42   0:00 bash
+qzee        3217  0.0  0.8 491644 26628 ?        Sl   19:42   0:00 /usr/bin/update-notifier
+root        3591  0.0  0.0      0     0 ?        I    20:18   0:01 [kworker/u5:3-events_unbound]
+root        4275  0.0  4.5 577868 133952 ?       Ssl  20:29   0:02 /usr/libexec/fwupd/fwupd
+root        4311  0.0  0.0      0     0 ?        I    20:29   0:00 [kworker/0:1-events]
+root        4330  0.0  0.0      0     0 ?        I    20:31   0:01 [kworker/1:0-cgroup_destroy]
+root        4416  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u5:0-flush-8:0]
+qzee        4695  0.0  0.6 1762328 19908 ?       Sl   20:31   0:00 /usr/bin/snap userd
+root        5234  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/u4:2-ext4-rsv-conversion]
+root        5655  0.0  0.0      0     0 ?        I    20:40   0:00 [kworker/u5:2-events_power_efficient]
+root        5682  0.0  0.0      0     0 ?        I    20:50   0:00 [kworker/1:2-events]
+root        5790  0.0  0.0      0     0 ?        I    21:05   0:00 [kworker/u6:2-events_power_efficient]
+root        5799  0.0  0.0      0     0 ?        I    21:10   0:00 [kworker/0:3-cgroup_destroy]
+root        5800  0.0  0.0      0     0 ?        I    21:10   0:00 [kworker/u6:0-events_unbound]
+root        5925  0.0  0.0      0     0 ?        I    21:16   0:00 [kworker/u6:3-writeback]
+root        6643  0.0  0.0      0     0 ?        I    21:17   0:00 [kworker/0:0-events]
+root        6672  0.0  0.0      0     0 ?        I    21:19   0:00 [kworker/1:1-cgroup_destroy]
+root        6673  0.0  0.0      0     0 ?        I    21:19   0:00 [kworker/1:3-events]
+qzee        6684 70.8  9.5 11223384 282840 ?     Sl   21:21   0:06 /snap/firefox/4173/usr/lib/firefox/firefox
+qzee        6798  1.1  1.5 210704 47232 ?        Sl   21:21   0:00 /snap/firefox/4173/usr/lib/firefox/firefox -contentpr
+root        6800  1.8  0.2  17276  7296 ?        Ss   21:21   0:00 /usr/lib/systemd/systemd-timedated
+qzee        6824 14.9  3.6 10804448 109440 ?     Sl   21:21   0:00 /snap/firefox/4173/usr/lib/firefox/firefox -contentpr
+qzee        7017 16.3  3.3 2425128 100504 ?      Sl   21:21   0:00 /snap/firefox/4173/usr/lib/firefox/firefox -contentpr
+qzee        7338  3.5  1.4 209116 42880 ?        Sl   21:21   0:00 /snap/firefox/4173/usr/lib/firefox/firefox -contentpr
+qzee        7340 10.8  2.4 2390836 72536 ?       Sl   21:21   0:00 /snap/firefox/4173/usr/lib/firefox/firefox -contentpr
+qzee        7348 10.2  2.4 2390836 72472 ?       Sl   21:21   0:00 /snap/firefox/4173/usr/lib/firefox/firefox -contentpr
+qzee        7359 11.8  2.4 2390836 72660 ?       Sl   21:21   0:00 /snap/firefox/4173/usr/lib/firefox/firefox -contentpr
+qzee        7393  100  0.1  13748  4480 pts/0    R+   21:21   0:00 ps aux
+qzee@qzee-VirtualBox:~$ kill 6824
+qzee@qzee-VirtualBox:~$ #pidof firefox
