@@ -1,0 +1,2134 @@
+qzee@qzee-VirtualBox:~$ history
+  191  sudo apt install nginx -y
+  192  sudo apt install apache2 -y
+  193  nginx --help
+  194  nginx -h
+  195  nginx -v
+  196  apache2 -h
+  197  ps afx
+  198  sudo ss -ntlp
+  199  sudo netstat
+  200  systemctl status nginx
+  201  cd /etc/nginx
+  202  ll
+  203  nano nginx.conf 
+  204  sudo nginx -t
+  205  # sudo systemctl reload nginx
+  206  # sudo systemctl restart nginx
+  207  ll
+  208  cd /etc/nginx
+  209  ll
+  210  tree
+  211  cd /sites-available
+  212  cd sites-available
+  213  ll
+  214  nano default 
+  215  cd ..
+  216  sudo systemctl status apache2
+  217  sudo ss -ntlp
+  218  sudo systemctl stop nginx
+  219  systemctl status nginx
+  220  ss -ntlp
+  221  sudo systemctl start apache2
+  222  systemctl status apache2
+  223  sudo ss -ntlp
+  224  pwd
+  225  cd /etc/apache2
+  226  tree
+  227  ll
+  228  sudo nano ports.conf 
+  229  sudo nano apache2.conf 
+  230  sudo apachectl -t
+  231  systemctl status apache2
+  232  sudo systemctl stop apache2
+  233  systemctl status apache2
+  234  ll
+  235  cd /sites-available
+  236  cd sites-available
+  237  ll
+  238  sudo nano 000-default.conf 
+  239  sudo systemctl start apache2
+  240  systemctl status apache2
+  241  sudo systemctl start nginx
+  242  sudo systemctl status nginx
+  243  systemctl status apache2
+  244  sudo systemctl start nginx
+  245  ss -ntlpcd
+  246  sudo systemctl start nginx
+  247  cd ~
+  248  sudo systemctl start nginx
+  249  systemctl statys nginx
+  250  systemctl status nginx
+  251  sudo systemctl reload nginx
+  252  sudo systemctl active nginx
+  253  sudo systemctl is-active nginx
+  254  sudo ss -ntlp
+  255  sudo systemctl restart nginx
+  256  sudo ss -ntlp
+  257  sudo systemctl restart apache2
+  258  sudo systemctl restart nginx
+  259  systemctl nginx -t
+  260  systemctl status nginx
+  261  cd /etc/nginx
+  262  ll
+  263  cd sites-available/
+  264  ll
+  265  nano default 
+  266  sudo systemctl start nginx
+  267  sudo apt install php-fpm -y
+  268  sudo apt install php8.3
+  269  sudo systemctl reload nginx
+  270  systemctl staus nginx
+  271  sudo systemctl status nginx
+  272  cd
+  273  sudo apt install mysql
+  274  sudo apt install mysql-server -y
+  275  sudo ss -ntlp
+  276  sudo mysql -u root -p 
+  277  history
+qzee@qzee-VirtualBox:~$ 
+qzee@qzee-VirtualBox:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04 LTS
+Release:	24.04
+Codename:	noble
+qzee@qzee-VirtualBox:~$ uname
+Linux
+qzee@qzee-VirtualBox:~$ sudo apt install nginx -y
+[sudo] password for qzee: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  nginx-common
+Suggested packages:
+  fcgiwrap nginx-doc
+The following NEW packages will be installed:
+  nginx nginx-common
+0 upgraded, 2 newly installed, 0 to remove and 12 not upgraded.
+Need to get 552 kB of archives.
+After this operation, 1,596 kB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 nginx-common all 1.24.0-2ubuntu7 [31.2 kB]
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 nginx amd64 1.24.0-2ubuntu7 [521 kB]
+Fetched 552 kB in 0s (2,775 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package nginx-common.
+(Reading database ... 152296 files and directories currently
+ installed.)
+Preparing to unpack .../nginx-common_1.24.0-2ubuntu7_all.deb
+ ...
+Unpacking nginx-common (1.24.0-2ubuntu7) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.24.0-2ubuntu7_amd64.deb ...
+Unpacking nginx (1.24.0-2ubuntu7) ...
+Setting up nginx (1.24.0-2ubuntu7) ...
+Setting up nginx-common (1.24.0-2ubuntu7) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/
+nginx.service → /usr/lib/systemd/system/nginx.service.
+Processing triggers for ufw (0.36.2-6) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+qzee@qzee-VirtualBox:~$ sudo apt install apache2 -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1t64
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64
+Suggested packages:
+  apache2-doc apache2-suexec-pristine
+  | apache2-suexec-custom
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap
+  libaprutil1t64
+0 upgraded, 8 newly installed, 0 to remove and 12 not upgraded.
+Need to get 1,896 kB of archives.
+After this operation, 7,452 kB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libapr1t64 amd64 1.7.2-3.1build2 [107 kB]
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1t64 amd64 1.6.3-1.1ubuntu7 [91.9 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.3-1.1ubuntu7 [11.2 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1-ldap amd64 1.6.3-1.1ubuntu7 [9,116 B]
+Get:5 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-bin amd64 2.4.58-1ubuntu8.1 [1,327 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-data all 2.4.58-1ubuntu8.1 [163 kB]
+Get:7 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-utils amd64 2.4.58-1ubuntu8.1 [96.2 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2 amd64 2.4.58-1ubuntu8.1 [90.2 kB]
+Fetched 1,896 kB in 0s (6,929 kB/s)       
+Selecting previously unselected package libapr1t64:amd64.
+(Reading database ... 152343 files and directories currently
+ installed.)
+Preparing to unpack .../0-libapr1t64_1.7.2-3.1build2_amd64.d
+eb ...
+Unpacking libapr1t64:amd64 (1.7.2-3.1build2) ...
+Selecting previously unselected package libaprutil1t64:amd64
+.
+Preparing to unpack .../1-libaprutil1t64_1.6.3-1.1ubuntu7_am
+d64.deb ...
+Unpacking libaprutil1t64:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package libaprutil1-dbd-sqli
+te3:amd64.
+Preparing to unpack .../2-libaprutil1-dbd-sqlite3_1.6.3-1.1u
+buntu7_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.3-1.1ubuntu7) .
+..
+Selecting previously unselected package libaprutil1-ldap:amd
+64.
+Preparing to unpack .../3-libaprutil1-ldap_1.6.3-1.1ubuntu7_
+amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../4-apache2-bin_2.4.58-1ubuntu8.1_amd6
+4.deb ...
+Unpacking apache2-bin (2.4.58-1ubuntu8.1) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../5-apache2-data_2.4.58-1ubuntu8.1_all
+.deb ...
+Unpacking apache2-data (2.4.58-1ubuntu8.1) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../6-apache2-utils_2.4.58-1ubuntu8.1_am
+d64.deb ...
+Unpacking apache2-utils (2.4.58-1ubuntu8.1) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../7-apache2_2.4.58-1ubuntu8.1_amd64.de
+b ...
+Unpacking apache2 (2.4.58-1ubuntu8.1) ...
+Setting up libapr1t64:amd64 (1.7.2-3.1build2) ...
+Setting up apache2-data (2.4.58-1ubuntu8.1) ...
+Setting up libaprutil1t64:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up libaprutil1-ldap:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.3-1.1ubuntu7) 
+...
+Setting up apache2-utils (2.4.58-1ubuntu8.1) ...
+Setting up apache2-bin (2.4.58-1ubuntu8.1) ...
+Setting up apache2 (2.4.58-1ubuntu8.1) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/
+apache2.service → /usr/lib/systemd/system/apache2.service.
+Could not execute systemctl:  at /usr/bin/deb-systemd-invoke
+ line 148.
+Created symlink /etc/systemd/system/multi-user.target.wants/
+apache-htcacheclean.service → /usr/lib/systemd/system/apache
+-htcacheclean.service.
+Processing triggers for ufw (0.36.2-6) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.1) ...
+qzee@qzee-VirtualBox:~$ nginx --help
+nginx: invalid option: "-"
+qzee@qzee-VirtualBox:~$ nginx -h
+nginx version: nginx/1.24.0 (Ubuntu)
+Usage: nginx [-?hvVtTq] [-s signal] [-p prefix]
+             [-e filename] [-c filename] [-g directives]
+
+Options:
+  -?,-h         : this help
+  -v            : show version and exit
+  -V            : show version and configure options then exit
+  -t            : test configuration and exit
+  -T            : test configuration, dump it and exit
+  -q            : suppress non-error messages during configuration testing
+  -s signal     : send signal to a master process: stop, quit, reopen, reload
+  -p prefix     : set prefix path (default: /usr/share/nginx/)
+  -e filename   : set error log file (default: stderr)
+  -c filename   : set configuration file (default: /etc/nginx/nginx.conf)
+  -g directives : set global directives out of configuration file
+
+qzee@qzee-VirtualBox:~$ nginx -v
+nginx version: nginx/1.24.0 (Ubuntu)
+qzee@qzee-VirtualBox:~$ apache2 -h
+Usage: apache2 [-D name] [-d directory] [-f file]
+               [-C "directive"] [-c "directive"]
+               [-k start|restart|graceful|graceful-stop|stop]
+               [-v] [-V] [-h] [-l] [-L] [-t] [-T] [-S] [-X]
+Options:
+  -D name            : define a name for use in <IfDefine name> directives
+  -d directory       : specify an alternate initial ServerRoot
+  -f file            : specify an alternate ServerConfigFile
+  -C "directive"     : process directive before reading config files
+  -c "directive"     : process directive after reading config files
+  -e level           : show startup errors of level (see LogLevel)
+  -E file            : log startup errors to file
+  -v                 : show version number
+  -V                 : show compile settings
+  -h                 : list available command line options (this page)
+  -l                 : list compiled in modules
+  -L                 : list available configuration directives
+  -t -D DUMP_VHOSTS  : show parsed vhost settings
+  -t -D DUMP_RUN_CFG : show parsed run settings
+  -S                 : a synonym for -t -D DUMP_VHOSTS -D DUMP_RUN_CFG
+  -t -D DUMP_MODULES : show all loaded modules 
+  -M                 : a synonym for -t -D DUMP_MODULES
+  -t -D DUMP_INCLUDES: show all included configuration files
+  -t                 : run syntax check for config files
+  -T                 : start without DocumentRoot(s) check
+  -X                 : debug mode (only one worker, do not detach)
+qzee@qzee-VirtualBox:~$ sudo ss -ntlp
+State  Recv-Q Send-Q Local Address:Port   Peer Address:Port Process                                                     
+LISTEN 0      511          0.0.0.0:80          0.0.0.0:*     users:(("nginx",pid=6030,fd=5),("nginx",pid=6029,fd=5),("nginx",pid=6028,fd=5))
+LISTEN 0      4096       127.0.0.1:631         0.0.0.0:*     users:(("cupsd",pid=1365,fd=7))                            
+LISTEN 0      4096      127.0.0.54:53          0.0.0.0:*     users:(("systemd-resolve",pid=389,fd=17))                  
+LISTEN 0      4096   127.0.0.53%lo:53          0.0.0.0:*     users:(("systemd-resolve",pid=389,fd=15))                  
+LISTEN 0      511             [::]:80             [::]:*     users:(("nginx",pid=6030,fd=6),("nginx",pid=6029,fd=6),("nginx",pid=6028,fd=6))
+LISTEN 0      4096               *:22                *:*     users:(("sshd",pid=1387,fd=3),("systemd",pid=1,fd=382))    
+LISTEN 0      4096           [::1]:631            [::]:*     users:(("cupsd",pid=1365,fd=6))                            
+qzee@qzee-VirtualBox:~$ sudo netstat
+sudo: netstat: command not found
+qzee@qzee-VirtualBox:~$ systemctl status nginx
+● nginx.service - A high performance web server and a rever>
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service;>
+     Active: active (running) since Fri 2024-05-31 20:03:55>
+       Docs: man:nginx(8)
+   Main PID: 6028 (nginx)
+      Tasks: 3 (limit: 3397)
+     Memory: 2.4M (peak: 2.7M)
+        CPU: 37ms
+     CGroup: /system.slice/nginx.service
+             ├─6028 "nginx: master process /usr/sbin/nginx >
+             ├─6029 "nginx: worker process"
+             └─6030 "nginx: worker process"
+
+May 31 20:03:54 qzee-VirtualBox systemd[1]: Starting nginx.>
+May 31 20:03:55 qzee-VirtualBox systemd[1]: Started nginx.s>
+qzee@qzee-VirtualBox:~$ cd /etc/nginx
+qzee@qzee-VirtualBox:/etc/nginx$ ll
+total 84
+drwxr-xr-x   8 root root  4096 May 31 20:03 ./
+drwxr-xr-x 141 root root 12288 May 31 20:05 ../
+drwxr-xr-x   2 root root  4096 Mar 31 05:40 conf.d/
+-rw-r--r--   1 root root  1125 Dec  1  2023 fastcgi.conf
+-rw-r--r--   1 root root  1055 Dec  1  2023 fastcgi_params
+-rw-r--r--   1 root root  2837 Dec  1  2023 koi-utf
+-rw-r--r--   1 root root  2223 Dec  1  2023 koi-win
+-rw-r--r--   1 root root  5465 Dec  1  2023 mime.types
+drwxr-xr-x   2 root root  4096 Mar 31 05:40 modules-available/
+drwxr-xr-x   2 root root  4096 Mar 31 05:40 modules-enabled/
+-rw-r--r--   1 root root  1446 Dec  1  2023 nginx.conf
+-rw-r--r--   1 root root   180 Dec  1  2023 proxy_params
+-rw-r--r--   1 root root   636 Dec  1  2023 scgi_params
+drwxr-xr-x   2 root root  4096 May 31 20:03 sites-available/
+drwxr-xr-x   2 root root  4096 May 31 20:03 sites-enabled/
+drwxr-xr-x   2 root root  4096 May 31 20:03 snippets/
+-rw-r--r--   1 root root   664 Dec  1  2023 uwsgi_params
+-rw-r--r--   1 root root  3071 Dec  1  2023 win-utf
+qzee@qzee-VirtualBox:/etc/nginx$ nano nginx.conf 
+qzee@qzee-VirtualBox:/etc/nginx$ sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+qzee@qzee-VirtualBox:/etc/nginx$ # sudo systemctl reload nginx
+qzee@qzee-VirtualBox:/etc/nginx$ # sudo systemctl restart nginx
+qzee@qzee-VirtualBox:~$ ll
+total 280
+drwxr-x--- 15 qzee qzee   4096 May 31 20:26 ./
+drwxr-xr-x  3 root root   4096 May 23 22:42 ../
+-rw-------  1 qzee qzee   3255 May 31 20:24 .bash_history
+-rw-r--r--  1 qzee qzee    220 Mar 31 11:41 .bash_logout
+-rw-r--r--  1 qzee qzee   3771 Mar 31 11:41 .bashrc
+drwx------ 11 qzee qzee   4096 May 23 23:30 .cache/
+drwx------ 16 qzee qzee   4096 May 28 21:16 .config/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Desktop/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Documents/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Downloads/
+-rw-rw-r--  1 qzee qzee    209 May 28 20:37 iptables-config
+-rw-------  1 qzee qzee     20 May 31 20:13 .lesshst
+drwx------  4 qzee qzee   4096 May 23 22:42 .local/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Music/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Pictures/
+-rw-r--r--  1 qzee qzee    807 Mar 31 11:41 .profile
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Public/
+-rw-rw-r--  1 qzee qzee     66 May 24 21:00 .selected_editor
+drwx------  5 qzee qzee   4096 May 28 20:31 snap/
+drwx------  2 qzee qzee   4096 May 23 22:43 .ssh/
+-rw-r--r--  1 qzee qzee      0 May 23 22:50 .sudo_as_admin_successful
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Templates/
+-rw-r-----  1 qzee qzee      5 May 31 20:26 .vboxclient-clipboard.pid
+-rw-r-----  1 qzee qzee      5 May 31 20:26 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 qzee qzee      5 May 31 20:26 .vboxclient-draganddrop.pid
+-rw-r-----  1 qzee qzee      5 May 31 20:26 .vboxclient-hostversion.pid
+-rw-r-----  1 qzee qzee      5 May 31 20:26 .vboxclient-seamless.pid
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Videos/
+-rw-r--r--  1 qzee qzee 175418 Apr  8 21:39 zip_3.0-13build1_amd64.deb
+qzee@qzee-VirtualBox:~$ cd /etc/nginx
+qzee@qzee-VirtualBox:/etc/nginx$ ll
+total 84
+drwxr-xr-x   8 root root  4096 May 31 20:03 ./
+drwxr-xr-x 141 root root 12288 May 31 20:05 ../
+drwxr-xr-x   2 root root  4096 Mar 31 05:40 conf.d/
+-rw-r--r--   1 root root  1125 Dec  1  2023 fastcgi.conf
+-rw-r--r--   1 root root  1055 Dec  1  2023 fastcgi_params
+-rw-r--r--   1 root root  2837 Dec  1  2023 koi-utf
+-rw-r--r--   1 root root  2223 Dec  1  2023 koi-win
+-rw-r--r--   1 root root  5465 Dec  1  2023 mime.types
+drwxr-xr-x   2 root root  4096 Mar 31 05:40 modules-available/
+drwxr-xr-x   2 root root  4096 Mar 31 05:40 modules-enabled/
+-rw-r--r--   1 root root  1446 Dec  1  2023 nginx.conf
+-rw-r--r--   1 root root   180 Dec  1  2023 proxy_params
+-rw-r--r--   1 root root   636 Dec  1  2023 scgi_params
+drwxr-xr-x   2 root root  4096 May 31 20:03 sites-available/
+drwxr-xr-x   2 root root  4096 May 31 20:03 sites-enabled/
+drwxr-xr-x   2 root root  4096 May 31 20:03 snippets/
+-rw-r--r--   1 root root   664 Dec  1  2023 uwsgi_params
+-rw-r--r--   1 root root  3071 Dec  1  2023 win-utf
+qzee@qzee-VirtualBox:/etc/nginx$ tree
+.
+├── conf.d
+├── fastcgi.conf
+├── fastcgi_params
+├── koi-utf
+├── koi-win
+├── mime.types
+├── modules-available
+├── modules-enabled
+├── nginx.conf
+├── proxy_params
+├── scgi_params
+├── sites-available
+│   └── default
+├── sites-enabled
+│   └── default -> /etc/nginx/sites-available/default
+├── snippets
+│   ├── fastcgi-php.conf
+│   └── snakeoil.conf
+├── uwsgi_params
+└── win-utf
+
+7 directories, 14 files
+qzee@qzee-VirtualBox:/etc/nginx$ cd /sites-available
+bash: cd: /sites-available: No such file or directory
+qzee@qzee-VirtualBox:/etc/nginx$ cd sites-available
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ ll
+total 12
+drwxr-xr-x 2 root root 4096 May 31 20:03 ./
+drwxr-xr-x 8 root root 4096 May 31 20:03 ../
+-rw-r--r-- 1 root root 2412 Dec  1  2023 default
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ nano default 
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ cd ..
+qzee@qzee-VirtualBox:/etc/nginx$ sudo systemctl status apache2
+[sudo] password for qzee: 
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.servic>
+     Active: active (running) since Fri 2024-05-31 20:25:48>
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 1189 ExecStart=/usr/sbin/apachectl start (code>
+   Main PID: 1236 (apache2)
+      Tasks: 55 (limit: 3397)
+     Memory: 7.9M (peak: 8.4M)
+        CPU: 129ms
+     CGroup: /system.slice/apache2.service
+             ├─1236 /usr/sbin/apache2 -k start
+             ├─1239 /usr/sbin/apache2 -k start
+             └─1241 /usr/sbin/apache2 -k start
+
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Starting apache>
+May 31 20:25:48 qzee-VirtualBox apachectl[1221]: AH00558: a>
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Started apache2>
+qzee@qzee-VirtualBox:/etc/nginx$ sudo ss -ntlp
+State  Recv-Q Send-Q Local Address:Port   Peer Address:Port Process                                                     
+LISTEN 0      4096       127.0.0.1:631         0.0.0.0:*     users:(("cupsd",pid=1190,fd=7))                            
+LISTEN 0      4096      127.0.0.54:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=17))                  
+LISTEN 0      511          0.0.0.0:80          0.0.0.0:*     users:(("apache2",pid=1241,fd=3),("apache2",pid=1239,fd=3),("apache2",pid=1236,fd=3))
+LISTEN 0      4096   127.0.0.53%lo:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=15))                  
+LISTEN 0      4096               *:22                *:*     users:(("sshd",pid=1231,fd=3),("systemd",pid=1,fd=211))    
+LISTEN 0      4096           [::1]:631            [::]:*     users:(("cupsd",pid=1190,fd=6))                            
+qzee@qzee-VirtualBox:/etc/nginx$ sudo systemctl stop nginx
+qzee@qzee-VirtualBox:/etc/nginx$ systemctl status nginx
+× nginx.service - A high performance web server and a rever>
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service;>
+     Active: failed (Result: exit-code) since Fri 2024-05-3>
+       Docs: man:nginx(8)
+    Process: 1224 ExecStartPre=/usr/sbin/nginx -t -q -g dae>
+    Process: 1234 ExecStart=/usr/sbin/nginx -g daemon on; m>
+        CPU: 44ms
+
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Starting nginx.>
+May 31 20:25:48 qzee-VirtualBox nginx[1234]: nginx: [emerg]>
+May 31 20:25:49 qzee-VirtualBox nginx[1234]: nginx: [emerg]>
+May 31 20:25:49 qzee-VirtualBox nginx[1234]: nginx: [emerg]>
+May 31 20:25:50 qzee-VirtualBox nginx[1234]: nginx: [emerg]>
+May 31 20:25:50 qzee-VirtualBox nginx[1234]: nginx: [emerg]>
+May 31 20:25:51 qzee-VirtualBox nginx[1234]: nginx: [emerg]>
+May 31 20:25:51 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 20:25:51 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 20:25:51 qzee-VirtualBox systemd[1]: Failed to start>
+qzee@qzee-VirtualBox:/etc/nginx$ ss -ntlp
+State  Recv-Q Send-Q Local Address:Port   Peer Address:Port Process                                                     
+LISTEN 0      4096       127.0.0.1:631         0.0.0.0:*                                                                
+LISTEN 0      4096      127.0.0.54:53          0.0.0.0:*                                                                
+LISTEN 0      511          0.0.0.0:80          0.0.0.0:*                                                                
+LISTEN 0      4096   127.0.0.53%lo:53          0.0.0.0:*                                                                
+LISTEN 0      4096               *:22                *:*                                                                
+LISTEN 0      4096           [::1]:631            [::]:*                                                                
+qzee@qzee-VirtualBox:/etc/nginx$ sudo systemctl start apache2
+qzee@qzee-VirtualBox:/etc/nginx$ systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.servic>
+     Active: active (running) since Fri 2024-05-31 20:25:48>
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 1189 ExecStart=/usr/sbin/apachectl start (code>
+   Main PID: 1236 (apache2)
+      Tasks: 55 (limit: 3397)
+     Memory: 7.9M (peak: 8.4M)
+        CPU: 144ms
+     CGroup: /system.slice/apache2.service
+             ├─1236 /usr/sbin/apache2 -k start
+             ├─1239 /usr/sbin/apache2 -k start
+             └─1241 /usr/sbin/apache2 -k start
+
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Starting apache>
+May 31 20:25:48 qzee-VirtualBox apachectl[1221]: AH00558: a>
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Started apache2>
+...skipping...
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.servic>
+     Active: active (running) since Fri 2024-05-31 20:25:48>
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 1189 ExecStart=/usr/sbin/apachectl start (code>
+   Main PID: 1236 (apache2)
+      Tasks: 55 (limit: 3397)
+     Memory: 7.9M (peak: 8.4M)
+        CPU: 144ms
+     CGroup: /system.slice/apache2.service
+             ├─1236 /usr/sbin/apache2 -k start
+             ├─1239 /usr/sbin/apache2 -k start
+             └─1241 /usr/sbin/apache2 -k start
+
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Starting apache>
+May 31 20:25:48 qzee-VirtualBox apachectl[1221]: AH00558: a>
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Started apache2>
+~
+~
+~
+~
+~
+~
+~
+~
+qzee@qzee-VirtualBox:/etc/nginx$ sudo ss -ntlp
+State  Recv-Q Send-Q Local Address:Port   Peer Address:Port Process                                                     
+LISTEN 0      4096       127.0.0.1:631         0.0.0.0:*     users:(("cupsd",pid=1190,fd=7))                            
+LISTEN 0      4096      127.0.0.54:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=17))                  
+LISTEN 0      511          0.0.0.0:80          0.0.0.0:*     users:(("apache2",pid=1241,fd=3),("apache2",pid=1239,fd=3),("apache2",pid=1236,fd=3))
+LISTEN 0      4096   127.0.0.53%lo:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=15))                  
+LISTEN 0      4096               *:22                *:*     users:(("sshd",pid=1231,fd=3),("systemd",pid=1,fd=211))    
+LISTEN 0      4096           [::1]:631            [::]:*     users:(("cupsd",pid=1190,fd=6))                            
+qzee@qzee-VirtualBox:/etc/nginx$ pwd
+/etc/nginx
+qzee@qzee-VirtualBox:/etc/nginx$ cd /etc/apache2
+qzee@qzee-VirtualBox:/etc/apache2$ tree
+.
+├── apache2.conf
+├── conf-available
+│   ├── charset.conf
+│   ├── localized-error-pages.conf
+│   ├── other-vhosts-access-log.conf
+│   ├── security.conf
+│   └── serve-cgi-bin.conf
+├── conf-enabled
+│   ├── charset.conf -> ../conf-available/charset.conf
+│   ├── localized-error-pages.conf -> ../conf-available/localized-error-pages.conf
+│   ├── other-vhosts-access-log.conf -> ../conf-available/other-vhosts-access-log.conf
+│   ├── security.conf -> ../conf-available/security.conf
+│   └── serve-cgi-bin.conf -> ../conf-available/serve-cgi-bin.conf
+├── envvars
+├── magic
+├── mods-available
+│   ├── access_compat.load
+│   ├── actions.conf
+│   ├── actions.load
+│   ├── alias.conf
+│   ├── alias.load
+│   ├── allowmethods.load
+│   ├── asis.load
+│   ├── auth_basic.load
+│   ├── auth_digest.load
+│   ├── auth_form.load
+│   ├── authn_anon.load
+│   ├── authn_core.load
+│   ├── authn_dbd.load
+│   ├── authn_dbm.load
+│   ├── authn_file.load
+│   ├── authn_socache.load
+│   ├── authnz_fcgi.load
+│   ├── authnz_ldap.load
+│   ├── authz_core.load
+│   ├── authz_dbd.load
+│   ├── authz_dbm.load
+│   ├── authz_groupfile.load
+│   ├── authz_host.load
+│   ├── authz_owner.load
+│   ├── authz_user.load
+│   ├── autoindex.conf
+│   ├── autoindex.load
+│   ├── brotli.load
+│   ├── buffer.load
+│   ├── cache_disk.conf
+│   ├── cache_disk.load
+│   ├── cache.load
+│   ├── cache_socache.load
+│   ├── cern_meta.load
+│   ├── cgid.conf
+│   ├── cgid.load
+│   ├── cgi.load
+│   ├── charset_lite.load
+│   ├── data.load
+│   ├── dav_fs.conf
+│   ├── dav_fs.load
+│   ├── dav.load
+│   ├── dav_lock.load
+│   ├── dbd.load
+│   ├── deflate.conf
+│   ├── deflate.load
+│   ├── dialup.load
+│   ├── dir.conf
+│   ├── dir.load
+│   ├── dump_io.load
+│   ├── echo.load
+│   ├── env.load
+│   ├── expires.load
+│   ├── ext_filter.load
+│   ├── file_cache.load
+│   ├── filter.load
+│   ├── headers.load
+│   ├── heartbeat.load
+│   ├── heartmonitor.load
+│   ├── http2.conf
+│   ├── http2.load
+│   ├── ident.load
+│   ├── imagemap.load
+│   ├── include.load
+│   ├── info.conf
+│   ├── info.load
+│   ├── lbmethod_bybusyness.load
+│   ├── lbmethod_byrequests.load
+│   ├── lbmethod_bytraffic.load
+│   ├── lbmethod_heartbeat.load
+│   ├── ldap.conf
+│   ├── ldap.load
+│   ├── log_debug.load
+│   ├── log_forensic.load
+│   ├── lua.load
+│   ├── macro.load
+│   ├── md.load
+│   ├── mime.conf
+│   ├── mime.load
+│   ├── mime_magic.conf
+│   ├── mime_magic.load
+│   ├── mpm_event.conf
+│   ├── mpm_event.load
+│   ├── mpm_prefork.conf
+│   ├── mpm_prefork.load
+│   ├── mpm_worker.conf
+│   ├── mpm_worker.load
+│   ├── negotiation.conf
+│   ├── negotiation.load
+│   ├── proxy_ajp.load
+│   ├── proxy_balancer.conf
+│   ├── proxy_balancer.load
+│   ├── proxy.conf
+│   ├── proxy_connect.load
+│   ├── proxy_express.load
+│   ├── proxy_fcgi.load
+│   ├── proxy_fdpass.load
+│   ├── proxy_ftp.conf
+│   ├── proxy_ftp.load
+│   ├── proxy_hcheck.load
+│   ├── proxy_html.conf
+│   ├── proxy_html.load
+│   ├── proxy_http2.load
+│   ├── proxy_http.load
+│   ├── proxy.load
+│   ├── proxy_scgi.load
+│   ├── proxy_uwsgi.load
+│   ├── proxy_wstunnel.load
+│   ├── ratelimit.load
+│   ├── reflector.load
+│   ├── remoteip.load
+│   ├── reqtimeout.conf
+│   ├── reqtimeout.load
+│   ├── request.load
+│   ├── rewrite.load
+│   ├── sed.load
+│   ├── session_cookie.load
+│   ├── session_crypto.load
+│   ├── session_dbd.load
+│   ├── session.load
+│   ├── setenvif.conf
+│   ├── setenvif.load
+│   ├── slotmem_plain.load
+│   ├── slotmem_shm.load
+│   ├── socache_dbm.load
+│   ├── socache_memcache.load
+│   ├── socache_redis.load
+│   ├── socache_shmcb.load
+│   ├── speling.load
+│   ├── ssl.conf
+│   ├── ssl.load
+│   ├── status.conf
+│   ├── status.load
+│   ├── substitute.load
+│   ├── suexec.load
+│   ├── unique_id.load
+│   ├── userdir.conf
+│   ├── userdir.load
+│   ├── usertrack.load
+│   ├── vhost_alias.load
+│   └── xml2enc.load
+├── mods-enabled
+│   ├── access_compat.load -> ../mods-available/access_compat.load
+│   ├── alias.conf -> ../mods-available/alias.conf
+│   ├── alias.load -> ../mods-available/alias.load
+│   ├── auth_basic.load -> ../mods-available/auth_basic.load
+│   ├── authn_core.load -> ../mods-available/authn_core.load
+│   ├── authn_file.load -> ../mods-available/authn_file.load
+│   ├── authz_core.load -> ../mods-available/authz_core.load
+│   ├── authz_host.load -> ../mods-available/authz_host.load
+│   ├── authz_user.load -> ../mods-available/authz_user.load
+│   ├── autoindex.conf -> ../mods-available/autoindex.conf
+│   ├── autoindex.load -> ../mods-available/autoindex.load
+│   ├── deflate.conf -> ../mods-available/deflate.conf
+│   ├── deflate.load -> ../mods-available/deflate.load
+│   ├── dir.conf -> ../mods-available/dir.conf
+│   ├── dir.load -> ../mods-available/dir.load
+│   ├── env.load -> ../mods-available/env.load
+│   ├── filter.load -> ../mods-available/filter.load
+│   ├── mime.conf -> ../mods-available/mime.conf
+│   ├── mime.load -> ../mods-available/mime.load
+│   ├── mpm_event.conf -> ../mods-available/mpm_event.conf
+│   ├── mpm_event.load -> ../mods-available/mpm_event.load
+│   ├── negotiation.conf -> ../mods-available/negotiation.conf
+│   ├── negotiation.load -> ../mods-available/negotiation.load
+│   ├── reqtimeout.conf -> ../mods-available/reqtimeout.conf
+│   ├── reqtimeout.load -> ../mods-available/reqtimeout.load
+│   ├── setenvif.conf -> ../mods-available/setenvif.conf
+│   ├── setenvif.load -> ../mods-available/setenvif.load
+│   ├── status.conf -> ../mods-available/status.conf
+│   └── status.load -> ../mods-available/status.load
+├── ports.conf
+├── sites-available
+│   ├── 000-default.conf
+│   └── default-ssl.conf
+└── sites-enabled
+    └── 000-default.conf -> ../sites-available/000-default.conf
+
+7 directories, 187 files
+qzee@qzee-VirtualBox:/etc/apache2$ ll
+total 96
+drwxr-xr-x   8 root root  4096 May 31 20:05 ./
+drwxr-xr-x 141 root root 12288 May 31 20:05 ../
+-rw-r--r--   1 root root  7178 Apr 18 18:13 apache2.conf
+drwxr-xr-x   2 root root  4096 May 31 20:05 conf-available/
+drwxr-xr-x   2 root root  4096 May 31 20:05 conf-enabled/
+-rw-r--r--   1 root root  1782 Mar 18 14:41 envvars
+-rw-r--r--   1 root root 31063 Mar 18 14:41 magic
+drwxr-xr-x   2 root root 12288 May 31 20:05 mods-available/
+drwxr-xr-x   2 root root  4096 May 31 20:05 mods-enabled/
+-rw-r--r--   1 root root   274 Mar 18 15:35 ports.conf
+drwxr-xr-x   2 root root  4096 May 31 20:05 sites-available/
+drwxr-xr-x   2 root root  4096 May 31 20:05 sites-enabled/
+qzee@qzee-VirtualBox:/etc/apache2$ sudo nano ports.conf 
+qzee@qzee-VirtualBox:/etc/apache2$ sudo nano apache2.conf 
+qzee@qzee-VirtualBox:/etc/apache2$ sudo apachectl -t
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Syntax OK
+qzee@qzee-VirtualBox:/etc/apache2$ systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.servic>
+     Active: active (running) since Fri 2024-05-31 20:25:48>
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 1189 ExecStart=/usr/sbin/apachectl start (code>
+   Main PID: 1236 (apache2)
+      Tasks: 55 (limit: 3397)
+     Memory: 7.9M (peak: 8.4M)
+        CPU: 224ms
+     CGroup: /system.slice/apache2.service
+             ├─1236 /usr/sbin/apache2 -k start
+             ├─1239 /usr/sbin/apache2 -k start
+             └─1241 /usr/sbin/apache2 -k start
+
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Starting apache>
+May 31 20:25:48 qzee-VirtualBox apachectl[1221]: AH00558: a>
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Started apache2>
+qzee@qzee-VirtualBox:/etc/apache2$ sudo systemctl stop apache2
+qzee@qzee-VirtualBox:/etc/apache2$ systemctl status apache2
+○ apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.servic>
+     Active: inactive (dead) since Fri 2024-05-31 20:51:22 >
+   Duration: 25min 33.347s
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 1189 ExecStart=/usr/sbin/apachectl start (code>
+    Process: 4480 ExecStop=/usr/sbin/apachectl graceful-sto>
+   Main PID: 1236 (code=exited, status=0/SUCCESS)
+        CPU: 285ms
+
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Starting apache>
+May 31 20:25:48 qzee-VirtualBox apachectl[1221]: AH00558: a>
+May 31 20:25:48 qzee-VirtualBox systemd[1]: Started apache2>
+May 31 20:51:21 qzee-VirtualBox systemd[1]: Stopping apache>
+May 31 20:51:22 qzee-VirtualBox apachectl[4482]: AH00558: a>
+May 31 20:51:22 qzee-VirtualBox systemd[1]: apache2.service>
+May 31 20:51:22 qzee-VirtualBox systemd[1]: Stopped apache2>
+qzee@qzee-VirtualBox:/etc/apache2$ ll
+total 96
+drwxr-xr-x   8 root root  4096 May 31 20:35 ./
+drwxr-xr-x 141 root root 12288 May 31 20:05 ../
+-rw-r--r--   1 root root  7178 Apr 18 18:13 apache2.conf
+drwxr-xr-x   2 root root  4096 May 31 20:05 conf-available/
+drwxr-xr-x   2 root root  4096 May 31 20:05 conf-enabled/
+-rw-r--r--   1 root root  1782 Mar 18 14:41 envvars
+-rw-r--r--   1 root root 31063 Mar 18 14:41 magic
+drwxr-xr-x   2 root root 12288 May 31 20:05 mods-available/
+drwxr-xr-x   2 root root  4096 May 31 20:05 mods-enabled/
+-rw-r--r--   1 root root   274 Mar 18 15:35 ports.conf
+drwxr-xr-x   2 root root  4096 May 31 20:05 sites-available/
+drwxr-xr-x   2 root root  4096 May 31 20:05 sites-enabled/
+qzee@qzee-VirtualBox:/etc/apache2$ cd /sites-available
+bash: cd: /sites-available: No such file or directory
+qzee@qzee-VirtualBox:/etc/apache2$ cd /sites-available
+bash: cd: /sites-available: No such file or directory
+qzee@qzee-VirtualBox:/etc/apache2$ cd sites-available
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ ll
+total 20
+drwxr-xr-x 2 root root 4096 May 31 20:05 ./
+drwxr-xr-x 8 root root 4096 May 31 20:35 ../
+-rw-r--r-- 1 root root 1286 Mar 18 15:35 000-default.conf
+-rw-r--r-- 1 root root 4573 Mar 18 15:35 default-ssl.conf
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ sudo nano 000-default.conf 
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ sudo nano 000-default.conf 
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ sudo systemctl start apache2
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.servic>
+     Active: active (running) since Fri 2024-05-31 20:54:16>
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 4619 ExecStart=/usr/sbin/apachectl start (code>
+   Main PID: 4622 (apache2)
+      Tasks: 55 (limit: 3397)
+     Memory: 5.4M (peak: 5.8M)
+        CPU: 61ms
+     CGroup: /system.slice/apache2.service
+             ├─4622 /usr/sbin/apache2 -k start
+             ├─4624 /usr/sbin/apache2 -k start
+             └─4625 /usr/sbin/apache2 -k start
+
+May 31 20:54:16 qzee-VirtualBox systemd[1]: Starting apache>
+May 31 20:54:16 qzee-VirtualBox apachectl[4621]: AH00558: a>
+May 31 20:54:16 qzee-VirtualBox systemd[1]: Started apache2>
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ sudo systemctl start nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ sudo systemctl status nginx
+× nginx.service - A high performance web server and a rever>
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service;>
+     Active: failed (Result: exit-code) since Fri 2024-05-3>
+       Docs: man:nginx(8)
+    Process: 4714 ExecStartPre=/usr/sbin/nginx -t -q -g dae>
+    Process: 4715 ExecStart=/usr/sbin/nginx -g daemon on; m>
+        CPU: 27ms
+
+May 31 20:54:53 qzee-VirtualBox systemd[1]: Starting nginx.>
+May 31 20:54:53 qzee-VirtualBox nginx[4715]: nginx: [emerg]>
+May 31 20:54:54 qzee-VirtualBox nginx[4715]: nginx: [emerg]>
+May 31 20:54:54 qzee-VirtualBox nginx[4715]: nginx: [emerg]>
+May 31 20:54:55 qzee-VirtualBox nginx[4715]: nginx: [emerg]>
+May 31 20:54:55 qzee-VirtualBox nginx[4715]: nginx: [emerg]>
+May 31 20:54:56 qzee-VirtualBox nginx[4715]: nginx: [emerg]>
+May 31 20:54:56 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 20:54:56 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 20:54:56 qzee-VirtualBox systemd[1]: Failed to start>
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.servic>
+     Active: active (running) since Fri 2024-05-31 20:54:16>
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 4619 ExecStart=/usr/sbin/apachectl start (code>
+   Main PID: 4622 (apache2)
+      Tasks: 55 (limit: 3397)
+     Memory: 5.4M (peak: 5.8M)
+        CPU: 66ms
+     CGroup: /system.slice/apache2.service
+             ├─4622 /usr/sbin/apache2 -k start
+             ├─4624 /usr/sbin/apache2 -k start
+             └─4625 /usr/sbin/apache2 -k start
+
+May 31 20:54:16 qzee-VirtualBox systemd[1]: Starting apache>
+May 31 20:54:16 qzee-VirtualBox apachectl[4621]: AH00558: a>
+May 31 20:54:16 qzee-VirtualBox systemd[1]: Started apache2>
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ sudo systemctl start nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ sudo systemctl start nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ ss -ntlpcd
+ss: invalid option -- 'c'
+Usage: ss [ OPTIONS ]
+       ss [ OPTIONS ] [ FILTER ]
+   -h, --help          this message
+   -V, --version       output version information
+   -n, --numeric       don't resolve service names
+   -r, --resolve       resolve host names
+   -a, --all           display all sockets
+   -l, --listening     display listening sockets
+   -o, --options       show timer information
+   -e, --extended      show detailed socket information
+   -m, --memory        show socket memory usage
+   -p, --processes     show process using socket
+   -T, --threads       show thread using socket
+   -i, --info          show internal TCP information
+       --tipcinfo      show internal tipc socket information
+   -s, --summary       show socket usage summary
+       --tos           show tos and priority information
+       --cgroup        show cgroup information
+   -b, --bpf           show bpf filter socket information
+   -E, --events        continually display sockets as they are destroyed
+   -Z, --context       display task SELinux security contexts
+   -z, --contexts      display task and socket SELinux security contexts
+   -N, --net           switch to the specified network namespace name
+
+   -4, --ipv4          display only IP version 4 sockets
+   -6, --ipv6          display only IP version 6 sockets
+   -0, --packet        display PACKET sockets
+   -t, --tcp           display only TCP sockets
+   -M, --mptcp         display only MPTCP sockets
+   -S, --sctp          display only SCTP sockets
+   -u, --udp           display only UDP sockets
+   -d, --dccp          display only DCCP sockets
+   -w, --raw           display only RAW sockets
+   -x, --unix          display only Unix domain sockets
+       --tipc          display only TIPC sockets
+       --vsock         display only vsock sockets
+       --xdp           display only XDP sockets
+   -f, --family=FAMILY display sockets of type FAMILY
+       FAMILY := {inet|inet6|link|unix|netlink|vsock|tipc|xdp|help}
+
+   -K, --kill          forcibly close sockets, display what was closed
+   -H, --no-header     Suppress header line
+   -O, --oneline       socket's data printed on a single line
+       --inet-sockopt  show various inet socket options
+
+   -A, --query=QUERY, --socket=QUERY
+       QUERY := {all|inet|tcp|mptcp|udp|raw|unix|unix_dgram|unix_stream|unix_seqpacket|packet|packet_raw|packet_dgram|netlink|dccp|sctp|vsock_stream|vsock_dgram|tipc|xdp}[,QUERY]
+
+   -D, --diag=FILE     Dump raw information about TCP sockets to FILE
+   -F, --filter=FILE   read filter information from FILE
+       FILTER := [ state STATE-FILTER ] [ EXPRESSION ]
+       STATE-FILTER := {all|connected|synchronized|bucket|big|TCP-STATES}
+         TCP-STATES := {established|syn-sent|syn-recv|fin-wait-{1,2}|time-wait|closed|close-wait|last-ack|listening|closing}
+          connected := {established|syn-sent|syn-recv|fin-wait-{1,2}|time-wait|close-wait|last-ack|closing}
+       synchronized := {established|syn-recv|fin-wait-{1,2}|time-wait|close-wait|last-ack|closing}
+             bucket := {syn-recv|time-wait}
+                big := {established|syn-sent|fin-wait-{1,2}|closed|close-wait|last-ack|listening|closing}
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ sudo systemctl start nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+qzee@qzee-VirtualBox:/etc/apache2/sites-available$ cd ~
+qzee@qzee-VirtualBox:~$ sudo systemctl start nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+qzee@qzee-VirtualBox:~$ systemctl statys nginx
+Unknown command verb 'statys', did you mean 'status'?
+qzee@qzee-VirtualBox:~$ systemctl status nginx
+× nginx.service - A high performance web server and a rever>
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service;>
+     Active: failed (Result: exit-code) since Fri 2024-05-3>
+       Docs: man:nginx(8)
+    Process: 4886 ExecStartPre=/usr/sbin/nginx -t -q -g dae>
+    Process: 4887 ExecStart=/usr/sbin/nginx -g daemon on; m>
+        CPU: 17ms
+
+May 31 20:58:06 qzee-VirtualBox systemd[1]: Starting nginx.>
+May 31 20:58:06 qzee-VirtualBox nginx[4887]: nginx: [emerg]>
+May 31 20:58:06 qzee-VirtualBox nginx[4887]: nginx: [emerg]>
+May 31 20:58:07 qzee-VirtualBox nginx[4887]: nginx: [emerg]>
+May 31 20:58:07 qzee-VirtualBox nginx[4887]: nginx: [emerg]>
+May 31 20:58:08 qzee-VirtualBox nginx[4887]: nginx: [emerg]>
+May 31 20:58:08 qzee-VirtualBox nginx[4887]: nginx: [emerg]>
+May 31 20:58:08 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 20:58:08 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 20:58:08 qzee-VirtualBox systemd[1]: Failed to start>
+qzee@qzee-VirtualBox:~$ sudo systemctl reload nginx
+nginx.service is not active, cannot reload.
+qzee@qzee-VirtualBox:~$ sudo systemctl active nginx
+Unknown command verb 'active', did you mean 'is-active'?
+qzee@qzee-VirtualBox:~$ sudo systemctl is-active nginx
+failed
+qzee@qzee-VirtualBox:~$ sudo systemctl is-active nginx
+failed
+qzee@qzee-VirtualBox:~$ sudo ss -ntlp
+State  Recv-Q Send-Q Local Address:Port   Peer Address:Port Process                                                     
+LISTEN 0      4096       127.0.0.1:631         0.0.0.0:*     users:(("cupsd",pid=1190,fd=7))                            
+LISTEN 0      4096      127.0.0.54:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=17))                  
+LISTEN 0      511          0.0.0.0:80          0.0.0.0:*     users:(("apache2",pid=4625,fd=3),("apache2",pid=4624,fd=3),("apache2",pid=4622,fd=3))
+LISTEN 0      4096   127.0.0.53%lo:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=15))                  
+LISTEN 0      4096               *:22                *:*     users:(("sshd",pid=1231,fd=3),("systemd",pid=1,fd=211))    
+LISTEN 0      4096           [::1]:631            [::]:*     users:(("cupsd",pid=1190,fd=6))                            
+qzee@qzee-VirtualBox:~$ sudo systemctl restart nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+qzee@qzee-VirtualBox:~$ sudo ss -ntlp
+State  Recv-Q Send-Q Local Address:Port   Peer Address:Port Process                                                     
+LISTEN 0      4096       127.0.0.1:631         0.0.0.0:*     users:(("cupsd",pid=1190,fd=7))                            
+LISTEN 0      4096      127.0.0.54:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=17))                  
+LISTEN 0      511          0.0.0.0:80          0.0.0.0:*     users:(("apache2",pid=4625,fd=3),("apache2",pid=4624,fd=3),("apache2",pid=4622,fd=3))
+LISTEN 0      4096   127.0.0.53%lo:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=15))                  
+LISTEN 0      4096               *:22                *:*     users:(("sshd",pid=1231,fd=3),("systemd",pid=1,fd=211))    
+LISTEN 0      4096           [::1]:631            [::]:*     users:(("cupsd",pid=1190,fd=6))                            
+qzee@qzee-VirtualBox:~$ sudo systemctl restart apache2
+qzee@qzee-VirtualBox:~$ sudo systemctl restart nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+qzee@qzee-VirtualBox:~$ systemctl nginx -t
+systemctl: option requires an argument -- 't'
+qzee@qzee-VirtualBox:~$ systemctl status nginx
+× nginx.service - A high performance web server and a rever>
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service;>
+     Active: failed (Result: exit-code) since Fri 2024-05-3>
+       Docs: man:nginx(8)
+    Process: 5211 ExecStartPre=/usr/sbin/nginx -t -q -g dae>
+    Process: 5212 ExecStart=/usr/sbin/nginx -g daemon on; m>
+        CPU: 25ms
+
+May 31 21:01:52 qzee-VirtualBox systemd[1]: Starting nginx.>
+May 31 21:01:53 qzee-VirtualBox nginx[5212]: nginx: [emerg]>
+May 31 21:01:53 qzee-VirtualBox nginx[5212]: nginx: [emerg]>
+May 31 21:01:54 qzee-VirtualBox nginx[5212]: nginx: [emerg]>
+May 31 21:01:54 qzee-VirtualBox nginx[5212]: nginx: [emerg]>
+May 31 21:01:55 qzee-VirtualBox nginx[5212]: nginx: [emerg]>
+May 31 21:01:55 qzee-VirtualBox nginx[5212]: nginx: [emerg]>
+May 31 21:01:55 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 21:01:55 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 21:01:55 qzee-VirtualBox systemd[1]: Failed to start>
+qzee@qzee-VirtualBox:~$ cd /etc/nginx
+qzee@qzee-VirtualBox:/etc/nginx$ ll
+total 84
+drwxr-xr-x   8 root root  4096 May 31 20:03 ./
+drwxr-xr-x 141 root root 12288 May 31 20:05 ../
+drwxr-xr-x   2 root root  4096 Mar 31 05:40 conf.d/
+-rw-r--r--   1 root root  1125 Dec  1  2023 fastcgi.conf
+-rw-r--r--   1 root root  1055 Dec  1  2023 fastcgi_params
+-rw-r--r--   1 root root  2837 Dec  1  2023 koi-utf
+-rw-r--r--   1 root root  2223 Dec  1  2023 koi-win
+-rw-r--r--   1 root root  5465 Dec  1  2023 mime.types
+drwxr-xr-x   2 root root  4096 Mar 31 05:40 modules-available/
+drwxr-xr-x   2 root root  4096 Mar 31 05:40 modules-enabled/
+-rw-r--r--   1 root root  1446 Dec  1  2023 nginx.conf
+-rw-r--r--   1 root root   180 Dec  1  2023 proxy_params
+-rw-r--r--   1 root root   636 Dec  1  2023 scgi_params
+drwxr-xr-x   2 root root  4096 May 31 20:03 sites-available/
+drwxr-xr-x   2 root root  4096 May 31 20:03 sites-enabled/
+drwxr-xr-x   2 root root  4096 May 31 20:03 snippets/
+-rw-r--r--   1 root root   664 Dec  1  2023 uwsgi_params
+-rw-r--r--   1 root root  3071 Dec  1  2023 win-utf
+qzee@qzee-VirtualBox:/etc/nginx$ cd sites-available/
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ ll
+total 12
+drwxr-xr-x 2 root root 4096 May 31 20:03 ./
+drwxr-xr-x 8 root root 4096 May 31 20:03 ../
+-rw-r--r-- 1 root root 2412 Dec  1  2023 default
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ nano default 
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ sudo systemctl start nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ sudo apt install php-fpm -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libsodium23 php-common php8.3-cli php8.3-common
+  php8.3-fpm php8.3-opcache php8.3-readline
+Suggested packages:
+  php-pear
+The following NEW packages will be installed:
+  libsodium23 php-common php-fpm php8.3-cli php8.3-common
+  php8.3-fpm php8.3-opcache php8.3-readline
+0 upgraded, 8 newly installed, 0 to remove and 12 not upgraded.
+Need to get 5,142 kB of archives.
+After this operation, 22.9 MB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libsodium23 amd64 1.0.18-1build3 [161 kB]
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 php-common all 2:93ubuntu2 [13.9 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 php8.3-common amd64 8.3.6-0maysync1 [738 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 php8.3-opcache amd64 8.3.6-0maysync1 [371 kB]
+Get:5 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 php8.3-readline amd64 8.3.6-0maysync1 [13.5 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 php8.3-cli amd64 8.3.6-0maysync1 [1,915 kB]
+Get:7 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 php8.3-fpm amd64 8.3.6-0maysync1 [1,924 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 php-fpm all 2:8.3+93ubuntu2 [4,162 B]
+Fetched 5,142 kB in 0s (10.8 MB/s) 
+Selecting previously unselected package libsodium23:amd64.
+(Reading database ... 153049 files and directories currently
+ installed.)
+Preparing to unpack .../0-libsodium23_1.0.18-1build3_amd64.d
+eb ...
+Unpacking libsodium23:amd64 (1.0.18-1build3) ...
+Selecting previously unselected package php-common.
+Preparing to unpack .../1-php-common_2%3a93ubuntu2_all.deb .
+..
+Unpacking php-common (2:93ubuntu2) ...
+Selecting previously unselected package php8.3-common.
+Preparing to unpack .../2-php8.3-common_8.3.6-0maysync1_amd6
+4.deb ...
+Unpacking php8.3-common (8.3.6-0maysync1) ...
+Selecting previously unselected package php8.3-opcache.
+Preparing to unpack .../3-php8.3-opcache_8.3.6-0maysync1_amd
+64.deb ...
+Unpacking php8.3-opcache (8.3.6-0maysync1) ...
+Selecting previously unselected package php8.3-readline.
+Preparing to unpack .../4-php8.3-readline_8.3.6-0maysync1_am
+d64.deb ...
+Unpacking php8.3-readline (8.3.6-0maysync1) ...
+Selecting previously unselected package php8.3-cli.
+Preparing to unpack .../5-php8.3-cli_8.3.6-0maysync1_amd64.d
+eb ...
+Unpacking php8.3-cli (8.3.6-0maysync1) ...
+Selecting previously unselected package php8.3-fpm.
+Preparing to unpack .../6-php8.3-fpm_8.3.6-0maysync1_amd64.d
+eb ...
+Unpacking php8.3-fpm (8.3.6-0maysync1) ...
+Selecting previously unselected package php-fpm.
+Preparing to unpack .../7-php-fpm_2%3a8.3+93ubuntu2_all.deb 
+...
+Unpacking php-fpm (2:8.3+93ubuntu2) ...
+Setting up php-common (2:93ubuntu2) ...
+Created symlink /etc/systemd/system/timers.target.wants/phps
+essionclean.timer → /usr/lib/systemd/system/phpsessionclean.
+timer.
+Setting up libsodium23:amd64 (1.0.18-1build3) ...
+Setting up php8.3-common (8.3.6-0maysync1) ...
+
+Creating config file /etc/php/8.3/mods-available/calendar.in
+i with new version
+
+Creating config file /etc/php/8.3/mods-available/ctype.ini w
+ith new version
+
+Creating config file /etc/php/8.3/mods-available/exif.ini wi
+th new version
+
+Creating config file /etc/php/8.3/mods-available/fileinfo.in
+i with new version
+
+Creating config file /etc/php/8.3/mods-available/ffi.ini wit
+h new version
+
+Creating config file /etc/php/8.3/mods-available/ftp.ini wit
+h new version
+
+Creating config file /etc/php/8.3/mods-available/gettext.ini
+ with new version
+
+Creating config file /etc/php/8.3/mods-available/iconv.ini w
+ith new version
+
+Creating config file /etc/php/8.3/mods-available/pdo.ini wit
+h new version
+
+Creating config file /etc/php/8.3/mods-available/phar.ini wi
+th new version
+
+Creating config file /etc/php/8.3/mods-available/posix.ini w
+ith new version
+
+Creating config file /etc/php/8.3/mods-available/shmop.ini w
+ith new version
+
+Creating config file /etc/php/8.3/mods-available/sockets.ini
+ with new version
+
+Creating config file /etc/php/8.3/mods-available/sysvmsg.ini
+ with new version
+
+Creating config file /etc/php/8.3/mods-available/sysvsem.ini
+ with new version
+
+Creating config file /etc/php/8.3/mods-available/sysvshm.ini
+ with new version
+
+Creating config file /etc/php/8.3/mods-available/tokenizer.i
+ni with new version
+Setting up php8.3-readline (8.3.6-0maysync1) ...
+
+Creating config file /etc/php/8.3/mods-available/readline.in
+i with new version
+Setting up php8.3-opcache (8.3.6-0maysync1) ...
+
+Creating config file /etc/php/8.3/mods-available/opcache.ini
+ with new version
+Setting up php8.3-cli (8.3.6-0maysync1) ...
+update-alternatives: using /usr/bin/php8.3 to provide /usr/b
+in/php (php) in auto mode
+update-alternatives: using /usr/bin/phar8.3 to provide /usr/
+bin/phar (phar) in auto mode
+update-alternatives: using /usr/bin/phar.phar8.3 to provide 
+/usr/bin/phar.phar (phar.phar) in auto mode
+
+Creating config file /etc/php/8.3/cli/php.ini with new versi
+on
+Setting up php8.3-fpm (8.3.6-0maysync1) ...
+
+Creating config file /etc/php/8.3/fpm/php.ini with new versi
+on
+NOTICE: Not enabling PHP 8.3 FPM by default.
+NOTICE: To enable PHP 8.3 FPM in Apache2 do:
+NOTICE: a2enmod proxy_fcgi setenvif
+NOTICE: a2enconf php8.3-fpm
+NOTICE: You are seeing this message because you have apache2
+ package installed.
+Created symlink /etc/systemd/system/multi-user.target.wants/
+php8.3-fpm.service → /usr/lib/systemd/system/php8.3-fpm.serv
+ice.
+Setting up php-fpm (2:8.3+93ubuntu2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.1) ...
+Processing triggers for php8.3-cli (8.3.6-0maysync1) ...
+Processing triggers for php8.3-fpm (8.3.6-0maysync1) ...
+NOTICE: Not enabling PHP 8.3 FPM by default.
+NOTICE: To enable PHP 8.3 FPM in Apache2 do:
+NOTICE: a2enmod proxy_fcgi setenvif
+NOTICE: a2enconf php8.3-fpm
+NOTICE: You are seeing this message because you have apache2
+ package installed.
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ sudo apt install php8.3
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  php8.3
+0 upgraded, 1 newly installed, 0 to remove and 12 not upgraded.
+Need to get 9,166 B of archives.
+After this operation, 62.5 kB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 php8.3 all 8.3.6-0maysync1 [9,166 B]
+Fetched 9,166 B in 0s (134 kB/s)
+Selecting previously unselected package php8.3.
+(Reading database ... 153193 files and directories currently
+ installed.)
+Preparing to unpack .../php8.3_8.3.6-0maysync1_all.deb ...
+Unpacking php8.3 (8.3.6-0maysync1) ...
+Setting up php8.3 (8.3.6-0maysync1) ...
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ sudo systemctl reload nginx
+nginx.service is not active, cannot reload.
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ systemctl staus nginx
+Unknown command verb 'staus', did you mean 'status'?
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ sudo systemctl status nginx
+× nginx.service - A high performance web server and a rever>
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service;>
+     Active: failed (Result: exit-code) since Fri 2024-05-3>
+       Docs: man:nginx(8)
+        CPU: 25ms
+
+May 31 21:05:29 qzee-VirtualBox nginx[5382]: nginx: [emerg]>
+May 31 21:05:29 qzee-VirtualBox nginx[5382]: nginx: [emerg]>
+May 31 21:05:30 qzee-VirtualBox nginx[5382]: nginx: [emerg]>
+May 31 21:05:30 qzee-VirtualBox nginx[5382]: nginx: [emerg]>
+May 31 21:05:31 qzee-VirtualBox nginx[5382]: nginx: [emerg]>
+May 31 21:05:31 qzee-VirtualBox nginx[5382]: nginx: [emerg]>
+May 31 21:05:31 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 21:05:31 qzee-VirtualBox systemd[1]: nginx.service: >
+May 31 21:05:31 qzee-VirtualBox systemd[1]: Failed to start>
+May 31 21:10:01 qzee-VirtualBox systemd[1]: nginx.service: >
+qzee@qzee-VirtualBox:/etc/nginx/sites-available$ cd
+qzee@qzee-VirtualBox:~$ sudo apt install mysql
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package mysql
+qzee@qzee-VirtualBox:~$ sudo apt install mysql-server -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libaio1t64 libcgi-fast-perl libcgi-pm-perl
+  libevent-core-2.1-7t64 libevent-pthreads-2.1-7t64
+  libfcgi-bin libfcgi-perl libfcgi0t64
+  libhtml-template-perl libmecab2 libprotobuf-lite32t64
+  mecab-ipadic mecab-ipadic-utf8 mecab-utils
+  mysql-client-8.0 mysql-client-core-8.0 mysql-common
+  mysql-server-8.0 mysql-server-core-8.0
+Suggested packages:
+  libipc-sharedcache-perl mailx tinyca
+The following NEW packages will be installed:
+  libaio1t64 libcgi-fast-perl libcgi-pm-perl
+  libevent-core-2.1-7t64 libevent-pthreads-2.1-7t64
+  libfcgi-bin libfcgi-perl libfcgi0t64
+  libhtml-template-perl libmecab2 libprotobuf-lite32t64
+  mecab-ipadic mecab-ipadic-utf8 mecab-utils
+  mysql-client-8.0 mysql-client-core-8.0 mysql-common
+  mysql-server mysql-server-8.0 mysql-server-core-8.0
+0 upgraded, 20 newly installed, 0 to remove and 12 not upgraded.
+Need to get 29.2 MB of archives.
+After this operation, 242 MB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 mysql-common all 5.8+1.1.0build1 [6,746 B]
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 mysql-client-core-8.0 amd64 8.0.36-2ubuntu3 [2,775 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 mysql-client-8.0 amd64 8.0.36-2ubuntu3 [22.4 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libaio1t64 amd64 0.3.113-6build1 [7,180 B]
+Get:5 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libevent-core-2.1-7t64 amd64 2.1.12-stable-9ubuntu2 [91.3 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libevent-pthreads-2.1-7t64 amd64 2.1.12-stable-9ubuntu2 [7,982 B]
+Get:7 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libmecab2 amd64 0.996-14ubuntu4 [201 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libprotobuf-lite32t64 amd64 3.21.12-8.2build1 [238 kB]
+Get:9 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 mysql-server-core-8.0 amd64 8.0.36-2ubuntu3 [17.4 MB]
+Get:10 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 mysql-server-8.0 amd64 8.0.36-2ubuntu3 [1,427 kB]
+Get:11 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libcgi-pm-perl all 4.63-1 [185 kB]
+Get:12 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libfcgi0t64 amd64 2.4.2-2.1build1 [26.8 kB]
+Get:13 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libfcgi-perl amd64 0.82+ds-3build2 [21.7 kB]
+Get:14 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libcgi-fast-perl all 1:2.17-1 [10.3 kB]
+Get:15 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libfcgi-bin amd64 2.4.2-2.1build1 [11.2 kB]
+Get:16 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libhtml-template-perl all 2.97-2 [60.2 kB]
+Get:17 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 mecab-utils amd64 0.996-14ubuntu4 [4,804 B]
+Get:18 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 mecab-ipadic all 2.7.0-20070801+main-3 [6,718 kB]
+Get:19 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-3 [4,384 B]
+Get:20 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 mysql-server all 8.0.36-2ubuntu3 [9,516 B]
+Fetched 29.2 MB in 3s (9,732 kB/s)        
+Preconfiguring packages ...
+Selecting previously unselected package mysql-common.
+(Reading database ... 153198 files and directories currently
+ installed.)
+Preparing to unpack .../0-mysql-common_5.8+1.1.0build1_all.d
+eb ...
+Unpacking mysql-common (5.8+1.1.0build1) ...
+Selecting previously unselected package mysql-client-core-8.
+0.
+Preparing to unpack .../1-mysql-client-core-8.0_8.0.36-2ubun
+tu3_amd64.deb ...
+Unpacking mysql-client-core-8.0 (8.0.36-2ubuntu3) ...
+Selecting previously unselected package mysql-client-8.0.
+Preparing to unpack .../2-mysql-client-8.0_8.0.36-2ubuntu3_a
+md64.deb ...
+Unpacking mysql-client-8.0 (8.0.36-2ubuntu3) ...
+Selecting previously unselected package libaio1t64:amd64.
+Preparing to unpack .../3-libaio1t64_0.3.113-6build1_amd64.d
+eb ...
+Unpacking libaio1t64:amd64 (0.3.113-6build1) ...
+Selecting previously unselected package libevent-core-2.1-7t
+64:amd64.
+Preparing to unpack .../4-libevent-core-2.1-7t64_2.1.12-stab
+le-9ubuntu2_amd64.deb ...
+Unpacking libevent-core-2.1-7t64:amd64 (2.1.12-stable-9ubunt
+u2) ...
+Selecting previously unselected package libevent-pthreads-2.
+1-7t64:amd64.
+Preparing to unpack .../5-libevent-pthreads-2.1-7t64_2.1.12-
+stable-9ubuntu2_amd64.deb ...
+Unpacking libevent-pthreads-2.1-7t64:amd64 (2.1.12-stable-9u
+buntu2) ...
+Selecting previously unselected package libmecab2:amd64.
+Preparing to unpack .../6-libmecab2_0.996-14ubuntu4_amd64.de
+b ...
+Unpacking libmecab2:amd64 (0.996-14ubuntu4) ...
+Selecting previously unselected package libprotobuf-lite32t6
+4:amd64.
+Preparing to unpack .../7-libprotobuf-lite32t64_3.21.12-8.2b
+uild1_amd64.deb ...
+Unpacking libprotobuf-lite32t64:amd64 (3.21.12-8.2build1) ..
+.
+Selecting previously unselected package mysql-server-core-8.
+0.
+Preparing to unpack .../8-mysql-server-core-8.0_8.0.36-2ubun
+tu3_amd64.deb ...
+Unpacking mysql-server-core-8.0 (8.0.36-2ubuntu3) ...
+Setting up mysql-common (5.8+1.1.0build1) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to pro
+vide /etc/mysql/my.cnf (my.cnf) in auto mode
+Selecting previously unselected package mysql-server-8.0.
+(Reading database ... 153428 files and directories currently
+ installed.)
+Preparing to unpack .../00-mysql-server-8.0_8.0.36-2ubuntu3_
+amd64.deb ...
+Unpacking mysql-server-8.0 (8.0.36-2ubuntu3) ...
+Selecting previously unselected package libcgi-pm-perl.
+Preparing to unpack .../01-libcgi-pm-perl_4.63-1_all.deb ...
+Unpacking libcgi-pm-perl (4.63-1) ...
+Selecting previously unselected package libfcgi0t64:amd64.
+Preparing to unpack .../02-libfcgi0t64_2.4.2-2.1build1_amd64
+.deb ...
+Unpacking libfcgi0t64:amd64 (2.4.2-2.1build1) ...
+Selecting previously unselected package libfcgi-perl.
+Preparing to unpack .../03-libfcgi-perl_0.82+ds-3build2_amd6
+4.deb ...
+Unpacking libfcgi-perl (0.82+ds-3build2) ...
+Selecting previously unselected package libcgi-fast-perl.
+Preparing to unpack .../04-libcgi-fast-perl_1%3a2.17-1_all.d
+eb ...
+Unpacking libcgi-fast-perl (1:2.17-1) ...
+Selecting previously unselected package libfcgi-bin.
+Preparing to unpack .../05-libfcgi-bin_2.4.2-2.1build1_amd64
+.deb ...
+Unpacking libfcgi-bin (2.4.2-2.1build1) ...
+Selecting previously unselected package libhtml-template-per
+l.
+Preparing to unpack .../06-libhtml-template-perl_2.97-2_all.
+deb ...
+Unpacking libhtml-template-perl (2.97-2) ...
+Selecting previously unselected package mecab-utils.
+Preparing to unpack .../07-mecab-utils_0.996-14ubuntu4_amd64
+.deb ...
+Unpacking mecab-utils (0.996-14ubuntu4) ...
+Selecting previously unselected package mecab-ipadic.
+Preparing to unpack .../08-mecab-ipadic_2.7.0-20070801+main-
+3_all.deb ...
+Unpacking mecab-ipadic (2.7.0-20070801+main-3) ...
+Selecting previously unselected package mecab-ipadic-utf8.
+Preparing to unpack .../09-mecab-ipadic-utf8_2.7.0-20070801+
+main-3_all.deb ...
+Unpacking mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../10-mysql-server_8.0.36-2ubuntu3_all.
+deb ...
+Unpacking mysql-server (8.0.36-2ubuntu3) ...
+Setting up libprotobuf-lite32t64:amd64 (3.21.12-8.2build1) .
+..
+Setting up libmecab2:amd64 (0.996-14ubuntu4) ...
+Setting up mysql-client-core-8.0 (8.0.36-2ubuntu3) ...
+Setting up libfcgi0t64:amd64 (2.4.2-2.1build1) ...
+Setting up libcgi-pm-perl (4.63-1) ...
+Setting up libfcgi-bin (2.4.2-2.1build1) ...
+Setting up libhtml-template-perl (2.97-2) ...
+Setting up mecab-utils (0.996-14ubuntu4) ...
+Setting up libaio1t64:amd64 (0.3.113-6build1) ...
+Setting up mysql-client-8.0 (8.0.36-2ubuntu3) ...
+Setting up libfcgi-perl (0.82+ds-3build2) ...
+Setting up libevent-core-2.1-7t64:amd64 (2.1.12-stable-9ubun
+tu2) ...
+Setting up mecab-ipadic (2.7.0-20070801+main-3) ...
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array:   9% |###                            
+emitting double-array:  18% |#######                        
+emitting double-array:  27% |###########                    
+emitting double-array:  36% |###############                
+emitting double-array:  45% |###################            
+emitting double-array:  54% |#######################        
+emitting double-array:  63% |###########################    
+emitting double-array:  72% |###############################
+emitting double-array:  81% |###############################
+emitting double-array:  90% |###############################
+emitting double-array: 100% |###############################
+############| 
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 2732
+8
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 79
+5
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 1214
+6
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+emitting double-array:   0% |                               
+emitting double-array:   1% |                               
+emitting double-array:   2% |                               
+emitting double-array:   3% |#                              
+emitting double-array:   4% |#                              
+emitting double-array:   5% |##                             
+emitting double-array:   6% |##                             
+emitting double-array:   7% |###                            
+emitting double-array:   8% |###                            
+emitting double-array:   9% |###                            
+emitting double-array:  10% |####                           
+emitting double-array:  11% |####                           
+emitting double-array:  12% |#####                          
+emitting double-array:  13% |#####                          
+emitting double-array:  14% |######                         
+emitting double-array:  15% |######                         
+emitting double-array:  16% |######                         
+emitting double-array:  17% |#######                        
+emitting double-array:  18% |#######                        
+emitting double-array:  19% |########                       
+emitting double-array:  20% |########                       
+emitting double-array:  21% |#########                      
+emitting double-array:  22% |#########                      
+emitting double-array:  23% |#########                      
+emitting double-array:  24% |##########                     
+emitting double-array:  25% |##########                     
+emitting double-array:  26% |###########                    
+emitting double-array:  27% |###########                    
+emitting double-array:  28% |############                   
+emitting double-array:  29% |############                   
+emitting double-array:  30% |############                   
+emitting double-array:  31% |#############                  
+emitting double-array:  32% |#############                  
+emitting double-array:  33% |##############                 
+emitting double-array:  34% |##############                 
+emitting double-array:  35% |###############                
+emitting double-array:  36% |###############                
+emitting double-array:  37% |###############                
+emitting double-array:  38% |################               
+emitting double-array:  39% |################               
+emitting double-array:  40% |#################              
+emitting double-array:  41% |#################              
+emitting double-array:  42% |##################             
+emitting double-array:  43% |##################             
+emitting double-array:  44% |##################             
+emitting double-array:  45% |###################            
+emitting double-array:  46% |###################            
+emitting double-array:  47% |####################           
+emitting double-array:  48% |####################           
+emitting double-array:  49% |#####################          
+emitting double-array:  50% |#####################          
+emitting double-array:  51% |#####################          
+emitting double-array:  52% |######################         
+emitting double-array:  53% |######################         
+emitting double-array:  54% |#######################        
+emitting double-array:  55% |#######################        
+emitting double-array:  56% |########################       
+emitting double-array:  57% |########################       
+emitting double-array:  58% |########################       
+emitting double-array:  59% |#########################      
+emitting double-array:  60% |#########################      
+emitting double-array:  61% |##########################     
+emitting double-array:  62% |##########################     
+emitting double-array:  63% |###########################    
+emitting double-array:  64% |###########################    
+emitting double-array:  65% |###########################    
+emitting double-array:  66% |############################   
+emitting double-array:  67% |############################   
+emitting double-array:  68% |#############################  
+emitting double-array:  69% |#############################  
+emitting double-array:  70% |############################## 
+emitting double-array:  71% |############################## 
+emitting double-array:  72% |############################## 
+emitting double-array:  73% |###############################
+emitting double-array:  74% |###############################
+emitting double-array:  75% |###############################
+emitting double-array:  76% |###############################
+emitting double-array:  77% |###############################
+emitting double-array:  78% |###############################
+emitting double-array:  79% |###############################
+emitting double-array:  80% |###############################
+emitting double-array:  81% |###############################
+emitting double-array:  82% |###############################
+emitting double-array:  83% |###############################
+emitting double-array:  84% |###############################
+emitting double-array:  85% |###############################
+emitting double-array:  86% |###############################
+emitting double-array:  87% |###############################
+emitting double-array:  88% |###############################
+emitting double-array:  89% |###############################
+emitting double-array:  90% |###############################
+emitting double-array:  91% |###############################
+emitting double-array:  92% |###############################
+emitting double-array:  93% |###############################
+emitting double-array:  94% |###############################
+emitting double-array:  95% |###############################
+emitting double-array:  96% |###############################
+emitting double-array:  97% |###############################
+emitting double-array:  98% |###############################
+emitting double-array:  99% |###############################
+emitting double-array: 100% |###############################
+############| 
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      :   0% |                               
+emitting matrix      :   1% |                               
+emitting matrix      :   2% |                               
+emitting matrix      :   3% |#                              
+emitting matrix      :   4% |#                              
+emitting matrix      :   5% |##                             
+emitting matrix      :   6% |##                             
+emitting matrix      :   7% |###                            
+emitting matrix      :   8% |###                            
+emitting matrix      :   9% |###                            
+emitting matrix      :  10% |####                           
+emitting matrix      :  11% |####                           
+emitting matrix      :  12% |#####                          
+emitting matrix      :  13% |#####                          
+emitting matrix      :  14% |######                         
+emitting matrix      :  15% |######                         
+emitting matrix      :  16% |######                         
+emitting matrix      :  17% |#######                        
+emitting matrix      :  18% |#######                        
+emitting matrix      :  19% |########                       
+emitting matrix      :  20% |########                       
+emitting matrix      :  21% |#########                      
+emitting matrix      :  22% |#########                      
+emitting matrix      :  23% |#########                      
+emitting matrix      :  24% |##########                     
+emitting matrix      :  25% |##########                     
+emitting matrix      :  26% |###########                    
+emitting matrix      :  27% |###########                    
+emitting matrix      :  28% |############                   
+emitting matrix      :  29% |############                   
+emitting matrix      :  30% |############                   
+emitting matrix      :  31% |#############                  
+emitting matrix      :  32% |#############                  
+emitting matrix      :  33% |##############                 
+emitting matrix      :  34% |##############                 
+emitting matrix      :  35% |###############                
+emitting matrix      :  36% |###############                
+emitting matrix      :  37% |###############                
+emitting matrix      :  38% |################               
+emitting matrix      :  39% |################               
+emitting matrix      :  40% |#################              
+emitting matrix      :  41% |#################              
+emitting matrix      :  42% |##################             
+emitting matrix      :  43% |##################             
+emitting matrix      :  44% |##################             
+emitting matrix      :  45% |###################            
+emitting matrix      :  46% |###################            
+emitting matrix      :  47% |####################           
+emitting matrix      :  48% |####################           
+emitting matrix      :  49% |#####################          
+emitting matrix      :  50% |#####################          
+emitting matrix      :  51% |#####################          
+emitting matrix      :  52% |######################         
+emitting matrix      :  53% |######################         
+emitting matrix      :  54% |#######################        
+emitting matrix      :  55% |#######################        
+emitting matrix      :  56% |########################       
+emitting matrix      :  57% |########################       
+emitting matrix      :  58% |########################       
+emitting matrix      :  59% |#########################      
+emitting matrix      :  60% |#########################      
+emitting matrix      :  61% |##########################     
+emitting matrix      :  62% |##########################     
+emitting matrix      :  63% |###########################    
+emitting matrix      :  64% |###########################    
+emitting matrix      :  65% |###########################    
+emitting matrix      :  66% |############################   
+emitting matrix      :  67% |############################   
+emitting matrix      :  68% |#############################  
+emitting matrix      :  69% |#############################  
+emitting matrix      :  70% |############################## 
+emitting matrix      :  71% |############################## 
+emitting matrix      :  72% |############################## 
+emitting matrix      :  73% |###############################
+emitting matrix      :  74% |###############################
+emitting matrix      :  75% |###############################
+emitting matrix      :  76% |###############################
+emitting matrix      :  77% |###############################
+emitting matrix      :  78% |###############################
+emitting matrix      :  79% |###############################
+emitting matrix      :  80% |###############################
+emitting matrix      :  81% |###############################
+emitting matrix      :  82% |###############################
+emitting matrix      :  83% |###############################
+emitting matrix      :  84% |###############################
+emitting matrix      :  85% |###############################
+emitting matrix      :  86% |###############################
+emitting matrix      :  87% |###############################
+emitting matrix      :  88% |###############################
+emitting matrix      :  89% |###############################
+emitting matrix      :  90% |###############################
+emitting matrix      :  91% |###############################
+emitting matrix      :  92% |###############################
+emitting matrix      :  93% |###############################
+emitting matrix      :  94% |###############################
+emitting matrix      :  95% |###############################
+emitting matrix      :  96% |###############################
+emitting matrix      :  97% |###############################
+emitting matrix      :  98% |###############################
+emitting matrix      :  99% |###############################
+emitting matrix      : 100% |###############################
+############| 
+
+done!
+update-alternatives: using /var/lib/mecab/dic/ipadic to prov
+ide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mod
+e
+Setting up libcgi-fast-perl (1:2.17-1) ...
+Setting up libevent-pthreads-2.1-7t64:amd64 (2.1.12-stable-9
+ubuntu2) ...
+Setting up mysql-server-core-8.0 (8.0.36-2ubuntu3) ...
+Setting up mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array:   9% |###                            
+emitting double-array:  18% |#######                        
+emitting double-array:  27% |###########                    
+emitting double-array:  36% |###############                
+emitting double-array:  45% |###################            
+emitting double-array:  54% |#######################        
+emitting double-array:  63% |###########################    
+emitting double-array:  72% |###############################
+emitting double-array:  81% |###############################
+emitting double-array:  90% |###############################
+emitting double-array: 100% |###############################
+############| 
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 2732
+8
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 79
+5
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 1214
+6
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+emitting double-array:   0% |                               
+emitting double-array:   1% |                               
+emitting double-array:   2% |                               
+emitting double-array:   3% |#                              
+emitting double-array:   4% |#                              
+emitting double-array:   5% |##                             
+emitting double-array:   6% |##                             
+emitting double-array:   7% |###                            
+emitting double-array:   8% |###                            
+emitting double-array:   9% |###                            
+emitting double-array:  10% |####                           
+emitting double-array:  11% |####                           
+emitting double-array:  12% |#####                          
+emitting double-array:  13% |#####                          
+emitting double-array:  14% |######                         
+emitting double-array:  15% |######                         
+emitting double-array:  16% |######                         
+emitting double-array:  17% |#######                        
+emitting double-array:  18% |#######                        
+emitting double-array:  19% |########                       
+emitting double-array:  20% |########                       
+emitting double-array:  21% |#########                      
+emitting double-array:  22% |#########                      
+emitting double-array:  23% |#########                      
+emitting double-array:  24% |##########                     
+emitting double-array:  25% |##########                     
+emitting double-array:  26% |###########                    
+emitting double-array:  27% |###########                    
+emitting double-array:  28% |############                   
+emitting double-array:  29% |############                   
+emitting double-array:  30% |############                   
+emitting double-array:  31% |#############                  
+emitting double-array:  32% |#############                  
+emitting double-array:  33% |##############                 
+emitting double-array:  34% |##############                 
+emitting double-array:  35% |###############                
+emitting double-array:  36% |###############                
+emitting double-array:  37% |###############                
+emitting double-array:  38% |################               
+emitting double-array:  39% |################               
+emitting double-array:  40% |#################              
+emitting double-array:  41% |#################              
+emitting double-array:  42% |##################             
+emitting double-array:  43% |##################             
+emitting double-array:  44% |##################             
+emitting double-array:  45% |###################            
+emitting double-array:  46% |###################            
+emitting double-array:  47% |####################           
+emitting double-array:  48% |####################           
+emitting double-array:  49% |#####################          
+emitting double-array:  50% |#####################          
+emitting double-array:  51% |#####################          
+emitting double-array:  52% |######################         
+emitting double-array:  53% |######################         
+emitting double-array:  54% |#######################        
+emitting double-array:  55% |#######################        
+emitting double-array:  56% |########################       
+emitting double-array:  57% |########################       
+emitting double-array:  58% |########################       
+emitting double-array:  59% |#########################      
+emitting double-array:  60% |#########################      
+emitting double-array:  61% |##########################     
+emitting double-array:  62% |##########################     
+emitting double-array:  63% |###########################    
+emitting double-array:  64% |###########################    
+emitting double-array:  65% |###########################    
+emitting double-array:  66% |############################   
+emitting double-array:  67% |############################   
+emitting double-array:  68% |#############################  
+emitting double-array:  69% |#############################  
+emitting double-array:  70% |############################## 
+emitting double-array:  71% |############################## 
+emitting double-array:  72% |############################## 
+emitting double-array:  73% |###############################
+emitting double-array:  74% |###############################
+emitting double-array:  75% |###############################
+emitting double-array:  76% |###############################
+emitting double-array:  77% |###############################
+emitting double-array:  78% |###############################
+emitting double-array:  79% |###############################
+emitting double-array:  80% |###############################
+emitting double-array:  81% |###############################
+emitting double-array:  82% |###############################
+emitting double-array:  83% |###############################
+emitting double-array:  84% |###############################
+emitting double-array:  85% |###############################
+emitting double-array:  86% |###############################
+emitting double-array:  87% |###############################
+emitting double-array:  88% |###############################
+emitting double-array:  89% |###############################
+emitting double-array:  90% |###############################
+emitting double-array:  91% |###############################
+emitting double-array:  92% |###############################
+emitting double-array:  93% |###############################
+emitting double-array:  94% |###############################
+emitting double-array:  95% |###############################
+emitting double-array:  96% |###############################
+emitting double-array:  97% |###############################
+emitting double-array:  98% |###############################
+emitting double-array:  99% |###############################
+emitting double-array: 100% |###############################
+############| 
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      :   0% |                               
+emitting matrix      :   1% |                               
+emitting matrix      :   2% |                               
+emitting matrix      :   3% |#                              
+emitting matrix      :   4% |#                              
+emitting matrix      :   5% |##                             
+emitting matrix      :   6% |##                             
+emitting matrix      :   7% |###                            
+emitting matrix      :   8% |###                            
+emitting matrix      :   9% |###                            
+emitting matrix      :  10% |####                           
+emitting matrix      :  11% |####                           
+emitting matrix      :  12% |#####                          
+emitting matrix      :  13% |#####                          
+emitting matrix      :  14% |######                         
+emitting matrix      :  15% |######                         
+emitting matrix      :  16% |######                         
+emitting matrix      :  17% |#######                        
+emitting matrix      :  18% |#######                        
+emitting matrix      :  19% |########                       
+emitting matrix      :  20% |########                       
+emitting matrix      :  21% |#########                      
+emitting matrix      :  22% |#########                      
+emitting matrix      :  23% |#########                      
+emitting matrix      :  24% |##########                     
+emitting matrix      :  25% |##########                     
+emitting matrix      :  26% |###########                    
+emitting matrix      :  27% |###########                    
+emitting matrix      :  28% |############                   
+emitting matrix      :  29% |############                   
+emitting matrix      :  30% |############                   
+emitting matrix      :  31% |#############                  
+emitting matrix      :  32% |#############                  
+emitting matrix      :  33% |##############                 
+emitting matrix      :  34% |##############                 
+emitting matrix      :  35% |###############                
+emitting matrix      :  36% |###############                
+emitting matrix      :  37% |###############                
+emitting matrix      :  38% |################               
+emitting matrix      :  39% |################               
+emitting matrix      :  40% |#################              
+emitting matrix      :  41% |#################              
+emitting matrix      :  42% |##################             
+emitting matrix      :  43% |##################             
+emitting matrix      :  44% |##################             
+emitting matrix      :  45% |###################            
+emitting matrix      :  46% |###################            
+emitting matrix      :  47% |####################           
+emitting matrix      :  48% |####################           
+emitting matrix      :  49% |#####################          
+emitting matrix      :  50% |#####################          
+emitting matrix      :  51% |#####################          
+emitting matrix      :  52% |######################         
+emitting matrix      :  53% |######################         
+emitting matrix      :  54% |#######################        
+emitting matrix      :  55% |#######################        
+emitting matrix      :  56% |########################       
+emitting matrix      :  57% |########################       
+emitting matrix      :  58% |########################       
+emitting matrix      :  59% |#########################      
+emitting matrix      :  60% |#########################      
+emitting matrix      :  61% |##########################     
+emitting matrix      :  62% |##########################     
+emitting matrix      :  63% |###########################    
+emitting matrix      :  64% |###########################    
+emitting matrix      :  65% |###########################    
+emitting matrix      :  66% |############################   
+emitting matrix      :  67% |############################   
+emitting matrix      :  68% |#############################  
+emitting matrix      :  69% |#############################  
+emitting matrix      :  70% |############################## 
+emitting matrix      :  71% |############################## 
+emitting matrix      :  72% |############################## 
+emitting matrix      :  73% |###############################
+emitting matrix      :  74% |###############################
+emitting matrix      :  75% |###############################
+emitting matrix      :  76% |###############################
+emitting matrix      :  77% |###############################
+emitting matrix      :  78% |###############################
+emitting matrix      :  79% |###############################
+emitting matrix      :  80% |###############################
+emitting matrix      :  81% |###############################
+emitting matrix      :  82% |###############################
+emitting matrix      :  83% |###############################
+emitting matrix      :  84% |###############################
+emitting matrix      :  85% |###############################
+emitting matrix      :  86% |###############################
+emitting matrix      :  87% |###############################
+emitting matrix      :  88% |###############################
+emitting matrix      :  89% |###############################
+emitting matrix      :  90% |###############################
+emitting matrix      :  91% |###############################
+emitting matrix      :  92% |###############################
+emitting matrix      :  93% |###############################
+emitting matrix      :  94% |###############################
+emitting matrix      :  95% |###############################
+emitting matrix      :  96% |###############################
+emitting matrix      :  97% |###############################
+emitting matrix      :  98% |###############################
+emitting matrix      :  99% |###############################
+emitting matrix      : 100% |###############################
+############| 
+
+done!
+update-alternatives: using /var/lib/mecab/dic/ipadic-utf8 to
+ provide /var/lib/mecab/dic/debian (mecab-dictionary) in aut
+o mode
+Setting up mysql-server-8.0 (8.0.36-2ubuntu3) ...
+update-alternatives: using /etc/mysql/mysql.cnf to provide /
+etc/mysql/my.cnf (my.cnf) in auto mode
+Renaming removed key_buffer and myisam-recover options (if p
+resent)
+mysqld will log errors to /var/log/mysql/error.log
+mysqld is running as pid 12942
+Created symlink /etc/systemd/system/multi-user.target.wants/
+mysql.service → /usr/lib/systemd/system/mysql.service.
+Setting up mysql-server (8.0.36-2ubuntu3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.1) ...
+qzee@qzee-VirtualBox:~$ sudo ss -ntlp
+State  Recv-Q Send-Q Local Address:Port   Peer Address:Port Process                                                     
+LISTEN 0      70         127.0.0.1:33060       0.0.0.0:*     users:(("mysqld",pid=13224,fd=21))                         
+LISTEN 0      4096       127.0.0.1:631         0.0.0.0:*     users:(("cupsd",pid=1190,fd=7))                            
+LISTEN 0      151        127.0.0.1:3306        0.0.0.0:*     users:(("mysqld",pid=13224,fd=23))                         
+LISTEN 0      4096      127.0.0.54:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=17))                  
+LISTEN 0      511          0.0.0.0:80          0.0.0.0:*     users:(("apache2",pid=5146,fd=3),("apache2",pid=5144,fd=3),("apache2",pid=5143,fd=3))
+LISTEN 0      4096   127.0.0.53%lo:53          0.0.0.0:*     users:(("systemd-resolve",pid=421,fd=15))                  
+LISTEN 0      4096               *:22                *:*     users:(("sshd",pid=1231,fd=3),("systemd",pid=1,fd=267))    
+LISTEN 0      4096           [::1]:631            [::]:*     users:(("cupsd",pid=1190,fd=6))                            
+qzee@qzee-VirtualBox:~$ sudo mysql -u root -p 
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.36-2ubuntu3 (Ubuntu)
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> exit
+Bye
+qzee@qzee-VirtualBox:~$ sudo mysql -u root -p 
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.36-2ubuntu3 (Ubuntu)
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.01 sec)
+
+mysql> use mysql;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++------------------------------------------------------+
+| Tables_in_mysql                                      |
++------------------------------------------------------+
+| columns_priv                                         |
+| component                                            |
+| db                                                   |
+| default_roles                                        |
+| engine_cost                                          |
+| func                                                 |
+| general_log                                          |
+| global_grants                                        |
+| gtid_executed                                        |
+| help_category                                        |
+| help_keyword                                         |
+| help_relation                                        |
+| help_topic                                           |
+| innodb_index_stats                                   |
+| innodb_table_stats                                   |
+| password_history                                     |
+| plugin                                               |
+| procs_priv                                           |
+| proxies_priv                                         |
+| replication_asynchronous_connection_failover         |
+| replication_asynchronous_connection_failover_managed |
+| replication_group_configuration_version              |
+| replication_group_member_actions                     |
+| role_edges                                           |
+| server_cost                                          |
+| servers                                              |
+| slave_master_info                                    |
+| slave_relay_log_info                                 |
+| slave_worker_info                                    |
+| slow_log                                             |
+| tables_priv                                          |
+| time_zone                                            |
+| time_zone_leap_second                                |
+| time_zone_name                                       |
+| time_zone_transition                                 |
+| time_zone_transition_type                            |
+| user                                                 |
++------------------------------------------------------+
+37 rows in set (0.00 sec)
+
+mysql> select * FROM user
+    -> 
+    -> q
+    -> exit
+    -> 
+[1]+  Stopped                 sudo mysql -u root -p
+qzee@qzee-VirtualBox:~$ sudo mysql -u root -p 
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.36-2ubuntu3 (Ubuntu)
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use mysql datatables
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++------------------------------------------------------+
+| Tables_in_mysql                                      |
++------------------------------------------------------+
+| columns_priv                                         |
+| component                                            |
+| db                                                   |
+| default_roles                                        |
+| engine_cost                                          |
+| func                                                 |
+| general_log                                          |
+| global_grants                                        |
+| gtid_executed                                        |
+| help_category                                        |
+| help_keyword                                         |
+| help_relation                                        |
+| help_topic                                           |
+| innodb_index_stats                                   |
+| innodb_table_stats                                   |
+| password_history                                     |
+| plugin                                               |
+| procs_priv                                           |
+| proxies_priv                                         |
+| replication_asynchronous_connection_failover         |
+| replication_asynchronous_connection_failover_managed |
+| replication_group_configuration_version              |
+| replication_group_member_actions                     |
+| role_edges                                           |
+| server_cost                                          |
+| servers                                              |
+| slave_master_info                                    |
+| slave_relay_log_info                                 |
+| slave_worker_info                                    |
+| slow_log                                             |
+| tables_priv                                          |
+| time_zone                                            |
+| time_zone_leap_second                                |
+| time_zone_name                                       |
+| time_zone_transition                                 |
+| time_zone_transition_type                            |
+| user                                                 |
++------------------------------------------------------+
+37 rows in set (0.00 sec)
+
+mysql> create database geek;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| geek               |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql> use geel;
+ERROR 1049 (42000): Unknown database 'geel'
+mysql> use geek;
+Database changed
+mysql> show;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> create table stusent (in int, email varchar(100));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in int, email varchar(100))' at line 1
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> exit
+Bye
+qzee@qzee-VirtualBox:~$ 
