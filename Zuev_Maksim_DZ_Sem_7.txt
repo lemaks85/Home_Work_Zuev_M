@@ -1,0 +1,1610 @@
+284  sudo apt update
+  285  sudo apt install docker.io -y
+  286  docker --help
+  287  docker ps
+  288  sudo docker ps
+  289  sudo docker ps -a
+  290  docker images
+  291  sudo docker images
+  292  sudo docker run hello-world
+  293  sudo docker ps -a
+  294  docker images
+  295  sudo docker images
+  296  sudo docker run hello-world
+  297  sudo docker ps -a
+  298  sudo groupadd docker
+  299  tail /etc/group
+  300  sudo usermod -aG docker $qzee
+  301  tail /etc/group
+  302  sudo usermod -aG docker $QZEE
+  303  sudo usermod -aG docker $qzee
+  304  sudo usermod -aG docker $QZEE
+  305  tail /etc/group
+  306  sudo su
+  307  tail /etc/group
+  308  clear
+  309  sudo docker run -d -p 80:80 docker/getting-started
+  310  sudo docker ps
+  311  sudo apt update
+  312  sudo docker run -d -p 80:80 docker/getting-started
+  313  sudo docker ps
+  314  sudo apt upgrade
+  315  sudo docker run -d -p 80:80 docker/getting-started
+  316  sudo docker ps
+  317  sudo systemctl restart docker
+  318  newgrp docker
+  319  sudo docker run -d -p 80:80 docker/getting-started
+  320  sudo docker ps
+  321  sudo docker ps -a
+  322  sudo docker run -d -p 80:80 docker/getting-started
+  323  sudo apt-get remove nginx*
+  324  sudo apt-get remove apache2*
+  325  sudo docker run -d -p 80:80 docker/getting-started
+  326  sudo docker ps -a
+  327  clear
+  328  sudo docker ps -a
+  329  sudo docker stop e3815fd863ea
+  330  sudo docker stop e9d45dd1653e
+  331  sudo docker ps -a
+  332  sudo docker stop e3815fd863ea
+  333  sudo docker stop e9d45dd1653e
+  334  sudo docker ps -a
+  335  sudo docker stop e3815fd863ea
+  336  sudo docker stop e6d21a5ec63d
+  337  sudo docker ps -a
+  338  sudo docker ps
+  339  sudo docker stop cf55da339759
+  340  sudo docker ps
+  341  sudo docker search nginx
+  342  sudo docker images
+  343  sudo docker pull nginx
+  344  sudo docker images
+  345  sudo docker run -d nginx
+  346  sudo docker ps
+  347  sudo docker stop a1a02256f9fd
+  348  sudo docker ps
+  349  sudo docker run -d -p 8123:80 nginx
+  350  sudo docker ps
+  351  sudo status nginx -t
+  352  sudo systemctl status nginx
+  353  clear
+  354  sudo docker ps
+  355  sudo docker exec -it 8a1983c6361b /bin/bash
+  356  sudo docker ps
+  357  sudo docker exec -it 8a1983c6361b /bin/bash
+  358  sudo docker ps
+  359  sudo docker stop 8a1983c6361b
+  360  sudo docker ps
+  361  ll
+  362  tree
+  363  sudo mkdir /study
+  364  tree
+  365  ll
+  366  mkdir ~/study
+  367  tree
+  368  cd study/
+  369  nano Dockerfile
+  370  ll
+  371  cat Dockerfile 
+  372  sudo docker images
+  373  sudo docker build -t my_nginx_image .
+  374  sudo docker images
+  375  clear
+  376  sudo docker run -d -p 9000:80 my_nginx_image
+  377  sudo docker ps
+  378  sudo docker stop ac8927e870be
+  379  sudo docker ps
+  380  sudo apt install docker-compose -y
+  381  sudo docker-compose --help
+  382  docker-compose --help
+  383  sudo apt install docker-compose -y
+  384  docker-compose --help
+  385  sudo apt update
+  386  sudo apt install docker-compose -y
+  387  docker-compose --help
+  388  sudo apt-get remove docker-compose*
+  389  sudo apt update
+  390  sudo apt upgrade
+  391  sudo apt install docker-compose -y
+  392  docker-compose --help
+  393  docker-compose -h
+  394  mkdir /wp_site
+  395  ll
+  396  cd wp_site/
+  397  tree
+  398  mkdir wp_site
+  399  ll
+  400  cd wp_site/
+  401  nano docker-compose.yml
+  402  ll
+  403  cat docker-compose.yml 
+  404  sudo docker-compose up -d
+  405  clear
+  406  sudo docker up -d
+  407  sudo docker ps
+  408  ll
+  409  sudo apt update
+  410  sudo apt install docker-compose 
+  411  sudo apt upgrade
+  412  sudo apt install docker-compose 
+  413  docker-compose --help
+  414  cd
+  415  sudo apt-get remove docker-compose -y
+  416  sudo apt search docker-compose
+  417  sudo apt install docker-compose-v2
+  418  docker-compose --help
+  419  sudo apt-get remove docker-compose-v2 -y
+  420  sudo apt-get remove docker-compose-v2*
+  421  sudo apt install docker-compose
+  422  cat docker-compose.yml 
+  423  cd study/
+  424  cd wp_site/
+  425  ll
+  426  cat docker-compose.yml 
+  427  sudo docker-compose up -d
+  428  sudo docker ps
+  429  sudo docker ps -a
+  430  sudo docker rm $(docker ps -aq)
+  431  sudo docker -aq
+  432  sudo docker ps -aq
+  433  sudo docker rm $(docker ps -aq)
+  434  docker --help
+  435  sudo docker rm $(sudo docker ps -aq)
+  436  sudo docker ps -a
+  437  sudo docker ps 
+  438  sudo docker ps -a
+  439  sudo docker image
+  440  sudo docker images
+  441  history
+
+qzee@qzee-VirtualBox:~$ doker --help
+Command 'doker' not found, did you mean:
+  command 'docker' from snap docker (24.0.5)
+  command 'docker' from deb docker.io (24.0.5-0ubuntu1)
+  command 'docker' from deb podman-docker (4.7.2+ds1-2build1)
+See 'snap info <snapname>' for additional versions.
+qzee@qzee-VirtualBox:~$ sudo apt update
+[sudo] password for qzee: 
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists... Done                        
+Building dependency tree... Done
+Reading state information... Done
+17 packages can be upgraded. Run 'apt list --upgradable' to see them.
+qzee@qzee-VirtualBox:~$ sudo apt install docker.io -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bridge-utils containerd git git-man liberror-perl pigz
+  runc ubuntu-fan
+Suggested packages:
+  ifupdown aufs-tools btrfs-progs cgroupfs-mount
+  | cgroup-lite debootstrap docker-buildx
+  docker-compose-v2 docker-doc rinse zfs-fuse | zfsutils
+  git-daemon-run | git-daemon-sysvinit git-doc git-email
+  git-gui gitk gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  bridge-utils containerd docker.io git git-man
+  liberror-perl pigz runc ubuntu-fan
+0 upgraded, 9 newly installed, 0 to remove and 17 not upgraded.
+Need to get 81.2 MB of archives.
+After this operation, 312 MB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 pigz amd64 2.8-1 [65.6 kB]
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 bridge-utils amd64 1.7.1-1ubuntu2 [33.9 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 runc amd64 1.1.12-0ubuntu3 [8,599 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 containerd amd64 1.7.12-0ubuntu4 [38.6 MB]
+Get:5 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 docker.io amd64 24.0.7-0ubuntu4 [29.1 MB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 liberror-perl all 0.17029-2 [25.6 kB]
+Get:7 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.1 [1,100 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.1 [3,679 kB]
+Get:9 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 ubuntu-fan all 0.12.16 [35.2 kB]
+Fetched 81.2 MB in 8s (10.1 MB/s)                          
+Preconfiguring packages ...
+Selecting previously unselected package pigz.
+(Reading database ... 191607 files and directories currently
+ installed.)
+Preparing to unpack .../0-pigz_2.8-1_amd64.deb ...
+Unpacking pigz (2.8-1) ...
+Selecting previously unselected package bridge-utils.
+Preparing to unpack .../1-bridge-utils_1.7.1-1ubuntu2_amd64.
+deb ...
+Unpacking bridge-utils (1.7.1-1ubuntu2) ...
+Selecting previously unselected package runc.
+Preparing to unpack .../2-runc_1.1.12-0ubuntu3_amd64.deb ...
+Unpacking runc (1.1.12-0ubuntu3) ...
+Selecting previously unselected package containerd.
+Preparing to unpack .../3-containerd_1.7.12-0ubuntu4_amd64.d
+eb ...
+Unpacking containerd (1.7.12-0ubuntu4) ...
+Selecting previously unselected package docker.io.
+Preparing to unpack .../4-docker.io_24.0.7-0ubuntu4_amd64.de
+b ...
+Unpacking docker.io (24.0.7-0ubuntu4) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../5-liberror-perl_0.17029-2_all.deb ..
+.
+Unpacking liberror-perl (0.17029-2) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../6-git-man_1%3a2.43.0-1ubuntu7.1_all.
+deb ...
+Unpacking git-man (1:2.43.0-1ubuntu7.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../7-git_1%3a2.43.0-1ubuntu7.1_amd64.de
+b ...
+Unpacking git (1:2.43.0-1ubuntu7.1) ...
+Selecting previously unselected package ubuntu-fan.
+Preparing to unpack .../8-ubuntu-fan_0.12.16_all.deb ...
+Unpacking ubuntu-fan (0.12.16) ...
+Setting up runc (1.1.12-0ubuntu3) ...
+Setting up liberror-perl (0.17029-2) ...
+Setting up bridge-utils (1.7.1-1ubuntu2) ...
+Setting up pigz (2.8-1) ...
+Setting up git-man (1:2.43.0-1ubuntu7.1) ...
+Setting up containerd (1.7.12-0ubuntu4) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/
+containerd.service → /usr/lib/systemd/system/containerd.serv
+ice.
+Setting up ubuntu-fan (0.12.16) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/
+ubuntu-fan.service → /usr/lib/systemd/system/ubuntu-fan.serv
+ice.
+Setting up docker.io (24.0.7-0ubuntu4) ...
+info: Selecting GID from range 100 to 999 ...
+info: Adding group `docker' (GID 125) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/
+docker.service → /usr/lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/doc
+ker.socket → /usr/lib/systemd/system/docker.socket.
+Setting up git (1:2.43.0-1ubuntu7.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+qzee@qzee-VirtualBox:~$ docker --help
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  checkpoint  Manage checkpoints
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  config      Manage Swarm configs
+  node        Manage Swarm nodes
+  secret      Manage Swarm secrets
+  service     Manage Swarm services
+  stack       Manage Swarm stacks
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Global Options:
+      --config string      Location of client config
+                           files (default
+                           "/home/qzee/.docker")
+  -c, --context string     Name of the context to use
+                           to connect to the daemon
+                           (overrides DOCKER_HOST env
+                           var and default context
+                           set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level
+                           ("debug", "info", "warn",
+                           "error", "fatal") (default
+                           "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by
+                           this CA (default
+                           "/home/qzee/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate
+                           file (default
+                           "/home/qzee/.docker/cert.pem")
+      --tlskey string      Path to TLS key file
+                           (default
+                           "/home/qzee/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information
+                           and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+qzee@qzee-VirtualBox:~$ 
+qzee@qzee-VirtualBox:~$ docker ps
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~$ docker images
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
+qzee@qzee-VirtualBox:~$ sudo docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+qzee@qzee-VirtualBox:~$ 
+qzee@qzee-VirtualBox:~$ sudo docker run -d -p 80:80 docker/getting-started
+Unable to find image 'docker/getting-started:latest' locally
+latest: Pulling from docker/getting-started
+c158987b0551: Pull complete 
+1e35f6679fab: Pull complete 
+cb9626c74200: Pull complete 
+b6334b6ace34: Pull complete 
+f1d1c9928c82: Pull complete 
+9b6f639ec6ea: Pull complete 
+ee68d3549ec8: Pull complete 
+33e0cbbb4673: Pull complete 
+4f7e34c2de10: Pull complete 
+Digest: sha256:d79336f4812b6547a53e735480dde67f8f8f7071b414fbd9297609ffb989abc1
+Status: Downloaded newer image for docker/getting-started:latest
+e6d21a5ec63d24ae19b92db4be431a674610d02cdac14db99f0024fb9ddeef34
+docker: Error response from daemon: driver failed programming external connectivity on endpoint naughty_hamilton (27420d6436fa563ecf43b7952d692a94cafae424e680ee64198505bcca80a76f): Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use.
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~$ sudo apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Hit:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Fetched 126 kB in 1s (131 kB/s)                      
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+17 packages can be upgraded. Run 'apt list --upgradable' to see them.
+qzee@qzee-VirtualBox:~$ sudo docker run -d -p 80:80 docker/getting-started
+3998911aeb53cf768b6d180d6d794e7dd7a80b1ea890779b9ee2a8ca24ba3ef1
+docker: Error response from daemon: driver failed programming external connectivity on endpoint naughty_panini (75748ee97789ee2a0bfa0cc4e3a06e3fdb7072b75789804a7d205de42edaaf71): Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use.
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  apport apport-core-dump-handler apport-gtk dhcpcd-base
+  initramfs-tools initramfs-tools-bin initramfs-tools-core
+  python3-apport python3-distupgrade
+  python3-problem-report ubuntu-pro-client
+  ubuntu-pro-client-l10n ubuntu-release-upgrader-core
+  ubuntu-release-upgrader-gtk vim-common vim-tiny xxd
+17 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2,178 kB of archives.
+After this operation, 101 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-problem-report all 2.28.1-0ubuntu3 [23.9 kB]
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-apport all 2.28.1-0ubuntu3 [92.1 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 apport-core-dump-handler all 2.28.1-0ubuntu3 [16.9 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 apport all 2.28.1-0ubuntu3 [83.5 kB]
+Get:5 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 dhcpcd-base amd64 1:10.0.6-1ubuntu3.1 [215 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 ubuntu-pro-client-l10n amd64 32.3~24.04 [19.4 kB]
+Get:7 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 ubuntu-pro-client amd64 32.3~24.04 [229 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 vim-tiny amd64 2:9.1.0016-1ubuntu7.1 [803 kB]
+Get:9 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 vim-common all 2:9.1.0016-1ubuntu7.1 [385 kB]
+Get:10 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 xxd amd64 2:9.1.0016-1ubuntu7.1 [62.9 kB]
+Get:11 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 ubuntu-release-upgrader-gtk all 1:24.04.18 [9,072 B]
+Get:12 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 ubuntu-release-upgrader-core all 1:24.04.18 [27.4 kB]
+Get:13 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-distupgrade all 1:24.04.18 [122 kB]
+Get:14 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 apport-gtk all 2.28.1-0ubuntu3 [9,746 B]
+Get:15 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 initramfs-tools all 0.142ubuntu25.1 [9,078 B]
+Get:16 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 initramfs-tools-core all 0.142ubuntu25.1 [49.9 kB]
+Get:17 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 initramfs-tools-bin amd64 0.142ubuntu25.1 [20.9 kB]
+Fetched 2,178 kB in 0s (8,466 kB/s)              
+(Reading database ... 193028 files and directories currently
+ installed.)
+Preparing to unpack .../00-python3-problem-report_2.28.1-0ub
+untu3_all.deb ...
+Unpacking python3-problem-report (2.28.1-0ubuntu3) over (2.2
+8.1-0ubuntu2) ...
+Preparing to unpack .../01-python3-apport_2.28.1-0ubuntu3_al
+l.deb ...
+Unpacking python3-apport (2.28.1-0ubuntu3) over (2.28.1-0ubu
+ntu2) ...
+Preparing to unpack .../02-apport-core-dump-handler_2.28.1-0
+ubuntu3_all.deb ...
+Unpacking apport-core-dump-handler (2.28.1-0ubuntu3) over (2
+.28.1-0ubuntu2) ...
+Preparing to unpack .../03-apport_2.28.1-0ubuntu3_all.deb ..
+.
+Unpacking apport (2.28.1-0ubuntu3) over (2.28.1-0ubuntu2) ..
+.
+Preparing to unpack .../04-dhcpcd-base_1%3a10.0.6-1ubuntu3.1
+_amd64.deb ...
+Unpacking dhcpcd-base (1:10.0.6-1ubuntu3.1) over (1:10.0.6-1
+ubuntu3) ...
+Preparing to unpack .../05-ubuntu-pro-client-l10n_32.3~24.04
+_amd64.deb ...
+Unpacking ubuntu-pro-client-l10n (32.3~24.04) over (31.2.3) 
+...
+Preparing to unpack .../06-ubuntu-pro-client_32.3~24.04_amd6
+4.deb ...
+Unpacking ubuntu-pro-client (32.3~24.04) over (31.2.3) ...
+Preparing to unpack .../07-vim-tiny_2%3a9.1.0016-1ubuntu7.1_
+amd64.deb ...
+Unpacking vim-tiny (2:9.1.0016-1ubuntu7.1) over (2:9.1.0016-
+1ubuntu7) ...
+Preparing to unpack .../08-vim-common_2%3a9.1.0016-1ubuntu7.
+1_all.deb ...
+Unpacking vim-common (2:9.1.0016-1ubuntu7.1) over (2:9.1.001
+6-1ubuntu7) ...
+Preparing to unpack .../09-xxd_2%3a9.1.0016-1ubuntu7.1_amd64
+.deb ...
+Unpacking xxd (2:9.1.0016-1ubuntu7.1) over (2:9.1.0016-1ubun
+tu7) ...
+Preparing to unpack .../10-ubuntu-release-upgrader-gtk_1%3a2
+4.04.18_all.deb ...
+Unpacking ubuntu-release-upgrader-gtk (1:24.04.18) over (1:2
+4.04.16) ...
+Preparing to unpack .../11-ubuntu-release-upgrader-core_1%3a
+24.04.18_all.deb ...
+Unpacking ubuntu-release-upgrader-core (1:24.04.18) over (1:
+24.04.16) ...
+Preparing to unpack .../12-python3-distupgrade_1%3a24.04.18_
+all.deb ...
+Unpacking python3-distupgrade (1:24.04.18) over (1:24.04.16)
+ ...
+Preparing to unpack .../13-apport-gtk_2.28.1-0ubuntu3_all.de
+b ...
+Unpacking apport-gtk (2.28.1-0ubuntu3) over (2.28.1-0ubuntu2
+) ...
+Preparing to unpack .../14-initramfs-tools_0.142ubuntu25.1_a
+ll.deb ...
+Unpacking initramfs-tools (0.142ubuntu25.1) over (0.142ubunt
+u25) ...
+Preparing to unpack .../15-initramfs-tools-core_0.142ubuntu2
+5.1_all.deb ...
+Unpacking initramfs-tools-core (0.142ubuntu25.1) over (0.142
+ubuntu25) ...
+Preparing to unpack .../16-initramfs-tools-bin_0.142ubuntu25
+.1_amd64.deb ...
+Unpacking initramfs-tools-bin (0.142ubuntu25.1) over (0.142u
+buntu25) ...
+Setting up python3-problem-report (2.28.1-0ubuntu3) ...
+Setting up python3-distupgrade (1:24.04.18) ...
+Setting up xxd (2:9.1.0016-1ubuntu7.1) ...
+Setting up python3-apport (2.28.1-0ubuntu3) ...
+Setting up vim-common (2:9.1.0016-1ubuntu7.1) ...
+Setting up ubuntu-release-upgrader-core (1:24.04.18) ...
+Setting up dhcpcd-base (1:10.0.6-1ubuntu3.1) ...
+Setting up ubuntu-release-upgrader-gtk (1:24.04.18) ...
+Setting up ubuntu-pro-client (32.3~24.04) ...
+Installing new version of config file /etc/apparmor.d/ubuntu
+_pro_apt_news ...
+Setting up initramfs-tools-bin (0.142ubuntu25.1) ...
+Setting up ubuntu-pro-client-l10n (32.3~24.04) ...
+Setting up vim-tiny (2:9.1.0016-1ubuntu7.1) ...
+Setting up initramfs-tools-core (0.142ubuntu25.1) ...
+Setting up initramfs-tools (0.142ubuntu25.1) ...
+update-initramfs: deferring update (trigger activated)
+Setting up apport-core-dump-handler (2.28.1-0ubuntu3) ...
+Setting up apport (2.28.1-0ubuntu3) ...
+apport-autoreport.service is a disabled or a static unit not
+ running, not starting it.
+Setting up apport-gtk (2.28.1-0ubuntu3) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.27-2build1) ..
+.
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1.1ubuntu3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for initramfs-tools (0.142ubuntu25.1) ..
+.
+update-initramfs: Generating /boot/initrd.img-6.8.0-35-gener
+ic
+qzee@qzee-VirtualBox:~$ sudo docker run -d -p 80:80 docker/getting-started
+c74a1eab6bee649ff3d8a1a5571afa46d3cd77e67c7a74e778e0c6653825622c
+docker: Error response from daemon: driver failed programming external connectivity on endpoint mystifying_elbakyan (f3085cc2ee1c71ed830c885e1ca04f8bae35a7ce2d6a7653e76bac0c79e7d212): Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use.
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~$ sudo systemctl restart docker
+qzee@qzee-VirtualBox:~$ newgrp docker
+Password: 
+Invalid password.
+qzee@qzee-VirtualBox:~$ newgrp docker
+Password: 
+Invalid password.
+qzee@qzee-VirtualBox:~$ sudo docker run -d -p 80:80 docker/getting-started
+bcc4e25c99c0d7e438e0b9db113d35dbf6afc92ee517f85250befb2f8421a00c
+docker: Error response from daemon: driver failed programming external connectivity on endpoint magical_curie (f46ef26e6be4aae58665c918ba1ab24e806971b2fd3e073fc5a70d78afd36f16): Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use.
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS                      PORTS     NAMES
+bcc4e25c99c0   docker/getting-started   "/docker-entrypoint.…"   14 seconds ago   Created                               magical_curie
+c74a1eab6bee   docker/getting-started   "/docker-entrypoint.…"   2 minutes ago    Created                               mystifying_elbakyan
+3998911aeb53   docker/getting-started   "/docker-entrypoint.…"   4 minutes ago    Created                               naughty_panini
+e6d21a5ec63d   docker/getting-started   "/docker-entrypoint.…"   5 minutes ago    Created                               naughty_hamilton
+e9d45dd1653e   hello-world              "/hello"                 14 minutes ago   Exited (0) 14 minutes ago             dazzling_williamson
+e3815fd863ea   hello-world              "/hello"                 16 minutes ago   Exited (0) 16 minutes ago             reverent_margulis
+qzee@qzee-VirtualBox:~$ sudo docker run -d -p 80:80 docker/getting-started
+5884677b31e42e990b2056e6f0e637a20ea5ca7f1341cb4aadb08512a771b62c
+docker: Error response from daemon: driver failed programming external connectivity on endpoint condescending_ritchie (9864f7892de548048c7bef1d651567422f5b876f1b0ec9473438bf31147c3f47): Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use.
+qzee@qzee-VirtualBox:~$ sudo apt-get remove nginx*
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'nginx-abi-1.24.0-1' for glob 'nginx*'
+Note, selecting 'nginx' for glob 'nginx*'
+Note, selecting 'nginx-common' for glob 'nginx*'
+Note, selecting 'nginx-dev' for glob 'nginx*'
+Note, selecting 'nginx-doc' for glob 'nginx*'
+Note, selecting 'nginx-light' for glob 'nginx*'
+Note, selecting 'nginx-core' for glob 'nginx*'
+Note, selecting 'nginx-confgen' for glob 'nginx*'
+Note, selecting 'nginx-extras' for glob 'nginx*'
+Note, selecting 'nginx-extra' for glob 'nginx*'
+Note, selecting 'nginx-full' for glob 'nginx*'
+Note, selecting 'nginx' instead of 'nginx-abi-1.24.0-1'
+Package 'nginx-extra' is not installed, so not removed
+Package 'nginx-core' is not installed, so not removed
+Package 'nginx-extras' is not installed, so not removed
+Package 'nginx-light' is not installed, so not removed
+Package 'nginx-doc' is not installed, so not removed
+Package 'nginx-full' is not installed, so not removed
+Package 'nginx-confgen' is not installed, so not removed
+Package 'nginx-dev' is not installed, so not removed
+The following packages will be REMOVED:
+  nginx nginx-common
+0 upgraded, 0 newly installed, 2 to remove and 0 not upgraded.
+After this operation, 1,596 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 193055 files and directories currently installed.)
+Removing nginx-common (1.24.0-2ubuntu7) ...
+Removing nginx (1.24.0-2ubuntu7) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+qzee@qzee-VirtualBox:~$ sudo apt-get remove apache2*
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'apache2-ssl-dev' for glob 'apache2*'
+Note, selecting 'apache2-suexec-pristine' for glob 'apache2*'
+Note, selecting 'apache2.2-common' for glob 'apache2*'
+Note, selecting 'apache2-api-20120211' for glob 'apache2*'
+Note, selecting 'apache2-suexec-custom' for glob 'apache2*'
+Note, selecting 'apache2-data' for glob 'apache2*'
+Note, selecting 'apache2-bin' for glob 'apache2*'
+Note, selecting 'apache2-dev' for glob 'apache2*'
+Note, selecting 'apache2-doc' for glob 'apache2*'
+Note, selecting 'apache2-utils' for glob 'apache2*'
+Note, selecting 'apache2' for glob 'apache2*'
+Note, selecting 'apache2-suexec' for glob 'apache2*'
+Note, selecting 'apache2-api-20120211-openssl1.1' for glob 'apache2*'
+Note, selecting 'apache2-bin' instead of 'apache2-api-20120211'
+Note, selecting 'apache2-bin' instead of 'apache2-api-20120211-openssl1.1'
+Package 'apache2.2-common' is not installed, so not removed
+Package 'apache2-doc' is not installed, so not removed
+Package 'apache2-suexec-pristine' is not installed, so not removed
+Package 'apache2-suexec-custom' is not installed, so not removed
+Package 'apache2-dev' is not installed, so not removed
+Package 'apache2-ssl-dev' is not installed, so not removed
+The following packages were automatically installed and are no longer required:
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  apache2 apache2-bin apache2-data apache2-utils
+0 upgraded, 0 newly installed, 4 to remove and 0 not upgraded.
+After this operation, 6,789 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 193031 files and directories currently installed.)
+Removing apache2 (2.4.58-1ubuntu8.1) ...
+Removing apache2-bin (2.4.58-1ubuntu8.1) ...
+dpkg: warning: while removing apache2-bin, directory '/var/lib/apache2' not empty so not removed
+Removing apache2-data (2.4.58-1ubuntu8.1) ...
+Removing apache2-utils (2.4.58-1ubuntu8.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ufw (0.36.2-6) ...
+qzee@qzee-VirtualBox:~$ sudo docker run -d -p 80:80 docker/getting-started
+cf55da339759b67a4ac395542bf19c0707f443a3438852048d6543fd2a974beb
+qzee@qzee-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID   IMAGE                    COMMAND                  CREATED              STATUS                      PORTS                               NAMES
+cf55da339759   docker/getting-started   "/docker-entrypoint.…"   6 seconds ago        Up 4 seconds                0.0.0.0:80->80/tcp, :::80->80/tcp   happy_hugle
+5884677b31e4   docker/getting-started   "/docker-entrypoint.…"   About a minute ago   Created                                                         condescending_ritchie
+bcc4e25c99c0   docker/getting-started   "/docker-entrypoint.…"   4 minutes ago        Created                                                         magical_curie
+c74a1eab6bee   docker/getting-started   "/docker-entrypoint.…"   6 minutes ago        Created                                                         mystifying_elbakyan
+3998911aeb53   docker/getting-started   "/docker-entrypoint.…"   8 minutes ago        Created                                                         naughty_panini
+e6d21a5ec63d   docker/getting-started   "/docker-entrypoint.…"   9 minutes ago        Created                                                         naughty_hamilton
+e9d45dd1653e   hello-world              "/hello"                 19 minutes ago       Exited (0) 19 minutes ago                                       dazzling_williamson
+e3815fd863ea   hello-world              "/hello"                 20 minutes ago       Exited (0) 20 minutes ago                                       reverent_margulis
+qzee@qzee-VirtualBox:~$ 
+qzee@qzee-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS                      PORTS                               NAMES
+cf55da339759   docker/getting-started   "/docker-entrypoint.…"   3 minutes ago    Up 3 minutes                0.0.0.0:80->80/tcp, :::80->80/tcp   happy_hugle
+5884677b31e4   docker/getting-started   "/docker-entrypoint.…"   4 minutes ago    Created                                                         condescending_ritchie
+bcc4e25c99c0   docker/getting-started   "/docker-entrypoint.…"   7 minutes ago    Created                                                         magical_curie
+c74a1eab6bee   docker/getting-started   "/docker-entrypoint.…"   9 minutes ago    Created                                                         mystifying_elbakyan
+3998911aeb53   docker/getting-started   "/docker-entrypoint.…"   11 minutes ago   Created                                                         naughty_panini
+e6d21a5ec63d   docker/getting-started   "/docker-entrypoint.…"   12 minutes ago   Created                                                         naughty_hamilton
+e9d45dd1653e   hello-world              "/hello"                 22 minutes ago   Exited (0) 22 minutes ago                                       dazzling_williamson
+e3815fd863ea   hello-world              "/hello"                 23 minutes ago   Exited (0) 23 minutes ago                                       reverent_margulis
+qzee@qzee-VirtualBox:~$ sudo docker stop e3815fd863ea
+e3815fd863ea
+qzee@qzee-VirtualBox:~$ sudo docker stop e9d45dd1653e
+e9d45dd1653e
+qzee@qzee-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS                      PORTS                               NAMES
+cf55da339759   docker/getting-started   "/docker-entrypoint.…"   3 minutes ago    Up 3 minutes                0.0.0.0:80->80/tcp, :::80->80/tcp   happy_hugle
+5884677b31e4   docker/getting-started   "/docker-entrypoint.…"   5 minutes ago    Created                                                         condescending_ritchie
+bcc4e25c99c0   docker/getting-started   "/docker-entrypoint.…"   8 minutes ago    Created                                                         magical_curie
+c74a1eab6bee   docker/getting-started   "/docker-entrypoint.…"   10 minutes ago   Created                                                         mystifying_elbakyan
+3998911aeb53   docker/getting-started   "/docker-entrypoint.…"   11 minutes ago   Created                                                         naughty_panini
+e6d21a5ec63d   docker/getting-started   "/docker-entrypoint.…"   13 minutes ago   Created                                                         naughty_hamilton
+e9d45dd1653e   hello-world              "/hello"                 22 minutes ago   Exited (0) 22 minutes ago                                       dazzling_williamson
+e3815fd863ea   hello-world              "/hello"                 24 minutes ago   Exited (0) 24 minutes ago                                       reverent_margulis
+qzee@qzee-VirtualBox:~$ sudo docker stop e3815fd863ea
+e3815fd863ea
+qzee@qzee-VirtualBox:~$ sudo docker stop e9d45dd1653e
+e9d45dd1653e
+qzee@qzee-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS                      PORTS                               NAMES
+cf55da339759   docker/getting-started   "/docker-entrypoint.…"   4 minutes ago    Up 4 minutes                0.0.0.0:80->80/tcp, :::80->80/tcp   happy_hugle
+5884677b31e4   docker/getting-started   "/docker-entrypoint.…"   5 minutes ago    Created                                                         condescending_ritchie
+bcc4e25c99c0   docker/getting-started   "/docker-entrypoint.…"   8 minutes ago    Created                                                         magical_curie
+c74a1eab6bee   docker/getting-started   "/docker-entrypoint.…"   10 minutes ago   Created                                                         mystifying_elbakyan
+3998911aeb53   docker/getting-started   "/docker-entrypoint.…"   12 minutes ago   Created                                                         naughty_panini
+e6d21a5ec63d   docker/getting-started   "/docker-entrypoint.…"   13 minutes ago   Created                                                         naughty_hamilton
+e9d45dd1653e   hello-world              "/hello"                 23 minutes ago   Exited (0) 23 minutes ago                                       dazzling_williamson
+e3815fd863ea   hello-world              "/hello"                 24 minutes ago   Exited (0) 24 minutes ago                                       reverent_margulis
+qzee@qzee-VirtualBox:~$ sudo docker stop e3815fd863ea
+e3815fd863ea
+qzee@qzee-VirtualBox:~$ sudo docker stop e6d21a5ec63d
+e6d21a5ec63d
+qzee@qzee-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS                      PORTS                               NAMES
+cf55da339759   docker/getting-started   "/docker-entrypoint.…"   4 minutes ago    Up 4 minutes                0.0.0.0:80->80/tcp, :::80->80/tcp   happy_hugle
+5884677b31e4   docker/getting-started   "/docker-entrypoint.…"   6 minutes ago    Created                                                         condescending_ritchie
+bcc4e25c99c0   docker/getting-started   "/docker-entrypoint.…"   9 minutes ago    Created                                                         magical_curie
+c74a1eab6bee   docker/getting-started   "/docker-entrypoint.…"   11 minutes ago   Created                                                         mystifying_elbakyan
+3998911aeb53   docker/getting-started   "/docker-entrypoint.…"   13 minutes ago   Created                                                         naughty_panini
+e6d21a5ec63d   docker/getting-started   "/docker-entrypoint.…"   14 minutes ago   Created                                                         naughty_hamilton
+e9d45dd1653e   hello-world              "/hello"                 23 minutes ago   Exited (0) 23 minutes ago                                       dazzling_williamson
+e3815fd863ea   hello-world              "/hello"                 25 minutes ago   Exited (0) 25 minutes ago                                       reverent_margulis
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE                    COMMAND                  CREATED         STATUS         PORTS                               NAMES
+cf55da339759   docker/getting-started   "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp   happy_hugle
+qzee@qzee-VirtualBox:~$ sudo docker stop cf55da339759
+        
+cf55da339759
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~$ sudo docker search nginx
+NAME                                              DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+nginx                                             Official build of Nginx.                        19899     [OK]       
+unit                                              Official build of NGINX Unit: Universal Web …   31        [OK]       
+nginx/nginx-ingress                               NGINX and  NGINX Plus Ingress Controllers fo…   92                   
+nginxinc/nginx-unprivileged                       Unprivileged NGINX Dockerfiles                  152                  
+nginx/nginx-prometheus-exporter                   NGINX Prometheus Exporter for NGINX and NGIN…   41                   
+nginxinc/nginx-s3-gateway                         Authenticating and caching gateway based on …   6                    
+nginx/unit                                        This repository is retired, use the Docker o…   63                   
+nginx/nginx-ingress-operator                      NGINX Ingress Operator for NGINX and NGINX P…   2                    
+nginxinc/amplify-agent                            NGINX Amplify Agent docker repository           1                    
+nginx/nginx-quic-qns                              NGINX QUIC interop                              1                    
+nginxinc/ingress-demo                             Ingress Demo                                    4                    
+nginxproxy/nginx-proxy                            Automated nginx proxy for Docker containers …   137                  
+nginxproxy/acme-companion                         Automated ACME SSL certificate generation fo…   133                  
+bitnami/nginx                                     Bitnami container image for NGINX               188                  [OK]
+bitnami/nginx-ingress-controller                  Bitnami container image for NGINX Ingress Co…   34                   [OK]
+nginxproxy/docker-gen                             Generate files from docker container meta-da…   17                   
+bitnami/nginx-exporter                            Bitnami container image for NGINX Exporter      5                    
+nginxinc/mra-fakes3                                                                               0                    
+ubuntu/nginx                                      Nginx, a high-performance reverse proxy & we…   113                  
+rancher/nginx-ingress-controller                                                                  13                   
+kasmweb/nginx                                     An Nginx image based off nginx:alpine and in…   8                    
+nginxinc/ngx-rust-tool                                                                            0                    
+nginxinc/mra_python_base                                                                          0                    
+rancher/nginx-ingress-controller-defaultbackend                                                   2                    
+qzee@qzee-VirtualBox:~$ sudo docker images
+REPOSITORY               TAG       IMAGE ID       CREATED         SIZE
+hello-world              latest    d2c94e258dcb   13 months ago   13.3kB
+docker/getting-started   latest    3e4394f6b72f   17 months ago   47MB
+qzee@qzee-VirtualBox:~$ sudo docker pull nginx
+Using default tag: latest
+latest: Pulling from library/nginx
+09f376ebb190: Pull complete 
+5529e0792248: Pull complete 
+9b3addd3eb3d: Pull complete 
+57910a8c4316: Pull complete 
+7b5f78f21449: Pull complete 
+b7923aa4e8a6: Pull complete 
+785625911f12: Pull complete 
+Digest: sha256:0f04e4f646a3f14bf31d8bc8d885b6c951fdcf42589d06845f64d18aec6a3c4d
+Status: Downloaded newer image for nginx:latest
+docker.io/library/nginx:latest
+qzee@qzee-VirtualBox:~$ sudo docker images
+REPOSITORY               TAG       IMAGE ID       CREATED         SIZE
+nginx                    latest    4f67c83422ec   5 days ago      188MB
+hello-world              latest    d2c94e258dcb   13 months ago   13.3kB
+docker/getting-started   latest    3e4394f6b72f   17 months ago   47MB
+qzee@qzee-VirtualBox:~$ sudo docker run -d nginx
+a1a02256f9fd65f11d1fe7981f2d4044e4a902b4440260de969fe10e78e720ee
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+a1a02256f9fd   nginx     "/docker-entrypoint.…"   17 seconds ago   Up 16 seconds   80/tcp    dazzling_heisenberg
+qzee@qzee-VirtualBox:~$ sudo docker stop a1a02256f9fd
+a1a02256f9fd
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~$ sudo docker run -d -p 8123:80 nginx
+8a1983c6361bb6ade94fb8fe41d678ef1b5eb148a6dcc8efb090621bd4f9c61f
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+8a1983c6361b   nginx     "/docker-entrypoint.…"   23 seconds ago   Up 22 seconds   0.0.0.0:8123->80/tcp, :::8123->80/tcp   peaceful_beaver
+qzee@qzee-VirtualBox:~$ sudo status nginx -t
+sudo: status: command not found
+qzee@qzee-VirtualBox:~$ sudo systemctl status nginx
+× nginx.service
+     Loaded: not-found (Reason: Unit nginx.service not >
+     Active: failed (Result: exit-code) since Tue 2024->
+        CPU: 33ms
+
+Jun 04 22:11:01 qzee-VirtualBox systemd[1]: Starting ng>
+Jun 04 22:11:01 qzee-VirtualBox nginx[1272]: nginx: [em>
+Jun 04 22:11:02 qzee-VirtualBox nginx[1272]: nginx: [em>
+Jun 04 22:11:02 qzee-VirtualBox nginx[1272]: nginx: [em>
+Jun 04 22:11:03 qzee-VirtualBox nginx[1272]: nginx: [em>
+Jun 04 22:11:03 qzee-VirtualBox nginx[1272]: nginx: [em>
+Jun 04 22:11:04 qzee-VirtualBox nginx[1272]: nginx: [em>
+Jun 04 22:11:04 qzee-VirtualBox systemd[1]: nginx.servi>
+Jun 04 22:11:04 qzee-VirtualBox systemd[1]: nginx.servi>
+Jun 04 22:11:04 qzee-VirtualBox systemd[1]: Failed to s>
+lines 1-15/15 (END)
+qzee@qzee-VirtualBox:~$ 
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                                   NAMES
+8a1983c6361b   nginx     "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes   0.0.0.0:8123->80/tcp, :::8123->80/tcp   peaceful_beaver
+qzee@qzee-VirtualBox:~$ sudo docker exec -it 8a1983c6361b /bin/bash
+root@8a1983c6361b:/# whoami
+root
+root@8a1983c6361b:/# ls
+bin		      etc    mnt   sbin  var
+boot		      home   opt   srv
+dev		      lib    proc  sys
+docker-entrypoint.d   lib64  root  tmp
+docker-entrypoint.sh  media  run   usr
+root@8a1983c6361b:/# nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+root@8a1983c6361b:/# find / -name index.html
+/usr/share/nginx/html/index.html
+find: '/proc/29/task/29/fdinfo': Permission denied
+find: '/proc/29/map_files': Permission denied
+find: '/proc/29/fdinfo': Permission denied
+find: '/proc/30/task/30/fdinfo': Permission denied
+find: '/proc/30/map_files': Permission denied
+find: '/proc/30/fdinfo': Permission denied
+root@8a1983c6361b:/# cat ^[[200~/usr/share/nginx/html/index.html
+cat: ''$'\033''[200~/usr/share/nginx/html/index.html': No such file or directory
+root@8a1983c6361b:/# cat /usr/share/nginx/html/index.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+root@8a1983c6361b:/# rm /usr/share/nginx/html/index.html 
+root@8a1983c6361b:/# cat > /usr/share/nginx/html/index.html
+<h1> Hello Linux canteiners </h1>
+bash: syntax error near unexpected token `newline'
+root@8a1983c6361b:/# cat > /usr/share/nginx/html/index.html
+<h1> Hello linux </h1>root@8a1983c6361b:/# 
+root@8a1983c6361b:/# cat  /usr/share/nginx/html/index.html
+<h1> Hello linux </h1>root@8a1983c6361b:/# exit
+exit
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+8a1983c6361b   nginx     "/docker-entrypoint.…"   14 minutes ago   Up 14 minutes   0.0.0.0:8123->80/tcp, :::8123->80/tcp   peaceful_beaver
+qzee@qzee-VirtualBox:~$ sudo docker exec -it 8a1983c6361b /bin/bash
+root@8a1983c6361b:/# 
+root@8a1983c6361b:/# exir
+bash: exir: command not found
+root@8a1983c6361b:/# exit
+exit
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+8a1983c6361b   nginx     "/docker-entrypoint.…"   16 minutes ago   Up 16 minutes   0.0.0.0:8123->80/tcp, :::8123->80/tcp   peaceful_beaver
+qzee@qzee-VirtualBox:~$ sudo docker stop 8a1983c6361b
+8a1983c6361b
+qzee@qzee-VirtualBox:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~$ ll
+total 280
+drwxr-x--- 15 qzee qzee   4096 Jun  4 22:12 ./
+drwxr-xr-x  3 root root   4096 May 23 22:42 ../
+-rw-------  1 qzee qzee   4699 Jun  4 21:15 .bash_history
+-rw-r--r--  1 qzee qzee    220 Mar 31 11:41 .bash_logout
+-rw-r--r--  1 qzee qzee   3771 Mar 31 11:41 .bashrc
+drwx------ 11 qzee qzee   4096 May 23 23:30 .cache/
+drwx------ 16 qzee qzee   4096 May 28 21:16 .config/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Desktop/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Documents/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Downloads/
+-rw-rw-r--  1 qzee qzee    209 May 28 20:37 iptables-config
+-rw-------  1 qzee qzee     20 May 31 21:03 .lesshst
+drwx------  4 qzee qzee   4096 May 23 22:42 .local/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Music/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Pictures/
+-rw-r--r--  1 qzee qzee    807 Mar 31 11:41 .profile
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Public/
+-rw-rw-r--  1 qzee qzee     66 May 24 21:00 .selected_editor
+drwx------  5 qzee qzee   4096 May 28 20:31 snap/
+drwx------  2 qzee qzee   4096 May 23 22:43 .ssh/
+-rw-r--r--  1 qzee qzee      0 May 23 22:50 .sudo_as_admin_successful
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Templates/
+-rw-r-----  1 qzee qzee      5 Jun  4 22:11 .vboxclient-clipboard.pid
+-rw-r-----  1 qzee qzee      6 Jun  4 23:55 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 qzee qzee      5 Jun  4 22:11 .vboxclient-draganddrop.pid
+-rw-r-----  1 qzee qzee      5 Jun  4 22:11 .vboxclient-seamless.pid
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Videos/
+-rw-r--r--  1 qzee qzee 175418 Apr  8 21:39 zip_3.0-13build1_amd64.deb
+qzee@qzee-VirtualBox:~$ tree
+.
+├── Desktop
+├── Documents
+├── Downloads
+├── iptables-config
+├── Music
+├── Pictures
+├── Public
+├── snap
+│   ├── firefox
+│   │   ├── 4173
+│   │   ├── 4336
+│   │   ├── common
+│   │   └── current -> 4336
+│   ├── firmware-updater
+│   │   ├── 127
+│   │   ├── common
+│   │   └── current -> 127
+│   └── snapd-desktop-integration
+│       ├── 157
+│       ├── common
+│       └── current -> 157
+├── Templates
+├── Videos
+└── zip_3.0-13build1_amd64.deb
+
+23 directories, 2 files
+qzee@qzee-VirtualBox:~$ sudo mkdir /study
+qzee@qzee-VirtualBox:~$ tree
+.
+├── Desktop
+├── Documents
+├── Downloads
+├── iptables-config
+├── Music
+├── Pictures
+├── Public
+├── snap
+│   ├── firefox
+│   │   ├── 4173
+│   │   ├── 4336
+│   │   ├── common
+│   │   └── current -> 4336
+│   ├── firmware-updater
+│   │   ├── 127
+│   │   ├── common
+│   │   └── current -> 127
+│   └── snapd-desktop-integration
+│       ├── 157
+│       ├── common
+│       └── current -> 157
+├── Templates
+├── Videos
+└── zip_3.0-13build1_amd64.deb
+
+23 directories, 2 files
+qzee@qzee-VirtualBox:~$ ll
+total 280
+drwxr-x--- 15 qzee qzee   4096 Jun  4 22:12 ./
+drwxr-xr-x  3 root root   4096 May 23 22:42 ../
+-rw-------  1 qzee qzee   4699 Jun  4 21:15 .bash_history
+-rw-r--r--  1 qzee qzee    220 Mar 31 11:41 .bash_logout
+-rw-r--r--  1 qzee qzee   3771 Mar 31 11:41 .bashrc
+drwx------ 11 qzee qzee   4096 May 23 23:30 .cache/
+drwx------ 16 qzee qzee   4096 May 28 21:16 .config/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Desktop/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Documents/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Downloads/
+-rw-rw-r--  1 qzee qzee    209 May 28 20:37 iptables-config
+-rw-------  1 qzee qzee     20 May 31 21:03 .lesshst
+drwx------  4 qzee qzee   4096 May 23 22:42 .local/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Music/
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Pictures/
+-rw-r--r--  1 qzee qzee    807 Mar 31 11:41 .profile
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Public/
+-rw-rw-r--  1 qzee qzee     66 May 24 21:00 .selected_editor
+drwx------  5 qzee qzee   4096 May 28 20:31 snap/
+drwx------  2 qzee qzee   4096 May 23 22:43 .ssh/
+-rw-r--r--  1 qzee qzee      0 May 23 22:50 .sudo_as_admin_successful
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Templates/
+-rw-r-----  1 qzee qzee      5 Jun  4 22:11 .vboxclient-clipboard.pid
+-rw-r-----  1 qzee qzee      6 Jun  4 23:57 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 qzee qzee      5 Jun  4 22:11 .vboxclient-draganddrop.pid
+-rw-r-----  1 qzee qzee      5 Jun  4 22:11 .vboxclient-seamless.pid
+drwxr-xr-x  2 qzee qzee   4096 May 23 22:42 Videos/
+-rw-r--r--  1 qzee qzee 175418 Apr  8 21:39 zip_3.0-13build1_amd64.deb
+qzee@qzee-VirtualBox:~$ mkdir ~/study
+qzee@qzee-VirtualBox:~$ tree
+.
+├── Desktop
+├── Documents
+├── Downloads
+├── iptables-config
+├── Music
+├── Pictures
+├── Public
+├── snap
+│   ├── firefox
+│   │   ├── 4173
+│   │   ├── 4336
+│   │   ├── common
+│   │   └── current -> 4336
+│   ├── firmware-updater
+│   │   ├── 127
+│   │   ├── common
+│   │   └── current -> 127
+│   └── snapd-desktop-integration
+│       ├── 157
+│       ├── common
+│       └── current -> 157
+├── study
+├── Templates
+├── Videos
+└── zip_3.0-13build1_amd64.deb
+
+24 directories, 2 files
+qzee@qzee-VirtualBox:~$ cd study/
+qzee@qzee-VirtualBox:~/study$ nano Dockerfile
+qzee@qzee-VirtualBox:~/study$ ll
+total 12
+drwxrwxr-x  2 qzee qzee 4096 Jun  5 00:04 ./
+drwxr-x--- 16 qzee qzee 4096 Jun  4 23:58 ../
+-rw-rw-r--  1 qzee qzee  152 Jun  5 00:04 Dockerfile
+qzee@qzee-VirtualBox:~/study$ cat Dockerfile 
+FROM debian
+MAINTAINER GB_student
+RUN apt-get update
+RUN apt-get install nginx -y
+VOLUME "/var/www/html"
+EXPOSE 80
+CMD /usr/sbin/nginx -g "daemon off;"
+qzee@qzee-VirtualBox:~/study$ sudo docker images
+REPOSITORY               TAG       IMAGE ID       CREATED         SIZE
+nginx                    latest    4f67c83422ec   5 days ago      188MB
+hello-world              latest    d2c94e258dcb   13 months ago   13.3kB
+docker/getting-started   latest    3e4394f6b72f   17 months ago   47MB
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_nginx_image .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  2.048kB
+Step 1/7 : FROM debian
+latest: Pulling from library/debian
+c6cf28de8a06: Pull complete 
+Digest: sha256:fac2c0fd33e88dfd3bc88a872cfb78dcb167e74af6162d31724df69e482f886c
+Status: Downloaded newer image for debian:latest
+ ---> 5027089adc4c
+Step 2/7 : MAINTAINER GB_student
+ ---> Running in 0e2e894f892f
+Removing intermediate container 0e2e894f892f
+ ---> 16704ca221cd
+Step 3/7 : RUN apt-get update
+ ---> Running in 0351736150fc
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8786 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [13.8 kB]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [157 kB]
+Fetched 9211 kB in 3s (3405 kB/s)
+Reading package lists...
+Removing intermediate container 0351736150fc
+ ---> 2f4923d9b233
+Step 4/7 : RUN apt-get install nginx -y
+ ---> Running in 73ae31b534f4
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  iproute2 krb5-locales libatm1 libbpf1 libbsd0 libcap2-bin libelf1
+  libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libmnl0
+  libpam-cap libssl3 libtirpc-common libtirpc3 libxtables12 nginx-common
+Suggested packages:
+  iproute2-doc python3:any krb5-doc krb5-user fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  iproute2 krb5-locales libatm1 libbpf1 libbsd0 libcap2-bin libelf1
+  libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libmnl0
+  libpam-cap libssl3 libtirpc-common libtirpc3 libxtables12 nginx nginx-common
+0 upgraded, 20 newly installed, 0 to remove and 0 not upgraded.
+Need to get 5049 kB of archives.
+After this operation, 16.1 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 libelf1 amd64 0.188-2.1 [174 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 libbpf1 amd64 1:1.1.0-1 [145 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libbsd0 amd64 0.11.7-2 [117 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 libmnl0 amd64 1.0.4-3 [12.5 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libkrb5support0 amd64 1.20.1-2+deb12u1 [32.4 kB]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 libk5crypto3 amd64 1.20.1-2+deb12u1 [78.9 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 libkeyutils1 amd64 1.6.3-2 [8808 B]
+Get:8 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 3.0.11-1~deb12u2 [2019 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 libkrb5-3 amd64 1.20.1-2+deb12u1 [332 kB]
+Get:10 http://deb.debian.org/debian bookworm/main amd64 libgssapi-krb5-2 amd64 1.20.1-2+deb12u1 [134 kB]
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libtirpc-common all 1.3.3+ds-1 [14.0 kB]
+Get:12 http://deb.debian.org/debian bookworm/main amd64 libtirpc3 amd64 1.3.3+ds-1 [85.2 kB]
+Get:13 http://deb.debian.org/debian bookworm/main amd64 libxtables12 amd64 1.8.9-2 [30.8 kB]
+Get:14 http://deb.debian.org/debian bookworm/main amd64 libcap2-bin amd64 1:2.66-4 [34.7 kB]
+Get:15 http://deb.debian.org/debian bookworm/main amd64 iproute2 amd64 6.1.0-3 [1046 kB]
+Get:16 http://deb.debian.org/debian bookworm/main amd64 krb5-locales all 1.20.1-2+deb12u1 [62.7 kB]
+Get:17 http://deb.debian.org/debian bookworm/main amd64 libatm1 amd64 1:2.5.1-4+b2 [68.3 kB]
+Get:18 http://deb.debian.org/debian bookworm/main amd64 libpam-cap amd64 1:2.66-4 [14.5 kB]
+Get:19 http://deb.debian.org/debian bookworm/main amd64 nginx-common all 1.22.1-9 [112 kB]
+Get:20 http://deb.debian.org/debian bookworm/main amd64 nginx amd64 1.22.1-9 [527 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 5049 kB in 1s (8407 kB/s)
+Selecting previously unselected package libelf1:amd64.
+(Reading database ... 6090 files and directories currently installed.)
+Preparing to unpack .../00-libelf1_0.188-2.1_amd64.deb ...
+Unpacking libelf1:amd64 (0.188-2.1) ...
+Selecting previously unselected package libbpf1:amd64.
+Preparing to unpack .../01-libbpf1_1%3a1.1.0-1_amd64.deb ...
+Unpacking libbpf1:amd64 (1:1.1.0-1) ...
+Selecting previously unselected package libbsd0:amd64.
+Preparing to unpack .../02-libbsd0_0.11.7-2_amd64.deb ...
+Unpacking libbsd0:amd64 (0.11.7-2) ...
+Selecting previously unselected package libmnl0:amd64.
+Preparing to unpack .../03-libmnl0_1.0.4-3_amd64.deb ...
+Unpacking libmnl0:amd64 (1.0.4-3) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../04-libkrb5support0_1.20.1-2+deb12u1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-2+deb12u1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../05-libk5crypto3_1.20.1-2+deb12u1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-2+deb12u1) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../06-libkeyutils1_1.6.3-2_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-2) ...
+Selecting previously unselected package libssl3:amd64.
+Preparing to unpack .../07-libssl3_3.0.11-1~deb12u2_amd64.deb ...
+Unpacking libssl3:amd64 (3.0.11-1~deb12u2) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../08-libkrb5-3_1.20.1-2+deb12u1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-2+deb12u1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../09-libgssapi-krb5-2_1.20.1-2+deb12u1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-2+deb12u1) ...
+Selecting previously unselected package libtirpc-common.
+Preparing to unpack .../10-libtirpc-common_1.3.3+ds-1_all.deb ...
+Unpacking libtirpc-common (1.3.3+ds-1) ...
+Selecting previously unselected package libtirpc3:amd64.
+Preparing to unpack .../11-libtirpc3_1.3.3+ds-1_amd64.deb ...
+Unpacking libtirpc3:amd64 (1.3.3+ds-1) ...
+Selecting previously unselected package libxtables12:amd64.
+Preparing to unpack .../12-libxtables12_1.8.9-2_amd64.deb ...
+Unpacking libxtables12:amd64 (1.8.9-2) ...
+Selecting previously unselected package libcap2-bin.
+Preparing to unpack .../13-libcap2-bin_1%3a2.66-4_amd64.deb ...
+Unpacking libcap2-bin (1:2.66-4) ...
+Selecting previously unselected package iproute2.
+Preparing to unpack .../14-iproute2_6.1.0-3_amd64.deb ...
+Unpacking iproute2 (6.1.0-3) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../15-krb5-locales_1.20.1-2+deb12u1_all.deb ...
+Unpacking krb5-locales (1.20.1-2+deb12u1) ...
+Selecting previously unselected package libatm1:amd64.
+Preparing to unpack .../16-libatm1_1%3a2.5.1-4+b2_amd64.deb ...
+Unpacking libatm1:amd64 (1:2.5.1-4+b2) ...
+Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../17-libpam-cap_1%3a2.66-4_amd64.deb ...
+Unpacking libpam-cap:amd64 (1:2.66-4) ...
+Selecting previously unselected package nginx-common.
+Preparing to unpack .../18-nginx-common_1.22.1-9_all.deb ...
+Unpacking nginx-common (1.22.1-9) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../19-nginx_1.22.1-9_amd64.deb ...
+Unpacking nginx (1.22.1-9) ...
+Setting up libkeyutils1:amd64 (1.6.3-2) ...
+Setting up libtirpc-common (1.3.3+ds-1) ...
+Setting up libssl3:amd64 (3.0.11-1~deb12u2) ...
+Setting up nginx-common (1.22.1-9) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.36.0 /usr/local/share/perl/5.36.0 /usr/lib/x86_64-linux-gnu/perl5/5.36 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.36 /usr/share/perl/5.36 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up krb5-locales (1.20.1-2+deb12u1) ...
+Setting up libatm1:amd64 (1:2.5.1-4+b2) ...
+Setting up libkrb5support0:amd64 (1.20.1-2+deb12u1) ...
+Setting up libcap2-bin (1:2.66-4) ...
+Setting up libmnl0:amd64 (1.0.4-3) ...
+Setting up libk5crypto3:amd64 (1.20.1-2+deb12u1) ...
+Setting up libxtables12:amd64 (1.8.9-2) ...
+Setting up libkrb5-3:amd64 (1.20.1-2+deb12u1) ...
+Setting up libbsd0:amd64 (0.11.7-2) ...
+Setting up libelf1:amd64 (0.188-2.1) ...
+Setting up libpam-cap:amd64 (1:2.66-4) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.36.0 /usr/local/share/perl/5.36.0 /usr/lib/x86_64-linux-gnu/perl5/5.36 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.36 /usr/share/perl/5.36 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libbpf1:amd64 (1:1.1.0-1) ...
+Setting up libgssapi-krb5-2:amd64 (1.20.1-2+deb12u1) ...
+Setting up libtirpc3:amd64 (1.3.3+ds-1) ...
+Setting up iproute2 (6.1.0-3) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.36.0 /usr/local/share/perl/5.36.0 /usr/lib/x86_64-linux-gnu/perl5/5.36 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.36 /usr/share/perl/5.36 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up nginx (1.22.1-9) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Processing triggers for libc-bin (2.36-9+deb12u7) ...
+Removing intermediate container 73ae31b534f4
+ ---> 89c999fa6df1
+Step 5/7 : VOLUME "/var/www/html"
+ ---> Running in 60234daf4169
+Removing intermediate container 60234daf4169
+ ---> 87fad5453a7a
+Step 6/7 : EXPOSE 80
+ ---> Running in bde5250c6b46
+Removing intermediate container bde5250c6b46
+ ---> d62a8b1c51b4
+Step 7/7 : CMD /usr/sbin/nginx -g "daemon off;"
+ ---> Running in 3b20ae756b8a
+Removing intermediate container 3b20ae756b8a
+ ---> c93b2f428031
+Successfully built c93b2f428031
+Successfully tagged my_nginx_image:latest
+qzee@qzee-VirtualBox:~/study$ sudo docker images
+REPOSITORY               TAG       IMAGE ID       CREATED          SIZE
+my_nginx_image           latest    c93b2f428031   37 seconds ago   153MB
+nginx                    latest    4f67c83422ec   5 days ago       188MB
+debian                   latest    5027089adc4c   3 weeks ago      117MB
+hello-world              latest    d2c94e258dcb   13 months ago    13.3kB
+docker/getting-started   latest    3e4394f6b72f   17 months ago    47MB
+qzee@qzee-VirtualBox:~/study$ 
+qzee@qzee-VirtualBox:~/study$ sudo docker run -d -p 9000:80 my_nginx_image
+ac8927e870be00f4edbbaf7f157bfc3499fb410dd5006d2100b0763c478c7876
+qzee@qzee-VirtualBox:~/study$ sudo docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+ac8927e870be   my_nginx_image   "/bin/sh -c '/usr/sb…"   22 seconds ago   Up 21 seconds   0.0.0.0:9000->80/tcp, :::9000->80/tcp   nervous_kepler
+qzee@qzee-VirtualBox:~/study$ sudo docker stop ac8927e870be
+ac8927e870be
+qzee@qzee-VirtualBox:~/study$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+qzee@qzee-VirtualBox:~/study$ sudo apt install docker-compose -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  python3-compose python3-docker python3-dockerpty python3-docopt python3-dotenv python3-texttable python3-websocket
+The following NEW packages will be installed:
+  docker-compose python3-compose python3-docker python3-dockerpty python3-docopt python3-dotenv python3-texttable
+  python3-websocket
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 297 kB of archives.
+After this operation, 1,589 kB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 python3-websocket all 1.7.0-1 [38.1 kB]
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 python3-docker all 5.0.3-1ubuntu1 [89.1 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 python3-dockerpty all 0.4.1-5 [11.4 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 python3-docopt all 0.6.2-6 [26.1 kB]
+Get:5 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 python3-dotenv all 1.0.1-1 [22.3 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 python3-texttable all 1.6.7-1 [11.0 kB]
+Get:7 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 python3-compose all 1.29.2-6ubuntu1 [84.6 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 docker-compose all 1.29.2-6ubuntu1 [14.0 kB]
+Fetched 297 kB in 0s (1,055 kB/s)          
+Selecting previously unselected package python3-websocket.
+(Reading database ... 192526 files and directories currently installed.)
+Preparing to unpack .../0-python3-websocket_1.7.0-1_all.deb ...
+Unpacking python3-websocket (1.7.0-1) ...
+Selecting previously unselected package python3-docker.
+Preparing to unpack .../1-python3-docker_5.0.3-1ubuntu1_all.deb ...
+Unpacking python3-docker (5.0.3-1ubuntu1) ...
+Selecting previously unselected package python3-dockerpty.
+Preparing to unpack .../2-python3-dockerpty_0.4.1-5_all.deb ...
+Unpacking python3-dockerpty (0.4.1-5) ...
+Selecting previously unselected package python3-docopt.
+Preparing to unpack .../3-python3-docopt_0.6.2-6_all.deb ...
+Unpacking python3-docopt (0.6.2-6) ...
+Selecting previously unselected package python3-dotenv.
+Preparing to unpack .../4-python3-dotenv_1.0.1-1_all.deb ...
+Unpacking python3-dotenv (1.0.1-1) ...
+Selecting previously unselected package python3-texttable.
+Preparing to unpack .../5-python3-texttable_1.6.7-1_all.deb ...
+Unpacking python3-texttable (1.6.7-1) ...
+Selecting previously unselected package python3-compose.
+Preparing to unpack .../6-python3-compose_1.29.2-6ubuntu1_all.deb ...
+Unpacking python3-compose (1.29.2-6ubuntu1) ...
+Selecting previously unselected package docker-compose.
+Preparing to unpack .../7-docker-compose_1.29.2-6ubuntu1_all.deb ...
+Unpacking docker-compose (1.29.2-6ubuntu1) ...
+Setting up python3-dotenv (1.0.1-1) ...
+Setting up python3-texttable (1.6.7-1) ...
+Setting up python3-docopt (0.6.2-6) ...
+Setting up python3-websocket (1.7.0-1) ...
+Setting up python3-dockerpty (0.4.1-5) ...
+Setting up python3-docker (5.0.3-1ubuntu1) ...
+Setting up python3-compose (1.29.2-6ubuntu1) ...
+Setting up docker-compose (1.29.2-6ubuntu1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+qzee@qzee-VirtualBox:~/study$ sudo docker-compose --help
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/docker-compose", line 25, in importlib_load_entry_point
+    return next(matches).load()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 9, in <module>
+    from distutils.spawn import find_executable
+ModuleNotFoundError: No module named 'distutils'
+qzee@qzee-VirtualBox:~/study$ docker-compose --help
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/docker-compose", line 25, in importlib_load_entry_point
+    return next(matches).load()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 9, in <module>
+    from distutils.spawn import find_executable
+ModuleNotFoundError: No module named 'distutils'
+qzee@qzee-VirtualBox:~/study$ sudo apt install docker-compose -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+docker-compose is already the newest version (1.29.2-6ubuntu1).
+The following packages were automatically installed and are no longer required:
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+qzee@qzee-VirtualBox:~/study$ docker-compose --help
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/docker-compose", line 25, in importlib_load_entry_point
+    return next(matches).load()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 9, in <module>
+    from distutils.spawn import find_executable
+ModuleNotFoundError: No module named 'distutils'
+qzee@qzee-VirtualBox:~/study$ sudo apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB] 
+Hit:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease                   
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Get:5 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [119 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [34.9 kB]
+Get:7 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [52.9 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [20.1 kB]
+Fetched 353 kB in 1s (283 kB/s)                                  
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+12 packages can be upgraded. Run 'apt list --upgradable' to see them.
+qzee@qzee-VirtualBox:~/study$ sudo apt install docker-compose -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+docker-compose is already the newest version (1.29.2-6ubuntu1).
+The following packages were automatically installed and are no longer required:
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
+qzee@qzee-VirtualBox:~/study$ docker-compose --help
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/docker-compose", line 25, in importlib_load_entry_point
+    return next(matches).load()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 9, in <module>
+    from distutils.spawn import find_executable
+ModuleNotFoundError: No module named 'distutils'
+qzee@qzee-VirtualBox:~/study$ sudo apt-get remove docker-compose*
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'docker-compose' for glob 'docker-compose*'
+Note, selecting 'docker-compose-v2' for glob 'docker-compose*'
+Package 'docker-compose-v2' is not installed, so not removed
+The following packages were automatically installed and are no longer required:
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64 python3-compose python3-docker python3-dockerpty
+  python3-docopt python3-dotenv python3-texttable python3-websocket
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  docker-compose
+0 upgraded, 0 newly installed, 1 to remove and 12 not upgraded.
+After this operation, 61.4 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 192787 files and directories currently installed.)
+Removing docker-compose (1.29.2-6ubuntu1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+qzee@qzee-VirtualBox:~/study$ sudo apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB] 
+Hit:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease                   
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Fetched 126 kB in 1s (115 kB/s)                      
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+12 packages can be upgraded. Run 'apt list --upgradable' to see them.
+N: Missing Signed-By in the sources.list(5) entry for 'http://ru.archive.ubuntu.com/ubuntu'
+qzee@qzee-VirtualBox:~/study$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64 python3-compose python3-docker python3-dockerpty
+  python3-docopt python3-dotenv python3-texttable python3-websocket
+Use 'sudo apt autoremove' to remove them.
+The following upgrades have been deferred due to phasing:
+  libnss-systemd libpam-systemd libsystemd-shared libsystemd0 libudev1 systemd systemd-dev systemd-oomd systemd-resolved
+  systemd-sysv systemd-timesyncd udev
+0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
+qzee@qzee-VirtualBox:~/study$ sudo apt install docker-compose -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  docker-compose
+0 upgraded, 1 newly installed, 0 to remove and 12 not upgraded.
+Need to get 14.0 kB of archives.
+After this operation, 61.4 kB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 docker-compose all 1.29.2-6ubuntu1 [14.0 kB]
+Fetched 14.0 kB in 0s (233 kB/s)    
+Selecting previously unselected package docker-compose.
+(Reading database ... 192776 files and directories currently installed.)
+Preparing to unpack .../docker-compose_1.29.2-6ubuntu1_all.deb ...
+Unpacking docker-compose (1.29.2-6ubuntu1) ...
+Setting up docker-compose (1.29.2-6ubuntu1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+qzee@qzee-VirtualBox:~/study$ docker-compose --help
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/docker-compose", line 25, in importlib_load_entry_point
+    return next(matches).load()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 9, in <module>
+    from distutils.spawn import find_executable
+ModuleNotFoundError: No module named 'distutils'
+qzee@qzee-VirtualBox:~/study$ docker-compose -h
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/docker-compose", line 25, in importlib_load_entry_point
+    return next(matches).load()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 9, in <module>
+    from distutils.spawn import find_executable
+ModuleNotFoundError: No module named 'distutils'
+qzee@qzee-VirtualBox:~/study$ mkdir /wp_site
+mkdir: cannot create directory ‘/wp_site’: Permission denied
+qzee@qzee-VirtualBox:~/study$ ll
+total 12
+drwxrwxr-x  2 qzee qzee 4096 Jun  5 00:04 ./
+drwxr-x--- 16 qzee qzee 4096 Jun  4 23:58 ../
+-rw-rw-r--  1 qzee qzee  152 Jun  5 00:04 Dockerfile
+qzee@qzee-VirtualBox:~/study$ cd wp_site/
+bash: cd: wp_site/: No such file or directory
+qzee@qzee-VirtualBox:~/study$ tree
+.
+└── Dockerfile
+
+1 directory, 1 file
+qzee@qzee-VirtualBox:~/study$ mkdir wp_site
+qzee@qzee-VirtualBox:~/study$ ll
+total 16
+drwxrwxr-x  3 qzee qzee 4096 Jun  5 00:28 ./
+drwxr-x--- 16 qzee qzee 4096 Jun  4 23:58 ../
+-rw-rw-r--  1 qzee qzee  152 Jun  5 00:04 Dockerfile
+drwxrwxr-x  2 qzee qzee 4096 Jun  5 00:28 wp_site/
+qzee@qzee-VirtualBox:~/study$ cd wp_site/
+qzee@qzee-VirtualBox:~/study/wp_site$ nano docker-compose.yml
+qzee@qzee-VirtualBox:~/study/wp_site$ ll
+total 12
+drwxrwxr-x 2 qzee qzee 4096 Jun  5 00:38 ./
+drwxrwxr-x 3 qzee qzee 4096 Jun  5 00:28 ../
+-rw-rw-r-- 1 qzee qzee  364 Jun  5 00:38 docker-compose.yml
+qzee@qzee-VirtualBox:~/study/wp_site$ cat docker-compose.yml 
+wordpress:
+    image: wordpress
+    links:
+    - mariadb:mysql
+    environment:
+    -WORDPRESS_DB_PASSWORD=password
+    -WORDPRESS_DB_USER=root
+    ports:
+    - 80:80
+    volumes:
+    - ./html:/var/www/html
+mariadb:
+    image: mariadb
+    environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=wordpress
+    volumes:
+    - ./database:/var/lib/mysql
+
+qzee@qzee-VirtualBox:~/study/wp_site$ sudo docker-compose up -d
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/docker-compose", line 25, in importlib_load_entry_point
+    return next(matches).load()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 9, in <module>
+    from distutils.spawn import find_executable
+ModuleNotFoundError: No module named 'distutils'
+qzee@qzee-VirtualBox:~/study/wp_site$ 
+
