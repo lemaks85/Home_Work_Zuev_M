@@ -1,0 +1,468 @@
+root@qzee-VirtualBox:~# mkdir testfolder/bin
+root@qzee-VirtualBox:~# cp /bin/bash testfolder/bin
+root@qzee-VirtualBox:~# ldd /bin/bash
+	linux-vdso.so.1 (0x00007ffd35f6d000)
+	libtinfo.so.6 => /lib/x86_64-linux-gnu/libtinfo.so.6 (0x000078eb1fb43000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x000078eb1f800000)
+	/lib64/ld-linux-x86-64.so.2 (0x000078eb1fcf3000)
+root@qzee-VirtualBox:~# mkdir testfolder/lib
+root@qzee-VirtualBox:~# mkdir testfolder/lib64
+root@qzee-VirtualBox:~# tree
+.
+├── gb
+│   ├── bin
+│   │   └── bash
+│   ├── lib
+│   │   ├── libc.so.6
+│   │   └── libtinfo.so.6
+│   └── lib64
+│       └── ld-linux-x86-64.so.2
+├── snap
+│   ├── firefox
+│   │   ├── 4173
+│   │   ├── 4336
+│   │   ├── common
+│   │   └── current -> 4336
+│   ├── firmware-updater
+│   │   ├── 127
+│   │   ├── common
+│   │   └── current -> 127
+│   ├── snapd-desktop-integration
+│   │   ├── 157
+│   │   ├── common
+│   │   └── current -> 157
+│   └── snap-store
+│       ├── 1124
+│       ├── 1134
+│       ├── common
+│       └── current -> 1134
+└── testfolder
+    ├── bin
+    │   └── bash
+    ├── lib
+    └── lib64
+
+28 directories, 5 files
+root@qzee-VirtualBox:~# cp /lib/x86_64-linux-gnu/libtinfo.so.6 testfolder/lib
+root@qzee-VirtualBox:~# cp /lib/x86_64-linux-gnu/libc.so.6 testfolder/lib
+root@qzee-VirtualBox:~# cp /lib64/ld-linux-x86-64.so.2 testfolder/lib64/
+root@qzee-VirtualBox:~# chroot testfolder
+bash-5.2# ls
+bash: ls: command not found
+bash-5.2# exit                      
+exit
+root@qzee-VirtualBox:~# cp /bin/ls testfolder/bin/
+root@qzee-VirtualBox:~# ldd /bin/ls
+	linux-vdso.so.1 (0x00007ffd15181000)
+	libselinux.so.1 => /lib/x86_64-linux-gnu/libselinux.so.1 (0x000077689b17b000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x000077689ae00000)
+	libpcre2-8.so.0 => /lib/x86_64-linux-gnu/libpcre2-8.so.0 (0x000077689b0e1000)
+	/lib64/ld-linux-x86-64.so.2 (0x000077689b1dd000)
+root@qzee-VirtualBox:~# cp /lib/x86_64-linux-gnu/libselinux.so.1 testfolder/lib/
+root@qzee-VirtualBox:~# cp /lib/x86_64-linux-gnu/libpcre2-8.so.0 testfolder/lib/
+root@qzee-VirtualBox:~# chroot testfolder/
+bash-5.2# ls /
+bin  lib  lib64
+bash-5.2# ll
+bash: ll: command not found
+bash-5.2# ls
+bin  lib  lib64
+bash-5.2# ls lib
+libc.so.6	 libselinux.so.1
+libpcre2-8.so.0  libtinfo.so.6
+bash-5.2# 
+bash-5.2# exit                                             
+exit
+root@qzee-VirtualBox:~# ls -l /proc/$$/ns
+total 0
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 cgroup -> 'cgroup:[4026531835]'
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 ipc -> 'ipc:[4026531839]'
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 mnt -> 'mnt:[4026531841]'
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 net -> 'net:[4026531840]'
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 pid -> 'pid:[4026531836]'
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 pid_for_children -> 'pid:[4026531836]'
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 time -> 'time:[4026531834]'
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 time_for_children -> 'time:[4026531834]'
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 user -> 'user:[4026531837]'
+lrwxrwxrwx 1 root root 0 Jun 10 21:02 uts -> 'uts:[4026531838]'
+root@qzee-VirtualBox:~# ls ns
+ls: cannot access 'ns': No such file or directory
+root@qzee-VirtualBox:~# lsns
+        NS TYPE   NPROCS   PID USER            COMMAND
+4026531834 time      207     1 root            /sbin/init sp
+4026531835 cgroup    207     1 root            /sbin/init sp
+4026531836 pid       207     1 root            /sbin/init sp
+4026531837 user      205     1 root            /sbin/init sp
+4026531838 uts       200     1 root            /sbin/init sp
+4026531839 ipc       207     1 root            /sbin/init sp
+4026531840 net       205     1 root            /sbin/init sp
+4026531841 mnt       190     1 root            /sbin/init sp
+4026532178 mnt         1   302 root            ├─/usr/lib/sy
+4026532179 uts         1   302 root            ├─/usr/lib/sy
+4026532180 mnt         1   422 systemd-oom     ├─/usr/lib/sy
+4026532181 mnt         1   424 systemd-resolve ├─/usr/lib/sy
+4026532182 uts         1   422 systemd-oom     ├─/usr/lib/sy
+4026532203 mnt         1   672 root            ├─/usr/sbin/N
+4026532204 uts         1   620 root            ├─/usr/libexe
+4026532208 uts         1   625 root            ├─/usr/lib/sy
+4026532209 uts         1   619 polkitd         ├─/usr/lib/po
+4026532210 net         1  1713 rtkit           ├─/usr/libexe
+4026532259 mnt         1   620 root            ├─/usr/libexe
+4026532260 net         1   626 root            ├─/usr/libexe
+4026532265 mnt         1   619 polkitd         ├─/usr/lib/po
+4026532316 mnt         1   629 root            ├─/usr/libexe
+4026532317 mnt         1   626 root            ├─/usr/libexe
+4026532318 mnt         1   752 root            ├─/usr/sbin/M
+4026532319 mnt         1   625 root            ├─/usr/lib/sy
+4026532326 mnt         1  1713 rtkit           ├─/usr/libexe
+4026532327 uts         1   748 syslog          ├─/usr/sbin/r
+4026532373 mnt         1  1809 colord          ├─/usr/libexe
+4026532374 uts         1  1809 colord          ├─/usr/libexe
+4026532377 user        1  1809 colord          ├─/usr/libexe
+4026532381 mnt         1  4480 root            ├─/usr/libexe
+4026532435 mnt         1  1848 root            ├─/usr/libexe
+4026532436 user        1  1848 root            └─/usr/libexe
+4026531862 mnt         1    29 root            kdevtmpfs
+4026532376 mnt         0       root            
+4026532378 mnt         0       root            
+4026532379 mnt         0       root            
+4026532495 mnt         2  2550 qzee            /snap/snapd-d
+root@qzee-VirtualBox:~# 
+root@qzee-VirtualBox:~# cd /proc
+root@qzee-VirtualBox:/proc# ls
+1     2150  2601  3362  615            ioports
+10    2159  2606  3363  619            irq
+11    2191  2607  34    620            kallsyms
+1159  22    2612  3520  624            kcore
+1162  2202  2651  36    625            keys
+1165  2218  2713  37    626            key-users
+1184  2241  2757  38    628            kmsg
+1191  2262  2758  4     629            kpagecgroup
+1198  2287  2776  40    63             kpagecount
+12    2288  2782  406   631            kpageflags
+1218  23    2793  4073  638            latency_stats
+1233  2303  2795  41    64             loadavg
+1241  2311  28    42    66             locks
+1242  2314  2800  422   672            mdstat
+1264  2346  282   424   673            meminfo
+13    2348  2822  43    7              misc
+1302  2363  2825  44    73             modules
+14    24    2841  4480  748            mounts
+140   2428  2849  45    75             mtrr
+141   2448  2856  4507  752            net
+142   2456  2882  4538  76             pagetypeinfo
+15    2467  2886  46    77             partitions
+150   2469  29    47    9              pressure
+152   2471  2913  4783  90             schedstat
+16    2472  2999  48    acpi           scsi
+1648  2475  3     49    asound         self
+1652  2478  30    4904  bootconfig     slabinfo
+17    2479  3004  5     buddyinfo      softirqs
+1713  2481  3019  50    bus            stat
+18    2483  302   51    cgroups        swaps
+1809  2485  3038  5115  cmdline        sys
+1848  2487  3041  53    consoles       sysrq-trigger
+19    2490  3075  54    cpuinfo        sysvipc
+2     2495  3106  55    crypto         thread-self
+20    25    3111  551   devices        timer_list
+21    2501  3116  56    diskstats      tty
+2113  2503  3146  57    dma            uptime
+212   2504  3168  58    driver         version
+2126  2528  3173  59    dynamic_debug  version_signature
+2129  2542  32    593   execdomains    vmallocinfo
+213   2549  326   6     fb             vmstat
+2142  2550  3274  60    filesystems    zoneinfo
+2143  2570  33    606   fs
+2147  2573  3360  607   interrupts
+2148  2576  3361  61    iomem
+root@qzee-VirtualBox:/home/qzee# history -c
+root@qzee-VirtualBox:/home/qzee# lsns
+        NS TYPE   NPROCS   PID USER            COMMAND
+4026531834 time      215     1 root            /sbin/init splash
+4026531835 cgroup    215     1 root            /sbin/init splash
+4026531836 pid       215     1 root            /sbin/init splash
+4026531837 user      213     1 root            /sbin/init splash
+4026531838 uts       208     1 root            /sbin/init splash
+4026531839 ipc       215     1 root            /sbin/init splash
+4026531840 net       213     1 root            /sbin/init splash
+4026531841 mnt       199     1 root            /sbin/init splash
+4026532178 mnt         1   325 root            ├─/usr/lib/systemd/systemd-udevd
+4026532179 uts         1   325 root            ├─/usr/lib/systemd/systemd-udevd
+4026532180 mnt         1   421 systemd-resolve ├─/usr/lib/systemd/systemd-resolved
+4026532181 mnt         1   419 systemd-oom     ├─/usr/lib/systemd/systemd-oomd
+4026532182 uts         1   419 systemd-oom     ├─/usr/lib/systemd/systemd-oomd
+4026532201 uts         1   622 root            ├─/usr/libexec/power-profiles-daemon
+4026532202 uts         1   627 root            ├─/usr/lib/systemd/systemd-logind
+4026532205 net         1  1790 rtkit           ├─/usr/libexec/rtkit-daemon
+4026532258 uts         1   799 syslog          ├─/usr/sbin/rsyslogd -n -iNONE
+4026532259 mnt         1   622 root            ├─/usr/libexec/power-profiles-daemon
+4026532260 mnt         1   627 root            ├─/usr/lib/systemd/systemd-logind
+4026532261 mnt         1   632 root            ├─/usr/libexec/switcheroo-control
+4026532262 mnt         1   620 polkitd         ├─/usr/lib/polkit-1/polkitd --no-debug
+4026532264 net         1   628 root            ├─/usr/libexec/accounts-daemon
+4026532319 mnt         1   628 root            ├─/usr/libexec/accounts-daemon
+4026532320 mnt         1   683 root            ├─/usr/sbin/NetworkManager --no-daemon
+4026532325 mnt         1  1790 rtkit           ├─/usr/libexec/rtkit-daemon
+4026532326 uts         1   620 polkitd         ├─/usr/lib/polkit-1/polkitd --no-debug
+4026532330 mnt         1   849 root            ├─/usr/sbin/ModemManager
+4026532377 mnt         1  1886 colord          ├─/usr/libexec/colord
+4026532378 uts         1  1886 colord          ├─/usr/libexec/colord
+4026532379 user        1  1886 colord          ├─/usr/libexec/colord
+4026532437 mnt         1  1922 root            ├─/usr/libexec/upowerd
+4026532438 user        1  1922 root            └─/usr/libexec/upowerd
+4026531862 mnt         1    29 root            kdevtmpfs
+4026532376 mnt         0       root            
+4026532434 mnt         2  2758 qzee            /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
+root@qzee-VirtualBox:/home/qzee# cd /proc
+root@qzee-VirtualBox:/proc# ls
+1     14    2     2307  2585  2732  2930  32    38   54   629  92             fs             modules        tty
+10    141   20    2334  2586  2733  2938  3201  39   55   63   acpi           interrupts     mounts         uptime
+11    142   21    2391  2592  2741  2942  3218  4    56   632  asound         iomem          mtrr           version
+12    143   214   2392  2594  2742  2950  325   40   57   634  bootconfig     ioports        net            version_signature
+1209  145   215   24    2595  2749  2961  327   41   58   641  buddyinfo      irq            pagetypeinfo   vmallocinfo
+122   15    22    2404  2597  2758  2978  33    419  59   65   bus            kallsyms       partitions     vmstat
+1225  156   2208  2414  26    279   2984  3320  42   597  66   cgroups        kcore          pressure       zoneinfo
+1229  16    2218  2423  2600  2790  3     3327  421  6    68   cmdline        keys           schedstat
+1232  1649  2222  2456  2604  2798  30    3356  43   60   683  consoles       key-users      scsi
+1246  17    2235  2459  2608  2870  3023  3357  44   607  684  cpuinfo        kmsg           self
+1256  1728  2236  2460  2612  2878  3043  3358  45   608  69   crypto         kpagecgroup    slabinfo
+1267  1730  2242  2473  2613  288   3051  3359  46   61   7    devices        kpagecount     softirqs
+1294  1790  2247  25    2614  2881  31    3378  47   612  75   diskstats      kpageflags     stat
+13    18    2250  2532  2616  289   3139  34    48   62   77   dma            latency_stats  swaps
+1303  1833  2254  2551  2634  2895  3168  35    49   620  78   driver         loadavg        sys
+1305  1886  2280  2559  2666  2897  3170  36    5    622  79   dynamic_debug  locks          sysrq-trigger
+1308  19    2297  2569  2667  29    3171  3621  50   625  799  execdomains    mdstat         sysvipc
+1340  1921  23    2576  2673  2901  3180  37    51   627  849  fb             meminfo        thread-self
+1367  1922  2306  2578  2702  2917  3191  374   52   628  9    filesystems    misc           timer_list
+root@qzee-VirtualBox:/proc# cd 2634
+root@qzee-VirtualBox:/proc/2634# ls
+arch_status  comm                fd                 limits     mountstats     pagemap      sessionid     status          wchan
+attr         coredump_filter     fdinfo             loginuid   net            patch_state  setgroups     syscall
+autogroup    cpu_resctrl_groups  gid_map            map_files  ns             personality  smaps         task
+auxv         cpuset              io                 maps       numa_maps      projid_map   smaps_rollup  timens_offsets
+cgroup       cwd                 ksm_merging_pages  mem        oom_adj        root         stack         timers
+clear_refs   environ             ksm_stat           mountinfo  oom_score      sched        stat          timerslack_ns
+cmdline      exe                 latency            mounts     oom_score_adj  schedstat    statm         uid_map
+root@qzee-VirtualBox:/proc/2634# cd ns
+root@qzee-VirtualBox:/proc/2634/ns# ls
+cgroup  ipc  mnt  net  pid  pid_for_children  time  time_for_children  user  uts
+root@qzee-VirtualBox:/proc/2634/ns# ls -la
+total 0
+dr-x--x--x 2 qzee qzee 0 Jun 11 22:00 .
+dr-xr-xr-x 9 qzee qzee 0 Jun 11 21:58 ..
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:00 cgroup -> 'cgroup:[4026531835]'
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:00 ipc -> 'ipc:[4026531839]'
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:00 mnt -> 'mnt:[4026531841]'
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:00 net -> 'net:[4026531840]'
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:00 pid -> 'pid:[4026531836]'
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:04 pid_for_children -> 'pid:[4026531836]'
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:00 time -> 'time:[4026531834]'
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:04 time_for_children -> 'time:[4026531834]'
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:00 user -> 'user:[4026531837]'
+lrwxrwxrwx 1 qzee qzee 0 Jun 11 22:00 uts -> 'uts:[4026531838]'
+root@qzee-VirtualBox:/proc/2634/ns# 
+root@qzee-VirtualBox:/proc/2634/ns# ip netns list
+root@qzee-VirtualBox:/proc/2634/ns# ip netns add testns
+root@qzee-VirtualBox:/proc/2634/ns# ip netns list
+testns
+root@qzee-VirtualBox:/proc/2634/ns# ip netns exec testns bash
+root@qzee-VirtualBox:/proc/2634/ns# ip a
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+root@qzee-VirtualBox:/proc/2634/ns# ip link set dev lo up
+root@qzee-VirtualBox:/proc/2634/ns# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+root@qzee-VirtualBox:/proc/2634/ns# exit
+exit
+root@qzee-VirtualBox:/proc/2634/ns# cd ..
+root@qzee-VirtualBox:/proc/2634# cd ..
+root@qzee-VirtualBox:/proc# exit
+exit
+qzee@qzee-VirtualBox:~$ sudo su
+[sudo] password for qzee: 
+root@qzee-VirtualBox:/home/qzee# cd /proc
+root@qzee-VirtualBox:/proc# ip link add veth0 type veth peer name veth1
+root@qzee-VirtualBox:/proc# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:04:be:65 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 84829sec preferred_lft 84829sec
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:5b:fd:85:70 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+4: veth1@veth0: <BROADCAST,MULTICAST,M-DOWN> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether ca:da:ed:a0:56:55 brd ff:ff:ff:ff:ff:ff
+5: veth0@veth1: <BROADCAST,MULTICAST,M-DOWN> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 8a:56:8b:c9:ef:39 brd ff:ff:ff:ff:ff:ff
+root@qzee-VirtualBox:/proc# ip link set veth1 netns testns
+root@qzee-VirtualBox:/proc# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:04:be:65 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 84694sec preferred_lft 84694sec
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:5b:fd:85:70 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+5: veth0@if4: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 8a:56:8b:c9:ef:39 brd ff:ff:ff:ff:ff:ff link-netns testns
+root@qzee-VirtualBox:/proc# ip addr add 10.0.0.1/24 dev veth0
+root@qzee-VirtualBox:/proc# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:04:be:65 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 84599sec preferred_lft 84599sec
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:5b:fd:85:70 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+5: veth0@if4: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 8a:56:8b:c9:ef:39 brd ff:ff:ff:ff:ff:ff link-netns testns
+    inet 10.0.0.1/24 scope global veth0
+       valid_lft forever preferred_lft forever
+root@qzee-VirtualBox:/proc# ip link set dev veth0 up
+root@qzee-VirtualBox:/proc# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:04:be:65 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 84521sec preferred_lft 84521sec
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:5b:fd:85:70 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+5: veth0@if4: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state LOWERLAYERDOWN group default qlen 1000
+    link/ether 8a:56:8b:c9:ef:39 brd ff:ff:ff:ff:ff:ff link-netns testns
+    inet 10.0.0.1/24 scope global veth0
+       valid_lft forever preferred_lft forever
+root@qzee-VirtualBox:/proc# ip netns exec testns bash
+root@qzee-VirtualBox:/proc# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+4: veth1@if5: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether ca:da:ed:a0:56:55 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+root@qzee-VirtualBox:/proc# ip addr add 10.0.0.2/24 dev veth1
+root@qzee-VirtualBox:/proc# ip link set dev veth1 up
+root@qzee-VirtualBox:/proc# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+4: veth1@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether ca:da:ed:a0:56:55 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 10.0.0.2/24 scope global veth1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::c8da:edff:fea0:5655/64 scope link 
+       valid_lft forever preferred_lft forever
+root@qzee-VirtualBox:/proc# ping 10.0.0.1
+PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.
+64 bytes from 10.0.0.1: icmp_seq=1 ttl=64 time=0.110 ms
+64 bytes from 10.0.0.1: icmp_seq=2 ttl=64 time=0.041 ms
+64 bytes from 10.0.0.1: icmp_seq=3 ttl=64 time=0.044 ms
+64 bytes from 10.0.0.1: icmp_seq=4 ttl=64 time=0.048 ms
+64 bytes from 10.0.0.1: icmp_seq=5 ttl=64 time=0.124 ms
+^C
+--- 10.0.0.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4117ms
+rtt min/avg/max/mdev = 0.041/0.073/0.124/0.035 ms
+root@qzee-VirtualBox:/proc# ping 10.0.0.1
+PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.
+64 bytes from 10.0.0.1: icmp_seq=1 ttl=64 time=0.059 ms
+64 bytes from 10.0.0.1: icmp_seq=2 ttl=64 time=0.108 ms
+64 bytes from 10.0.0.1: icmp_seq=3 ttl=64 time=0.045 ms
+64 bytes from 10.0.0.1: icmp_seq=4 ttl=64 time=0.044 ms
+64 bytes from 10.0.0.1: icmp_seq=5 ttl=64 time=0.041 ms
+64 bytes from 10.0.0.1: icmp_seq=6 ttl=64 time=0.056 ms
+64 bytes from 10.0.0.1: icmp_seq=7 ttl=64 time=0.056 ms
+64 bytes from 10.0.0.1: icmp_seq=8 ttl=64 time=0.050 ms
+^C
+--- 10.0.0.1 ping statistics ---
+8 packets transmitted, 8 received, 0% packet loss, time 7149ms
+rtt min/avg/max/mdev = 0.041/0.057/0.108/0.020 ms
+root@qzee-VirtualBox:/proc# 
+root@qzee-VirtualBox:/proc# man unshare
+
+[1]+  Stopped                 man unshare
+root@qzee-VirtualBox:/proc# man unshare
+root@qzee-VirtualBox:/proc# sudo unshare --net bash
+root@qzee-VirtualBox:/proc# ip a
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+root@qzee-VirtualBox:/proc# exit
+exit
+root@qzee-VirtualBox:/proc# sudo unshare -u bash
+root@qzee-VirtualBox:/proc# hostname
+qzee-VirtualBox
+root@qzee-VirtualBox:/proc# hostname pc1
+root@qzee-VirtualBox:/proc# hostname
+pc1
+root@qzee-VirtualBox:/proc# exit
+exit
+root@qzee-VirtualBox:/proc# hostname
+qzee-VirtualBox
+root@qzee-VirtualBox:/proc# sudo unshare --pid --fork --mount-proc bash
+root@qzee-VirtualBox:/proc# ps
+    PID TTY          TIME CMD
+      1 pts/2    00:00:00 bash
+      8 pts/2    00:00:00 ps
+root@qzee-VirtualBox:/proc# ps
+    PID TTY          TIME CMD
+      1 pts/2    00:00:00 bash
+      9 pts/2    00:00:00 ps
+root@qzee-VirtualBox:/proc# ps
+    PID TTY          TIME CMD
+      1 pts/2    00:00:00 bash
+     10 pts/2    00:00:00 ps
+root@qzee-VirtualBox:/proc# echo $PS1
+\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$
+root@qzee-VirtualBox:/proc# exit 
+exit
+root@qzee-VirtualBox:/proc# exit
+exit
+There are stopped jobs.
+root@qzee-VirtualBox:/proc# exit
+exit
+qzee@qzee-VirtualBox:~$ 
+
+
+
+
+
+
+
+
