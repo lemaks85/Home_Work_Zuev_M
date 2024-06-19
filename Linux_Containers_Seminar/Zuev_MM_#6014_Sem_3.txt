@@ -1,0 +1,730 @@
+root@qzee-VirtualBox:~/qzeeUP# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@qzee-VirtualBox:~/qzeeUP# docker version
+Client: Docker Engine - Community
+ Version:           26.1.4
+ API version:       1.45
+ Go version:        go1.21.11
+ Git commit:        5650f9b
+ Built:             Wed Jun  5 11:28:57 2024
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          26.1.4
+  API version:      1.45 (minimum version 1.24)
+  Go version:       go1.21.11
+  Git commit:       de5c9cf
+  Built:            Wed Jun  5 11:28:57 2024
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.6.33
+  GitCommit:        d2d58213f83a351ca8f528a95fbd145f5654e957
+ runc:
+  Version:          1.1.12
+  GitCommit:        v1.1.12-0-g51d5e94
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+root@qzee-VirtualBox:~/qzeeUP# docker pull ubuntu:latest
+latest: Pulling from library/ubuntu
+9c704ecd0c69: Pull complete 
+Digest: sha256:2e863c44b718727c860746568e1d54afd13b2fa71b160f5cd9058fc436217b30
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+root@qzee-VirtualBox:~/qzeeUP# docker images
+REPOSITORY               TAG       IMAGE ID       CREATED         SIZE
+ubuntu                   latest    35a88802559d   12 days ago     78.1MB
+my_nginx_image           latest    c93b2f428031   2 weeks ago     153MB
+nginx                    latest    4f67c83422ec   2 weeks ago     188MB
+debian                   latest    5027089adc4c   5 weeks ago     117MB
+hello-world              latest    d2c94e258dcb   13 months ago   13.3kB
+docker/getting-started   latest    3e4394f6b72f   18 months ago   47MB
+root@qzee-VirtualBox:~/qzeeUP# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@qzee-VirtualBox:~/qzeeUP# docker run ubuntu:latest
+root@qzee-VirtualBox:~/qzeeUP# docker ps -a
+CONTAINER ID   IMAGE           COMMAND       CREATED          STATUS                      PORTS     NAMES
+b5c989c82429   ubuntu:latest   "/bin/bash"   7 seconds ago    Exited (0) 6 seconds ago              crazy_elbakyan
+97f2aaa018a5   hello-world     "/hello"      31 minutes ago   Exited (0) 31 minutes ago             pensive_bardeen
+root@qzee-VirtualBox:~/qzeeUP# docker run -d ubuntu:latest
+858c9afcdb47ed95b32c5d4598c2e72482f05a8159f60275d0a062cecfab11eb
+root@qzee-VirtualBox:~/qzeeUP# docker run -it ubuntu:latest bash
+root@892339e69c10:/# ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@892339e69c10:/# pwd
+/
+root@892339e69c10:/# id
+uid=0(root) gid=0(root) groups=0(root)
+root@892339e69c10:/# hostname
+892339e69c10
+root@892339e69c10:/# apt install iproute2
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package iproute2
+root@892339e69c10:/# exit
+exit
+root@qzee-VirtualBox:~/qzeeUP# apt install iprouter2
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package iprouter2
+root@qzee-VirtualBox:~/qzeeUP# sudo apt install iprouter2
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package iprouter2
+root@qzee-VirtualBox:~/qzeeUP# docker run -it ubuntu:latest bash
+root@8005164bca78:/# $ apt-get install apt-file
+bash: $: command not found
+root@8005164bca78:/#  apt-get install apt-file
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package apt-file
+root@8005164bca78:/#  apt-get install apt-file                          
+ apt-file update
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package apt-file
+bash: apt-file: command not found
+root@8005164bca78:/# exit
+exit
+root@qzee-VirtualBox:~/qzeeUP#  apt-get install apt-file
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64 python3-compose python3-docker python3-dockerpty
+  python3-docopt python3-dotenv python3-texttable python3-websocket ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libapt-pkg-perl libregexp-assemble-perl
+The following NEW packages will be installed:
+  apt-file libapt-pkg-perl libregexp-assemble-perl
+0 upgraded, 3 newly installed, 0 to remove and 50 not upgraded.
+Need to get 164 kB of archives.
+After this operation, 532 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 libapt-pkg-perl amd64 0.1.40build7 [68.4 kB]
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 libregexp-assemble-perl all 0.38-2 [69.5 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 apt-file all 3.3 [25.9 kB]
+Fetched 164 kB in 0s (739 kB/s)                   
+Selecting previously unselected package libapt-pkg-perl.
+(Reading database ... 193503 files and directories currently installed.)
+Preparing to unpack .../libapt-pkg-perl_0.1.40build7_amd64.deb ...
+Unpacking libapt-pkg-perl (0.1.40build7) ...
+Selecting previously unselected package libregexp-assemble-perl.
+Preparing to unpack .../libregexp-assemble-perl_0.38-2_all.deb ...
+Unpacking libregexp-assemble-perl (0.38-2) ...
+Selecting previously unselected package apt-file.
+Preparing to unpack .../archives/apt-file_3.3_all.deb ...
+Unpacking apt-file (3.3) ...
+Setting up libapt-pkg-perl (0.1.40build7) ...
+Setting up libregexp-assemble-perl (0.38-2) ...
+Setting up apt-file (3.3) ...
+The system-wide cache is empty. You may want to run 'apt-file update'
+as root to update the cache.
+Processing triggers for man-db (2.12.0-4build2) ...
+root@qzee-VirtualBox:~/qzeeUP# apt update apt-file
+E: The update command takes no arguments
+root@qzee-VirtualBox:~/qzeeUP# apt-file update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease                                                             
+Hit:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease                                                           
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease                                                              
+Hit:5 https://download.docker.com/linux/ubuntu noble InRelease           
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble amd64 Contents (deb) [51.3 MB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security amd64 Contents (deb) [3,530 kB]
+Get:8 https://download.docker.com/linux/ubuntu noble/stable amd64 Contents (deb) [1,304 B]
+Get:9 http://ru.archive.ubuntu.com/ubuntu noble-updates amd64 Contents (deb) [3,622 kB]                                        
+Get:10 http://ru.archive.ubuntu.com/ubuntu noble-backports amd64 Contents (deb) [16.4 kB]                                      
+Fetched 58.5 MB in 20s (2,855 kB/s)                                                                                            
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+50 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@qzee-VirtualBox:~/qzeeUP# docker run -it ubuntu:latest bash
+root@94118e9bec33:/# apt install iproute2
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package iproute2
+root@94118e9bec33:/# apt-get install apt-file
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package apt-file
+root@94118e9bec33:/# apt-file update
+bash: apt-file: command not found
+root@94118e9bec33:/# sudo apt-get install apt-file
+bash: sudo: command not found
+root@94118e9bec33:/# sudo apt-get install apt-file
+bash: sudo: command not found
+root@94118e9bec33:/# apt-get install apt-file
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package apt-file
+root@94118e9bec33:/# apt install iproute2
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package iproute2
+root@94118e9bec33:/# apt-file search --regexp 'bin/ip$'
+iproute2: /bin/ip
+iproute2: /sbin/ip
+bash: apt-file: command not found
+bash: iproute2:: command not found
+bash: iproute2:: command not found
+root@94118e9bec33:/# exit
+exit
+root@qzee-VirtualBox:~/qzeeUP# apt-file search --regexp 'bin/ip$'
+iproute2: /bin/ip
+iproute2: /sbin/ip
+iproute2: /bin/ip                         
+iproute2: /sbin/ip
+iproute2:: command not found
+iproute2:: command not found
+root@qzee-VirtualBox:~/qzeeUP# apt install -y iproute2
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+iproute2 is already the newest version (6.1.0-1ubuntu6).
+iproute2 set to manually installed.
+The following packages were automatically installed and are no longer required:
+  libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64 python3-compose python3-docker python3-dockerpty
+  python3-docopt python3-dotenv python3-texttable python3-websocket ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 50 not upgraded.
+root@qzee-VirtualBox:~/qzeeUP# docker run -it ubuntu:latest bash
+root@a844aaa5360f:/# apt install -y iproute2
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package iproute2
+root@a844aaa5360f:/# sudo apt apdate
+bash: sudo: command not found
+root@a844aaa5360f:/# apt apdate
+E: Invalid operation apdate
+root@a844aaa5360f:/# apt update
+Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]            
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]              
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [84.8 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [202 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [65.1 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]                  
+Get:10 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [139 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [15.5 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [92.4 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [226 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [7519 B]
+Fetched 23.0 MB in 4s (5443 kB/s)                          
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+root@a844aaa5360f:/# apt upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+root@a844aaa5360f:/# apt install -y iproute2
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  krb5-locales libatm1t64 libbpf1 libcap2-bin libelf1t64 libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  libmnl0 libpam-cap libtirpc-common libtirpc3t64 libxtables12
+Suggested packages:
+  iproute2-doc python3:any krb5-doc krb5-user
+The following NEW packages will be installed:
+  iproute2 krb5-locales libatm1t64 libbpf1 libcap2-bin libelf1t64 libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libmnl0 libpam-cap libtirpc-common libtirpc3t64 libxtables12
+0 upgraded, 16 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2180 kB of archives.
+After this operation, 6460 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libelf1t64 amd64 0.190-1.1build4 [57.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 libbpf1 amd64 1:1.3.0-2build2 [166 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libmnl0 amd64 1.0.5-2build1 [12.3 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libkrb5support0 amd64 1.20.1-6ubuntu2 [33.5 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libk5crypto3 amd64 1.20.1-6ubuntu2 [81.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libkeyutils1 amd64 1.6.3-3build1 [9490 B]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 libkrb5-3 amd64 1.20.1-6ubuntu2 [347 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libgssapi-krb5-2 amd64 1.20.1-6ubuntu2 [142 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libtirpc-common all 1.3.4+ds-1.1build1 [8094 B]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libtirpc3t64 amd64 1.3.4+ds-1.1build1 [82.6 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 libxtables12 amd64 1.8.10-3ubuntu2 [35.7 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 libcap2-bin amd64 1:2.66-5ubuntu2 [34.5 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 iproute2 amd64 6.1.0-1ubuntu6 [1120 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 krb5-locales all 1.20.1-6ubuntu2 [13.8 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 libatm1t64 amd64 1:2.5.1-5.1build1 [22.9 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 libpam-cap amd64 1:2.66-5ubuntu2 [12.4 kB]
+Fetched 2180 kB in 1s (3037 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libelf1t64:amd64.
+(Reading database ... 4376 files and directories currently installed.)
+Preparing to unpack .../00-libelf1t64_0.190-1.1build4_amd64.deb ...
+Unpacking libelf1t64:amd64 (0.190-1.1build4) ...
+Selecting previously unselected package libbpf1:amd64.
+Preparing to unpack .../01-libbpf1_1%3a1.3.0-2build2_amd64.deb ...
+Unpacking libbpf1:amd64 (1:1.3.0-2build2) ...
+Selecting previously unselected package libmnl0:amd64.
+Preparing to unpack .../02-libmnl0_1.0.5-2build1_amd64.deb ...
+Unpacking libmnl0:amd64 (1.0.5-2build1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../03-libkrb5support0_1.20.1-6ubuntu2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../04-libk5crypto3_1.20.1-6ubuntu2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../05-libkeyutils1_1.6.3-3build1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-3build1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../06-libkrb5-3_1.20.1-6ubuntu2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../07-libgssapi-krb5-2_1.20.1-6ubuntu2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libtirpc-common.
+Preparing to unpack .../08-libtirpc-common_1.3.4+ds-1.1build1_all.deb ...
+Unpacking libtirpc-common (1.3.4+ds-1.1build1) ...
+Selecting previously unselected package libtirpc3t64:amd64.
+Preparing to unpack .../09-libtirpc3t64_1.3.4+ds-1.1build1_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libtirpc.so.3 to /lib/x86_64-linux-gnu/libtirpc.so.3.usr-is-merged by libtirpc3t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libtirpc.so.3.0.0 to /lib/x86_64-linux-gnu/libtirpc.so.3.0.0.usr-is-merged by libtirp
+c3t64'
+Unpacking libtirpc3t64:amd64 (1.3.4+ds-1.1build1) ...
+Selecting previously unselected package libxtables12:amd64.
+Preparing to unpack .../10-libxtables12_1.8.10-3ubuntu2_amd64.deb ...
+Unpacking libxtables12:amd64 (1.8.10-3ubuntu2) ...
+Selecting previously unselected package libcap2-bin.
+Preparing to unpack .../11-libcap2-bin_1%3a2.66-5ubuntu2_amd64.deb ...
+Unpacking libcap2-bin (1:2.66-5ubuntu2) ...
+Selecting previously unselected package iproute2.
+Preparing to unpack .../12-iproute2_6.1.0-1ubuntu6_amd64.deb ...
+Unpacking iproute2 (6.1.0-1ubuntu6) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../13-krb5-locales_1.20.1-6ubuntu2_all.deb ...
+Unpacking krb5-locales (1.20.1-6ubuntu2) ...
+Selecting previously unselected package libatm1t64:amd64.
+Preparing to unpack .../14-libatm1t64_1%3a2.5.1-5.1build1_amd64.deb ...
+Unpacking libatm1t64:amd64 (1:2.5.1-5.1build1) ...
+Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../15-libpam-cap_1%3a2.66-5ubuntu2_amd64.deb ...
+Unpacking libpam-cap:amd64 (1:2.66-5ubuntu2) ...
+Setting up libkeyutils1:amd64 (1.6.3-3build1) ...
+Setting up libatm1t64:amd64 (1:2.5.1-5.1build1) ...
+Setting up libtirpc-common (1.3.4+ds-1.1build1) ...
+Setting up krb5-locales (1.20.1-6ubuntu2) ...
+Setting up libelf1t64:amd64 (0.190-1.1build4) ...
+Setting up libkrb5support0:amd64 (1.20.1-6ubuntu2) ...
+Setting up libcap2-bin (1:2.66-5ubuntu2) ...
+Setting up libmnl0:amd64 (1.0.5-2build1) ...
+Setting up libk5crypto3:amd64 (1.20.1-6ubuntu2) ...
+Setting up libxtables12:amd64 (1.8.10-3ubuntu2) ...
+Setting up libkrb5-3:amd64 (1.20.1-6ubuntu2) ...
+Setting up libpam-cap:amd64 (1:2.66-5ubuntu2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/F
+rontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/
+perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/pe
+rl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /u
+sr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Setting up libbpf1:amd64 (1:1.3.0-2build2) ...
+Setting up libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2) ...
+Setting up libtirpc3t64:amd64 (1.3.4+ds-1.1build1) ...
+Setting up iproute2 (6.1.0-1ubuntu6) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/F
+rontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/
+perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/pe
+rl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /u
+sr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Processing triggers for libc-bin (2.39-0ubuntu8.2) ...
+root@a844aaa5360f:/# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+17: eth0@if18: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 172.17.0.2/16 brd 172.17.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+root@a844aaa5360f:/# ip -a
+Usage: ip [ OPTIONS ] OBJECT { COMMAND | help }
+       ip [ -force ] -batch filename
+where  OBJECT := { address | addrlabel | amt | fou | help | ila | ioam | l2tp |
+                   link | macsec | maddress | monitor | mptcp | mroute | mrule |
+                   neighbor | neighbour | netconf | netns | nexthop | ntable |
+                   ntbl | route | rule | sr | tap | tcpmetrics |
+                   token | tunnel | tuntap | vrf | xfrm }
+       OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |
+                    -h[uman-readable] | -iec | -j[son] | -p[retty] |
+                    -f[amily] { inet | inet6 | mpls | bridge | link } |
+                    -4 | -6 | -M | -B | -0 |
+                    -l[oops] { maximum-addr-flush-attempts } | -br[ief] |
+                    -o[neline] | -t[imestamp] | -ts[hort] | -b[atch] [filename] |
+                    -rc[vbuf] [size] | -n[etns] name | -N[umeric] | -a[ll] |
+                    -c[olor]}
+root@a844aaa5360f:/# ip a 
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+17: eth0@if18: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 172.17.0.2/16 brd 172.17.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+root@a844aaa5360f:/# ip route
+default via 172.17.0.1 dev eth0 
+172.17.0.0/16 dev eth0 proto kernel scope link src 172.17.0.2 
+root@a844aaa5360f:/# apt install nettools
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package nettools
+root@a844aaa5360f:/# apt update
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Fetched 126 kB in 1s (167 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+root@a844aaa5360f:/# apt install nettools
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package nettools
+root@a844aaa5360f:/# apt update
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+root@a844aaa5360f:/# apt upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+root@a844aaa5360f:/# apt install nettools
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package nettools
+root@a844aaa5360f:/# apt install inetutils-ping
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  netbase
+The following NEW packages will be installed:
+  inetutils-ping netbase
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 75.5 kB of archives.
+After this operation, 243 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 inetutils-ping amd64 2:2.5-3ubuntu4 [62.4 kB]
+Fetched 75.5 kB in 0s (220 kB/s)        
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package netbase.
+(Reading database ... 4668 files and directories currently installed.)
+Preparing to unpack .../archives/netbase_6.4_all.deb ...
+Unpacking netbase (6.4) ...
+Selecting previously unselected package inetutils-ping.
+Preparing to unpack .../inetutils-ping_2%3a2.5-3ubuntu4_amd64.deb ...
+Unpacking inetutils-ping (2:2.5-3ubuntu4) ...
+Setting up netbase (6.4) ...
+Setting up inetutils-ping (2:2.5-3ubuntu4) ...
+root@a844aaa5360f:/# ping mail.ru
+PING mail.ru (94.100.180.201): 56 data bytes
+64 bytes from 94.100.180.201: icmp_seq=0 ttl=52 time=71.320 ms
+64 bytes from 94.100.180.201: icmp_seq=1 ttl=52 time=63.277 ms
+64 bytes from 94.100.180.201: icmp_seq=2 ttl=52 time=62.711 ms
+64 bytes from 94.100.180.201: icmp_seq=3 ttl=52 time=60.211 ms
+64 bytes from 94.100.180.201: icmp_seq=4 ttl=52 time=60.280 ms
+64 bytes from 94.100.180.201: icmp_seq=5 ttl=52 time=61.188 ms
+64 bytes from 94.100.180.201: icmp_seq=6 ttl=52 time=62.253 ms
+64 bytes from 94.100.180.201: icmp_seq=7 ttl=52 time=60.910 ms
+64 bytes from 94.100.180.201: icmp_seq=8 ttl=52 time=59.559 ms
+64 bytes from 94.100.180.201: icmp_seq=9 ttl=52 time=72.031 ms
+64 bytes from 94.100.180.201: icmp_seq=10 ttl=52 time=59.319 ms
+^Z
+[1]+  Stopped                 ping mail.ru
+root@a844aaa5360f:/# exit
+exit
+There are stopped jobs.
+root@a844aaa5360f:/# exit 
+exit
+root@qzee-VirtualBox:~/qzeeUP# docker ps -a
+CONTAINER ID   IMAGE           COMMAND       CREATED          STATUS                        PORTS     NAMES
+a844aaa5360f   ubuntu:latest   "bash"        11 minutes ago   Exited (1) 17 seconds ago               wizardly_shirley
+94118e9bec33   ubuntu:latest   "bash"        14 minutes ago   Exited (127) 11 minutes ago             infallible_feistel
+8005164bca78   ubuntu:latest   "bash"        18 minutes ago   Exited (127) 16 minutes ago             optimistic_cray
+892339e69c10   ubuntu:latest   "bash"        23 minutes ago   Exited (100) 19 minutes ago             jolly_meninsky
+858c9afcdb47   ubuntu:latest   "/bin/bash"   24 minutes ago   Exited (0) 24 minutes ago               stoic_diffie
+b5c989c82429   ubuntu:latest   "/bin/bash"   26 minutes ago   Exited (0) 26 minutes ago               crazy_elbakyan
+97f2aaa018a5   hello-world     "/hello"      58 minutes ago   Exited (0) 58 minutes ago               pensive_bardeen
+root@qzee-VirtualBox:~/qzeeUP# echo $HOSTNAME
+qzee-VirtualBox
+root@qzee-VirtualBox:~/qzeeUP# docker run ubuntu:latest ls /
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+root@qzee-VirtualBox:~/qzeeUP# cd
+root@qzee-VirtualBox:~# cd qzeeUP/
+root@qzee-VirtualBox:~/qzeeUP# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@qzee-VirtualBox:~/qzeeUP# docker ps -a
+CONTAINER ID   IMAGE           COMMAND       CREATED             STATUS                         PORTS     NAMES
+6dd1c035f571   ubuntu:latest   "ls /"        3 minutes ago       Exited (0) 3 minutes ago                 interesting_allen
+a844aaa5360f   ubuntu:latest   "bash"        18 minutes ago      Exited (1) 7 minutes ago                 wizardly_shirley
+94118e9bec33   ubuntu:latest   "bash"        22 minutes ago      Exited (127) 19 minutes ago              infallible_feistel
+8005164bca78   ubuntu:latest   "bash"        25 minutes ago      Exited (127) 24 minutes ago              optimistic_cray
+892339e69c10   ubuntu:latest   "bash"        30 minutes ago      Exited (100) 27 minutes ago              jolly_meninsky
+858c9afcdb47   ubuntu:latest   "/bin/bash"   32 minutes ago      Exited (0) 32 minutes ago                stoic_diffie
+b5c989c82429   ubuntu:latest   "/bin/bash"   34 minutes ago      Exited (0) 34 minutes ago                crazy_elbakyan
+97f2aaa018a5   hello-world     "/hello"      About an hour ago   Exited (0) About an hour ago             pensive_bardeen
+root@qzee-VirtualBox:~/qzeeUP# docker rm 858c9afcdb47
+858c9afcdb47
+root@qzee-VirtualBox:~/qzeeUP# docker rm 892339e69c10
+892339e69c10
+root@qzee-VirtualBox:~/qzeeUP# docker rm 8005164bca78
+8005164bca78
+root@qzee-VirtualBox:~/qzeeUP# docker ps -a
+CONTAINER ID   IMAGE           COMMAND       CREATED             STATUS                         PORTS     NAMES
+6dd1c035f571   ubuntu:latest   "ls /"        4 minutes ago       Exited (0) 4 minutes ago                 interesting_allen
+a844aaa5360f   ubuntu:latest   "bash"        19 minutes ago      Exited (1) 9 minutes ago                 wizardly_shirley
+94118e9bec33   ubuntu:latest   "bash"        23 minutes ago      Exited (127) 20 minutes ago              infallible_feistel
+b5c989c82429   ubuntu:latest   "/bin/bash"   35 minutes ago      Exited (0) 35 minutes ago                crazy_elbakyan
+97f2aaa018a5   hello-world     "/hello"      About an hour ago   Exited (0) About an hour ago             pensive_bardeen
+root@qzee-VirtualBox:~/qzeeUP# docker rm a844aaa5360f
+a844aaa5360f
+root@qzee-VirtualBox:~/qzeeUP# docker ps -a
+CONTAINER ID   IMAGE           COMMAND       CREATED             STATUS                         PORTS     NAMES
+6dd1c035f571   ubuntu:latest   "ls /"        4 minutes ago       Exited (0) 4 minutes ago                 interesting_allen
+94118e9bec33   ubuntu:latest   "bash"        23 minutes ago      Exited (127) 20 minutes ago              infallible_feistel
+b5c989c82429   ubuntu:latest   "/bin/bash"   35 minutes ago      Exited (0) 35 minutes ago                crazy_elbakyan
+97f2aaa018a5   hello-world     "/hello"      About an hour ago   Exited (0) About an hour ago             pensive_bardeen
+root@qzee-VirtualBox:~/qzeeUP# docker rm $(docker ps -a -q)
+6dd1c035f571
+94118e9bec33
+b5c989c82429
+97f2aaa018a5
+root@qzee-VirtualBox:~/qzeeUP# docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@qzee-VirtualBox:~/qzeeUP# docker volume ls
+DRIVER    VOLUME NAME
+local     aecf1fe1c73c1009be81330e19d3133b0e46ed9c392d9d4bc6837922d70701d4
+root@qzee-VirtualBox:~/qzeeUP#  docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+Unable to find image 'mariadb:latest' locally
+latest: Pulling from library/mariadb
+9c704ecd0c69: Already exists 
+f8f7f3c9a741: Pull complete 
+97c034108521: Pull complete 
+50366979c20a: Pull complete 
+0221331af5c0: Pull complete 
+e3c4d1c9d9cb: Pull complete 
+eef7a8467f98: Pull complete 
+60c15bb5bb03: Pull complete 
+Digest: sha256:e59ba8783bf7bc02a4779f103bb0d8751ac0e10f9471089709608377eded7aa8
+Status: Downloaded newer image for mariadb:latest
+b40b4059581fd2e8a93f040055bca83bf72cd6fa599a30eaedc8e2d1401c29e4
+root@qzee-VirtualBox:~/qzeeUP# docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS         PORTS      NAMES
+b40b4059581f   mariadb:latest   "docker-entrypoint.s…"   7 seconds ago   Up 5 seconds   3306/tcp   some-mariadb
+root@qzee-VirtualBox:~/qzeeUP# docker exec b40b4059581f ls /
+bin
+bin.usr-is-merged
+boot
+dev
+docker-entrypoint-initdb.d
+etc
+home
+lib
+lib.usr-is-merged
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+sbin.usr-is-merged
+srv
+sys
+tmp
+usr
+var
+root@qzee-VirtualBox:~/qzeeUP# docker exec -it b40b4059581f mariadb
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+root@qzee-VirtualBox:~/qzeeUP# docker exec -it b40b4059581f mariadb -u root -p my-secret-pw
+Enter password: 
+ERROR 1049 (42000): Unknown database 'my-secret-pw'
+root@qzee-VirtualBox:~/qzeeUP# docker exec -it b40b4059581f mariadb -u root 
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+root@qzee-VirtualBox:~/qzeeUP# docker exec -it b40b4059581f mariadb -u root -p my-secret-pw
+Enter password: 
+ERROR 1049 (42000): Unknown database 'my-secret-pw'
+root@qzee-VirtualBox:~/qzeeUP# docker exec -it b40b4059581f mariadb -u root -p my-secret-pw
+Enter password: 
+ERROR 1049 (42000): Unknown database 'my-secret-pw'
+root@qzee-VirtualBox:~/qzeeUP# docker exec -it b40b4059581f mariadb -u root -p 
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 11.4.2-MariaDB-ubu2404 mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.002 sec)
+
+MariaDB [(none)]> CREATE DATABASE my_db;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| my_db              |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.002 sec)
+
+MariaDB [(none)]> exit
+Bye
+root@qzee-VirtualBox:~/qzeeUP# docker run --name phpmyadmin -d --link mariadb:db -p 8080:80 phpmyadmin
+Unable to find image 'phpmyadmin:latest' locally
+latest: Pulling from library/phpmyadmin
+2cc3ae149d28: Pull complete 
+01c187ab622c: Pull complete 
+4382a8829fff: Pull complete 
+43046b340e34: Pull complete 
+199ce03f09e6: Pull complete 
+82f77a5a3aed: Pull complete 
+60517e1132d4: Pull complete 
+048a128f8a9b: Pull complete 
+29fca939395b: Pull complete 
+73e70c64ea4e: Pull complete 
+a39eb8ce7fab: Pull complete 
+8ba7f5c30795: Pull complete 
+4cd80e85911a: Pull complete 
+bcf398b39daf: Pull complete 
+5793993a0f6a: Pull complete 
+ecbda14f71b3: Pull complete 
+6909befa5df8: Pull complete 
+9bef6fc36529: Pull complete 
+Digest: sha256:3197db06cdb9186ba2fe42211d70cbb32299c6888a86c7761076bbfe47e989f1
+Status: Downloaded newer image for phpmyadmin:latest
+docker: Error response from daemon: could not get container for mariadb: No such container: mariadb.
+See 'docker run --help'.
+root@qzee-VirtualBox:~/qzeeUP# docerps
+docerps: command not found
+root@qzee-VirtualBox:~/qzeeUP# docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS      NAMES
+b40b4059581f   mariadb:latest   "docker-entrypoint.s…"   14 minutes ago   Up 14 minutes   3306/tcp   some-mariadb
+root@qzee-VirtualBox:~/qzeeUP# docker run --name phpmyadmin -d --link mariadb:latest:db -p 8080:80 phpmyadmin
+invalid argument "mariadb:latest:db" for "--link" flag: bad format for links: mariadb:latest:db
+See 'docker run --help'.
+root@qzee-VirtualBox:~/qzeeUP# docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS      NAMES
+b40b4059581f   mariadb:latest   "docker-entrypoint.s…"   15 minutes ago   Up 15 minutes   3306/tcp   some-mariadb
+root@qzee-VirtualBox:~/qzeeUP# docker run --name phpmyadmin -d --link b40b4059581f:db -p 8080:80 phpmyadmin
+e73e4532428fc7e339d85aca06a1d5d43b9b6d62adb4ac90ccb75821db81f946
+root@qzee-VirtualBox:~/qzeeUP# docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+e73e4532428f   phpmyadmin       "/docker-entrypoint.…"   7 seconds ago    Up 6 seconds    0.0.0.0:8080->80/tcp, :::8080->80/tcp   phpmyadmin
+b40b4059581f   mariadb:latest   "docker-entrypoint.s…"   15 minutes ago   Up 15 minutes   3306/tcp                                some-mariadb
+root@qzee-VirtualBox:~/qzeeUP# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:04:be:65 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 74822sec preferred_lft 74822sec
+3: lxcbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 00:16:3e:00:00:00 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.3.1/24 brd 10.0.3.255 scope global lxcbr0
+       valid_lft forever preferred_lft forever
+4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:b1:28:15:15 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:b1ff:fe28:1515/64 scope link 
+       valid_lft forever preferred_lft forever
+22: veth0d28281@if21: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 0a:c1:0a:6f:46:e4 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::8c1:aff:fe6f:46e4/64 scope link 
+       valid_lft forever preferred_lft forever
+24: veth417ec48@if23: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 7a:e8:b6:9a:be:d5 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    inet6 fe80::78e8:b6ff:fe9a:bed5/64 scope link 
+       valid_lft forever preferred_lft forever
+
+
