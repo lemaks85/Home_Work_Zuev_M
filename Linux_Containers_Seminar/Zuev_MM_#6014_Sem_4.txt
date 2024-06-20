@@ -1,0 +1,292 @@
+qzee@qzee-VirtualBox:~$ ls
+321.png    iptables-config  study
+Desktop    Music            Templates
+Documents  Pictures         Videos
+Downloads  Public           zip_3.0-13build1_amd64.deb
+gb         snap
+qzee@qzee-VirtualBox:~$ cd study/
+qzee@qzee-VirtualBox:~/study$ ls
+clear_directory.sh  f2.tmp     ownersoft.sh
+f1.bak              f3.backup  qzee
+qzee@qzee-VirtualBox:~/study$ nano
+qzee@qzee-VirtualBox:~/study$ ls
+clear_directory.sh  f1.bak  f3.backup     qzee
+Dockerfile          f2.tmp  ownersoft.sh
+qzee@qzee-VirtualBox:~/study$ cat Dockerfile 
+FROM ubuntu:latest
+RUN apt-get update && \
+    apt-get install -y cowsay && \
+    ln -s /usr/games/cowsay /usr/bin/cowsay && \
+    rm -rf /var/lib/apt/lists/*
+CMD [“cowsay”]
+
+
+
+docker build -t cowsaytest .
+docker run cowsaytest cowsay “GeekBrains”
+qzee@qzee-VirtualBox:~/study$ docker build -t my_cow:v.1.0.1.
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+Usage:  docker buildx build [OPTIONS] PATH | URL | -
+
+Start a build
+qzee@qzee-VirtualBox:~/study$ docker build -t my_cow .
+ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Head "http://%2Fvar%2Frun%2Fdocker.sock/_ping": dial unix /var/run/docker.sock: connect: permission denied
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow:latest .
+[sudo] password for qzee: 
+[+] Building 0.2s (1/1) FINISHED             docker:default
+ => [internal] load build definition from Dockerfile   0.1s
+ => => transferring dockerfile: 295B                   0.0s
+Dockerfile:10
+--------------------
+   8 |     
+   9 |     
+  10 | >>> docker build -t cowsaytest .
+  11 |     docker run cowsaytest cowsay “GeekBrains”
+  12 |     
+--------------------
+ERROR: failed to solve: dockerfile parse error on line 10: unknown instruction: docker
+qzee@qzee-VirtualBox:~/study$ sudo docker images
+REPOSITORY               TAG       IMAGE ID       CREATED         SIZE
+phpmyadmin               latest    c6d2e5105bad   7 days ago      562MB
+mariadb                  latest    4486d64c9c3b   9 days ago      406MB
+ubuntu                   latest    35a88802559d   13 days ago     78.1MB
+my_nginx_image           latest    c93b2f428031   2 weeks ago     153MB
+nginx                    latest    4f67c83422ec   3 weeks ago     188MB
+debian                   latest    5027089adc4c   5 weeks ago     117MB
+hello-world              latest    d2c94e258dcb   13 months ago   13.3kB
+docker/getting-started   latest    3e4394f6b72f   18 months ago   47MB
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow:latest .
+[+] Building 0.1s (1/1) FINISHED             docker:default
+ => [internal] load build definition from Dockerfile   0.0s
+ => => transferring dockerfile: 295B                   0.0s
+Dockerfile:10
+--------------------
+   8 |     
+   9 |     
+  10 | >>> docker build -t cowsaytest .
+  11 |     docker run cowsaytest cowsay “GeekBrains”
+  12 |     
+--------------------
+ERROR: failed to solve: dockerfile parse error on line 10: unknown instruction: docker
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow  .
+[+] Building 0.1s (1/1) FINISHED             docker:default
+ => [internal] load build definition from Dockerfile   0.0s
+ => => transferring dockerfile: 295B                   0.0s
+Dockerfile:10
+--------------------
+   8 |     
+   9 |     
+  10 | >>> docker build -t cowsaytest .
+  11 |     docker run cowsaytest cowsay “GeekBrains”
+  12 |     
+--------------------
+ERROR: failed to solve: dockerfile parse error on line 10: unknown instruction: docker
+qzee@qzee-VirtualBox:~/study$ ls
+clear_directory.sh  f1.bak  f3.backup     qzee
+Dockerfile          f2.tmp  ownersoft.sh
+qzee@qzee-VirtualBox:~/study$ nano Dockerfile 
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow:latest .
+[+] Building 23.6s (6/6) FINISHED            docker:default
+ => [internal] load build definition from Dockerfile   0.0s
+ => => transferring dockerfile: 235B                   0.0s
+ => [internal] load metadata for docker.io/library/ub  0.0s
+ => [internal] load .dockerignore                      0.1s
+ => => transferring context: 2B                        0.0s
+ => [1/2] FROM docker.io/library/ubuntu:latest         0.0s
+ => [2/2] RUN apt-get update &&     apt-get install   22.3s
+ => exporting to image                                 1.0s 
+ => => exporting layers                                1.0s 
+ => => writing image sha256:1c4aefd6e86d9f81311825a08  0.0s 
+ => => naming to docker.io/library/my_cow:latest       0.0s 
+qzee@qzee-VirtualBox:~/study$ sudo docker images
+REPOSITORY               TAG       IMAGE ID       CREATED          SIZE
+my_cow                   latest    1c4aefd6e86d   11 seconds ago   128MB
+phpmyadmin               latest    c6d2e5105bad   7 days ago       562MB
+mariadb                  latest    4486d64c9c3b   9 days ago       406MB
+ubuntu                   latest    35a88802559d   13 days ago      78.1MB
+my_nginx_image           latest    c93b2f428031   2 weeks ago      153MB
+nginx                    latest    4f67c83422ec   3 weeks ago      188MB
+debian                   latest    5027089adc4c   5 weeks ago      117MB
+hello-world              latest    d2c94e258dcb   13 months ago    13.3kB
+docker/getting-started   latest    3e4394f6b72f   18 months ago    47MB
+qzee@qzee-VirtualBox:~/study$ sudo docker rub my_cow
+docker: 'rub' is not a docker command.
+See 'docker --help'
+qzee@qzee-VirtualBox:~/study$ sudo docker rub my_cow:v1.0.1 
+docker: 'rub' is not a docker command.
+See 'docker --help'
+qzee@qzee-VirtualBox:~/study$ sudo docker rub my_cow:v1.0.1
+docker: 'rub' is not a docker command.
+See 'docker --help'
+qzee@qzee-VirtualBox:~/study$ sudo docker images
+REPOSITORY               TAG       IMAGE ID       CREATED              SIZE
+my_cow                   latest    1c4aefd6e86d   About a minute ago   128MB
+phpmyadmin               latest    c6d2e5105bad   7 days ago           562MB
+mariadb                  latest    4486d64c9c3b   9 days ago           406MB
+ubuntu                   latest    35a88802559d   13 days ago          78.1MB
+my_nginx_image           latest    c93b2f428031   2 weeks ago          153MB
+nginx                    latest    4f67c83422ec   3 weeks ago          188MB
+debian                   latest    5027089adc4c   5 weeks ago          117MB
+hello-world              latest    d2c94e258dcb   13 months ago        13.3kB
+docker/getting-started   latest    3e4394f6b72f   18 months ago        47MB
+qzee@qzee-VirtualBox:~/study$ 
+qzee@qzee-VirtualBox:~/study$ sudo docker run my_cow:latest
+ ________
+< Hello! >
+ --------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+qzee@qzee-VirtualBox:~/study$ 
+qzee@qzee-VirtualBox:~/study$ nano Dockerfile 
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow:v1.0 .
+[+] Building 0.3s (6/6) FINISHED             docker:default
+ => [internal] load build definition from Dockerfile   0.0s
+ => => transferring dockerfile: 248B                   0.0s
+ => [internal] load metadata for docker.io/library/ub  0.0s
+ => [internal] load .dockerignore                      0.0s
+ => => transferring context: 2B                        0.0s
+ => [1/2] FROM docker.io/library/ubuntu:latest         0.0s
+ => CACHED [2/2] RUN apt-get update &&     apt-get in  0.0s
+ => exporting to image                                 0.0s
+ => => exporting layers                                0.0s
+ => => writing image sha256:2f7d283ba5786bb431391d1d3  0.0s
+ => => naming to docker.io/library/my_cow:v1.0         0.0s
+qzee@qzee-VirtualBox:~/study$ sudo docker run my_cow:v1.0
+ _____________________
+< Hello! My NAME PUSY >
+ ---------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+qzee@qzee-VirtualBox:~/study$ 
+zee@qzee-VirtualBox:~/study$ nano 
+qzee@qzee-VirtualBox:~/study$ nano Dockerfile 
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow:v1.1 .
+[+] Building 0.1s (1/1) FINISHED             docker:default
+ => [internal] load build definition from Dockerfile   0.0s
+ => => transferring dockerfile: 552B                   0.0s
+Dockerfile:11
+--------------------
+   9 |     
+  10 |     
+  11 | >>> docker build -t cowsaytest .
+  12 |     docker run cowsaytest bash /cowsay_script.sh
+  13 |     #FROM ubuntu:latest
+--------------------
+ERROR: failed to solve: dockerfile parse error on line 11: unknown instruction: docker
+qzee@qzee-VirtualBox:~/study$ nano Dockerfile 
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow:v1.1 .
+[+] Building 0.2s (8/8) FINISHED             docker:default
+ => [internal] load build definition from Dockerfile   0.0s
+ => => transferring dockerfile: 557B                   0.0s
+ => [internal] load metadata for docker.io/library/ub  0.0s
+ => [internal] load .dockerignore                      0.0s
+ => => transferring context: 2B                        0.0s
+ => [1/4] FROM docker.io/library/ubuntu:latest         0.0s
+ => [internal] load build context                      0.1s
+ => => transferring context: 2B                        0.0s
+ => CACHED [2/4] RUN apt-get update &&     apt-get in  0.0s
+ => ERROR [3/4] COPY example.txt /                     0.0s
+ => ERROR [4/4] COPY cowsay_script.sh /                0.0s
+------
+ > [3/4] COPY example.txt /:
+------
+------
+ > [4/4] COPY cowsay_script.sh /:
+------
+Dockerfile:6
+--------------------
+   4 |         ln -s /usr/games/cowsay /usr/bin/cowsay && \
+   5 |         rm -rf /var/lib/apt/lists/*
+   6 | >>> COPY example.txt /
+   7 |     COPY cowsay_script.sh /
+   8 |     CMD [“cowsay”]
+--------------------
+ERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref 13a2cba2-4226-48b1-b6d2-a34eb6c6007a::xbkxew2w2m2ko0o1kwgzqb7tz: "/example.txt": not found
+qzee@qzee-VirtualBox:~/study$ nano Dockerfile 
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow:v1.1 .
+[+] Building 0.2s (8/8) FINISHED             docker:default
+ => [internal] load build definition from Dockerfile   0.0s
+ => => transferring dockerfile: 557B                   0.0s
+ => [internal] load metadata for docker.io/library/ub  0.0s
+ => [internal] load .dockerignore                      0.0s
+ => => transferring context: 2B                        0.0s
+ => [internal] load build context                      0.0s
+ => => transferring context: 2B                        0.0s
+ => [1/4] FROM docker.io/library/ubuntu:latest         0.0s
+ => CACHED [2/4] RUN apt-get update &&     apt-get in  0.0s
+ => ERROR [3/4] COPY Exemple.txt /                     0.0s
+ => ERROR [4/4] COPY cowsay_script.sh /                0.0s
+------
+ > [3/4] COPY Exemple.txt /:
+------
+------
+ > [4/4] COPY cowsay_script.sh /:
+------
+Dockerfile:6
+--------------------
+   4 |         ln -s /usr/games/cowsay /usr/bin/cowsay && \
+   5 |         rm -rf /var/lib/apt/lists/*
+   6 | >>> COPY Exemple.txt /
+   7 |     COPY cowsay_script.sh /
+   8 |     CMD [“cowsay”]
+--------------------
+ERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref 13a2cba2-4226-48b1-b6d2-a34eb6c6007a::vs6rz6jw5o8wylru5gyifyweu: "/Exemple.txt": not found
+qzee@qzee-VirtualBox:~/study$ ls
+clear_directory.sh  Eexmple.txt  f2.tmp     ownersoft.sh
+Dockerfile          f1.bak       f3.backup  qzee
+qzee@qzee-VirtualBox:~/study$ nano Dockerfile 
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow:v1.1 .
+[+] Building 0.2s (8/8) FINISHED             docker:default
+ => [internal] load build definition from Dockerfile   0.0s
+ => => transferring dockerfile: 557B                   0.0s
+ => [internal] load metadata for docker.io/library/ub  0.0s
+ => [internal] load .dockerignore                      0.0s
+ => => transferring context: 2B                        0.0s
+ => [1/4] FROM docker.io/library/ubuntu:latest         0.0s
+ => CACHED [2/4] RUN apt-get update &&     apt-get in  0.0s
+ => [internal] load build context                      0.0s
+ => => transferring context: 77B                       0.0s
+ => CACHED [3/4] COPY Eexmple.txt /                    0.0s
+ => ERROR [4/4] COPY cowsay_script.sh /                0.0s
+------
+ > [4/4] COPY cowsay_script.sh /:
+------
+Dockerfile:7
+--------------------
+   5 |         rm -rf /var/lib/apt/lists/*
+   6 |     COPY Eexmple.txt /
+   7 | >>> COPY cowsay_script.sh /
+   8 |     CMD [“cowsay”]
+   9 |     
+--------------------
+ERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref 13a2cba2-4226-48b1-b6d2-a34eb6c6007a::jvdf5whpucu82dndv3pvkeuc3: "/cowsay_script.sh": not found
+qzee@qzee-VirtualBox:~/study$ nano Dockerfile 
+qzee@qzee-VirtualBox:~/study$ sudo docker build -t my_cow:v1.1 .
+[+] Building 0.5s (8/8) FINISHED             docker:default
+ => [internal] load build definition from Dockerfile   0.0s
+ => => transferring dockerfile: 558B                   0.0s
+ => [internal] load metadata for docker.io/library/ub  0.0s
+ => [internal] load .dockerignore                      0.1s
+ => => transferring context: 2B                        0.0s
+ => [internal] load build context                      0.0s
+ => => transferring context: 32B                       0.0s
+ => [1/3] FROM docker.io/library/ubuntu:latest         0.0s
+ => CACHED [2/3] RUN apt-get update &&     apt-get in  0.0s
+ => [3/3] COPY Eexmple.txt /                           0.1s
+ => exporting to image                                 0.1s
+ => => exporting layers                                0.1s
+ => => writing image sha256:07f77baa76635fb5d0c7289e2  0.0s
+ => => naming to docker.io/library/my_cow:v1.1         0.0s
+qzee@qzee-VirtualBox:~/study$ sudo docker run my_cow:v1.1
+/bin/sh: 1: [“cowsay”]: not found
+qzee@qzee-VirtualBox:~/study$ 
+
+
