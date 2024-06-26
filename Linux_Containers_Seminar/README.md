@@ -19,7 +19,13 @@ sudo docker compose up -d
 ```
 ![alt text](Screenshot/1.png)
 
-Далее переходим в браузер ip:6080 и вводим связку логин - пороль.
+Далее переходим в браузер указывая свой ip:6080 или localhost:6080 и вводим связку логин - пороль.
+Для уточнения своего ip воспользуемся командой 
+
+```
+ip a
+```
+где в блоке enp0s3 будет указан текуший ip VirtualBox
 
 ![alt text](Screenshot/3.png)
 ![alt text](Screenshot/4.png)
