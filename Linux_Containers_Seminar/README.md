@@ -92,7 +92,7 @@ sudo docker service create --name nginx_service --replicas 2 -p 3310:3310 --netw
 sudo docker service ps nginx_service
 ```
 
-![alt text](Screenshot/10.png)
+![alt text](Screenshot/16.png)
 ***
 
 Прописываем labels = prod
@@ -113,7 +113,7 @@ sudo docker service create --name nginx_service2 --replicas 2 -p 3308:3308 --net
 sudo docker service ps nginx_service2
 ```
 
-![alt text](Screenshot/14.png)
+![alt text](Screenshot/17.png)
 ***
 
 Прописываем labels = lab
