@@ -20,11 +20,17 @@ CREATE TABLE users_old (
 > Скрипт
 ![](Screen_dbeaver/2.png)
 
-> Конечная база данных в новой таблицей users_old
+> Конечная база данных c новой таблицей users_old
 ![](Screen_dbeaver/3.png)
 
+> Создаем процедуру, с помощью которой можно переместить любого (одного) пользователя из таблицы users в таблицу users_old.
+![](Screen_dbeaver/6.png)
 
+>Вводим команду CALL go_user(5);
+![](Screen_dbeaver/4.png)
 
+>Вводим команду CALL go_user(2);
+![](Screen_dbeaver/5.png)
 
 
 
