@@ -1,0 +1,32 @@
+/* a {
+  text-decoration: none;
+  } */
+
+  .link {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .title {
+  color: #222222;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+  }
+
+  .txt {
+    font-style: normal;
+      font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987
+  }
+
+  .titTwo {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+  }
