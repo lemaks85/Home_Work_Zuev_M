@@ -39,7 +39,7 @@ c. font-weight: 700;
 d. font-size: 36px;
 e. line-height: 80px;
 ```
-
+## index.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +65,7 @@ e. line-height: 80px;
 </body>
 </html>
 ```
-
+## style.css
 ```html 
 /* a {
   text-decoration: none;
@@ -100,7 +100,7 @@ e. line-height: 80px;
     line-height: 80px;
   }
 ```
-
+## catalog.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
