@@ -1,62 +1,89 @@
-a {
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
 
+/* @font-face {
+    font-family: name font;
+    src: url(folder font);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
 
 body {
-  background-color: bisque;
-  /* font-family: sans-serif; */
+    scroll-behavior: smooth;
+    background: #020a18;
+    font-family: "Open Sans, sans-serif";
 }
 
-.link {
-  color: cornflowerblue;
-  font-size: 16px;
-  line-height: 20px;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-.tit {
-  color: #222222;
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: bold;
+h1, h2, p, a, button {
+    color: #fff;
+    font-weight: 600;
 }
 
-.txt {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  color: #7d7987;
+.container {
+    max-width: 1146px;
+    margin: 0 auto;
 }
 
-.sub {
-  color: coral;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 80px;
+.header {
+    padding: 39px 0;
+    margin-bottom: 160px;
 }
 
-.picture {
-  border-radius: 20px 50px 20px 80px;
-  width: 250px;
-  height: 200px;
+.main {
+    margin-bottom: 197px;
 }
 
-.form {
-  width: 200px;
-  height: 30px;
-  outline: none;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  font-size: 14px;
-  line-height: 30px;
+/* .navigation {} */
+
+.navigation a {
+    font-size: 16px;
 }
 
-.click {
-  width: 100px;
-  height: 30px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+/* .main {} */
+
+/* .mainContent {} */
+
+.mainContent__leftSide h2 {
+    color: #3a68b8;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
+
+.mainContent__leftSide h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.mainContent__leftSide p {
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.mainContent__leftSide-btnList button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #3A68B8;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    margin-bottom: 100px;
+}
+
+/* .logos {} */
