@@ -1,0 +1,128 @@
+@font-face { 
+    font-family: Gilroy-Bold;
+    src: url(./font/Gilroy-Bold.woff2);
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(./font/Gilroy-Medium.woff2);
+}
+
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url(./font/Gilroy-Regular.woff2);
+}
+
+@font-face {
+    font-family: Gilroy-Semibold;
+    src: url(./font/Gilroy-Semibold.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #FFFFFF;
+    /* font-family: "Gilroy, sans-serif"; */
+}
+
+main {
+    max-width: 1174px;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1174px;
+    margin: 0 auto;
+}
+
+.header nav {
+    width: 1174px;
+    padding: 40px 0 84px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation img {
+    margin-right: 460px;
+}
+.navigation a {
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+/* .navigation img {} */
+
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+    gap: auto;
+}
+.mainContent h1 {
+margin-bottom: 20px;
+font-family: Gilroy-Bolt;
+font-size: 60px;
+line-height: 120%;
+}
+
+.mainContent p {
+    margin-bottom: 32px;
+    font-family: Gilroy-Regular;
+    font-size: 20px;
+    line-height: 140%;
+    color: #888888;
+}
+
+.mainContent img {
+    width: 545px;
+    height: 375px;
+}
+.butLeft {
+    padding: 16px 10px;
+    font-family: Gilroy-Bolt;
+    font-size: 16px;
+    border-radius: 56px;
+    color: #FFFFFF;
+    background-color: #F25822;
+    cursor: pointer;
+
+}
+
+.button {
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+}
+.butRight {
+    padding: 16px 10px;
+    font-family: Gilroy-Bolt;
+    font-size: 16px;
+    color: #AAAAAA;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 100px 0;
+}
+
+.footerLogo a {
+    width: 160px;
+    height: 50px;
+}
+
+.footer nav {
+    width: 1174px;
+    display: flex;
+    justify-content: space-between;
+}
