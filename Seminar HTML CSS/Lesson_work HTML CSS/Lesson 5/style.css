@@ -1,0 +1,147 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
+
+/* @font-face {
+    font-family: name font;
+    src: url(folder font);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #020a18;
+    font-family: "Open Sans, sans-serif";
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, p, a, button {
+    color: #fff;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 39px 0;
+    margin-bottom: 160px;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navigation a {
+    font-size: 16px;
+}
+
+/* .main {} */
+
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 197px;
+
+}
+
+.mainContent__leftSide {
+    max-width: 604px;
+}
+
+.mainContent__leftSide h2 {
+    color: #3a68b8;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.mainContent__leftSide h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.mainContent__leftSide p {
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 50px;
+    max-width: 558px;
+}
+
+.mainContent__leftSide-btnList button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #3A68B8;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.mainContent__leftSide-btnList {
+    display: flex;
+    gap: 20px;
+}
+
+.btnRight {
+display: flex;
+gap: 10px;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.cardList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    border-radius: 10px;
+    background: #132035;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+flex-direction: column;    text-align: center;
+}
+
+.card_Big {
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 60px;
+}
+
+.card h2 {
+    opacity: 0.7;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.card p {
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 160%;
+}
