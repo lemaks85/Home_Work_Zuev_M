@@ -27,5 +27,5 @@
    - Переименовать получившийся файл в "Human Friends"(.
 
         Пример конечного вывода после команды `“ls”`    :
-        Desktop Documents Downloads  HumanFriends.txt  Music  PackAnimals.txt Pets.txt  Pictures  Videos
+        Desktop Documents Downloads  HumanFriends.txt  Music  PackAnimals.txt Pets.txt  Pictures  Videos.
 
