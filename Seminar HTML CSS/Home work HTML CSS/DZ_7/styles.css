@@ -152,7 +152,7 @@ body {
 }
 
 .card {
-    width: 360px;
+    max-width: 360px;
     height: 581px;
     background-color: rgba(248, 248, 248, 1);
 }
@@ -223,8 +223,8 @@ body {
     }
 
     .p1 {
-        width: 231px;
-        height: 167px;
+        max-width: 231px;
+        max-height: 167px;
     }
     .p2 {
         width: 231px;
@@ -235,8 +235,13 @@ body {
         height: 167px;
     }
 
+    .p4 {
+        height: 116px;
+    }
+
     .mainCatalog {
-    max-width: 732px;
+    max-width: 768px;
+    gap: 20px;
 }
 }
 
