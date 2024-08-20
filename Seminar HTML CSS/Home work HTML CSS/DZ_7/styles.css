@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #222222;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.butHead {
+    background: #222222;
+    border: none;
+    cursor: pointer;
+}
+
+.navLeft {
+    margin-top: 18px;
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    gap: 41px;
+}
+
+.navRight {
+    margin-top: 26px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
+}
+
+.mainImg {
+    background-color: #f1e4e6 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand{
+    margin-right: 331px;
+    max-width: 405px;
+    max-height: 93px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.c1 {
+    font-size: 32px;
+}
+.c2 {
+    font-size: 48px;
+}
+.c3 {
+    color: #F16D7F;
+}
+
+.mainCommercial {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 96px;
+}
+
+.mainCommercial h2 {
+    font-size: 16px;
+}
+
+
+.p1 {
+    width: 360px;
+    height: 260px;
+    background-image: url(./img/imgMain/test/1.png);
+    background-size: cover;
+    background-size: 100% 100%;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.p2 {
+    width: 360px;
+    height: 260px;
+    background-image: url(./img/imgMain/test/2.png);
+    background-size: cover;
+    background-size: 100% 100%;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.p3 {
+    width: 360px;
+    height: 260px;
+    background-image: url(./img/imgMain/test/3.png);
+    background-size: cover;
+    background-size: 100% 100%;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.p4 {
+    width: 1140px;
+    height: 180px;
+    background-image: url(./img/imgMain/test/4.png);
+    background-size: cover;
+    background-size: 100% 100%;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 22, 22, 0.70);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+}
+
+.c4 {
+    font-size: 24px;
+    color: #F16D7F;
+}
+
+
+.mainCatalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px, rgba(255, 106, 106, 1);
+}
+
+.card {
+    width: 360px;
+    height: 581px;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.card p {
+    margin-top: 13px;
+    margin-bottom: 18px;
+
+}
+
+.groupCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+.catHeder {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.catHeder  h2 {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+.catHeder  p {
+    font-size: 14px;
+    color: rgba(159, 159, 159, 1);
+}
+
+.downCard{
+    border: 1px solid, rgba(255, 106, 106, 1);
+    padding: 15px 39px 14px 39px;
+    color: rgba(242, 99, 118, 1);
+}
+
+
+
+
+
+
+
+@media (min-width: 767px) and (max-width: 1146px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brand{
+        margin-right: 33px;
+        max-width: 311px;
+        max-height: 92px;
+        border-left: 12px solid #F16D7F;
+        padding-left: 16px;
+    }
+
+    .p1 {
+        width: 231px;
+        height: 167px;
+    }
+    .p2 {
+        width: 231px;
+        height: 167px;
+    }
+    .p3 {
+        width: 231px;
+        height: 167px;
+    }
+
+    .mainCatalog {
+    max-width: 732px;
+}
+}
+
+
