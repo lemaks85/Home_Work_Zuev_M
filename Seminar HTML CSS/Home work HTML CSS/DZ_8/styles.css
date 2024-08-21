@@ -71,7 +71,7 @@ h1, h2, p, a, button {
     align-items: center;
 }
 .main__img-brand{
-    margin-right: 331px;
+    /* margin-right: 331px; */
     max-width: 405px;
     max-height: 93px;
     border-left: 12px solid #F16D7F;
@@ -177,6 +177,8 @@ h1, h2, p, a, button {
     justify-content: center;
 }
 .footer__downCard {
+    font-size: 16px;
+    font-weight: 400;
     margin: 48px 0 60px 0;
     max-width: 212px;
     max-height: 48px;
@@ -189,13 +191,135 @@ h1, h2, p, a, button {
 
 
 
-
-@media (min-width: 767px) and (max-width: 1146px) {
+/*~~~~~~~~~~~~~~~~~~~~~~ TABLET ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width: 768px) and (max-width: 1139px) {
 
     .container {
         max-width: 768px;
     }
-
+    .header__navigation-navLeft {
+        margin-left: 32px;
+    }
+    .header__navigation-navRight {
+        margin-right: 32px;
+    }
+    .main__img-picture {
+        max-width: 368px;
+        max-height: 368px;
+    }
+    .style_1 {
+        font-size: 44px;
+    }
+    .style_2 {
+        font-size: 24px;
+    }
+    .main__commercial {
+        gap: 19px;
+        margin-bottom: 110px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main__commercial-picture_1 {
+        width: 231px;
+        height: 167.62px;
+    }
+    .main__commercial-picture_2 {
+        width: 231px;
+        height: 167.62px;
+    }
+    .main__commercial-picture_3 {
+        width: 231px;
+        height: 167px;
+    }
+    .main__commercial-picture_4 {
+        width: 768px;
+        height: 116.09px;
+    }
+    .main__catalog {
+        gap: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~ PHONE ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width: 374px) and (max-width: 767px) {
+
+    .container {
+        max-width: 767px;
+    }
+    .header__navigation-buttonHead[value="read more"] {
+        display: none;
+    }
+    .header__navigation-navLeft {
+        margin-left: 16px;
+    }
+    .header__navigation-navRight {
+        margin-right: 16px;
+    }
+    .main__img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 375px;
+        min-height: 363px;
+    }
+    .main__img-man{
+        visibility: hidden;
+    }
+    .main__img-brand{
+        margin: 56px 148px 56px 149px ;
+        max-width: 263px;
+        max-height: 66px;
+        border-left: 12px solid #F16D7F;
+        padding-left: 16px;
+    }
+    .style_1 {
+        font-size: 30px;
+    }
+    .style_2 {
+        font-size: 14px;
+    }
+    .main__commercial {
+    justify-content: center;
+        gap: 32px;
+        margin-bottom: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main__commercial-picture_1 {
+        width: 343px;
+        height: 247px;
+    }
+    .main__commercial-picture_2 {
+        width: 344px;
+        height: 249px;
+    }
+    .main__commercial-picture_3 {
+        width: 343px;
+        height: 248px;
+    }
+    .main__commercial-picture_4 {
+        width: 343px;
+        height: 111px;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
