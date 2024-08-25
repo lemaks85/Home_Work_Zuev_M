@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    scroll-behavior: smooth;
+    background: #ffffff;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+h1, h2, p, a, button {
+    font-family: "Lato", sans-serif;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+} /*~~~~~~~~~~~~~~~~~~~~ STYLE ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.style_1 {
+    font-size: 48px;
+    font-weight: 900
+}
+.style_2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.style_3 {
+    color: #F16D7F;
+}
+.style_4 {
+    font-size: 24px;
+    color: #F16D7F;
+}/*~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.header {
+    background: #222222;
+    display: flex;
+    justify-content: center;
+}
+.header__navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header__navigation-buttonHead {
+    background: #222222;
+    border: none;
+    cursor: pointer;
+}
+.header__navigation-navLeft {
+    margin-top: 18px;
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    gap: 41px;
+}
+.header__navigation-navRight {
+    margin-top: 26px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
+}/*~~~~~~~~~~~~~~~~~~~~~ TITLE LOGO ~~~~~~~~~~~~~~~~~~~~~*/
+.main__img {
+    background-color: #f1e4e6 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__img-brand{
+    /* margin-right: 331px; */
+    max-width: 405px;
+    max-height: 93px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}/*~~~~~~~~~~~~~~~~~~~~~ COMMERCIAL ~~~~~~~~~~~~~~~~~~~~~*/
+.main__commercial {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 96px;
+}
+.main__commercial h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.main__commercial-picture_1 {
+    display: block;
+    width: 360px;
+    height: 260px;
+    background-size: cover;
+    background-image: url(./img/imgMain/img_1.svg)
+}
+.main__commercial-picture_2 {
+    display: block;
+    width: 360px;
+    height: 260px;
+    background-size: cover;
+    background-image: url(./img/imgMain/img_2.svg)
+}
+.main__commercial-picture_3 {
+    display: block;
+    width: 360px;
+    height: 260px;
+    background-size: cover;
+    background-image: url(./img/imgMain/img_3.svg)
+}
+.main__commercial-picture_4 {
+    display: block;
+    width: 1140px;
+    height: 180px;
+    background-size: cover;
+    background-image: url(./img/imgMain/img_4.svg)
+}
+.main__commercial .shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 22, 22, 0.70);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+}/*~~~~~~~~~~~~~~~~~~~~~ CATALOG TITLE ~~~~~~~~~~~~~~~~~~*/
+.main__catalog-title {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.main__catalog-title h2 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+.main__catalog-title p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(159, 159, 159, 1);
+}/*~~~~~~~~~~~~~~~~~~~~~ CATALOG PRODUCT ~~~~~~~~~~~~~~~~*/
+.main__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    border: 1px, rgba(255, 106, 106, 1);
+}
+.main__catalog-product_item {
+    padding-bottom: 16px;
+    width: 360px;
+    text-align: start;
+    margin: 0 auto;
+    background: rgba(248, 248, 248, 1);
+}
+.main__catalog-product_text h2 {
+    margin: 24px 0 12px 18px;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.main__catalog-product_text p {
+    margin: 0 0 18px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(93, 93, 93, 1);
+}
+.main__catalog-product_text span {
+    margin-left: 18px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.main__catalog-button {
+    display: flex;
+    justify-content: center;
+}
+.main__catalog-butDown {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 48px 0 60px 0;
+    max-width: 212px;
+    max-height: 48px;
+    border: 1px solid, rgba(255, 106, 106, 1);
+    padding: 15px 39px 14px 39px;
+    color: rgba(242, 99, 118, 1);
+    text-align: center;
+    cursor: pointer;
+}
+.main__catalog-butDown:hover {
+    background-color: rgba(241, 109, 127, 1);
+}
+.main__catalog-butDown:hover .style_3 {
+    background-color: rgba(241, 109, 127, 1);
+    color: #ffffff;
+}/*~~~~~~~~~~~~~~~~~~~~~ BLACK_BOX ~~~~~~~~~~~~~~~~~~~~~~~*/
+.main__blackBox-box{
+    background-color: rgba(34, 34, 36, 1);
+}
+.main__blackBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.main__blackBox-card {
+    width: 360px;
+    height: 134px;
+    margin-top: 103px;
+    margin-bottom: 103px;
+    text-align: center;
+}
+.main__blackBox-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(251, 251, 251, 1);
+    margin-top: 28px;
+    margin-bottom: 24px;
+}
+.main__blackBox-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(119, 118, 118);
+}/*~~~~~~~~~~~~~~~~~~~~~ SUBSCRIBE  ~~~~~~~~~~~~~~~~~~~~~~*/
+.main__subscribe-img {
+    background-size: cover;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(./img/fon_1.svg);
+    height: 448px;
+}
+.main__subscribe-shadow {
+    height: 448px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(244, 244, 244, 0.7);
+}
+.main__subscribe-left_side {
+    width: 360px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.main__subscribe-left_side p {
+    text-align: center;
+}
+.main__subscribe-right_side {
+    width: 557px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.main__subscribe-right_side .style_4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(34, 34, 36, 1);
+}
+.main__subscribe-right_side h2 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.main__subscribe-button {
+    width: 85px;
+    height: 36px;
+    background-color: rgba(224, 92, 110, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid ;
+    border-radius: 0 15px 15px 0;
+    border-color: rgba(224, 92, 110, 1);
+    font-size: 14px;
+    cursor: pointer;
+}
+.form {
+    display: flex;
+}
+.main__subscribe-form {
+    max-width: 256px;
+    max-height: 36px;
+    background-color: rgba(225, 225, 225, 1);
+    border: 1px solid rgba(225, 225, 225, 1);
+    border-radius: 15px 0 0 15px;
+}/*~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.main__footer {
+    background-color: rgba(34, 34, 36, 1);
+}
+.main__footer_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 32px 0 32px;
+}
+.main__footer_box-rightSide {
+    gap: 8px;
+}
+.facebook:hover .one {
+    fill: rgba(241, 109, 127, 1);
+}
+.facebook:hover .two {
+    fill: rgba(255, 255, 255, 1);
+}
+.instagram:hover .one {
+    fill: rgba(241, 109, 127, 1);
+}
+.instagram:hover .two {
+    fill: rgba(255, 255, 255, 1);
+}
+.pinteres:hover .one {
+    fill: rgba(241, 109, 127, 1);
+}
+.pinteres:hover .two {
+    fill: rgba(255, 255, 255, 1);
+}
+.twitter:hover .one {
+    fill: rgba(241, 109, 127, 1);
+}
+.twitter:hover .two {
+    fill: rgba(255, 255, 255, 1);
+}/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~ TABLET ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width: 768px) and (max-width: 1139px) {
+
+    .container {
+        max-width: 768px;
+    }
+    .header__navigation-navLeft {
+        margin-left: 32px;
+    }
+    .header__navigation-navRight {
+        margin-right: 32px;
+    }
+    .main__img-picture {
+        max-width: 368px;
+        max-height: 368px;
+    }
+    .style_1 {
+        font-size: 44px;
+    }
+    .style_2 {
+        font-size: 24px;
+    }
+    .main__commercial {
+        gap: 19px;
+        margin-bottom: 110px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main__commercial-picture_1 {
+        width: 231px;
+        height: 167.62px;
+    }
+    .main__commercial-picture_2 {
+        width: 231px;
+        height: 167.62px;
+    }
+    .main__commercial-picture_3 {
+        width: 231px;
+        height: 167px;
+    }
+    .main__commercial-picture_4 {
+        width: 768px;
+        height: 116.09px;
+    }
+    .main__catalog {
+        gap: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main__blackBox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__blackBox-card {
+        margin-top: 48px;
+        margin-bottom: 81px;
+    }
+    .main__subscribe-shadow {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__subscribe-left_side {
+        width: 343px;
+        height: 194px;
+    }
+    .main__subscribe-right_side {
+        width: 341px;
+        height: 124px;
+    }
+    .main__footer_box {
+        flex-direction: column-reverse;
+        padding-top: 43px;
+        padding-bottom: 9px;
+    }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~ PHONE ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width: 374px) and (max-width: 767px) {
+
+    .container {
+        max-width: 767px;
+    }
+    .header__navigation-buttonHead[value="read more"] {
+        display: none;
+    }
+    .header__navigation-navLeft {
+        margin-left: 16px;
+    }
+    .header__navigation-navRight {
+        margin-right: 16px;
+    }
+    .main__img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 375px;
+        min-height: 363px;
+    }
+    .main__img-man{
+        visibility: hidden;
+    }
+    .main__img-brand{
+        margin: 56px 148px 56px 149px ;
+        max-width: 263px;
+        max-height: 66px;
+        border-left: 12px solid #F16D7F;
+        padding-left: 16px;
+    }
+    .style_1 {
+        font-size: 30px;
+    }
+    .style_2 {
+        font-size: 14px;
+    }
+    .main__commercial {
+    justify-content: center;
+        gap: 32px;
+        margin-bottom: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main__commercial-picture_1 {
+        width: 343px;
+        height: 247px;
+    }
+    .main__commercial-picture_2 {
+        width: 344px;
+        height: 249px;
+    }
+    .main__commercial-picture_3 {
+        width: 343px;
+        height: 248px;
+    }
+    .main__commercial-picture_4 {
+        width: 343px;
+        height: 111px;
+        background-position: center;
+        background-size: cover;
+    }
+    .main__blackBox {
+        flex-direction: column;
+    }
+    .main__blackBox-card {
+        margin-top: 48px;
+        margin-bottom: 81px;
+    }
+    .main__subscribe-shadow {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__subscribe-left_side {
+        width: 343px;
+        height: 194px;
+    }
+    .main__subscribe-right_side {
+        width: 341px;
+        height: 124px;
+    }
+    .main__footer_box {
+        flex-direction: column-reverse;
+        padding-top: 43px;
+        padding-bottom: 9px;
+    }
+}
