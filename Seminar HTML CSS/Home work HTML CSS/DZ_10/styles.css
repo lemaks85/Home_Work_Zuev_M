@@ -13,7 +13,7 @@ img {
     display: block;
     max-width: 100%;
 }
-h1, h2, p, a, button {
+h1, h2, h3, h4, h5, h6,  p, a, button {
     font-family: "Lato", sans-serif;
 }
 .container {
@@ -63,6 +63,57 @@ h1, h2, p, a, button {
     display: flex;
     justify-content: space-between;
     gap: 33px;
+    position: relative;
+}/*~~~~~~~~~~~~~~~~~~~~~ MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.menu-active {
+    position: absolute;
+    right: 0;
+    top: 75px;
+}
+ul, li {
+    list-style: none;
+    margin-bottom: 11px;
+}
+.menu-active__all {
+    padding-top: 32px;
+    width: 232px;
+    height: 634px;
+    background: rgba(255, 255, 255, 1);
+}
+.menu-heading {
+    margin-left: 33px;
+}
+.menu-text {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 32px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.menu-list a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(111, 110, 110, 1);
+    margin-left: 53px;
+}
+.dropbtn {
+    background: none;
+    border: none;
+    margin-right: 6px;
+}
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
+}
+.dropdown-content {
+    /* right: -104px; */
+    /* top: 49px; */
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }/*~~~~~~~~~~~~~~~~~~~~~ TITLE LOGO ~~~~~~~~~~~~~~~~~~~~~*/
 .main__img {
     background-color: #f1e4e6 ;
