@@ -40,3 +40,11 @@
 ![](./ScreenShots/Screenshot%202024-08-26%20222737.png)
 ![](./ScreenShots/Screenshot%202024-08-26%20222913.png)
 ***
+3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
+   - Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
+***
+![](./ScreenShots/Screenshot%202024-08-26%20224846.png)
+![](./ScreenShots/Screenshot%202024-08-26%20225421.png)
+![](./ScreenShots/Screenshot%202024-08-26%20225231.png)
+![](./ScreenShots/Screenshot%202024-08-26%20230054.png)
+***
