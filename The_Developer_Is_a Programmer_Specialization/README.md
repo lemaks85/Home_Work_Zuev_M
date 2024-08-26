@@ -31,5 +31,12 @@
 ![](./ScreenShots/Screenshot%202024-08-26%20215240.png)
 ![](./ScreenShots/Screenshot%202024-08-26%20215540.png)
 ![](./ScreenShots/Screenshot%202024-08-26%20220457.png)
+***
 
-
+2. Работа с директориями в Linux
+   - Создать новую директорию и переместить туда файл "Human_Friends".
+***
+![](./ScreenShots/Screenshot%202024-08-26%20222031.png)
+![](./ScreenShots/Screenshot%202024-08-26%20222737.png)
+![](./ScreenShots/Screenshot%202024-08-26%20222913.png)
+***
