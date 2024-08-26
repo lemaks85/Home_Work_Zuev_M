@@ -48,3 +48,12 @@
 ![](./ScreenShots/Screenshot%202024-08-26%20225231.png)
 ![](./ScreenShots/Screenshot%202024-08-26%20230054.png)
 ***
+
+4. Управление deb-пакетами
+   - Установить и затем удалить deb-пакет, используя команду `dpkg`.
+***
+   ![](./ScreenShots/Screenshot%202024-08-26%20232505.png)
+   ![](./ScreenShots/Screenshot%202024-08-26%20233130.png)
+   ![](./ScreenShots/Screenshot%202024-08-26%20233650.png)
+   ![](./ScreenShots/Screenshot%202024-08-26%20233656.png)
+***
