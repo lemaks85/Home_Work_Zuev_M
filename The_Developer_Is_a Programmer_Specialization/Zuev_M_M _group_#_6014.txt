@@ -1,0 +1,56 @@
+1  clear
+    2  mysql
+    3  mysql version
+    4  mysql help
+    5  clear
+    6  sudo wget -c htpps://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+    7  sudo wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.32-1_all.deb
+    8  sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+    9  sudo dpkg -i mysql-apt-config_0.8.32-1_all.deb
+   10  mysql
+   11  clear
+   12  mariadb
+   13  sudo mysql -u root # I had to use "sudo" since it was a new installation
+   14  mariadb
+   15  sudo su
+   16  clear
+   17  sudo su
+   18  sudo dpkg -l
+   19  ls
+   20  dpkg -l
+   21  cleare
+   22  clar
+   23  'clear
+   24  clear
+   25  dpkg -r apache2
+   26  sudo dpkg -r apache2
+   27  sudo dpkg -i apache2
+   28  sudo dpkg -i apache2.deb
+   29  clear
+   30  sudo dpkg -r apache2
+   31  sudo apt install apache2
+   32  clear
+   33  sudo dpkg -r apache2
+   34  dpkg -l
+   35  cleaer
+   36  cl
+   37  apache2 --help
+   38  sudo apt install apache2
+   39  apache2 --help
+   40  apache2 -version
+   41  sudo apt install apache2-bin
+   42  apache2 -version
+   43  apache2 --help
+   44  apache2
+   45  sudo apt install apache2
+   46  sudo apt purge apache2
+   47  dpkg -l
+   48  sudo dpkg -i apache2_2.4.53-1~deb11u1_amd64.deb
+   49  sudo apt install apache2
+   50  dpkg -l
+   51  apt -l
+   52  apt --help
+   53  apt list
+   54  clear
+   55  history
+qzee@qzee-VirtualBox:~/In_the_animal_world$ 
