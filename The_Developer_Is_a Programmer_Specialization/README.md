@@ -78,3 +78,6 @@
 ***
 ![](./Animals_diagramm/Animals_diagramm.drawio.png)
 ***
+7. Работа с MySQL (Задача выполняется в случае успешного выполнения задачи    “Работа с MySQL в Linux. “Установить MySQL на вашу машину”
+***
+![](./ScreenShots/Screenshot%202024-08-27%20232813.png)
