@@ -1,79 +1,79 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.7">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1100" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="880" dy="460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFF1" math="0" shadow="1">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-0" value="Animals&amp;nbsp;&lt;div&gt;class&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-0" value="Animals&amp;nbsp;&lt;div&gt;class&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="360" y="20" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-1" value="Pets&lt;div&gt;class&lt;/div&gt;&lt;div&gt;************************&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Cat&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Dog&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Hamster&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-1" value="Pets&lt;div&gt;class&lt;/div&gt;&lt;div&gt;************************&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;Breed&lt;/div&gt;&lt;div&gt;Lineage&lt;/div&gt;&lt;div&gt;Date of birth&lt;br&gt;&lt;/div&gt;&lt;div&gt;Name&lt;/div&gt;&lt;div&gt;Animal coloring&lt;br&gt;&lt;/div&gt;&lt;div&gt;Medical card&lt;br&gt;&lt;/div&gt;&lt;div&gt;Command&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="160" y="120" width="120" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-2" value="Pack animals&lt;div&gt;class&lt;/div&gt;&lt;div&gt;************************&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Horse&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Camel&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Donkey&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-2" value="Pack animals&lt;div&gt;class&lt;/div&gt;&lt;div&gt;************************&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;Breed&lt;/div&gt;&lt;div&gt;Lineage&lt;/div&gt;&lt;div&gt;Date of birth&lt;br&gt;&lt;/div&gt;&lt;div&gt;Name&lt;/div&gt;&lt;div&gt;Animal coloring&lt;br&gt;&lt;/div&gt;&lt;div&gt;Medical card&lt;br&gt;&lt;/div&gt;&lt;div&gt;Command&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="550" y="120" width="120" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-5" value="Cat&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;************************&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Breed&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Lineage&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Date of birth&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Name&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Animal coloring&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Medical card&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Command&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="30" y="360" width="120" height="160" as="geometry" />
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-5" value="Cat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="30" y="360" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-6" value="Dog&lt;div&gt;************************&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Breed&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Lineage&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Date of birth&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Name&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Animal coloring&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Medical card&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Command&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="160" y="360" width="120" height="160" as="geometry" />
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-6" value="Dog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="360" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-7" value="Hamster&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;************************&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Breed&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Lineage&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Date of birth&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Name&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Animal coloring&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Medical card&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Command&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="290" y="360" width="120" height="160" as="geometry" />
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-7" value="Hamster" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="290" y="360" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-8" value="&lt;div&gt;Horse&lt;/div&gt;&lt;div&gt;************************&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Breed&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Lineage&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Date of birth&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Name&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Animal coloring&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Medical card&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Command&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="420" y="360" width="120" height="160" as="geometry" />
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-8" value="&lt;div&gt;Horse&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="420" y="360" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-9" value="Camel&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;************************&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Breed&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Lineage&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Date of birth&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Name&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Animal coloring&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Medical card&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Command&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="550" y="360" width="120" height="160" as="geometry" />
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-9" value="Camel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="550" y="360" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-10" value="Donkey&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;************************&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Breed&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Lineage&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Date of birth&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Name&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Animal coloring&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Medical card&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Command&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="680" y="360" width="120" height="160" as="geometry" />
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-10" value="Donkey" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="680" y="360" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-12" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="eYQ3jZKsWFRB7sjNvRwM-0" target="eYQ3jZKsWFRB7sjNvRwM-1">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-12" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="eYQ3jZKsWFRB7sjNvRwM-0" target="eYQ3jZKsWFRB7sjNvRwM-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="280" y="170" as="sourcePoint" />
             <mxPoint x="370" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="eYQ3jZKsWFRB7sjNvRwM-0" target="eYQ3jZKsWFRB7sjNvRwM-2">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="eYQ3jZKsWFRB7sjNvRwM-0" target="eYQ3jZKsWFRB7sjNvRwM-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="490" y="140" as="sourcePoint" />
             <mxPoint x="430" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="220" y="350" as="sourcePoint" />
             <mxPoint x="220" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-16" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-16" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="609.38" y="350" as="sourcePoint" />
             <mxPoint x="609.38" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-17" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="eYQ3jZKsWFRB7sjNvRwM-1">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-17" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="eYQ3jZKsWFRB7sjNvRwM-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="340" y="350" as="sourcePoint" />
             <mxPoint x="349.38" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-18" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="eYQ3jZKsWFRB7sjNvRwM-2">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-18" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="eYQ3jZKsWFRB7sjNvRwM-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="740" y="350" as="sourcePoint" />
             <mxPoint x="680" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-19" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="eYQ3jZKsWFRB7sjNvRwM-1">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-19" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="eYQ3jZKsWFRB7sjNvRwM-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="350" as="sourcePoint" />
             <mxPoint x="30" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-20" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="eYQ3jZKsWFRB7sjNvRwM-2">
+        <mxCell id="eYQ3jZKsWFRB7sjNvRwM-20" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="eYQ3jZKsWFRB7sjNvRwM-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="480" y="350" as="sourcePoint" />
             <mxPoint x="550" y="280" as="targetPoint" />
