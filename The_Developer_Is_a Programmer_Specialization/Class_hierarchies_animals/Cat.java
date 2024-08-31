@@ -1,1 +1,4 @@
-public  class Cat{}
+public class Animals Cat{
+
+
+}
