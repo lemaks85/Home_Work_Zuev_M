@@ -1,3 +1,4 @@
+import java.util.List;
 public interface Animals {
 
 
@@ -9,6 +10,7 @@ public interface Animals {
 
     void addCommand(String newCommand); // Новая команда животного
     void removeCommand(String command); // Удаление команды животного
+
     List<String> getCommandList(); // Получить список команд животного
     int getCommandCount();// Получить кооличество комманд животного
 
