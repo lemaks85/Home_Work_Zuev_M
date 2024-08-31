@@ -4,12 +4,12 @@ import java.util.Objects;
 
 public class Cat implements Animals{
     private String name;
-    private String dataBirth;
+    private String dateBirth;
     private List<String> commands;
 
     public Cat(String name, String dataBirth, List<String> commands) {
         this.name = name;
-        this.dataBirth = dataBirth;
+        this.dateBirth = dataBirth;
         this.commands = commands;
     }
 
@@ -20,8 +20,8 @@ public class Cat implements Animals{
 
 
 
+//*********************************************************************************** */
 
-`
     @Override
     public String getName() {
         return this.name;
@@ -34,12 +34,12 @@ public class Cat implements Animals{
 
     @Override
     public void setDataBirth(String date) {
-        this.dataBirth = date;
+        this.dateBirth = date;
     }
 
     @Override
     public String getDataBirth() {
-        return this.dataBirth;
+        return this.dateBirth;
     }
 
     @Override
@@ -65,16 +65,16 @@ public class Cat implements Animals{
         return commands.size();
     }
 
-
+//*************************************************************************************** */
 
 
 @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("Кот ")
+        builder.append("CAT ")
         .append(name)
         .append(" ")
-        .append(dataBirth);
+        .append(dateBirth);
 
         return builder.toString();
     }
