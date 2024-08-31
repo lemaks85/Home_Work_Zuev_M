@@ -70,7 +70,7 @@ public class Horse implements Animals{
 @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("CAT ")
+        builder.append("HORSE ")
         .append(name)
         .append(" ")
         .append(dateBirth);
