@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Cat implements Animals{
     private String name;
@@ -20,7 +21,7 @@ public class Cat implements Animals{
 
 
 
-
+`
     @Override
     public String getName() {
         return this.name;
@@ -67,7 +68,29 @@ public class Cat implements Animals{
 
 
 
+@Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Кот ")
+        .append(name)
+        .append(" ")
+        .append(dataBirth);
 
+        return builder.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return Objects.equals(name, cat.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
 
 
 
