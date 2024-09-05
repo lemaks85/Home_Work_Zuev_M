@@ -12,25 +12,28 @@ public class ProgrammMenu {
 
     
     private final Map<String, String> menuMain = new HashMap<String, String>() {{ // главное меню
-        put("1", "Добавить животное");
-        put("2", "Добавить команду");
-        put("3", "Отобразить список");
-        put("4", "Показать команды");
-        put("5", "Показать кол-во животных");
-        put("0", "Выход");
+        put("1", "Add Animal");
+        put("2", "Add Command");
+        put("3", "View List");
+        put("4", "View Commands");
+        put("5", "View List Animals");
+        put("0", "Exit");
     }};
   
 
     private final Map<String, String> menuAnimal = new HashMap<>() {{ // меню второго уровня
-        put("1", "Кот");
-        put("2", "Собака");
-        put("3", "Хомяк");
-        put("0", "Отмена");
+        put("1", "Cat");
+        put("2", "Dog");
+        put("3", "Hamster");
+        put("4", "Camel");
+        put("5", "Donkey");
+        put("6", "Horse");
+        put("0", "Cancel");
     }};
 
     private final Map<String, String> menuYesNo = new HashMap<>(){{
-        put("1","ДА");
-        put("0", "НЕТ");
+        put("1","YES");
+        put("0", "NO");
     }};
 
     private enum ANIMALS {CAT, DOG, HAMSTER, CAMEL, DONKEY, HORSE};
@@ -77,7 +80,7 @@ public class ProgrammMenu {
     }
 
     private void showCommands(ANIMALS animal){
-        String name = view.getString("Имя животного: ");// Отобразить список команд животного
+        String name = view.getString("Commands animal: ");// Отобразить список команд животного
 
         Object o = null;
 
@@ -91,7 +94,7 @@ public class ProgrammMenu {
         }
 
         if(o == null){
-            Logger.getAnonymousLogger().info("Животное не найдено");
+            Logger.getAnonymousLogger().info("Animal DONT LIST!!!");
             return;
         }
 
@@ -135,7 +138,7 @@ public class ProgrammMenu {
 
     
     private void addCommand(ANIMALS animal){ // Добавление команды
-        String name = view.getString("Имя животного: ");
+        String name = view.getString("Name animal: ");
         Object objAnimal = null;
         switch (animal){
             case CAT -> objAnimal = listanimals.findCat(name);
@@ -147,10 +150,10 @@ public class ProgrammMenu {
         }
 
         if(objAnimal == null){
-            Logger.getAnonymousLogger().info("Такое животное не найдено");
+            Logger.getAnonymousLogger().info("Animal DONT LIST!!!");
         }
         else{
-            String command = view.getString("Новая команда: ");
+            String command = view.getString("New command: ");
 
             switch (animal){
                 case CAT -> ((Cat)objAnimal).addCommand(command);
@@ -172,17 +175,17 @@ public class ProgrammMenu {
         }
 
 
-        String name = view.getString("Имя животного: ");
-        String date = view.getString("Дата рождения: ");
+        String name = view.getString("Name animal: ");
+        String date = view.getString("Date Birth animal: ");
         //String color = view.getString("Окрас: ");
 
         List<String> commands = new ArrayList<>();
-        System.out.println("Добавить команды?");
+        System.out.println("Add commands?");
         String menu = view.menuShow(menuYesNo);
         while (menu.equals("1")){
-            String command = view.getString("Команда: ");
+            String command = view.getString("Command: ");
             commands.add(command);
-            System.out.println("Продолжить?");
+            System.out.println("Continue?");
             menu = view.menuShow(menuYesNo);
         }
 
