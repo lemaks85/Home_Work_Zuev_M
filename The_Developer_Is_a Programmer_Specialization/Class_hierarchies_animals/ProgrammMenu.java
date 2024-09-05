@@ -1,8 +1,13 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class ProgrammMenu {
 
 
     private final ListAnimals<Object> listanimals = new ListAnimals<>();
-    private final UI ui = new UI();
+    private final View view = new View();
 
     
     private final Map<String, String> menuMain = new HashMap<String, String>() {{ // главное меню
@@ -71,17 +76,17 @@ public class ProgrammMenu {
     }
 
     private void showCommands(ANIMALS animal){
-        String name = ui.getString("Имя животного: ");// Отобразить список команд животного
+        String name = view.getString("Имя животного: ");// Отобразить список команд животного
 
         Object o = null;
 
         switch (animal){
-            case CAT -> o = animalList.findCat(name);
-            case DOG -> o = animalList.findDog(name);
-            case HAMSTER -> o = animalList.findHamster(name);
-            case CAMEL -> o = animalList.findCamel(name);
-            case DONKEY -> o = animalList.findDonkey(name);
-            case HORSE -> o = animalList.findHorse(name);
+            case CAT -> o = listanimals.findCat(name);
+            case DOG -> o = listanimals.findDog(name);
+            case HAMSTER -> o = listanimals.findHamster(name);
+            case CAMEL -> o = listanimals.findCamel(name);
+            case DONKEY -> o = listanimals.findDonkey(name);
+            case HORSE -> o = listanimals.findHorse(name);
         }
 
         if(o == null){
@@ -113,12 +118,12 @@ public class ProgrammMenu {
         List<Object> animals = null;
 
         switch (animal){
-            case CAT -> animals = animalList.getCats();
-            case DOG -> animals = animalList.getDogs();
-            case HAMSTER -> animals = animalList.getHamsters();
-            case CAMEL -> animals = animalList.getCamels();
-            case DONKEY -> animals = animalList.getDonkeys();
-            case HORSE -> animals = animalList.getHorses();
+            case CAT -> animals = listanimals.getCats();
+            case DOG -> animals = listanimals.getDogs();
+            case HAMSTER -> animals = listanimals.getHamsters();
+            case CAMEL -> animals = listanimals.getCamels();
+            case DONKEY -> animals = listanimals.getDonkeys();
+            case HORSE -> animals = listanimals.getHorses();
         }
 
         Logger logger = Logger.getAnonymousLogger();
@@ -129,22 +134,22 @@ public class ProgrammMenu {
 
     
     private void addCommand(ANIMALS animal){ // Добавление команды
-        String name = ui.getString("Имя животного: ");
+        String name = view.getString("Имя животного: ");
         Object objAnimal = null;
         switch (animal){
-            case CAT -> objAnimal = animalList.findCat(name);
-            case DOG -> objAnimal = animalList.findDog(name);
-            case HAMSTER -> objAnimal = animalList.findHamster(name);
-            case CAMEL -> objAnimal = animalList.findCamel(name);
-            case DONKEY -> objAnimal = animalList.findDonkey(name);
-            case HORSE -> objAnimal = animalList.findHorse(name);
+            case CAT -> objAnimal = listanimals.findCat(name);
+            case DOG -> objAnimal = listanimals.findDog(name);
+            case HAMSTER -> objAnimal = listanimals.findHamster(name);
+            case CAMEL -> objAnimal = listanimals.findCamel(name);
+            case DONKEY -> objAnimal = listanimals.findDonkey(name);
+            case HORSE -> objAnimal = listanimals.findHorse(name);
         }
 
         if(objAnimal == null){
             Logger.getAnonymousLogger().info("Такое животное не найдено");
         }
         else{
-            String command = ui.getString("Новая команда: ");
+            String command = view.getString("Новая команда: ");
 
             switch (animal){
                 case CAT -> ((Cat)objAnimal).addCommand(command);
@@ -166,35 +171,35 @@ public class ProgrammMenu {
         }
 
 
-        String name = ui.getString("Имя животного: ");
-        String color = ui.getString("Окрас: ");
-        String date = ui.getString("Дата рождения: ");
+        String name = view.getString("Имя животного: ");
+        String date = view.getString("Дата рождения: ");
+        //String color = view.getString("Окрас: ");
 
         List<String> commands = new ArrayList<>();
         System.out.println("Добавить команды?");
-        String menu = ui.menuShow(menuYesNo);
+        String menu = view.menuShow(menuYesNo);
         while (menu.equals("1")){
-            String command = ui.getString("Команда: ");
+            String command = view.getString("Команда: ");
             commands.add(command);
             System.out.println("Продолжить?");
-            menu = ui.menuShow(menuYesNo);
+            menu = view.menuShow(menuYesNo);
         }
 
         switch (animal){
-            case CAT -> animalList.addAnimal(new Cat(name, date, commands));
-            case DOG -> animalList.addAnimal(new Dog(name, date, commands));
-            case HAMSTER -> animalList.addAnimal(new Hamster(name, date, commands));
-            case CAMEL -> animalList.addAnimal(new Camel(name, date, commands));
-            case DONKEY -> animalList.addAnimal(new Donkey(name, date, commands));
-            case HORSE -> animalList.addAnimal(new Horse(name, date, commands));
+            case CAT -> listanimals.addAnimal(new Cat(name, date, commands));
+            case DOG -> listanimals.addAnimal(new Dog(name, date, commands));
+            case HAMSTER -> listanimals.addAnimal(new Hamster(name, date, commands));
+            case CAMEL -> listanimals.addAnimal(new Camel(name, date, commands));
+            case DONKEY -> listanimals.addAnimal(new Donkey(name, date, commands));
+            case HORSE -> listanimals.addAnimal(new Horse(name, date, commands));
         }
     }
 
 
     private String getOperation() { // Выбор операции в меню программы
-        String menu = ui.menuShow(menuMain);
+        String menu = view.menuShow(menuMain);
         if (!menu.isEmpty() && !menu.equals("0") && !menu.equals("5")) {
-            menu += ui.menuShow(menuAnimal);
+            menu += view.menuShow(menuAnimal);
         }
 
         return menu;
