@@ -841,13 +841,14 @@ li {
     }
 }
 
-.top-head {
+.top__head-2 {
     background: #F8F3F4;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 
     &__heading {
         font-style: normal;
@@ -875,11 +876,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 777px;  
+    height: 777px;
     background: #F7F7F7;
-    
+
     &__link:hover .one {
-        fill: $selectColorSite; 
+        fill: $selectColorSite;
     }
 }
 
@@ -1142,10 +1143,10 @@ summary::-webkit-details-marker {
 }
 
 .navBar {
-display: flex;
-justify-content: center;
-padding-top: 48px;
-padding-bottom: 96px;
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+    padding-bottom: 96px;
 
 
     &__pagination {
@@ -1172,3 +1173,195 @@ padding-bottom: 96px;
         color: $selectColorSite;
     }
 }
+
+
+// STYLES --> CART.index !!!
+
+
+.cart {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: 332px 332px 332px;
+    margin-top: 95px;
+    // margin-bottom: 250px;
+
+
+    &__item1 {
+        box-sizing: border-box;
+        margin-bottom: 40px;
+        box-shadow: 15px 15px 50px $colorText_B;
+
+        display: flex;
+        width: 652px;
+        height: 306px;
+    }
+
+    &__item3 {
+        box-sizing: border-box;
+        margin-bottom: 40px;
+        box-shadow: 15px 15px 50px $colorText_B;
+
+        display: flex;
+        width: 652px;
+        height: 306px;
+    }
+
+    &__color {
+        color: $selectColorSite;
+    }
+
+    &__item-right {
+        position: relative;
+        width: 390px;
+        height: 306px;
+        padding: 22px 97px 62px 31px;
+        box-sizing: border-box;
+    }
+
+    &__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    &__head {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: left;
+        margin-bottom: 42px;
+    }
+
+    &__text {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26.4px;
+        text-align: left;
+        margin-bottom: 6px;
+    }
+
+    &__piece {
+        border: 1px solid $colorText_B
+    }
+
+    &__butt {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        width: 652px;
+        margin-top: 72px;
+        margin-bottom: 128px;
+    }
+
+    &__butCart {
+        padding: 17px 40px;
+        border: 1px solid $colorText_B;
+        background: none;
+    }
+
+
+}
+
+.formBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 204px;
+    align-content: stretch;
+    flex-direction: column;
+    // justify-content: flex-end;
+
+    &__input {
+        width: 360px;
+        height: 45px;
+        margin-top: 30px;
+        // margin-bottom: 15px;
+    }
+
+    &__boxForm {}
+
+    &__title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+    }
+
+    &__butTit {
+        width: 102px;
+        height: 35px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13.2px;
+        text-align: left;
+        border: 1px solid $colorText_B;
+        background: none;
+        margin-top: 15px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+.CASH{
+    display: flex;
+    justify-content: end;
+    // padding-top: 20px;
+}
+
+.cash {
+    padding-top: 40px;
+    padding-right: 40px;
+    width: 360px;
+    height: 214px;
+    background-color: #F5F3F3;
+
+    &__sub-total {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13.2px;
+        text-align: right;
+        margin-bottom: 12px;
+    }
+
+    &__grand-total {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        text-align: right;
+        margin-bottom: 21px;
+    }
+
+    &__bord {
+        width: 273px;
+        border-bottom: 1px solid $colorText_B;
+        margin-bottom: 17px;
+    }
+
+    &__checkout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 273px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        background: $selectColorSite;
+        color: #FFFFFF;
+
+    }
+
+    &__color {
+        color: $selectColorSite;
+    }
+
+    &__CHECKOUT {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+// .bbz {
+//     border: 2px solid black;
+// }
