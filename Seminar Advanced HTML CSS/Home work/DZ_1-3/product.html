@@ -8,52 +8,53 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__navigation container">
-            <div class="header__navigation-navLeft">
-                <a href="./index.html"><img src="./img/logoHeader/logo.svg" alt="logo"></a>
-                <button class="header__navigation-buttonHead" type="button"><img src="./img/logoHeader/logoSearch.svg" alt="logoSearch"></button>
+        <div class="header__hed container">
+            <div class="header__left">
+                <a href="./index.html"><img src="./img/logoHeader/logo.svg" alt=""></a>
+                <img src="./img/logoHeader/logoSearch.svg" alt="">
             </div>
-            <div class="dropdown header__navigation-navRight">
-                <button class="dropbtn "><img src="./img/logoHeader/logoMenu.svg" alt="logoMenu"></button>
-                <div class="dropdown-content">
-                    <div class="menu-active__all">
-                        <h4 class="menu-heading">MENU</h4>
-                        <div class="menu-man">
-                            <h5 class="menu-text style_3">MAN</h5>
-                            <ul class="menu-list">
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Denim</a></li>
-                                <li><a href="#">T-Shirts</a></li>
-                            </ul>
+            <div class="header__right">
+                    <label for="burger"><img src="./img/logoHeader/logoMenu.svg" alt="menu"></label>
+                    <input id="burger" type="checkbox" checked>
+                    <nav class="header__nav">
+                        <div class="">
+                            <h4>MENU</h4>
+                            <div>
+                                <h5 class="style_3">MAN</h5>
+                                <ul class="">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <h5 class="style_3">WOMAN</h5>
+                                <ul class="">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <h5 class="style_3">KIDS</h5>
+                                <ul class="">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="menu-woman">
-                            <h5 class="menu-text style_3">WOMAN</h5>
-                            <ul class="menu-list">
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Jackets & Coats</a></li>
-                                <li><a href="#">Polos</a></li>
-                                <li><a href="#">T-Shirts</a></li>
-                                <li><a href="#">Shirts</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu-kids">
-                            <h5 class="menu-text style_3">KIDS</h5>
-                            <ul class="menu-list">
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Jackets & Coats</a></li>
-                                <li><a href="#">Polos</a></li>
-                                <li><a href="#">T-Shirts</a></li>
-                                <li><a href="#">Shirts</a></li>
-                                <li><a href="#">Bags</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <button class="header__navigation-buttonHead " type="button"  value="read more"><img src="./img/logoHeader/logoUser.png" alt="logoUser"></button>
-                <button class="header__navigation-buttonHead " type="button"  value="read more"><img src="./img/logoHeader/logoBasket.svg" alt="logoBasket"></button>
+                    </nav>
+                    <a class="header__navigation-buttonHead" href="./registration.html"><img src="./img/logoHeader/logoUser.png" alt="logoUser"></a>
+                    <a class="header__navigation-buttonHead" href="./cart.html"><img src="./img/logoHeader/logoBasket.svg" alt="logoBasket"></a>
             </div>
-        </nav>
+        </div>
     </header>
     <main class="main">
             <section name="top-head">
@@ -95,7 +96,7 @@
                                 <button class="blockCenter__button">QUANTITY <img src="./img/galck.svg" alt=""></button>
                             </div>
                             <div>
-                                <button class="blockCenter__Cart"><img src="./img/cart_2.svg" alt="cart">Add to Cart</button>
+                                <a class="blockCenter__Cart main__catalog-butDown" href="./cart.html"><img src="./img/cart_2.svg" alt="cart"><span class="style_3">Add to Cart</span></a>
                             </div>
             </div>
             </article>

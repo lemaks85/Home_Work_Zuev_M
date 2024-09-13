@@ -35,7 +35,6 @@ button {
     padding-right: calc(50% - $widthSite / 2);
 }
 
-/*~~~~~~~~~~~~~~~~~~~~ STYLE ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .style_1 {
     font-size: 48px;
     font-weight: 900
@@ -55,49 +54,74 @@ button {
     color: $selectColorSite;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .header {
-    background: #222222;
-    display: flex;
-    justify-content: center;
+    // overflow: hidden;
+    // min-height: 100vh;
 
-    &__navigation {
-        width: 100%;
+    &__hed {
+        height: 75px;
+        background-color: $colorTextHED;
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: space-between;
+        position: relative;
     }
 
-    &__navigation-buttonHead {
-        background: #222222;
-        border: none;
-        cursor: pointer;
-    }
-
-    &__navigation-navLeft {
-        margin-top: 18px;
-        margin-bottom: 19px;
+    &__left {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
         gap: 41px;
     }
 
-    &__navigation-navRight {
-        margin-top: 26px;
-        margin-bottom: 20px;
+    &__right {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
         gap: 33px;
+    }
+
+    &__nav {
+        background: #FFFFFF;
+        width: 232px;
+        padding: 32px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        transition: right .3s;
+        z-index: 20;
+    }
+
+    #burger {
+        position: absolute;
+        left: -9999999;
+        visibility: hidden;
+    }
+
+
+    #burger:checked~.header__nav {
+        display: none;
+        // right: -5000px;
+    }
+
+    &__basketNum{
         position: relative;
     }
-}
-
-
-
-/*~~~~~~~~~~~~~~~~~~~~~ MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.menu-active {
-    position: absolute;
-    right: 0;
-    top: 75px;
+    &__basketNum span{
+        position: absolute;
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+        background-color: $selectColorSite;
+        border-radius: 50%;
+        color: #FFFFFF;
+        // display: inline-block;
+        display: flex;
+        justify-content: center;align-items: center;
+        line-height: 0;
+        top: -4px;
+        right: -5px;
+    }
 }
 
 ul,
@@ -106,58 +130,6 @@ li {
     margin-bottom: 11px;
 }
 
-.menu-active__all {
-    padding-top: 32px;
-    width: 232px;
-    height: 634px;
-    background: rgba(255, 255, 255, 1);
-}
-
-.menu-heading {
-    margin-left: 33px;
-}
-
-.menu-text {
-    font-size: 14px;
-    font-weight: 400;
-    margin-left: 32px;
-    margin-top: 24px;
-    margin-bottom: 12px;
-}
-
-.menu-list a {
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(111, 110, 110, 1);
-    margin-left: 53px;
-}
-
-.dropbtn {
-    background: none;
-    border: none;
-    margin-right: 6px;
-}
-
-.dropdown {
-    position: relative;
-    /* display: inline-block; */
-}
-
-.dropdown-content {
-    /* right: -104px; */
-    /* top: 49px; */
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-
-/*~~~~~~~~~~~~~~~~~~~~~ COMMERCIAL ~~~~~~~~~~~~~~~~~~~~~*/
 .commercial {
     margin-top: 65px;
     display: flex;
@@ -215,7 +187,7 @@ li {
     }
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~ CATALOG TITLE ~~~~~~~~~~~~~~~~~~*/
+/* CATALOG TITLE */
 .main__catalog-title {
     text-align: center;
     margin-bottom: 48px;
@@ -233,7 +205,7 @@ li {
     color: rgba(159, 159, 159, 1);
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~ CATALOG PRODUCT ~~~~~~~~~~~~~~~~*/
+/* CATALOG PRODUCT */
 .main__catalog {
     display: flex;
     flex-wrap: wrap;
@@ -352,23 +324,26 @@ li {
     border: 2px solid rgba(255, 255, 255, 1);
     transform: translate(-50%, -50%) scale(0);
     transition: .3s ease-in-out;
+    
 }
 
 .click:before {
     /* content: url(./img/Cart.svg); */
     margin-right: 10px;
+    
 
 }
 
 .main__catalog-shadow:hover .main__catalog-click {
     opacity: 1;
+    
 }
 
 .main__catalog-click:hover .click {
     transform: translate(-50%, -50%) scale(1);
+    
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~ BLACK_BOX ~~~~~~~~~~~~~~~~~~~~~~~*/
 .blackBox {
     background-color: rgba(34, 34, 36, 1);
 
@@ -403,7 +378,6 @@ li {
     }
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~ SUBSCRIBE  ~~~~~~~~~~~~~~~~~~~~~~*/
 .subscribe {
 
     &__img {
@@ -485,7 +459,6 @@ li {
     }
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .footer {
     background-color: rgba(34, 34, 36, 1);
 
@@ -841,7 +814,7 @@ li {
     }
 }
 
-.top__head-2 {
+.top-head {
     background: #F8F3F4;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1000,7 +973,7 @@ summary::-webkit-details-marker {
     padding-top: 13px;
     // padding: 13px 16px 16px;
     width: 360px;
-    height: 571px;
+    // height: 571px;
     top: 39px;
     box-sizing: border-box;
     cursor: pointer;
@@ -1012,11 +985,12 @@ summary::-webkit-details-marker {
         padding-right: 16px;
         padding-bottom: 16px;
         padding-left: 16px;
+        // position: absolute;
     }
 
     &[open] {
         background: #FFFFFF;
-        box-shadow: 6px 4px 35px #000000;
+        box-shadow: 6px 4px 35px #A1A1A1;
     }
 
     &[open] .filter__heading {
@@ -1050,7 +1024,6 @@ summary::-webkit-details-marker {
 
     &__item[open] .filter__head {
         color: $selectColorSite;
-
     }
 
     &__head {
@@ -1128,7 +1101,7 @@ summary::-webkit-details-marker {
         flex-direction: column;
         gap: 8px;
         background: #FFFFFF;
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        box-shadow: 6px 4px 35px #A1A1A1;
         padding: 7px 30px 11px 9px;
         position: absolute;
         left: -9px;
@@ -1301,7 +1274,7 @@ summary::-webkit-details-marker {
     }
 }
 
-.CASH{
+.CASH {
     display: flex;
     justify-content: end;
     // padding-top: 20px;
@@ -1362,6 +1335,8 @@ summary::-webkit-details-marker {
 }
 
 
-// .bbz {
-//     border: 2px solid black;
-// }
+
+
+
+
+
