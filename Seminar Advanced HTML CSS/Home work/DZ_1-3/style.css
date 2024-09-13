@@ -746,7 +746,7 @@ li {
   text-align: center;
   height: 601px;
   border: 1px solid #EAEAEA;
-  margin-bottom: 128px;
+  margin-bottom: 80px;
   padding: 64px 0;
 }
 .blockCenter__title-one {
@@ -775,8 +775,8 @@ li {
   color: #F16D7F;
 }
 .blockCenter__border-one {
-  margin-top: -60px;
-  margin-bottom: -60px;
+  margin-top: -50px;
+  margin-bottom: -50px;
   width: 63px;
   border-top: 3px solid #F16D7F;
 }
@@ -1070,6 +1070,7 @@ summary::-webkit-details-marker {
   margin-top: 15px;
   margin-bottom: 0;
   text-align: center;
+  cursor: pointer;
 }
 
 .CASH {
@@ -1114,6 +1115,7 @@ summary::-webkit-details-marker {
   line-height: 19px;
   background: #F16D7F;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .cash__color {
   color: #F16D7F;
@@ -1121,4 +1123,88 @@ summary::-webkit-details-marker {
 .cash__CHECKOUT {
   display: flex;
   justify-content: center;
+}
+
+.regist__box {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.regist__form-one {
+  width: 360px;
+  height: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.regist__form-two {
+  width: 360px;
+  height: 45px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.regist__ratio {
+  display: flex;
+  gap: 20px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.2px;
+  text-align: left;
+  margin-bottom: 33px;
+}
+.regist__box-left {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.regist__box-left h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: #222222;
+}
+.regist__box-left p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: left;
+  color: #B1B1B1;
+}
+.regist__box-but {
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  color: white;
+  text-align: center;
+  padding: 16px 29px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 39px;
+}
+.regist__box-right {
+  width: 100%;
+  max-width: 652px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.regist__box-right h3 {
+  padding-bottom: 16px;
+}
+.regist__box-right h2 {
+  padding-bottom: 32px;
+}
+.regist__box-right p {
+  padding-bottom: 22px;
+}
+.regist__box-text-R {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
