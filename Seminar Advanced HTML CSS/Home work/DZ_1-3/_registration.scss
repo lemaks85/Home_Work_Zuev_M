@@ -1,0 +1,101 @@
+.regist {
+
+    &__box {
+        padding-top: 64px;
+        padding-bottom: 96px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form-one {
+        width: 360px;
+        height: 45px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__form-two {
+        width: 360px;
+        height: 45px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__ratio {
+        display: flex;
+        gap: 20px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13.2px;
+        text-align: left;
+        // margin-top: 31px;
+        margin-bottom: 33px;
+
+    }
+
+    &__box-left {
+        width: 100%;
+        max-width: 360px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &__box-left h2 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        color: #222222;
+    }
+
+    &__box-left p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        color: #B1B1B1;
+    }
+
+    &__box-but {
+        width: 167px;
+        height: 50px;
+        background-color: $selectColorSite;
+        color: white;
+        text-align: center;
+        padding: 16px 29px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 39px;
+    }
+
+    &__box-right {
+        width: 100%;
+        max-width: 652px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &__box-right h3 {
+        padding-bottom: 16px;
+    }
+
+    &__box-right h2 {
+        padding-bottom: 32px;
+    }
+
+    &__box-right p {
+        padding-bottom: 22px;
+    }
+
+    &__box-text-R {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28.8px;
+        color: #000000;
+    }
+
+}
