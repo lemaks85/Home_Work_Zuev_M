@@ -6,6 +6,7 @@
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
+        
     }
 
     &__form-one {
@@ -79,6 +80,11 @@
         cursor: pointer;
     }
 
+    &__box-but:hover{
+        transition: transform .3s;
+        background-color:#ee465c;
+
+    }
     &__box-right {
         width: 100%;
         max-width: 652px;

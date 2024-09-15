@@ -69,6 +69,10 @@
   border: none;
   cursor: pointer;
 }
+.regist__box-but:hover {
+  transition: transform 0.3s;
+  background-color: #ee465c;
+}
 .regist__box-right {
   width: 100%;
   max-width: 652px;
