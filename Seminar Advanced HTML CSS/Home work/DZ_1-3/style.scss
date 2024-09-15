@@ -1036,6 +1036,7 @@ summary::-webkit-details-marker {
     align-content: stretch;
     flex-direction: column;
     // justify-content: flex-end;
+    cursor: pointer;
 
     &__input {
         width: 360px;

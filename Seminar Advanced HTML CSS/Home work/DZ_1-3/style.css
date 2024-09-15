@@ -7,12 +7,16 @@
   justify-content: space-between;
 }
 .regist__form-one {
+  display: block;
   width: 360px;
   height: 45px;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
 .regist__form-two {
+  display: block;
+  padding-left: 10px;
   width: 360px;
   height: 45px;
   margin-top: 20px;
@@ -25,6 +29,7 @@
   font-weight: 400;
   line-height: 13.2px;
   text-align: left;
+  margin-top: 31px;
   margin-bottom: 33px;
 }
 .regist__box-left {
@@ -49,6 +54,8 @@
   color: #B1B1B1;
 }
 .regist__box-but {
+  display: flex;
+  align-items: center;
   width: 167px;
   height: 50px;
   background-color: #F16D7F;
@@ -59,6 +66,8 @@
   font-size: 14px;
   font-weight: 400;
   margin-top: 39px;
+  border: none;
+  cursor: pointer;
 }
 .regist__box-right {
   width: 100%;
@@ -946,6 +955,7 @@ summary::-webkit-details-marker {
   margin-left: 204px;
   align-content: stretch;
   flex-direction: column;
+  cursor: pointer;
 }
 .formBox__input {
   width: 360px;
