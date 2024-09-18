@@ -255,7 +255,7 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  border: 1px, rgb(255, 106, 106);
+  border: 1px rgb(255, 106, 106);
 }
 .middleBox__catalog-product_item {
   /* padding-bottom: 16px; */
@@ -295,7 +295,7 @@ li {
   margin: 48px 0 60px 0;
   max-width: 212px;
   max-height: 48px;
-  border: 1px solid, rgb(255, 106, 106);
+  border: 1px solid rgb(255, 106, 106);
   padding: 15px 39px 14px 39px;
   color: rgb(242, 99, 118);
   text-align: center;
@@ -485,7 +485,7 @@ li {
 }
 @media screen and (max-width: 425px) {
   .footer .footer__box {
-    flex-direction: column column-reverse;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     justify-content: center;
   }
