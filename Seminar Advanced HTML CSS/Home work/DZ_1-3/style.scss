@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import 'vars';
-@import 'registration';
 
 * {
     margin: 0;
@@ -24,7 +23,8 @@ img {
     max-width: 100%;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
 }
 
@@ -57,7 +57,8 @@ ul, li {
 }
 
 .header {
-    width: 100%;
+    padding: 0 15px;
+    // width: 100%;
     background-color: $colorTextHED;
     // overflow: hidden;
     // min-height: 100vh;
@@ -100,16 +101,17 @@ ul, li {
         box-shadow: 6px 4px 35px 0px #00000036;
     }
 
+
     &__nav-link {
         margin-bottom: 11px;
         padding-left: 21px;
     }
 
-    &__nav-link:hover{
+    &__nav-link:hover {
         color: $selectColorSite;
     }
 
-    &__nav h5{
+    &__nav h5 {
         margin-top: 20px;
         margin-bottom: 12px;
     }
@@ -120,8 +122,9 @@ ul, li {
         visibility: hidden;
     }
 
-    #burger:checked ~ &__nav {
+    #burger:checked~&__nav {
         display: none;
+        transition: display .3s;
         // right: -5000px;
     }
 
@@ -147,6 +150,74 @@ ul, li {
     }
 }
 
+.downHeader {
+    &__box {
+        background-color: #f1e4e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__leftSide {
+        width: 100%;
+        max-width: 700px;
+        height: 100%;
+        max-height: 764px;
+        // background-image: url(./img/logoMan.svg);
+        background-repeat: no-repeat;
+        // background-size: auto;
+    }
+
+    &__rightSide {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 700px;
+        height: 100%;
+        max-height: 764px;
+    }
+
+    &__brand {
+        max-width: 405px;
+        max-height: 93px;
+        border-left: 12px solid #F16D7F;
+        padding-left: 16px;
+    }
+}
+
+.top-head {
+    background: #F8F3F4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+    &__heading {
+        padding-left: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $selectColorSite;
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+
+    &__linkSite {
+        font-weight: 700;
+        color: $selectColorSite;
+    }
+}
+
 .commercial {
     margin-top: 65px;
     display: flex;
@@ -154,6 +225,7 @@ ul, li {
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 96px;
+
 
     &__shadow h2 {
         font-size: 16px;
@@ -163,32 +235,40 @@ ul, li {
 
     &__picture_1 {
         display: block;
-        width: 360px;
-        height: 260px;
+        width: 100vw;
+        max-width: 360px;
+        height: 100vh;
+        max-height: 260px;
         background-size: cover;
         background-image: url(./img/imgMain/img_1.svg)
     }
 
     &__picture_2 {
         display: block;
-        width: 360px;
-        height: 260px;
+        width: 100vw;
+        max-width: 360px;
+        height: 100vh;
+        max-height: 260px;
         background-size: cover;
         background-image: url(./img/imgMain/img_2.svg)
     }
 
     &__picture_3 {
         display: block;
-        width: 360px;
-        height: 260px;
+        width: 100vw;
+        max-width: 360px;
+        height: 100vh;
+        max-height: 260px;
         background-size: cover;
         background-image: url(./img/imgMain/img_3.svg)
     }
 
     &__picture_4 {
         display: block;
-        width: 1140px;
-        height: 180px;
+        width: 100vw;
+        max-width: 1140px;
+        height: 100vh;
+        max-height: 180px;
         background-size: cover;
         background-image: url(./img/imgMain/img_4.svg)
     }
@@ -205,6 +285,7 @@ ul, li {
 }
 
 .middleBox {
+
 
     &__catalog-title {
         text-align: center;
@@ -367,8 +448,10 @@ ul, li {
     }
 
     &__card {
-        width: 360px;
-        height: 134px;
+        width: 100vw;
+        max-width: 360px;
+        height: 100vh;
+        max-height: 134px;
         margin-top: 103px;
         margin-bottom: 103px;
         text-align: center;
@@ -393,6 +476,23 @@ ul, li {
 
 .subscribe {
 
+    @media screen and (max-width: 768px) {
+        .subscribe__body {
+            gap: 25px;
+            padding: 0 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 475px) {
+
+        .subscribe__body {
+            // gap: 25px;
+            padding: 0 15px;
+        }
+    }
+
     &__img {
         background-size: cover;
         background-repeat: no-repeat;
@@ -409,14 +509,16 @@ ul, li {
     }
 
     &__body {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 450px;
+        gap: 400px;
     }
 
     &__left-side {
-        width: 360px;
+        width: 100%;
+        max-width: 360px;
         height: 225px;
         display: flex;
         flex-direction: column;
@@ -429,6 +531,7 @@ ul, li {
     }
 
     &__right-side {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -473,9 +576,30 @@ ul, li {
 }
 
 .footer {
-    // width: 100%;
     background-color: rgba(34, 34, 36, 1);
 
+    @media screen and (max-width: 425px) {
+        .footer__box {
+            // background: red;
+            flex-direction: column column-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .footer__box {
+            padding: 0 15px;
+        }
+    }
+
+    @media screen and (max-width: 1149px) {
+
+        .footer__box {
+            padding: 0 15px;
+        }
+    }
 
     &__box {
         display: flex;
@@ -532,42 +656,12 @@ ul, li {
 }
 
 // STYLES --> PRODUCT.index !!!
-.downHeader {
-    &__box {
-        background-color: #f1e4e6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    &__leftSide {
-        width: 700px;
-        height: 764px;
-        background-image: url(./img/logoMan.svg);
-        background-repeat: no-repeat;
-        background-size: auto;
-    }
-
-    &__rightSide {
-        display: flex;
-        align-items: center;
-        width: 700px;
-        height: 764px;
-    }
-
-    &__brand {
-        max-width: 405px;
-        max-height: 93px;
-        border-left: 12px solid #F16D7F;
-        padding-left: 16px;
-    }
-}
 
 .product {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 128px;
+    gap: 20px;
+    margin-bottom: 20px;
 
     &__box {
         width: 360px;
@@ -612,63 +706,46 @@ ul, li {
     }
 }
 
-.top-head {
-    background: #F8F3F4;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
-    &__heading {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 29px;
-        color: $selectColorSite;
-    }
-
-    &__link {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
-        color: #636363;
-    }
-
-    &__linkSite {
-        font-weight: 700;
-        color: $selectColorSite;
-    }
-}
-
 .carousel {
+    // padding: 1px;
+    // box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 777px;
+    justify-content: space-around;
     background: #F7F7F7;
 
+    .carousel__btn{
+        display: inline-block;
+    }
+    .carousel__img{
+        background-image: url(./img/Cat_women.svg);
+        background-position: center;
+        background-size: 30%;
+        background-repeat: no-repeat;
+        width: 100vw;
+        max-width: 1440px;
+        height: 100vh;
+        max-height: 777px;
+    }
     &__link:hover .one {
         fill: $selectColorSite;
     }
 }
 
-
 .blockCenter {
     position: relative;
     top: -65px;
 
-
     &__box {
+        // position: absolute;
         background: #FFFFFF;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        height: 601px;
+        height: 100vh;
+        max-height: 601px;
         border: 1px solid #EAEAEA;
         margin-bottom: 80px;
         padding: 64px 0;
@@ -689,7 +766,8 @@ ul, li {
 
     &__text {
         text-align: center;
-        width: 567px;
+        width: 100vw;
+        max-width: 567px;
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
@@ -705,14 +783,16 @@ ul, li {
     }
 
     &__border-one {
-        margin-top: -50px;
-        margin-bottom: -50px;
-        width: 63px;
+        // margin-top: -50px;
+        // margin-bottom: -50px;
+        width: 100vw;
+        max-width: 63px;
         border-top: 3px solid $selectColorSite;
     }
 
     &__border-two {
-        width: 641px;
+        width: 100vw;
+        max-width: 641px;
         border-top: 1px solid $colorText_B;
     }
 
@@ -763,7 +843,6 @@ summary::-webkit-details-marker {
     gap: $gapGrid;
     padding-top: 39px;
     box-sizing: border-box;
-
 }
 
 .filter {
@@ -946,31 +1025,43 @@ summary::-webkit-details-marker {
 
 // STYLES --> CART.index !!!
 .cart {
-    display: grid;
-    grid-template-columns: 570px 570px;
-    grid-template-rows: 332px 332px 332px;
+display: flex;
     margin-top: 95px;
     // margin-bottom: 250px;
 
+    &__left{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
 
     &__item1 {
         box-sizing: border-box;
         margin-bottom: 40px;
         box-shadow: 15px 15px 50px $colorText_B;
-
         display: flex;
-        width: 652px;
-        height: 306px;
+        width: 100vw;
+        max-width: 734px;
+        height: 100%;
+        max-height: 306px;
     }
 
     &__item3 {
         box-sizing: border-box;
         margin-bottom: 40px;
         box-shadow: 15px 15px 50px $colorText_B;
-
         display: flex;
-        width: 652px;
-        height: 306px;
+        width: 100vw;
+        max-width: 734px;
+        height: 100%;
+        max-height: 306px;
     }
 
     &__color {
@@ -1015,7 +1106,8 @@ summary::-webkit-details-marker {
         display: flex;
         align-content: center;
         justify-content: space-between;
-        width: 652px;
+        width: 100vw;
+        max-width: 652px;
         margin-top: 72px;
         margin-bottom: 128px;
     }
@@ -1131,13 +1223,290 @@ summary::-webkit-details-marker {
 
 }
 
-// Adaptive look down !!!
+// STYLES --> REGISTRATION.index !!!
+.regist {
+
+    &__box {
+        padding-top: 64px;
+        padding-bottom: 96px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        gap: 128px;
+    }
+
+    &__form-one {
+        display: block;
+        width: 100%;
+        height: 45px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        // overflow: hidden
+    }
+
+    &__form-two {
+        display: block;
+        padding-left: 10px;
+        width: 100%;
+        height: 45px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        // overflow: hidden
+    }
+
+    &__ratio {
+        display: flex;
+        gap: 20px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13.2px;
+        text-align: left;
+        margin-top: 31px;
+        margin-bottom: 33px;
+
+    }
+
+    &__box-left {
+        // width: 100%;
+        // max-width: 360px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    &__box-left h2 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        color: #222222;
+    }
+
+    &__box-left p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        color: #B1B1B1;
+    }
+
+    &__box-but {
+        display: flex;
+        align-items: center;
+        width: 167px;
+        height: 50px;
+        background-color: $selectColorSite;
+        color: white;
+        text-align: center;
+        padding: 16px 29px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 39px;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__box-but:hover {
+        transition: transform .3s;
+        background-color: #ee465c;
+
+    }
+
+    &__box-right {
+        width: 100%;
+        max-width: 652px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &__box-right h3 {
+        padding-bottom: 16px;
+    }
+
+    &__box-right h2 {
+        padding-bottom: 32px;
+    }
+
+    &__box-right p {
+        padding-bottom: 22px;
+    }
+
+    &__box-text-R {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28.8px;
+        color: #000000;
+    }
+}
 
 
-/*~~~~~~~~~~~~~~~~~~~~~~ TABLET ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-// @media (min-width: 768px) and (max-width: 1139px) {
-// }
+// ADAPTATION SCREEN
 
-/*~~~~~~~~~~~~~~~~~~~~~~ PHONE ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-// @media (min-width: 374px) and (max-width: 767px) {
-// }
+
+
+@media only screen and (max-width: 425px) {
+    .cart{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .carousel__img_big{
+        background-size: cover;
+    }
+    .downHeader__leftSide img {
+        display: none;
+    }
+    .style_1-1 {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 45px;
+    }
+    .style_2-2{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .downHeader__rightSide{
+        height: 363px;
+        width: 100vw;
+        max-width: 375px;
+    }
+    .downHeader__box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .top-head{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .regist__box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .commercial{
+        padding: 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .commercial__picture_4{
+        width: 100vw;
+        max-width: 360px;
+    }
+    .header__navigation-buttonHead {
+        display: none;
+    }
+
+    .header__basketNum {
+        display: none;
+    }
+
+    .blockCenter__box{
+        padding: 0 15px;
+    }
+
+    .product{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .regist__box {
+        padding: 0 15px;
+        padding-top: 40px;
+        padding-bottom: 96px;
+        gap: 25px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1170px){
+    .blackBox__box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .middleBox__catalog-product_item-del{
+        display: none;
+    }
+    .cart{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .cart__right_para{
+        display: flex;
+    }
+    .commercial{
+        padding: 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .CASH{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .formBox__boxForm{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .formBox{
+        margin: 0;
+    }
+    .cart__butt{
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+    .regist__box {
+        padding: 0 15px;
+        padding-top: 40px;
+        padding-bottom: 96px;
+        gap: 128px;
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 1170px) {
+    .top-head {
+        padding: 0 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .header__hed {
+        padding: 0 15px;
+    }
+
+}
+
+//width="262px" height="306px"
