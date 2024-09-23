@@ -1259,4 +1259,18 @@ summary::-webkit-details-marker {
   .header__hed {
     padding: 0 15px;
   }
+}
+.itemBox {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  font-size: 148px;
+}
+
+.gridBox {
+  width: 1000px;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 100% 100% 100% 100%;
+  grid-template-rows: 100% 100% 100% 100%;
 }/*# sourceMappingURL=style.css.map */
