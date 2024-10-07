@@ -55,19 +55,19 @@ $city = ['Московская область' => ['Подольск', 'Домо
         'Рязанская область'=> ['Скопин', 'Сасово', 'Рыбное']
         ];
 
-    foreach ($city as $key => $value){
-        echo "$key: " . PHP_EOL;
-        print_r($value);
-    }
+foreach ($city as $key => $value){
+    $num = count($value);
+        echo "$key: ";
+            for($i = 0; $i < $num; $i++){
+                if($i < $num-1){
+                    echo "$value[$i], ";
+                }else{
+                    echo "$value[$i]; ";
+                }
+            }
+        }
 
-// foreach ($city as $key => $value){
-//     $num = count($value);
-//         echo "$key: ";
-//             for($i = 0; $i < $num; $i++){
-//                 if($i < $num-1){
-//                     echo "$value[$i], ";
-//                 }else{
-//                     echo "$value[$i]; ";
-//                 }
-//             }
-//         }
+    // foreach ($city as $key => $value){
+    //     echo "$key: " . PHP_EOL;
+    //     print_r($value);
+    // }
