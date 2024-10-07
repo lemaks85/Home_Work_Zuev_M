@@ -74,16 +74,29 @@
 
 //******************************************************************************* */
 
-function transLit($text){
-    $alfavit = array('а'=>'a', 'б'=>'b', 'в'=>'v', 'г'=>'g', 'д'=>'d', 'е'=>'ye', 'ё'=>'yo', 'ж'=>'zh', 'з'=>'z', 'и'=>'i', 'к'=>'k', 'л'=>'l','м'=>'m', 'н'=>'n','о'=>'o', 'п'=>'p','р'=>'r', 'с'=>'s', 'т'=>'t', 'у'=>'u','ф'=>'f','х'=>'kh', 'ц'=>'ts', 'ч'=>'ch', 'ш'=>'sh','щ'=>'tch', 'ъ'=>'"', 'ы'=>'y', 'ь'=>'`', 'э'=>'eh', 'ю'=>'yu', 'я'=>'ya');
-        $text_a = preg_split('//u', $text, -1, PREG_SPLIT_NO_EMPTY);
-            $text = '';
-                foreach($text_a as $val) {
-                    $text .= (isset($alfavit[$val])) ? $alfavit[$val] : $val;
-                }
-    return $text;
-}
+// function transLit($text){
+//     $alfavit = array('а'=>'a', 'б'=>'b', 'в'=>'v', 'г'=>'g', 'д'=>'d', 'е'=>'ye', 'ё'=>'yo', 'ж'=>'zh', 'з'=>'z', 'и'=>'i', 'к'=>'k', 'л'=>'l','м'=>'m', 'н'=>'n','о'=>'o', 'п'=>'p','р'=>'r', 'с'=>'s', 'т'=>'t', 'у'=>'u','ф'=>'f','х'=>'kh', 'ц'=>'ts', 'ч'=>'ch', 'ш'=>'sh','щ'=>'tch', 'ъ'=>'"', 'ы'=>'y', 'ь'=>'`', 'э'=>'eh', 'ю'=>'yu', 'я'=>'ya');
+//         $text_a = preg_split('//u', $text, -1, PREG_SPLIT_NO_EMPTY);
+//             $text = '';
+//                 foreach($text_a as $val) {
+//                     $text .= (isset($alfavit[$val])) ? $alfavit[$val] : $val;
+//                 }
+//     return $text;
+// }
 
 
-    $text = "привет мир!";
-        echo transLit($text);
+//     $text = "привет мир!";
+//         echo transLit($text);
+
+//********************************************************************* */
+
+function exponentiation($val, $pow)
+	{
+		if ($pow == 1){
+			return $val;
+		}
+		if ($pow != 1){
+			return $val * exponentiation($val, $pow-1);
+		}
+	}
+	echo exponentiation(2, 2);
