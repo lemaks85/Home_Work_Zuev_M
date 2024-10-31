@@ -13,13 +13,13 @@
 
 > Из этого файла сформировать блок Featured Items. `Всю вёрстку остальных частей реализовывать не нужно, если у вас она была сделана на html/css можно использовать, заново создавать не требуется`.
 ---
-[HTML Code](./index.html) Основная страница
+[HTML Code](./Home_work/index.html) Основная страница
 ---
-[CSS Code](./style.css) Стили
+[CSS Code](./Home_work/style.css) Стили
 ---
-[JS Code](./script.js) Шаблон
+[JS Code](./Home_work/script.js) Шаблон
 ---
-[JSON Code](./data.js) Данные
+[JSON Code](./Home_work/data.js) Данные
 ---
 ## Пример "Решение задачи" размещение на сервере.
 http://sxcary2r.beget.tech/
