@@ -24,4 +24,4 @@
 ## Пример "Решение задачи" размещение на сервере.
 http://sxcary2r.beget.tech/
 ---
-![](./screen/1.png)
+![](./Home_work/screen/1.png)
