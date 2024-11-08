@@ -18,6 +18,26 @@ data.forEach(element => {
     const itemHoverBtn = document.createElement('button');
     itemHoverBtn.classList.add('item-img__hover-btn');
     itemHoverBtn.textContent = 'Add to Cart';
+    itemHoverBtn.addEventListener('click', () => {
+
+        const blockEl = document.createElement('div');
+        blockEl.classList.add('blockElem');
+
+        const textEl = document.createElement('p');
+        textEl.textContent = `ID - ${element.id} Collection - ${element.name} Price - ${element.price}`;
+
+
+        const removeButtonEl = document.createElement('button');
+        removeButtonEl.textContent = 'Del to Cart';
+        removeButtonEl.addEventListener('click', () => blockEl.remove());
+
+        blockEl.appendChild(textEl);
+        blockEl.appendChild(removeButtonEl);
+        
+        const cardEl = document.querySelector('.cart');
+        cardEl.appendChild(blockEl);
+        
+    });
 
     const itemDesc = document.createElement('div');
     itemDesc.classList.add('item-description');
@@ -44,5 +64,3 @@ data.forEach(element => {
     itemDesc.appendChild(itemPrice);
 
 });
-
-
