@@ -1,0 +1,47 @@
+# Task_1
+const arr = [1, 5, 7, 9];
+const minNumber = Math.min(...arr);
+console.log(minNumber);
+
+# Task_2
+function createCounter() {
+let count = 0; // Приватное свойство
+return {
+increment() {
+count++;
+return count;
+},
+decrement() {
+count--;
+return count;
+},
+getValue() {
+return count; // Для получения текущего значения счетчика
+(если нужно)
+}
+};
+}
+
+const counter = createCounter();
+console.log(counter.increment());
+console.log(counter.increment());
+console.log(counter.decrement());
+console.log(counter.getValue());
+
+#Task_3
+function findElementByClass(root, className) {
+if (root.classList.contains(className)) {
+return root;
+}
+for (let i = 0; i < root.children.length; i++) {
+const found = findElementByClass(root.children[i], className);
+if (found) {
+return found;
+}
+}
+return null; // Если элемент с таким классом не найден
+}
+
+const rootElement = document.getElementById('root');
+const targetElement = findElementByClass(rootElement, 'my-class');
+console.log(targetElement);
