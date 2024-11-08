@@ -13,9 +13,8 @@
 ---
 [Итоговая аттестация Блок MySQL](./Final_control_work_on_the_MySQL_block/)
 ---
-```md
->Семинары и практические задания.
+![](./The_Developer_Is_a%20Programmer_Specialization/ScreenShots/123.webp)
+> Семинары и практические задания.
 - [Linux_Containers_Seminar](./Linux_Containers_Seminar/)
 - [Seminar HTML CSS](./Seminar%20HTML%20CSS/)
 - [Seminar Advanced HTML CSS](./Seminar%20Advanced%20HTML%20CSS/)
-```
