@@ -13,11 +13,11 @@
 
 [`Task_pdf`](./screen_shots/Task_2.pdf) <=
 ---
-<img src="./screen_shots/2-1.png" alt="drawing" style="width:200px;"/>
-<img src="./screen_shots/2-2.png" alt="drawing" style="width:200px;"/>
-<img src="./screen_shots/2-3.png" alt="drawing" style="width:200px;"/>
-<img src="./screen_shots/2-4.png" alt="drawing" style="width:200px;"/>
-<img src="./screen_shots/2-5.png" alt="drawing" style="width:200px;"/>
+<img src="./screen_shots/2-1.png" alt="drawing" style="width:400px;"/>
+<img src="./screen_shots/2-2.png" alt="drawing" style="width:400px;"/>
+<img src="./screen_shots/2-3.png" alt="drawing" style="width:400px;"/>
+<img src="./screen_shots/2-4.png" alt="drawing" style="width:400px;"/>
+<img src="./screen_shots/2-5.png" alt="drawing" style="width:400px;"/>
 
 
 ---
