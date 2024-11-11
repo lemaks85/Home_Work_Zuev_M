@@ -13,11 +13,13 @@
 
 [`Task_pdf`](./screen_shots/Task_2.pdf) <=
 ---
-![](./screen_shots/2-1.png)
-![](./screen_shots/2-2.png)
-![](./screen_shots/2-3.png)
-![](./screen_shots/2-4.png)
-![](./screen_shots/2-5.png)
+<img src="./screen_shots/2-1.png" alt="drawing" style="width:200px;"/>
+<img src="./screen_shots/2-2.png" alt="drawing" style="width:200px;"/>
+<img src="./screen_shots/2-3.png" alt="drawing" style="width:200px;"/>
+<img src="./screen_shots/2-4.png" alt="drawing" style="width:200px;"/>
+<img src="./screen_shots/2-5.png" alt="drawing" style="width:200px;"/>
+
+
 ---
 # Урок 1. Функциональный JavaScript
 ```
@@ -32,3 +34,4 @@
 ![](./screen_shots/1-1.png)
 ![](./screen_shots/1-2.png)
 ![](./screen_shots/1-3.png)
+<img src="./screen_shots/1-1.png" alt="drawing" style="width:200px;"/>
