@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class BankAccount {
+            static bankName = 'MyBank';
+
+            constructor(accountNumber, balance = 0){
+                this.accountNumber = accountNumber;
+                this.balance = balance;
+            }
+            deposit(amount){
+                this.balance += amount;
+                console.log(`${amount} пополнено, номер счета ${this.accountNumber}, сумма ${this.balance}`);
+            }
+
+            withdraw(amount){
+                
+                if (this.balance >= amount){
+                    this.balance -= amount;
+                    console.log(`${amount} списано, номер счета ${this.accountNumber}, сумма ${this.balance}`);
+                } else{
+                    console.log(`Не дастаточно средств для снятие ${amount}`);
+                }
+                
+            }
+        }
+            const account1 = new BankAccount("1234567890", 1000);
+            account1.deposit(500);
+            account1.withdraw(200);
+            account1.withdraw(1500);
+    </script>
+</body>
+</html>

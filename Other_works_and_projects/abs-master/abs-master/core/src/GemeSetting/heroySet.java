@@ -55,7 +55,7 @@ public abstract class heroySet implements moveHero {
         if (percent > origin)
             return origin;
         int n = (origin * percent) / 100;
-        return origin + (rnd.nextInt(0, n * 2 + 1) - n);
+        return origin + (rnd.nextInt(0) - n);
     }
 
 

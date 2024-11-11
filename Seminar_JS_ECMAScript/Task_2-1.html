@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Person = {
+            name:'',
+            age: 0,
+            gender: '',
+            introduce(){
+                console.log(`My name is ${this.name}. I'm ${this.age} years old and I identify as ${this.gender}`);
+            },
+            changeName(newName){
+                this.name = newName;
+            }
+        }
+
+        Person.name = "John";
+        Person.age = 25;
+        Person.gender  = "male";
+        Person.introduce();
+        Person.changeName("Mike");
+        Person.introduce();
+    </script>
+</body>
+</html>

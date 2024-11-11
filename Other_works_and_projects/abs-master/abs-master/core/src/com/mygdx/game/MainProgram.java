@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
 
-import static jdk.vm.ci.hotspot.riscv64.RISCV64HotSpotRegisterConfig.t1;
+// import static jdk.vm.ci.hotspot.riscv64.RISCV64HotSpotRegisterConfig.t1;
 
 public class MainProgram {
 
