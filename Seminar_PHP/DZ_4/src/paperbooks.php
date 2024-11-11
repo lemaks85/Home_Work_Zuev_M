@@ -1,13 +1,9 @@
 <?php
 
-class Paperbooks {
-    protected string $title;
-    protected string $authors;
-    protected string $genre;
-    protected array $category = [];
+class Paperbooks extends Library{
 
-    
-
-
-
+    public function __construct(string $title, string $authors, string $category){
+        parent::__construct($title, $authors, $category);
+    }
 }
+
