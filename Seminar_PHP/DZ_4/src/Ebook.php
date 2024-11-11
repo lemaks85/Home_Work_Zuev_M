@@ -1,17 +1,20 @@
 <?php
+require_once 'Library.php';
 
-class Paperbooks extends Library{
+class Ebook extends Library{
+    protected string $url;
 
-    public function __construct(string $title, string $author, string $category, string $library){
-        parent::__construct($title, $author, $category, $library);
+    public function __construct(string $title, string $author, string $category, string $url){
+        parent::__construct($title, $author, $category);
+        $this->url = $url;
     }
 
-    public function bringBook(): string
+    public function downBook(): string
     {
         return  'Book ' . $this->getTitle() .
                 ', author: ' . $this->getAuthor() .
                 ', category: ' . $this->getCategory() .
-                ', library: ' . $this->getLibrary();
+                ', url: ' . $this->url;
     }
 
     public function returnBook(): string
@@ -19,7 +22,7 @@ class Paperbooks extends Library{
         return  'Book ' . $this->getTitle() .
                 ', author: ' . $this->getAuthor() .
                 ', category: ' . $this->getCategory() .
-                ', library: ' . $this->getLibrary();
+                ', url: ' . $this->url;
     }
 }
 

@@ -2,36 +2,44 @@
 
 abstract class Library {
     protected string $title;
-    protected string $authors;
+    protected string $author;
     protected string $category;
+    protected string $library;
 
-    public function __construct(string $title, string $authors, string $category){
+    public function __construct(string $title, string $authors, string $category, string $library){
         $this->title = $title;
-        $this->authors = $authors;
+        $this->author = $authors;
         $this->category = $category;
+        $this->library = $library;
     }
 
     public function getTitle(): string{
         return $this->title;
     }
-    public function getAuthors(): string{
-        return $this->authors;
+    public function getAuthor(): string{
+        return $this->author;
     }
-
-    public function getCategory(string $category){
+    public function getCategory(){
         return $this->category;
+    }
+    public function getLibrary(){
+        return $this->library;
     }
 
     public function setTitle(string $title): void {
         $this->title = $title;
     }
     public function setAuthors(string $authors): void {
-        $this->authors = $authors;
+        $this->author = $authors;
     }
-
     public function setCategory(string $category): void {
         $this->category = $category;
     }
+    public function setLibrary(string $library): void {
+        $this->library = $library;
+    }
     
+
+
 
 }
