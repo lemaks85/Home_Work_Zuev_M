@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            class Product{
+                constructor(name, price){
+                    this.name = name;
+                    this.price = price;
+
+                }
+            }
+
+            class ShoppingCart{
+                constructor(customerName, initialTotalCost) {
+                    this.customerName = customerName;
+                    this.totalCost = initialTotalCost;
+                    this.items = [];
+
+                }
+           
+
+            addItem(product, quantity = 1){
+                this.totalCost+= product.price * quantity;
+                this.items.push({product, quantity});
+
+            }
+
+            getCurrentTotalCost(){
+                return this.totalCost;
+            }
+
+            checkout(){
+                console.log(`Заказ оформлен для ${this.customerName}. Общая стоимость заказа: ${this.totalCost} рублей. Спасибо за покупку!`);
+            }
+        }
+
+        const product1 = new Product("Футболка",1000);
+        const product2 = new Product("Джинсы",2000);
+
+        const cart = new ShoppingCart('Дима', 0);
+        cart.addItem(product1, 2);
+        cart.addItem(product2);
+        console.log(`Общая стоимость ${cart.getCurrentTotalCost()}`);
+        cart.checkout();
+
+
+
+        </script>
+    </body>
+</html>
