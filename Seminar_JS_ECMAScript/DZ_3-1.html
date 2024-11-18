@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            class Employee {
+                constructor(name) {
+                    this.name = name;
+                }
+                displayInfo() {
+                    console.log(`Name: ${this.name}`);
+                }
+            }
+            class Manager extends Employee {
+                constructor(name, department) {
+                    super(name);
+                    this.department = department;
+                }
+                displayInfo() {
+                    console.log(`Name: ${this.name}, Department: ${this.department}`);
+                }
+            }
+            const disp1 = new Employee("John");
+            disp1.displayInfo();
+
+            const disp2 = new Manager("Maks", "Police");
+            disp2.displayInfo();
+
+        </script>
+    </body>
+</html>

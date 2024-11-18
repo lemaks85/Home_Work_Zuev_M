@@ -1,17 +1,21 @@
 # JavaScript про ECMAScript (семинары)
-## Урок 3. Объектно-ориентированное программирование в Javascript
 ```
 Домашнее задание.
 Выполнил студент GB Зуев Максим Михайлович, группа № 6014.
 ```
+## Урок 3. Объектно-ориентированное программирование в Javascript
 ---
 [`File_Task 1`](./Task_3-1.html)
 [`File_Task 2`](./Task_3-2.html)
 [`File_Task 3`](./Task_3-3.html)
+[`DZ-1`](./DZ_3-1.html)
+[`DZ-2`](./DZ_3-2.html)
 ***
 ![](./screen_shots/3-1.png)
 ![](./screen_shots/3-2.png)
 ![](./screen_shots/3-3.png)
+![](./screen_shots/dz_3-1.png)
+![](./screen_shots/dz_3-2.png)
 ---
 
 
