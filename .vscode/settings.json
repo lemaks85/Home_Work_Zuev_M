@@ -1,6 +1,25 @@
 {
     "cSpell.words": [
+        "answear",
         "Geekbrains",
-        "regist"
-    ]
+        "lemaks",
+        "regist",
+        "zuev",
+        "вашей",
+        "Введение",
+        "Выполнил",
+        "Домашнее",
+        "Достаточно",
+        "Обязательно",
+        "опубликовать",
+        "прислать",
+        "Протестируйте",
+        "работу",
+        "семинары",
+        "создайте",
+        "студент",
+        "Урок"
+    ],
+    "ltex.additionalRules.motherTongue": "ru-RU",
+    "ltex.additionalRules.languageModel": "ru"
 }

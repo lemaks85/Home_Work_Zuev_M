@@ -97,6 +97,7 @@ public class MainProgram {
 
         return endGame;
     }
+    @SuppressWarnings("unused")
     private static boolean isLiving(ArrayList<heroySet> team) {
         for (heroySet personBase : team) {
             if (personBase.getHealth() > 0)

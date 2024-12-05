@@ -1,16 +1,16 @@
-public class AnimalCounter implements AutoCloseable{
-    private static Integer counter = 0;
+// public class AnimalCounter implements AutoCloseable{
+//     private static Integer counter = 0;
 
-    public void add(){
-        counter++;
-    }
+//     public void add(){
+//         counter++;
+//     }
 
-    public Integer getCount(){
-        return counter;
-    }
+//     public Integer getCount(){
+//         return counter;
+//     }
 
-    @Override
-    public void close() throws Exception {
+//     @Override
+//     public void close() throws Exception {
 
-    }
-}
+//     }
+// }
