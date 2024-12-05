@@ -1,15 +1,16 @@
 {
-  "name": "dz_project",
+  "name": "zuev_6014",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "lemaks85",
   "license": "ISC",
-  "description": "",
+  "description": "DZ task 2",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "uuid": "^11.0.3"
   }
 }
