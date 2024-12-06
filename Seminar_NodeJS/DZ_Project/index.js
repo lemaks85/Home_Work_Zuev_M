@@ -4,7 +4,18 @@ const express = require('express');
 
 const app = express();
 
+const ticPage = [
+    {
+        page: "/",
+        tic: 0
+    },
 
+    {
+        page: "/about",
+        tic: 0
+    }];
+
+    
 
 
 
