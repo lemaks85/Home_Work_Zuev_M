@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
     });
         res.send(`
         <h1>Main page</h1>
-        <p>Просмотров ${isToData[0].tic}</p>
+        <p>View ${isToData[0].tic}</p>
         <a href="/about">To about page</a>
         `);
     });
@@ -57,7 +57,7 @@ app.get('/about', (req, res) => {
     });
         res.send(`
         <h1>About page</h1>
-        <p>Просмотров ${isToData[1].tic}</p>
+        <p>View ${isToData[1].tic}</p>
         <a href="/">To main page</a>
         `);
     });
