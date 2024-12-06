@@ -29,14 +29,38 @@ fs.readFile('./ticPages.json', (err, data) => {
         console.log(data.toString());
 })
 
-fs.readFile(isToFile, "utf-8", (error, data) => {
-    if (error) return console.log(error);
-        let isToData = JSON.parse(data, "utf-8");
-        isToData[1].tic += 1;
-        console.log(isToData);
-fs.writeFile(isToFile, JSON.stringify(isToData, null, 2), (error) => {
-    if (error) return console.log(error);
-        });
+app.get('/', (req, res) => {
+    fs.readFile(isToFile, "utf-8", (error, data) => {
+        if (error) return console.log(error);
+            let isToData = JSON.parse(data, "utf-8");
+            isToData[0].tic += 1;
+            console.log(isToData);
+    fs.writeFile(isToFile, JSON.stringify(isToData, null, 2), (error) => {
+        if (error) return console.log(error);
+    });
+        res.send(`
+        <h1>Main page</h1>
+        <p>Просмотров ${isToData[0].tic}</p>
+        <a href="/about">To about page</a>
+        `);
+    });
+});
+
+app.get('/about', (req, res) => {
+    fs.readFile(isToFile, "utf-8", (error, data) => {
+        if (error) return console.log(error);
+            let isToData = JSON.parse(data, "utf-8");
+            isToData[1].tic += 1;
+            console.log(isToData);
+    fs.writeFile(isToFile, JSON.stringify(isToData, null, 2), (error) => {
+        if (error) return console.log(error);
+    });
+        res.send(`
+        <h1>About page</h1>
+        <p>Просмотров ${isToData[1].tic}</p>
+        <a href="/">To main page</a>
+        `);
+    });
 });
 
 
@@ -48,12 +72,8 @@ fs.writeFile(isToFile, JSON.stringify(isToData, null, 2), (error) => {
 
 
 
-
-
-
-
-// const port = 3000;
-// app.listen(port, () => {console.log('Server start');});
+const port = 3000;
+app.listen(port, () => {console.log('Server start');});
 
 
 
