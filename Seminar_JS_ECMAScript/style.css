@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .my-element {
+    width: 100px;
+    height: 100px;
+    background-color: #fcd228;
+    border-radius: 50px;
+    border: 1px solid #333;
+  }
+  .colorBlue {
+    background-color: #10d52a;
+  }
+  button {
+    width: 100px;
+  }
