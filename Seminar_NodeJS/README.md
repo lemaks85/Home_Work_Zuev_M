@@ -18,7 +18,7 @@ File => [index.js](./DZ_Project/index.js)
 File => [users.json](./DZ_Project/users.json)
 ---
 ![](./screenShots/5.png)
-![](./screenShots/6 .png)
+![](./screenShots/6.png)
 ![](./screenShots/7.png)
 ![](./screenShots/8.png)
 ![](./screenShots/9.png)
