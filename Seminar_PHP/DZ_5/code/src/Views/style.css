@@ -1,0 +1,32 @@
+html {
+	scroll-behavior: smooth;
+	background: #5a69aa;
+}
+
+body {
+	margin: 10px;
+}
+
+p {
+	background: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.container {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 200px auto;
+}
+
+.box-left {
+	background: white;
+	padding: 10px;
+	border-radius: 10px;	
+}
+
+.box-right {
+	background: white;
+	padding: 10px;
+	border-radius: 10px;	
+}

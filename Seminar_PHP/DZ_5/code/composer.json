@@ -1,8 +1,8 @@
 {
-    "name": "qzee/dz_5",
+    "name": "geekbrains/application1",
     "autoload": {
         "psr-4": {
-            "Qzee\\Dz5\\": "src/"
+            "Geekbrains\\Application1\\": "src/"
         }
     },
     "authors": [
@@ -11,5 +11,7 @@
             "email": "sxcar@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {
+         "twig/twig": "^3.0"
+    }
 }
