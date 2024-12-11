@@ -1,0 +1,15 @@
+{
+    "name": "qzee/dz_5",
+    "autoload": {
+        "psr-4": {
+            "Qzee\\Dz5\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lemaks85",
+            "email": "sxcar@yandex.ru"
+        }
+    ],
+    "require": {}
+}
