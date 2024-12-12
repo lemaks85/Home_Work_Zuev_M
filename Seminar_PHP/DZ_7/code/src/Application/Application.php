@@ -26,8 +26,35 @@ class Application {
         Application::$auth = new Auth();
     }
 
+    public function runApp(): string {
+        $memory_start = memory_get_usage();
+
+        $result = $this->run();
+
+        $memory_end = memory_get_usage();
+        //добавить if config...(Application::$config->get()['log']['DB_MEMORY_LOG']
+        $this->saveMemoryLog($memory_end - $memory_start);
+
+        return $result;
+    }
+
+    private function saveMemoryLog(int $memory): void {
+        $logSql = "INSERT INTO memory_log(`user_agent`, `log_datetime`, `url`, `memory_volume`) 
+            VALUES (:user_agent, :log_datetime, :url, :memory_volume)";
+
+
+        $handler = Application::$storage->get()->prepare($logSql);
+        $handler->execute([
+            'user_agent' => $_SERVER['HTTP_USER_AGENT'],
+            'log_datetime' => date("Y-m-d H:i:s", $_SERVER['REQUEST_TIME']),
+            'url' => $_SERVER['REQUEST_URI'],
+            'memory_volume' => $memory
+        ]);
+    }
+
     public function run() : string {
         session_start();
+        Application::$auth->restoreSession();
 
         $routeArray = explode('/', $_SERVER['REQUEST_URI']);
 
@@ -84,8 +111,12 @@ class Application {
     private function checkAccessToMethod(AbstractController $controllerInstance, string $methodName): bool {
         $userRoles = $controllerInstance->getUserRoles();
 
+
+
         $rules = $controllerInstance->getActionsPermissions($methodName);
-        
+
+        $rules[] = 'user';
+
         $isAllowed = false;
 
         if(!empty($rules)){
@@ -98,5 +129,6 @@ class Application {
         }
 
         return $isAllowed;
+
     }
 }

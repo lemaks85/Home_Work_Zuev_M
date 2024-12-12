@@ -31,8 +31,16 @@ services:
     # мы можем создать для контейнеров внутреннюю сеть
     networks:
       - app-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      XDEBUG_MODE: develop,debug
+      XDEBUG_CONFIG:
+        client_host=host.docker.internal
+        start_with_request=yes
 
-   #Контейнер с PHP-FPM, назовём его app
+
+    #Контейнер с PHP-FPM, назовём его app
   cli:
     # Если нет секции build, то система будет искать образ в репозиториях
     build:
