@@ -27,6 +27,8 @@
 ---
 - [Seminar_JS_ECMAScript](./Seminar_JS_ECMAScript/)
 ---
+- [Seminar_NodeJS](./Seminar_NodeJS/)
+---
 - [Seminar_PHP](./Seminar_PHP/)
 ---
 - [Seminar_Python](./Seminar_Python/)
