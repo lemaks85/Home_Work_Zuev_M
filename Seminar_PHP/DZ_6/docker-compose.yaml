@@ -46,6 +46,24 @@ services:
     networks:
       - app-network
 
+  #Контейнер с БД
+  database:
+    platform: linux/x86_64
+    image: mysql:5.7
+    container_name: database # имя контейнера после запуска
+    environment:
+      MYSQL_DATABASE: ${DB_NAME} # имя нашей БД
+      MYSQL_USER: ${DB_USER} # имя пользователя, с которым будет подключаться 
+      MYSQL_PASSWORD: ${DB_PASSWORD} # пароль для пользователя
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD} # администраторский пароль
+    ports:
+      - "3306:3306"
+    volumes:
+        - ./db:/var/lib/mysql
+    # мы можем создать для контейнеров внутреннюю сеть
+    networks:
+      - app-network
+
 #Docker Networks
 networks:
   app-network:
