@@ -102,4 +102,5 @@ class Application {
 
         return $isAllowed;
     }
+    
 }
