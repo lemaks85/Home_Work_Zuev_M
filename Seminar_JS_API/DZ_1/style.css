@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #ed692a;
+}
+
+body {
+    background: rgba(205, 214, 219, 0.3);
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    background: white;
+    height: 80px;
+
+}
+
+.header__Box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+}
