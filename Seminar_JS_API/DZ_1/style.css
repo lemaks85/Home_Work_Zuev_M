@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/* .center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+} */
+
 a {
     text-decoration: none;
     color: #ed692a;
@@ -11,6 +16,7 @@ a {
 
 body {
     background: rgba(205, 214, 219, 0.3);
+    font-family: "Audiowide", sans-serif;
 }
 
 .container{
@@ -29,5 +35,24 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 80px;
+}
 
+.headBut{
+        background: #ed692a;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px;
+        min-width: 194px;
+        height: 50px;
+        color: #fff;
+        font: 700 14px "Montserrat", "Roboto", sans-serif;
+        text-align: center;
+        border-radius: 100px;
+        border: 0px;
+}
+
+.tel {
+    color: black;
+    font-weight: bold;
 }
