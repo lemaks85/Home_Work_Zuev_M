@@ -1,4 +1,6 @@
+
 export const programmSports = `[
+
 {
     "id": "1",
     "name": "Smart Start Fullbody",
@@ -21,7 +23,7 @@ export const programmSports = `[
     "coach": "Ксения Капранова",
     "time": "10:30 90 min",
     "maxPeople": "15",
-    "currentPeople": "10"
+    "currentPeople": "15"
 },
 {
     "id": "4",
@@ -46,6 +48,6 @@ export const programmSports = `[
     "time": "19:00 55 min",
     "maxPeople": "30",
     "currentPeople": "29"
-},
+}
 
 ]`
