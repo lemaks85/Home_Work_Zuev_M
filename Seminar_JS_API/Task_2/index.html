@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="circle"></div>
+    <style>
+        .circle {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.1s ease;
+
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const circle = document.querySelector('.circle');
+            let isMoving = false;
+
+            circle.addEventListener('mouseover', () => {
+                if (!isMoving) {
+                    const randomTop = Math.random() * window.innerHeight;
+                    const randomLeft = Math.random()* window.innerWidth;
+
+                    circle.style.top = `${randomTop}px`;
+                    circle.style.left = `${randomLeft}px`;
+                }
+            });
+        
+            circle.addEventListener('mousedown', () => {
+                isMoving = true;
+                circle.style.backgroundColor = 'blue';
+            });
+
+            circle.addEventListener('mouseup', () => {
+                isMoving = false;
+                circle.style.backgroundColor = 'red';
+            });
+        });
+    </script>
+</body>
+</html>
