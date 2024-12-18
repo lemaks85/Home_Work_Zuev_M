@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body>
-    <script type="module" src="./script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="slider" id="polosa">
+            <div class="item">
+                <img id="img1" src="./img/1.jpg" />
+            </div>
+            <div class="item">
+                <img id="img2" src="./img/2.jpg" />
+            </div>
+            <div class="item">
+                <img id="img3" src="./img/3.jpg" />
+            </div>
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+            <div class="buttons">
+                <div class="button" onclick="action1()"></div>
+                <div class="button" onclick="action2()"></div>
+                <div class="button" onclick="action3()"></div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
 </html>
