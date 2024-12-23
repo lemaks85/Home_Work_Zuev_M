@@ -35,5 +35,7 @@
 ---
 - [Seminar_Python](./Seminar_Python/)
 ---
+- [Seminar_REACT](./Seminar_REACT/)
+---
 - [The_Developer_Is_a Programmer_Specialization](./The_Developer_Is_a%20Programmer_Specialization/)
 ---
