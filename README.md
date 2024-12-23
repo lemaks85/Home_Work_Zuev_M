@@ -25,6 +25,8 @@
 ---
 - [Seminar_JS](./Seminar_JS/)
 ---
+- [Seminar_JS_API](./Seminar_JS_API/)
+---
 - [Seminar_JS_ECMAScript](./Seminar_JS_ECMAScript/)
 ---
 - [Seminar_NodeJS](./Seminar_NodeJS/)
