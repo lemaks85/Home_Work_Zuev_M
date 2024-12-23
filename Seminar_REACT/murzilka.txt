@@ -1,0 +1,3 @@
+npx create-react-app имя проекта
+cd имя проекта
+npm start
