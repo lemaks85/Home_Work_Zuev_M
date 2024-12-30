@@ -1,3 +1,22 @@
 npx create-react-app имя проекта
 cd имя проекта
 npm start
+
+npx create-react-app my-app
+
+npm init react-app my-app
+
+yarn create react-app my-app
+
+npx create-react-app my-app --template [template-name]
+
+npx create-react-app my-app --template typescript
+
+
+npm install --save-dev web-vitals
+В качестве альтернативы, если вы используете Yarn, используйте следующую команду.
+
+yarn add web-vitals --dev
+
+
+Включил в настройках smooth caret в положение "on"

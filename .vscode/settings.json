@@ -21,5 +21,6 @@
         "Урок"
     ],
     "ltex.additionalRules.motherTongue": "ru-RU",
-    "ltex.additionalRules.languageModel": "ru"
+    "ltex.additionalRules.languageModel": "ru",
+    "git.ignoreLimitWarning": true
 }

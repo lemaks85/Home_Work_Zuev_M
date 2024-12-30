@@ -60,3 +60,4 @@ btnNext.addEventListener('click', () => {
     });
     location.reload();
 });
+
