@@ -5,5 +5,5 @@
 ## Урок 1. Знакомство с React и первые компоненты. Работа с JSX
 ```
 Задание => [Task_1.txt](./Tasks/task_1.txt)  
-Файлы проекта => [Project](./Project/)  
+Файлы проекта => [Project](./Project/gbzuevmm/)  
 Мурзилка => [Murzilka](./murzilka.txt)
