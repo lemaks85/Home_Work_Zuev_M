@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headOne {
+  color: green;
+}
+
+.headTwo {
+  color: blue;
+}
+
+.textOne {
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 30vh;
+  background-color: rgba(172, 172, 171, 0.521);
+
+}
+
+.textTwo {
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 45vh;
+  background-color: rgba(172, 172, 171, 0.521);
+}
