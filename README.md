@@ -23,6 +23,8 @@
 ---
 - [Seminar_C#](./Seminar_C#/)
 ---
+- [Seminar_GitHub](./Seminar_GitHub/)
+---
 - [Seminar_JS](./Seminar_JS/)
 ---
 - [Seminar_JS_API](./Seminar_JS_API/)
