@@ -41,7 +41,10 @@
 ---
 - [The_Developer_Is_a Programmer_Specialization](./The_Developer_Is_a%20Programmer_Specialization/)
 ---
+- [test](../Home_Work_Zuev_M/)
+---
 |Семинары и практические задания.|Ссылки|
 |:-|:-|
-|Веб-вёрстка HTML/CSS|[Seminar HTML CSS](./Seminar%20HTML%20CSS/)|
+|Веб-вёрстка HTML / CSS|[Seminar HTML CSS](./Seminar%20HTML%20CSS/)|
 |Фреймворк React JS|[Seminar_REACT](./Seminar_REACT/)|
+|Продвинутый HTML + CSS|[Seminar Advanced HTML CSS](./Seminar%20Advanced%20HTML%20CSS/)|
