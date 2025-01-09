@@ -41,4 +41,7 @@
 ---
 - [The_Developer_Is_a Programmer_Specialization](./The_Developer_Is_a%20Programmer_Specialization/)
 ---
----
+|Семинары и практические задания.|Ссылки|
+|:-|:-|
+|Веб-вёрстка HTML/CSS|[Seminar HTML CSS](./Seminar%20HTML%20CSS/)|
+|Фреймворк React JS|[Seminar_REACT](./Seminar_REACT/)|
