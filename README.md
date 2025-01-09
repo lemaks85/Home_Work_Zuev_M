@@ -41,7 +41,7 @@
 ---
 - [The_Developer_Is_a Programmer_Specialization](./The_Developer_Is_a%20Programmer_Specialization/)
 ---
-- [test](../Home_Work_Zuev_M/)
+- [test](./../Home_Work_Zuev_M/)
 ---
 |Семинары и практические задания.|Ссылки|
 |:-|:-|
