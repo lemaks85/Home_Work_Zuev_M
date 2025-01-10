@@ -26,10 +26,10 @@
 РЕШЕНИЕ => [Smart Electric Scooter](./Smart%20Electric%20Scooter.pdf)  
 РЕШЕНИЕ => [Google Docs Tables](https://docs.google.com/spreadsheets/d/1C_HrwegSUXHrxtwwWHvsy2wSPoMZZ4QrsLuEQjeY8m8/edit?gid=0#gid=0)
 ---
-
+<a name="task_2"></a>
 Урок 2. Agile
 Студенты должны решить кейс и прикрепить решение к семинару. Преподаватель проверяет его и даёт обратную связь комментариями. Обсуждение прошлого ДЗ на следующем семинаре не предполагается.
-<a name="task_2"></a>
+
 Кейс:
 Вы хотите стать программистом или управленцем и, возможно, получить позицию Project Manager IT-проектов. Это очень престижно, востребовано и неплохо оплачивается.
 
