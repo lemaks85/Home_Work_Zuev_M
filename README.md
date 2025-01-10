@@ -23,6 +23,8 @@
 ---
 - [Seminar_C#](./Seminar_C#/)
 ---
+- [Seminar_Flexible_methodologies](./Seminar_Flexible_methodologies/)
+---
 - [Seminar_GitHub](./Seminar_GitHub/)
 ---
 - [Seminar_JS](./Seminar_JS/)
