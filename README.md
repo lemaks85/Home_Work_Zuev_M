@@ -15,34 +15,8 @@
 ---
 # Семинары и практические задания.
 
-- [Linux_Containers_Seminar](./Linux_Containers_Seminar/)
----
-- [Seminar HTML CSS](./Seminar%20HTML%20CSS/)
----
-- [Seminar Advanced HTML CSS](./Seminar%20Advanced%20HTML%20CSS/)
----
-- [Seminar_C#](./Seminar_C#/)
----
-- [Seminar_Flexible_methodologies](./Seminar_Flexible_methodologies/)
----
-- [Seminar_GitHub](./Seminar_GitHub/)
----
-- [Seminar_JS](./Seminar_JS/)
----
-- [Seminar_JS_API](./Seminar_JS_API/)
----
-- [Seminar_JS_ECMAScript](./Seminar_JS_ECMAScript/)
----
-- [Seminar_NodeJS](./Seminar_NodeJS/)
----
-- [Seminar_PHP](./Seminar_PHP/)
----
-- [Seminar_Python](./Seminar_Python/)
----
-- [Seminar_REACT](./Seminar_REACT/)
----
 
-|Семинары и практические задания.|Ссылки|
+|Name block|Link|
 |:-|:-|
 |Linux|[Linux_Containers_Seminar](./Linux_Containers_Seminar/)|
 |HTML CSS|[Seminar HTML CSS](./Seminar%20HTML%20CSS/)|
@@ -59,4 +33,3 @@
 |React JS|[Seminar_REACT](./Seminar_REACT/)|
 |Programmer Specialization|[The_Developer_Is_a Programmer_Specialization](./The_Developer_Is_a%20Programmer_Specialization/)|
 
-test
