@@ -1,20 +1,20 @@
 
- > Ранее размещенные репазитории были перемещены в папку [сюда](./Other_works_and_projects/)
+ > Previously hosted repositories have been moved to a folder [here](./Other_works_and_projects/)
 
 
 
-# Итоговая аттестация.
+# Final certification.
 
-- [Итоговая аттестация Блок Java](./Final_control_work_on_the_java_block/)
----
-- [Итоговая аттестация Блок Linix](./Final_control_work_on_the_linux_block/)
----
-- [Итоговая аттестация Блок MainStart](./Final_control_work_on_the_main_block/)
----
-- [Итоговая аттестация Блок MySQL](./Final_control_work_on_the_MySQL_block/)
----
-# Семинары и практические задания.
+|Name block|Link|
+|:-|:-|
+|Block Java|[Final certification Java](./Final_control_work_on_the_java_block/)|
+|Block Linux|[Final certification Linix](./Final_control_work_on_the_linux_block/)|
+|Block Main Start|[Final certification MainStart](./Final_control_work_on_the_main_block/)|
+|Block MySQL|[Final certification MySQL](./Final_control_work_on_the_MySQL_block/)|  
 
+
+
+# Seminars and practical assignments.
 
 |Name block|Link|
 |:-|:-|
