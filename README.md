@@ -1,5 +1,6 @@
+> Student GeekBrains - Zuev Maksim Group #6014
+---
 
- > Previously hosted repositories have been moved to a folder [here](./Other_works_and_projects/)
 
 
 
@@ -32,4 +33,5 @@
 |Python|[Seminar_Python](./Seminar_Python/)|
 |React JS|[Seminar_REACT](./Seminar_REACT/)|
 |Programmer Specialization|[The_Developer_Is_a Programmer_Specialization](./The_Developer_Is_a%20Programmer_Specialization/)|
-
+---
+ > Previously hosted repositories have been moved to a folder [here](./Other_works_and_projects/)
