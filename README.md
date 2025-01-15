@@ -41,10 +41,22 @@
 ---
 - [Seminar_REACT](./Seminar_REACT/)
 ---
-- [The_Developer_Is_a Programmer_Specialization](./The_Developer_Is_a%20Programmer_Specialization/)
----
+
 |Семинары и практические задания.|Ссылки|
 |:-|:-|
-|Веб-вёрстка HTML / CSS|[Seminar HTML CSS](./Seminar%20HTML%20CSS/)|
-|Фреймворк React JS|[Seminar_REACT](./Seminar_REACT/)|
-|Продвинутый HTML + CSS|[Seminar Advanced HTML CSS](./Seminar%20Advanced%20HTML%20CSS/)|
+|Linux|[Linux_Containers_Seminar](./Linux_Containers_Seminar/)|
+|HTML CSS|[Seminar HTML CSS](./Seminar%20HTML%20CSS/)|
+|Advanced HTML CSS|[Seminar Advanced HTML CSS](./Seminar%20Advanced%20HTML%20CSS/)|
+|C#|[Seminar_C#](./Seminar_C#/)|
+|Flexible methodologies|[Seminar_Flexible_methodologies](./Seminar_Flexible_methodologies/)|
+|GitHub|[Seminar_GitHub](./Seminar_GitHub/)|
+|JavaScript|[Seminar_JS](./Seminar_JS/)|
+|JavaScript API|[Seminar_JS_API](./Seminar_JS_API/)|
+|JavaScript ECMAScript|[Seminar_JS_ECMAScript](./Seminar_JS_ECMAScript/)|
+|Node JS|[Seminar_NodeJS](./Seminar_NodeJS/)|
+|PHP|[Seminar_PHP](./Seminar_PHP/)|
+|Python|[Seminar_Python](./Seminar_Python/)|
+|React JS|[Seminar_REACT](./Seminar_REACT/)|
+|Programmer Specialization|[The_Developer_Is_a Programmer_Specialization](./The_Developer_Is_a%20Programmer_Specialization/)|
+
+test
