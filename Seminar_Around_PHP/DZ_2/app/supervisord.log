@@ -1,0 +1,48 @@
+2024-04-26 15:53:56,951 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 15:53:56,952 INFO Included extra file "/etc/supervisor/conf.d/bot.ini" during parsing
+2024-04-26 15:53:56,955 INFO supervisord started with pid 37
+2024-04-26 15:53:57,957 INFO spawnerr: can't find command 'php8.0'
+2024-04-26 15:53:58,959 INFO spawnerr: can't find command 'php8.0'
+2024-04-26 15:54:00,962 INFO spawnerr: can't find command 'php8.0'
+2024-04-26 15:54:03,966 INFO spawnerr: can't find command 'php8.0'
+2024-04-26 15:54:03,966 INFO gave up: worker_00 entered FATAL state, too many start retries too quickly
+2024-04-26 15:54:32,999 WARN received SIGINT indicating exit request
+2024-04-26 16:04:27,829 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 16:04:27,829 INFO Included extra file "/etc/supervisor/conf.d/bot.ini" during parsing
+2024-04-26 16:04:27,833 INFO supervisord started with pid 35
+2024-04-26 16:04:28,835 INFO spawned: 'worker_00' with pid 36
+2024-04-26 16:04:29,839 INFO success: worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 16:12:43,161 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 16:12:43,161 INFO Included extra file "/etc/supervisor/conf.d/bot.ini" during parsing
+2024-04-26 16:12:43,165 INFO supervisord started with pid 38
+2024-04-26 16:12:44,168 INFO spawned: 'worker_00' with pid 39
+2024-04-26 16:12:45,170 INFO success: worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 16:16:04,907 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 16:16:04,908 INFO Included extra file "/etc/supervisor/conf.d/bot.ini" during parsing
+2024-04-26 16:16:04,914 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-04-26 16:16:04,916 INFO supervisord started with pid 29
+2024-04-26 16:16:05,919 INFO spawned: 'worker_00' with pid 36
+2024-04-26 16:16:06,921 INFO success: worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 16:17:31,561 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 16:17:31,561 INFO Included extra file "/etc/supervisor/conf.d/bot.ini" during parsing
+2024-04-26 16:17:31,567 INFO RPC interface 'supervisor' initialized
+2024-04-26 16:17:31,567 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-04-26 16:17:31,569 INFO supervisord started with pid 29
+2024-04-26 16:17:32,572 INFO spawned: 'worker_00' with pid 30
+2024-04-26 16:17:33,574 INFO success: worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 16:18:03,942 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 16:18:03,942 INFO Included extra file "/etc/supervisor/conf.d/bot.ini" during parsing
+2024-04-26 16:18:54,732 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 16:18:54,732 INFO Included extra file "/etc/supervisor/conf.d/bot.ini" during parsing
+2024-04-26 16:18:54,742 INFO RPC interface 'supervisor' initialized
+2024-04-26 16:18:54,743 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-04-26 16:18:54,746 INFO supervisord started with pid 33
+2024-04-26 16:18:55,749 INFO spawned: 'worker_00' with pid 34
+2024-04-26 16:18:56,750 INFO success: worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 16:33:05,005 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 16:33:05,006 INFO Included extra file "/etc/supervisor/conf.d/bot.ini" during parsing
+2024-04-26 16:33:05,013 INFO RPC interface 'supervisor' initialized
+2024-04-26 16:33:05,014 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-04-26 16:33:05,017 INFO supervisord started with pid 1
+2024-04-26 16:33:06,020 INFO spawned: 'worker_00' with pid 7
+2024-04-26 16:33:07,025 INFO success: worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

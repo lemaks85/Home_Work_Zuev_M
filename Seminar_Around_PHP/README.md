@@ -24,3 +24,7 @@ stdout_logfile=/var/log/worker
 php runner -c save_event --name 'name' --receiver 1 --text 'text' --cron '* * * * *' * * * * * php runner -c handle_events
 ```
 =>  [DZ_1](./DZ_1/)
+---
+## Урок 4. Семинар: Backend API
+Домашнее задание написано на последних слайдах в [презентации](./DZ_2/Презентация%20к%20семинару%202.%20Backend%20API%20-%20student.pdf).
+
