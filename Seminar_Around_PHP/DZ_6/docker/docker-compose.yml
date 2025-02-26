@@ -1,0 +1,37 @@
+version: '3.7'
+
+networks:
+  app-network:
+    driver: bridge
+
+x-app: &app
+  env_file: .env
+  networks: [ app-network ]
+  environment:
+    TZ: ${TIMEZONE}
+
+services:
+  php-fpm:
+    <<: *app
+    container_name: php-fpm
+    image: myapp/php
+    build: ./php-fpm
+    extra_hosts: [ "host.docker.internal:host-gateway" ]
+    volumes: [ "../app:/app/mysite.local" ]
+  supervisor:
+    <<: *app
+    container_name: supervisor
+    image: myapp/supervisor
+    build: ./supervisor
+    volumes: [ "../app:/app/mysite.local" ]
+  redis:
+    <<: *app
+    container_name: redis
+    image: myapp/redis
+    build: ./redis
+  rmq:
+    <<: *app
+    container_name: rmq
+    image: myapp/rmq
+    build: ./rmq
+    ports: [ "81:15672" ]

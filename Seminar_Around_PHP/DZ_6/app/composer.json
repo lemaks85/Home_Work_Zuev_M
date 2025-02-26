@@ -1,0 +1,45 @@
+{
+  "name": "rek771/reminder-tg-bot",
+  "description": "Бот, который напоминает в телегу о важных событиях",
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-pcntl": "*",
+    "ext-pdo": "*",
+    "ext-pdo_sqlite": "*",
+    "php-amqplib/php-amqplib": "^3.6",
+    "predis/predis": "^2.2",
+    "psr/simple-cache": "^3.0",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "require-dev": {
+    "infection/infection": "^0.28.1",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/"
+    ]
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "infection/extension-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
