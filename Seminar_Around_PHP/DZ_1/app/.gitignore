@@ -1,0 +1,5 @@
+/vendor
+/.idea
+.env
+cache.txt
+database.sqlite
