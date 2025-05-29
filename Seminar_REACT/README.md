@@ -2,6 +2,36 @@
 
 > Домашнее задание. Выполнил студент GB Зуев Максим Михайлович, группа № 6014.
 ```
+Урок 8. Работа с API
+```
+Задание => [Task_8.txt](./Tasks/task_8.txt)  
+Файлы проекта => [HW_8](./HW_8/)    
+Мурзилка => [Murzilka](./murzilka.txt)  
+
+![](./Screens/8-1.png)
+![](./Screens/8-2.png)
+![](./Screens/8-3.png)
+![](./Screens/8-4.png)
+---
+```
+Урок 7. Redux middlewares. Redux persist
+```
+Задание => [Task_7.txt](./Tasks/task_7.txt)  
+Файлы проекта => [HW_7](./HW_7/)    
+Мурзилка => [Murzilka](./murzilka.txt)  
+
+![](./Screens/7-1.png)
+---
+```
+Урок 6. Погружение в Redux. Connect
+```
+Задание => [Task_6.txt](./Tasks/task_6.txt)  
+Файлы проекта => [HW_6](./HW_6/)    
+Мурзилка => [Murzilka](./murzilka.txt)  
+
+![](./Screens/6-1.png)
+---
+```
 Урок 5. Компоненты высшего порядка знакомство с Redux
 ```
 Задание => [Task_5.txt](./Tasks/task_5.txt)  
