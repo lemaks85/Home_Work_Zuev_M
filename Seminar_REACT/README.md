@@ -2,6 +2,28 @@
 
 > Домашнее задание. Выполнил студент GB Зуев Максим Михайлович, группа № 6014.
 ```
+Урок 4. Children. Роутинг в React
+```
+Ссылка на сайт => http://sxcary2r.beget.tech/  
+Задание => [Task_4.txt](./Tasks/task_4.txt)  
+Файлы проекта => [HW_4](./HW_4/)    
+Мурзилка => [Murzilka](./murzilka.txt)  
+
+![](./Screens/4_1.png)
+![](./Screens/4_2.png)
+![](./Screens/4_3.png)
+---
+
+
+
+
+
+
+
+
+
+
+```
 Урок 3. Virtual DOM. Подключение библиотеки UI-компонентов
 ```
 Задание => [Task_3.txt](./Tasks/task_3.txt)  
