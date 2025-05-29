@@ -20,3 +20,13 @@ yarn add web-vitals --dev
 
 
 Включил в настройках smooth caret в положение "on"
+
+npm install @mui/icons-material
+
+npm install @mui/material @emotion/react @emotion/styled
+
+npm install @reduxjs/toolkit
+
+npm install react-redux  --save
+
+npm install react react-dom --save
