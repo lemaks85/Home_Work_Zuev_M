@@ -1,0 +1,15 @@
+https://gbcdn.mrgcdn.ru/uploads/record/305310/attachment/c99cfb505c822e6de187f5844ea0a32f.mp4
+НЕ ГРУЗИТСЯ TASK_7 ВИДИО_1
+
+Для установки Laravel на PC должен быть предустановлен Composer и PHP 
+
+- composer create-project Laravel/Laravel example-app
+- cd example-app
+- php artisan serve
+- php artisan serve --port=8080
+
+Создание контроллера 
+- php artisan make:controller NameController
+
+Сброс кеша
+-php artisan config:clear
