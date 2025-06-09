@@ -12,4 +12,25 @@ https://gbcdn.mrgcdn.ru/uploads/record/305310/attachment/c99cfb505c822e6de187f58
 - php artisan make:controller NameController
 
 Сброс кеша
--php artisan config:clear
+- php artisan config:clear
+
+Создание миграций 
+- php artisan make:migration create_employee_table
+
+Запуск миграций 
+- php artisan migrate 
+
+Список ранее запущенных  миграций.
+- php artisan migrate:status
+
+Принудительный запуск миграции.
+- php artisan migrate --force
+
+Откат миграций
+- php artisan migrate:rollback
+
+Для отката определенного числа файлов миграции воспользуемся флогом `step`
+- php artisan migrate:rollback --step=5
+
+Чтобы откатить все миграции на проекте изпользую команду RESET
+- php artisan migrate:reset
