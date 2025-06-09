@@ -19,12 +19,14 @@
 ```
 Урок 2. Контроллеры, экшены и роутинг.
 ```
-***
+
 |File|Explorer / Link|
 |:-|:-|
 |Задание|[Task_2.txt](./Task/Taks_2.txt)|
 |Файлы проекта|[HomeWork](./Project/vmas-app/)|
 |Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
 ![](./Screens/2-1.png)
 ![](./Screens/2-2.png)
 ![](./Screens/2-3.png)
