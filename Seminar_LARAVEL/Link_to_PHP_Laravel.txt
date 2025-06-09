@@ -34,3 +34,6 @@ https://gbcdn.mrgcdn.ru/uploads/record/305310/attachment/c99cfb505c822e6de187f58
 
 Чтобы откатить все миграции на проекте изпользую команду RESET
 - php artisan migrate:reset
+
+Создание нового компонента шаблонизатора blade.
+- php artisan make:component <Имя компонента>

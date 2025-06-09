@@ -18,3 +18,38 @@ Route::get('/test_database', function () {
     $employee->save();
      echo "Добавлен пользователь $newUser.";
     });
+
+
+    Route::get('/', function () {
+    $user = [
+        'name' => 'Zuev Maksim',
+        'age' => 40,
+        'position' => 'married',
+        'address' => 'Moscow'
+    ];
+    return view(
+        'home',
+        [
+            'title' => 'main',
+            'style' => "css/app.css",
+            'user' => $user
+        ]
+    );
+});
+
+Route::get('/contacts', function () {
+    $user = [
+        'address' => 'Moscow',
+        'post_code' => 117403,
+        'email' => '',
+        'phone' => 89161907775
+    ];
+    return view(
+        'contacts',
+        [
+            'title' => 'contacts',
+            'style' => "css/style.css",
+            'user' => $user
+        ]
+    );
+});
