@@ -68,7 +68,8 @@
 |Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
 
 ***
-![]()
+![](./Screens/10-1.png)
+![](./Screens/10-2.png)
 ***
 
 ## Урок 9. Работа с событиями
