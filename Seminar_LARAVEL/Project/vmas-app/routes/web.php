@@ -12,6 +12,12 @@ use App\Events\NewsHidden;
 use App\Models\News;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UsersController;
+use App\Mail\Welcome;
+use App\Models\User;
+use Illuminate\Support\Facades\Mail;
+use Telegram\Bot\Laravel\Facades\Telegram;
+
+
 
 require __DIR__ . '/auth.php';
 
@@ -29,8 +35,56 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/test-telegram', function () {
+    Telegram::sendMessage([
+        'chat_id' => env('TELEGRAM_CHANNEL_ID'),
+        'parse_mode' => 'HTML',
+        'text' => 'Произошло тестовое событие.'
+    ]);
 
-Route::get('/users', [UsersController::class, 'index']);
+    return response()->json(['status' => 'success']);
+});
+
+Route::get('/test-email', function () {
+    $email = env('USER_MAIL');
+    Mail::to($email)->send(new Welcome(User::where('id', 1)->first()));
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// require __DIR__ . '/auth.php';
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Route::middleware('auth')->group(function () {
+//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// });
+
+
+// Route::get('/users', [UsersController::class, 'index']);
 
 
 
