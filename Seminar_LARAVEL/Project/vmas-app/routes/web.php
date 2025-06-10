@@ -7,34 +7,30 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\PdfGeneratorController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LogController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/', function () {
-    return view('userForm');
-});
-
-Route::get('/user', [UserController::class, 'index']);
-Route::get('/user/{id}', [UserController::class, 'get']);
-Route::post('/store-user', [UserController::class, 'store']);
-
-Route::get('/resume/{id}', [PdfGeneratorController::class, 'index']);
+Route::get('/logs',[LogController::class, 'index']);
 
 
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
+// Route::get('/', function () {
+//     return view('userForm');
+// });
 
+// Route::get('/user', [UserController::class, 'index']);
+// Route::get('/user/{id}', [UserController::class, 'get']);
+// Route::post('/store-user', [UserController::class, 'store']);
 
-
-
-
-
-
-
+// Route::get('/resume/{id}', [PdfGeneratorController::class, 'index']);
 
 
 
