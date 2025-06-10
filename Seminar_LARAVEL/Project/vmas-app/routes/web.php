@@ -5,10 +5,40 @@ use App\Http\Controllers\FormProcessor;
 use App\Models\Employee;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\PdfGeneratorController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/', function () {
+    return view('userForm');
+});
+
+Route::get('/user', [UserController::class, 'index']);
+Route::get('/user/{id}', [UserController::class, 'get']);
+Route::post('/store-user', [UserController::class, 'store']);
+
+Route::get('/resume/{id}', [PdfGeneratorController::class, 'index']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Route::get('/userform', [FormProcessor::class, 'index'])->name('user-form');
 // Route::post('/store_form',[FormProcessor::class, 'store']);
@@ -60,9 +90,9 @@ Route::get('/', function () {
 // Route::post('stote-form', [EmployeeController::class,'store']);
 // Route::put('/user/{id}', [EmployeeController::class,'update']);
 
-Route::get('/', function () {
-    return view('bookForm');
-});
+// Route::get('/', function () {
+//     return view('bookForm');
+// });
 
-Route::get('/index', [BookController::class,'index'])->name('index');
-Route::post('/store', [BookController::class,'store']);
+// Route::get('/index', [BookController::class,'index'])->name('index');
+// Route::post('/store', [BookController::class,'store']);
