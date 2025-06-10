@@ -20,6 +20,7 @@ class FormProcessor extends Controller
                 'email' => $request->email
             ];
 
-        return response()->json($userData);
+        // return response()->json($userData);
+        return view('helloUser',['user' => $userData]);
     }
 }
