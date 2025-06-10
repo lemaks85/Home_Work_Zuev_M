@@ -1,5 +1,5 @@
 <form name="employee-form" id="employee-form" method="post" action="{{url('store-form')}}">
-    @csrf
+    
     <div class="form-group">
         <labal for="name">Name</labal>
         <input type="text" id="name" name="name" class="form-control" require="true">

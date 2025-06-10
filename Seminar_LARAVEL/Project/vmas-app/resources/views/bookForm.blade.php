@@ -11,7 +11,7 @@
 
 <body>
     <form name="add-new-book" method="post" action="{{ url('store') }}">
-        @csrf
+        
         <div class="form">
             <div class="form__item">
                 <label for="title">Title</label>

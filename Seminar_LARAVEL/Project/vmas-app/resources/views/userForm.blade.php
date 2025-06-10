@@ -10,7 +10,7 @@
 
 <body>
     <form method="post" action="{{ url('store_form') }}">
-        @csrf
+      
         <div class="userForm">
           <div class="userForm__item">
             <label for="username">Name</label>
