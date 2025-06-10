@@ -4,6 +4,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\FormProcessor;
 use App\Models\Employee;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -55,6 +56,13 @@ Route::get('/', function () {
 //     );
 // });
 
-Route::get('get-employee-data', [EmployeeController::class,'index']);
-Route::post('stote-form', [EmployeeController::class,'store']);
-Route::put('/user/{id}', [EmployeeController::class,'update']);
+// Route::get('get-employee-data', [EmployeeController::class,'index']);
+// Route::post('stote-form', [EmployeeController::class,'store']);
+// Route::put('/user/{id}', [EmployeeController::class,'update']);
+
+Route::get('/', function () {
+    return view('bookForm');
+});
+
+Route::get('/index', [BookController::class,'index'])->name('index');
+Route::post('/store', [BookController::class,'store']);
