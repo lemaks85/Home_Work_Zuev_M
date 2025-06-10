@@ -16,154 +16,22 @@
 [Задание 10](#урок-10-встроенные-возможности-laravel)  
 [Задание 11](#урок-11-реализация-авторизации)  
 [Задание 12](#урок-12-интеграция-с-внешними-сервисами)  
-[Задание 13](#урок-13-тестирование-и-отладка-laravel-приложений)
+[Задание 13](#урок-13-тестирование-и-отладка-laravel-приложений)  
+[Задание 14](#урок-14-создание-администраторской-панели)
 ***
 
-## Урок 13. Тестирование и отладка Laravel-приложений
+## Урок 1. Введение, установка и первичная настройка
 
 |File|Explorer / Link|
 |:-|:-|
-|Задание|[Task_13.txt](./Task/Taks_13.txt)|
+|Задание|[Task_1.txt](./Task/Taks_1.txt)|
 |Файлы проекта|[HomeWork](./Project/vmas-app/)|
 |Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
 
 ***
-![](./Screens/13-1.png)
-![](./Screens/13-2.png)
-![](./Screens/13-3.png)
-![](./Screens/13-4.png)
-![](./Screens/13-5.png)
-***
-
-## Урок 12. Интеграция с внешними сервисами
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_12.txt](./Task/Taks_12.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![](./Screens/12-2.png)
-***
-
-## Урок 11. Реализация авторизации
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_11.txt](./Task/Taks_11.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![]()
-***
-
-## Урок 10. Встроенные возможности Laravel
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_10.txt](./Task/Taks_10.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![](./Screens/10-1.png)
-![](./Screens/10-2.png)
-***
-
-## Урок 9. Работа с событиями
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_9.txt](./Task/Taks_9.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![](./Screens/9-1.png)
-![](./Screens/9-2.png)
-***
-
-## Урок 8. Сервисы: создание и использование
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_8.txt](./Task/Taks_8.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![](./Screens/8-1.png)
-![](./Screens/8-2.png)
-![](./Screens/8-3.png)
-***
-
-## Урок 7. Формирование ответа (Response)
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_7.txt](./Task/Taks_7.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![](./Screens/7-1.png)
-
-***
-## Урок 6. Работа с формами
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_6.txt](./Task/Taks_6.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![](./Screens/6-1.png)
-![](./Screens/6-2.png)
-![](./Screens/6-3.png)
-***
-
-## Урок 5. Обработка запроса (Request)
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_5.txt](./Task/Taks_5.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![]()
-***
-
-## Урок 4. Работа с шаблонами. Шаблонизатор Blade
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_4.txt](./Task/Taks_4.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![](./Screens/4-1.png)
-![](./Screens/4-2.png)
-***
-
-## Урок 3. Работа с базами данных. ORM-система Eloquent
-
-|File|Explorer / Link|
-|:-|:-|
-|Задание|[Task_3.txt](./Task/Taks_3.txt)|
-|Файлы проекта|[HomeWork](./Project/vmas-app/)|
-|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
-
-***
-![](./Screens/3-1.png)
-![](./Screens/3-2.png)
-![](./Screens/3-3.png)
-![](./Screens/3-4.png)
-![](./Screens/3-5.png)
+![](./Screens/1-1.png)
+![](./Screens/1-2.png)
+![](./Screens/1-3.png)
 ***
 
 ## Урок 2. Контроллеры, экшены и роутинг.
@@ -182,17 +50,191 @@
 ![](./Screens/2-5.png)
 ***
 
-
-## Урок 1. Введение, установка и первичная настройка
+## Урок 3. Работа с базами данных. ORM-система Eloquent
 
 |File|Explorer / Link|
 |:-|:-|
-|Задание|[Task_1.txt](./Task/Taks_1.txt)|
+|Задание|[Task_3.txt](./Task/Taks_3.txt)|
 |Файлы проекта|[HomeWork](./Project/vmas-app/)|
 |Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
 
 ***
-![](./Screens/1-1.png)
-![](./Screens/1-2.png)
-![](./Screens/1-3.png)
+![](./Screens/3-1.png)
+![](./Screens/3-2.png)
+![](./Screens/3-3.png)
+![](./Screens/3-4.png)
+![](./Screens/3-5.png)
 ***
+
+## Урок 4. Работа с шаблонами. Шаблонизатор Blade
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_4.txt](./Task/Taks_4.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![](./Screens/4-1.png)
+![](./Screens/4-2.png)
+***
+
+## Урок 5. Обработка запроса (Request)
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_5.txt](./Task/Taks_5.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![]()
+***
+
+## Урок 6. Работа с формами
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_6.txt](./Task/Taks_6.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![](./Screens/6-1.png)
+![](./Screens/6-2.png)
+![](./Screens/6-3.png)
+***
+
+## Урок 7. Формирование ответа (Response)
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_7.txt](./Task/Taks_7.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![](./Screens/7-1.png)
+
+***
+
+## Урок 8. Сервисы: создание и использование
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_8.txt](./Task/Taks_8.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![](./Screens/8-1.png)
+![](./Screens/8-2.png)
+![](./Screens/8-3.png)
+***
+
+## Урок 9. Работа с событиями
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_9.txt](./Task/Taks_9.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![](./Screens/9-1.png)
+![](./Screens/9-2.png)
+***
+
+## Урок 10. Встроенные возможности Laravel
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_10.txt](./Task/Taks_10.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![](./Screens/10-1.png)
+![](./Screens/10-2.png)
+***
+
+## Урок 11. Реализация авторизации
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_11.txt](./Task/Taks_11.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![]()
+***
+
+## Урок 12. Интеграция с внешними сервисами
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_12.txt](./Task/Taks_12.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![](./Screens/12-2.png)
+***
+
+## Урок 13. Тестирование и отладка Laravel-приложений
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_13.txt](./Task/Taks_13.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![](./Screens/13-1.png)
+![](./Screens/13-2.png)
+![](./Screens/13-3.png)
+![](./Screens/13-4.png)
+![](./Screens/13-5.png)
+***
+
+## Урок 14. Создание администраторской панели
+
+|File|Explorer / Link|
+|:-|:-|
+|Задание|[Task_14.txt](./Task/Taks_14.txt)|
+|Файлы проекта|[HomeWork](./Project/vmas-app/)|
+|Мурзилка|[Murzilka](./Link_to_PHP_Laravel.txt)|  
+
+***
+![](./Screens/14-1.png)
+![](./Screens/14-2.png)
+![](./Screens/14-3.png)
+![](./Screens/14-4.png)
+![](./Screens/14-5.png)
+***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
